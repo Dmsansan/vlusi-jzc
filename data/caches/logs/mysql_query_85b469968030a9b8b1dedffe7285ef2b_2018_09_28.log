@@ -6150,3 +6150,15 @@ SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id 
 
 DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538121879
 
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '312c19918872ced302e12e01e10a8924'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1538094737'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1538094737
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538123859', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538095059;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:0:{}}' WHERE sesskey = '312c19918872ced302e12e01e10a8924' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538122059
+

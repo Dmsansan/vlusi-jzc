@@ -11,7 +11,7 @@
  Target Server Version : 50553
  File Encoding         : 65001
 
- Date: 28/09/2018 14:12:05
+ Date: 28/09/2018 16:37:33
 */
 
 SET NAMES utf8mb4;
@@ -402,6 +402,28 @@ CREATE TABLE `jzc_agency`  (
   PRIMARY KEY (`agency_id`) USING BTREE,
   INDEX `agency_name`(`agency_name`) USING BTREE
 ) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for jzc_amount_card
+-- ----------------------------
+DROP TABLE IF EXISTS `jzc_amount_card`;
+CREATE TABLE `jzc_amount_card`  (
+  `amount_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '代金卡ID',
+  `amount_list` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '代金卡批次',
+  `amount_number` varchar(60) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '代金卡号',
+  `amount_password` varchar(60) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '代金卡密码',
+  `amount_status` int(11) NULL DEFAULT 1 COMMENT '代金卡状态：0未激活 1激活',
+  `expry_date` datetime NULL DEFAULT NULL COMMENT '有效期',
+  `amount_count` float(255, 2) NULL DEFAULT NULL COMMENT '代金卡金额',
+  `add_date` datetime NULL DEFAULT NULL COMMENT '代金卡添加时间',
+  PRIMARY KEY (`amount_id`) USING BTREE
+) ENGINE = MyISAM AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of jzc_amount_card
+-- ----------------------------
+INSERT INTO `jzc_amount_card` VALUES (1, '0001', '23781378', '317371838', 1, '2018-10-19 15:59:36', 100.05, '2018-09-28 15:59:48');
+INSERT INTO `jzc_amount_card` VALUES (2, '0002', '67545736', '316736176', 1, '2018-10-20 16:00:31', 88.00, '2018-09-28 16:00:40');
 
 -- ----------------------------
 -- Table structure for jzc_area_region
@@ -5202,8 +5224,8 @@ CREATE TABLE `jzc_sessions`  (
 -- ----------------------------
 -- Records of jzc_sessions
 -- ----------------------------
-INSERT INTO `jzc_sessions` VALUES ('312c19918872ced302e12e01e10a8924', 1538115066, 0, 1, '0.0.0.0', '0', 0, 0.00, '0', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538086266;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:0:{}}');
-INSERT INTO `jzc_sessions` VALUES ('2683bd361e10b1a2b1deba813b3e73ae', 1538114425, 0, 0, '0.0.0.0', '0', 0, 1.00, '0', 'a:6:{s:9:\"parent_id\";i:0;s:8:\"drp_shop\";a:0:{}s:9:\"subscribe\";N;s:9:\"last_time\";i:1538083776;s:7:\"from_ad\";i:15;s:7:\"referer\";s:6:\"本站\";}');
+INSERT INTO `jzc_sessions` VALUES ('312c19918872ced302e12e01e10a8924', 1538123676, 0, 1, '0.0.0.0', '0', 0, 0.00, '0', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538094737;s:12:\"suppliers_id\";s:1:\"0\";s:9:\"user_list\";a:0:{}}');
+INSERT INTO `jzc_sessions` VALUES ('928512da7f677ade14170d8e4fa0d98d', 1538122119, 0, 0, '0.0.0.0', '0', 0, 0.00, '0', 'a:0:{}');
 
 -- ----------------------------
 -- Table structure for jzc_sessions_data
