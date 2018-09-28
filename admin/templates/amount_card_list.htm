@@ -1,0 +1,84 @@
+<!-- $Id: mount_card.htm 15544 2018-09-28 15:54:28Z siss $ -->
+{if $full_page}
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+<div class="form-div">
+  <form action="javascript:searchArticle()" name="searchForm">
+    <img src="images/icon_search.gif" width="26" height="22" border="0" alt="SEARCH" />
+    {$lang.title} <input type="text" name="keyword" id="keyword" />
+    <input type="submit" value="{$lang.button_search}" class="button" />
+  </form>
+</div>
+
+<form method="POST" action="exchange_goods.php?act=batch_remove" name="listForm">
+<!-- start cat list -->
+<div class="list-div" id="listDiv">
+{/if}
+
+<table cellspacing='1' cellpadding='3' id='list-table'>
+  <tr>
+    <th><input onclick='listTable.selectAll(this, "checkboxes")' type="checkbox">
+      <a href="javascript:listTable.sort('amount_id'); ">{$lang.amount_id}</a>{$sort_amount_id}</th>
+    <th><a href="javascript:listTable.sort('amount_list'); ">{$lang.amount_list}</a>{$sort_amount_list}</th>
+    <th><a href="javascript:listTable.sort('amount_number'); ">{$lang.amount_number}</a>{$sort_exchange_integral}</th>
+    <th><a href="javascript:listTable.sort('amount_password'); ">{$lang.amount_password}</a>{$sort_is_exchange}</th>
+    <th><a href="javascript:listTable.sort('status'); ">{$lang.amount_status}</a>{$sort_is_hot}</th>
+    <th><a href="javascript:listTable.sort('amount_count'); ">{$lang.amount_count}</a>{$sort_amount_count}</th>
+    <th><a href="javascript:listTable.sort('expry_date'); ">{$lang.expry_date}</a>{$sort_is_hot}</th>
+    <th><a href="javascript:listTable.sort('add_date'); ">{$lang.add_date}</a>{$sort_is_hot}</th>
+    <th>{$lang.handler}</th>
+  </tr>
+  {foreach from=$cards_list item=list}
+  <tr>
+    <td align="center"><span><input name="checkboxes[]" type="checkbox" value="{$list.amount_id}"/>{$list.amount_id}</span></td>
+    <td class="first-cell" align="center"><span>{$list.amount_list|escape:html}</span></td>
+    <td align="center"><span>{$list.amount_number}</span></td>
+    <td align="center"><span>{$list.amount_password}</span></td>
+    <td align="center"><span>{if $list.amount_status == 0}{$lang.down}{else}{$lang.up}{/if}</span></td>
+    <td align="center"><span>{$list.amount_count}</span></td>
+    <td align="center"><span>{$list.expry_date}</span></td>
+    <td align="center"><span>{$list.add_date}</span></td>
+    <td align="center" nowrap="true"><span>
+      <a href="../index.php?c=exchange&a=exchange_goods&gid={$list.goods_id}" target="_blank" title="{$lang.view}"><img src="images/icon_view.gif" border="0" height="16" width="16" /></a>&nbsp;
+      <a href="exchange_goods.php?act=edit&id={$list.goods_id}" title="{$lang.edit}"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
+      <a href="javascript:;" onclick="listTable.remove({$list.goods_id}, '{$lang.drop_confirm}')" title="{$lang.remove}"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
+    </td>
+   </tr>
+   {foreachelse}
+    <tr><td class="no-records" colspan="5">{$lang.no_records}</td></tr>
+  {/foreach}
+  <tr>
+    <td colspan="2"><input type="submit" class="button" id="btnSubmit" value="{$lang.button_remove}" disabled="true" /></td>
+    <td align="right" nowrap="true" colspan="8">{include file="page.htm"}</td>
+  </tr>
+</table>
+
+{if $full_page}
+</div>
+<!-- end cat list -->
+<script type="text/javascript" language="JavaScript">
+  listTable.recordCount = {$record_count};
+  listTable.pageCount = {$page_count};
+
+  {foreach from=$filter item=item key=key}
+  listTable.filter.{$key} = '{$item}';
+  {/foreach}
+  {literal}
+
+  onload = function()
+  {
+    // 开始检查订单
+    startCheckOrder();
+  }
+
+ /* 搜索文章 */
+ function searchArticle()
+ {
+    listTable.filter.keyword = Utils.trim(document.forms['searchForm'].elements['keyword'].value);
+    listTable.filter.page = 1;
+    listTable.loadList();
+ }
+ {/literal}
+</script>
+{include file="pagefooter.htm"}
+{/if}

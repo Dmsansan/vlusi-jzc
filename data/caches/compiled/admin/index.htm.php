@@ -280,7 +280,7 @@ function addFavorite(url, title) {
         <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
 
         </div><div class="copyright">
-        <p>Powered By <em><a href="http://www.ectouch.cn" target="_blank"><span class="vol"><font class="b">ECTouch</font><font class="o">.Cn</font></span></a></em></p></div></td>
+        <p>Powered By <em><a href="http://www.vlusi.com" target="_blank"><span class="vol"><font class="b">Vlusi</font><font class="o">.Com</font></span></a></em></p></div></td>
       <td valign="top" width="100%"><iframe src="" id="workspace" name="workspace" style="overflow: visible;" frameborder="0" width="100%" height="100%" scrolling="yes" onload="window.parent"></iframe></td>
     </tr>
   </tbody>

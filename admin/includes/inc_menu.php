@@ -87,17 +87,18 @@ $modules['05_menu_content']['02_articlecat_list']        = 'articlecat.php?act=l
 
 // 营销
 //$modules['06_menu_promotion']['02_snatch_list']          = 'snatch.php?act=list';
-$modules['06_menu_promotion']['04_bonustype_list']       = 'bonus.php?act=list';
+//$modules['06_menu_promotion']['04_bonustype_list']       = 'bonus.php?act=list';
 // $modules['06_menu_promotion']['06_pack_list']            = 'pack.php?act=list';
 // $modules['06_menu_promotion']['07_card_list']            = 'card.php?act=list';
-$modules['06_menu_promotion']['08_group_buy']            = 'group_buy.php?act=list';
+//$modules['06_menu_promotion']['08_group_buy']            = 'group_buy.php?act=list';
 // $modules['06_menu_promotion']['09_topic']                = 'topic.php?act=list';
 //$modules['06_menu_promotion']['10_auction']              = 'auction.php?act=list';
-$modules['06_menu_promotion']['12_favourable']           = 'favourable.php?act=list';
+//$modules['06_menu_promotion']['12_favourable']           = 'favourable.php?act=list';
 //$modules['06_menu_promotion']['13_wholesale']            = 'wholesale.php?act=list';
 //$modules['06_menu_promotion']['14_package_list']         = 'package.php?act=list';
 //$modules['03_promotion']['ebao_commend']            = 'ebao_commend.php?act=list';
-$modules['06_menu_promotion']['15_exchange_goods']       = 'exchange_goods.php?act=list';
+//$modules['06_menu_promotion']['15_exchange_goods']       = 'exchange_goods.php?act=list';
+$modules['06_menu_promotion']['16_amount_card'] = 'amount_card.php?act=list';
 
 
 // 报表

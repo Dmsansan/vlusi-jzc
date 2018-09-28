@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cf80b267-d9b3-41d1-bdc8-021d64523372" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/amount_card.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/templates/amount_card_list.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/languages/zh_cn/admin/amount_card.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/inc_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/inc_menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/inc_priv.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/inc_priv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/templates/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/admin/templates/index.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/caches/compiled/admin/index.htm.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/caches/compiled/admin/index.htm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/caches/logs/mysql_query_85b469968030a9b8b1dedffe7285ef2b_2018_09_28.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/caches/logs/mysql_query_85b469968030a9b8b1dedffe7285ef2b_2018_09_28.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/caches/query_caches/sqlcache_config_file_85b469968030a9b8b1dedffe7285ef2b.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/caches/query_caches/sqlcache_config_file_85b469968030a9b8b1dedffe7285ef2b.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/apps/admin/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/apps/admin/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/languages/zh_cn/admin/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/languages/zh_cn/admin/common.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/include/composer.json</pharConfigPath>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-557689674">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="htm" value="4" />
+          <entry key="php" value="41" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="4" />
+          <entry key="PHP" value="41" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="htm" value="447" />
+          <entry key="php" value="730" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="447" />
+          <entry key="PHP" value="730" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/includes/inc_menu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="100" column="59" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/exchange_goods.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/amount_card.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="42" column="66" lean-forward="true" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
+              <folding>
+                <element signature="e#7#430#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/templates/amount_card_list.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="798">
+              <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/languages/zh_cn/admin/amount_card.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="e#6#493#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/languages/zh_cn/admin/exchange_goods.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-114" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/includes/inc_priv.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/languages/zh_cn/admin/common.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4302">
+              <caret line="200" column="22" lean-forward="true" selection-start-line="200" selection-start-column="22" selection-end-line="200" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/config/global.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/config/constant.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4378" />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>01_menu_system</find>
+      <find>exchange_goods</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/admin/templates/index.htm" />
+        <option value="$PROJECT_DIR$/include/apps/admin/config/config.php" />
+        <option value="$PROJECT_DIR$/include/languages/zh_cn/admin/mount_card.php" />
+        <option value="$PROJECT_DIR$/admin/exchange_goods.php" />
+        <option value="$PROJECT_DIR$/admin/templates/mount_card_list.htm" />
+        <option value="$PROJECT_DIR$/admin/includes/inc_menu.php" />
+        <option value="$PROJECT_DIR$/admin/includes/inc_priv.php" />
+        <option value="$PROJECT_DIR$/include/languages/zh_cn/admin/common.php" />
+        <option value="$PROJECT_DIR$/admin/mount_card.php" />
+        <option value="$PROJECT_DIR$/admin/amount_card.php" />
+        <option value="$PROJECT_DIR$/include/languages/zh_cn/admin/amount_card.php" />
+        <option value="$PROJECT_DIR$/admin/templates/amount_card_list.htm" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/include/vendor/PHPExcel/RichText" />
+      <path value="$PROJECT_DIR$/include/vendor/PHPExcel/Style" />
+      <path value="$PROJECT_DIR$/include/vendor/PHPExcel/Calculation" />
+      <path value="$PROJECT_DIR$/include/vendor/PHPExcel/Cell" />
+      <path value="$PROJECT_DIR$/include/vendor/PHPExcel/Chart" />
+      <path value="$PROJECT_DIR$/include/vendor/ecmoban/Upload" />
+      <path value="$PROJECT_DIR$/include/vendor/composer" />
+      <path value="$PROJECT_DIR$/include/vendor/PHPExcel/CalcEngine" />
+      <path value="$PROJECT_DIR$/include/vendor/PHPExcel/Writer" />
+      <path value="$PROJECT_DIR$/include/vendor/aliyuncs/oss-sdk-php" />
+      <path value="$PROJECT_DIR$/include/vendor/PHPExcel/Worksheet" />
+      <path value="$PROJECT_DIR$/include/vendor/PHPExcel/Reader" />
+      <path value="$PROJECT_DIR$/include/vendor/PHPExcel/locale" />
+      <path value="$PROJECT_DIR$/include/vendor/PHPExcel/Shared" />
+      <path value="$PROJECT_DIR$/include/vendor/PHPExcel/CachedObjectStorage" />
+      <path value="$PROJECT_DIR$/include/vendor/filp/whoops" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vlusi_jzc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vlusi_jzc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vlusi_jzc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vlusi_jzc" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vlusi_jzc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vlusi_jzc" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vlusi_jzc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vlusi_jzc" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vlusi_jzc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vlusi_jzc" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vlusi_jzc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vlusi_jzc" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="languages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vlusi_jzc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vlusi_jzc" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="languages" type="462c0819:PsiDirectoryNode" />
+              <item name="zh_cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vlusi_jzc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vlusi_jzc" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="languages" type="462c0819:PsiDirectoryNode" />
+              <item name="zh_cn" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="modules&#9;FILE&#9;file://D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/include/modules" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\phpStudy\PHPTutorial\WWW\vlusi_jzc\admin\templates" />
+      <recent name="D:\phpStudy\PHPTutorial\WWW\vlusi_jzc\admin" />
+      <recent name="D:\phpStudy\PHPTutorial\WWW\vlusi_jzc\include\languages\zh_cn\admin" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf80b267-d9b3-41d1-bdc8-021d64523372" name="Default Changelist" comment="" />
+      <created>1538116670914</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1538116670914</updated>
+      <workItem from="1538116675388" duration="6615000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6615000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24281392" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/admin/templates/dodolink_list.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-369">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/group_buy_list.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-570">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="254" column="8" lean-forward="true" selection-start-line="254" selection-start-column="8" selection-end-line="254" selection-end-column="8" />
+          <folding>
+            <element signature="e#33#39#1" expanded="true" />
+            <element signature="e#33#39#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/apps/admin/models/AdminModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/apps/admin/languages/zh_cn/languages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-103" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/apps/admin/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/apps/admin/controllers/AuctionController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-760">
+          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/apps/admin/controllers/ExtendController.class.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/apps/admin/controllers/ConfigController.class.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/apps/admin/controllers/CategoryController.class.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/apps/admin/controllers/PaymentController.class.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/apps/admin/controllers/NavigatorController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-912" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/apps/admin/controllers/LanguagesController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/vendor/UploadFile.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/vendor/PHPExcel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/languages/zh_cn/admin/magazine_list.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/languages/zh_cn/admin/mail_template.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/languages/zh_cn/admin/repay.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/languages/zh_cn/admin/wholesale.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3878" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/lib_template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3135" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/lib_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3648" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/attention_list.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/cloud.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <folding>
+            <element signature="e#41#47#0" expanded="true" />
+            <element signature="e#47#53#0" expanded="true" />
+            <element signature="e#53#59#0" expanded="true" />
+            <element signature="e#59#65#0" expanded="true" />
+            <element signature="e#41#47#0" expanded="true" />
+            <element signature="e#47#53#0" expanded="true" />
+            <element signature="e#53#59#0" expanded="true" />
+            <element signature="e#59#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin_logs.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/ads.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/config/app.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/config/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/config/constant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4378" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/exchange_goods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/languages/zh_cn/admin/exchange_goods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/inc_priv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="52" column="49" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/inc_menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="100" column="59" selection-start-line="100" selection-start-column="59" selection-end-line="100" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/languages/zh_cn/admin/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4302">
+          <caret line="200" column="22" lean-forward="true" selection-start-line="200" selection-start-column="22" selection-end-line="200" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/languages/zh_cn/admin/amount_card.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#6#493#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/amount_card_list.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/amount_card.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="42" column="66" lean-forward="true" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
+          <folding>
+            <element signature="e#7#430#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
