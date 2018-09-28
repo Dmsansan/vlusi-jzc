@@ -1,0 +1,46 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" -->
+<!-- #EndLibraryItem -->
+<body class="n-hs-bg">
+<div id="box">
+
+	<div class="a-raply-info n-rap-box">
+		<p class="f-05 col-7">24小时内到账，法定节假日3天到账,最低提现{$txxz}元</p>
+	</div>
+	<form action="{:url('Sale/act_account')}" method="post" name="theForm">
+		<div class="bank-card">
+			<ul>
+				{if $bank_info}
+				<li>
+					<a href="{:url('sale/select_bank')}">
+						<label for="banck-check-01"><i></i></label>
+						<h4>{$bank_info.bank_name}</h4>
+						<span>{$bank_info.bank_card}</span>
+					</a>
+				</li>
+				{else}
+				<li>
+					<a href="{:url('sale/select_bank')}">
+						<label for="banck-check-01"><i></i></label>
+						<h4>选择银行卡</h4>
+					</a>
+				</li>
+				{/if}
+			</ul>
+
+		</div>
+		<div class="jg-text">
+			<label class="f-05 col-6">金额<span>(元)</span></label>
+			<div class="jg-text-input">
+				<input type="hidden" name="bank" value="{$bank_info.id}">
+				<input type="text" name="amount" placeholder="当前可提取佣金为{$surplus_amount}">
+			</div>
+		</div>
+		<div class="padding-all">
+			<div class="n-t-a-center">
+				<button type="submit" class="n-set-4-submit">{:L('next_step')}</button>
+			</div>
+		</div>
+	</form>
+	</body>
+
+	</html>

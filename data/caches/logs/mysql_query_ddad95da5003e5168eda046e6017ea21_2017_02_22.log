@@ -1,0 +1,2040 @@
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487663991'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487663991
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487692971', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487664171;}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693057', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487664171;}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691257
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691258
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691258
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT `ec_salt` FROM `wfx2017`.`ecs_admin_user`WHERE user_name = 'admin'
+
+SELECT user_id, user_name, password, last_login, action_list, last_login,suppliers_id,ec_salt FROM `wfx2017`.`ecs_admin_user` WHERE user_name = 'admin' AND password = '7a7928959c7fb1210f5e0b51f0ea2e0a'
+
+UPDATE `wfx2017`.`ecs_admin_user` SET last_login='1487664261', last_ip='192.168.1.16' WHERE user_id='1'
+
+SELECT DISTINCT session_id FROM `wfx2017`.`ecs_cart` AS c, `wfx2017`.`ecs_sessions` AS s WHERE c.session_id = s.sesskey 
+
+DELETE FROM `wfx2017`.`ecs_cart` WHERE session_id NOT  IN ('') 
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693061', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";s:10:\"1487644977\";s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_return` AS o WHERE 1 
+
+SELECT o.ret_id, o.rec_id, o.service_sn, o.order_sn, o.add_time, o.user_id, o.service_id, o.should_return , o.actual_return, o.is_check,o.return_status, o.refund_status, r.back_num, r.out_num, IFNULL(u.user_name, '') AS buyer  FROM `wfx2017`.`ecs_order_return` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id   LEFT JOIN `wfx2017`.`ecs_return_goods` AS r ON o.rec_id = r.rec_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691262
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_return` AS o WHERE 1 
+
+SELECT o.ret_id, o.rec_id, o.service_sn, o.order_sn, o.add_time, o.user_id, o.service_id, o.should_return , o.actual_return, o.is_check,o.return_status, o.refund_status, r.back_num, r.out_num, IFNULL(u.user_name, '') AS buyer  FROM `wfx2017`.`ecs_order_return` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id   LEFT JOIN `wfx2017`.`ecs_return_goods` AS r ON o.rec_id = r.rec_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1 
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693076', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";s:10:\"1487644977\";s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691276
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '1'
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT MAX(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id < '1'
+
+SELECT MIN(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id > '1'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT agency_id, agency_name FROM `wfx2017`.`ecs_agency`
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '1'
+
+SELECT action_note FROM `wfx2017`.`ecs_order_action` WHERE order_id = '1' AND shipping_status = 1 ORDER BY log_time DESC
+
+SELECT SUM(g.goods_weight * o.goods_number) AS weight, SUM(o.goods_price * o.goods_number) AS amount ,SUM(o.goods_number) AS number FROM `wfx2017`.`ecs_order_goods` AS o, `wfx2017`.`ecs_goods` AS g WHERE o.order_id = '1' AND o.goods_id = g.goods_id
+
+SELECT rank_name FROM `wfx2017`.`ecs_user_rank` WHERE min_points <= 0 ORDER BY min_points DESC 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_bonus_type` AS bt, `wfx2017`.`ecs_user_bonus` AS ub WHERE bt.type_id = ub.bonus_type_id AND ub.user_id = '1' AND ub.order_id = 0 AND bt.use_start_date <= '1487750399' AND bt.use_end_date >= '1487750399'
+
+SELECT * FROM `wfx2017`.`ecs_user_address` WHERE user_id = '1'
+
+SELECT o.*, IF(o.product_id > 0, p.product_number, g.goods_number) AS storage, o.goods_attr, g.suppliers_id, IFNULL(b.brand_name, '') AS brand_name, p.product_sn
+            FROM `wfx2017`.`ecs_order_goods` AS o
+                LEFT JOIN `wfx2017`.`ecs_products` AS p
+                    ON p.product_id = o.product_id
+                LEFT JOIN `wfx2017`.`ecs_goods` AS g
+                    ON o.goods_id = g.goods_id
+                LEFT JOIN `wfx2017`.`ecs_brand` AS b
+                    ON g.brand_id = b.brand_id
+            WHERE o.order_id = '1'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT * FROM `wfx2017`.`ecs_order_action` WHERE order_id = '1' ORDER BY log_time DESC,action_id DESC
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_goods` WHERE order_id = '1' AND is_real = 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691278
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691281
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '1'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+DESC `wfx2017`.`ecs_order_info`
+
+UPDATE `wfx2017`.`ecs_order_info` SET order_status = '1', confirm_time = '1487664281' WHERE order_id = '1'
+
+UPDATE `wfx2017`.`ecs_order_info` SET order_amount =    goods_amount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee  - money_paid - surplus - integral_money - bonus - discount  WHERE order_id = '1' LIMIT 1
+
+INSERT INTO `wfx2017`.`ecs_order_action` (order_id, action_user, order_status, shipping_status, pay_status, action_place, action_note, log_time) SELECT order_id, 'admin', '1', '0', '0', '0', '234', '1487664281' FROM `wfx2017`.`ecs_order_info` WHERE order_sn = '2017022113224271132'
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691282
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691282
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '1'
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT MAX(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id < '1'
+
+SELECT MIN(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id > '1'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT agency_id, agency_name FROM `wfx2017`.`ecs_agency`
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '1'
+
+SELECT action_note FROM `wfx2017`.`ecs_order_action` WHERE order_id = '1' AND shipping_status = 1 ORDER BY log_time DESC
+
+SELECT SUM(g.goods_weight * o.goods_number) AS weight, SUM(o.goods_price * o.goods_number) AS amount ,SUM(o.goods_number) AS number FROM `wfx2017`.`ecs_order_goods` AS o, `wfx2017`.`ecs_goods` AS g WHERE o.order_id = '1' AND o.goods_id = g.goods_id
+
+SELECT rank_name FROM `wfx2017`.`ecs_user_rank` WHERE min_points <= 0 ORDER BY min_points DESC 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_bonus_type` AS bt, `wfx2017`.`ecs_user_bonus` AS ub WHERE bt.type_id = ub.bonus_type_id AND ub.user_id = '1' AND ub.order_id = 0 AND bt.use_start_date <= '1487750399' AND bt.use_end_date >= '1487750399'
+
+SELECT * FROM `wfx2017`.`ecs_user_address` WHERE user_id = '1'
+
+SELECT o.*, IF(o.product_id > 0, p.product_number, g.goods_number) AS storage, o.goods_attr, g.suppliers_id, IFNULL(b.brand_name, '') AS brand_name, p.product_sn
+            FROM `wfx2017`.`ecs_order_goods` AS o
+                LEFT JOIN `wfx2017`.`ecs_products` AS p
+                    ON p.product_id = o.product_id
+                LEFT JOIN `wfx2017`.`ecs_goods` AS g
+                    ON o.goods_id = g.goods_id
+                LEFT JOIN `wfx2017`.`ecs_brand` AS b
+                    ON g.brand_id = b.brand_id
+            WHERE o.order_id = '1'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT * FROM `wfx2017`.`ecs_order_action` WHERE order_id = '1' ORDER BY log_time DESC,action_id DESC
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_goods` WHERE order_id = '1' AND is_real = 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691285
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '1'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+DESC `wfx2017`.`ecs_order_info`
+
+UPDATE `wfx2017`.`ecs_order_info` SET pay_status = '2', money_paid = '16', order_amount = '0', pay_time = '1487664285' WHERE order_id = '1'
+
+INSERT INTO `wfx2017`.`ecs_order_action` (order_id, action_user, order_status, shipping_status, pay_status, action_place, action_note, log_time) SELECT order_id, 'admin', '1', '0', '2', '0', '324', '1487664285' FROM `wfx2017`.`ecs_order_info` WHERE order_sn = '2017022113224271132'
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '1'
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT MAX(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id < '1'
+
+SELECT MIN(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id > '1'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT agency_id, agency_name FROM `wfx2017`.`ecs_agency`
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '1'
+
+SELECT action_note FROM `wfx2017`.`ecs_order_action` WHERE order_id = '1' AND shipping_status = 1 ORDER BY log_time DESC
+
+SELECT SUM(g.goods_weight * o.goods_number) AS weight, SUM(o.goods_price * o.goods_number) AS amount ,SUM(o.goods_number) AS number FROM `wfx2017`.`ecs_order_goods` AS o, `wfx2017`.`ecs_goods` AS g WHERE o.order_id = '1' AND o.goods_id = g.goods_id
+
+SELECT rank_name FROM `wfx2017`.`ecs_user_rank` WHERE min_points <= 0 ORDER BY min_points DESC 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_bonus_type` AS bt, `wfx2017`.`ecs_user_bonus` AS ub WHERE bt.type_id = ub.bonus_type_id AND ub.user_id = '1' AND ub.order_id = 0 AND bt.use_start_date <= '1487750399' AND bt.use_end_date >= '1487750399'
+
+SELECT * FROM `wfx2017`.`ecs_user_address` WHERE user_id = '1'
+
+SELECT o.*, IF(o.product_id > 0, p.product_number, g.goods_number) AS storage, o.goods_attr, g.suppliers_id, IFNULL(b.brand_name, '') AS brand_name, p.product_sn
+            FROM `wfx2017`.`ecs_order_goods` AS o
+                LEFT JOIN `wfx2017`.`ecs_products` AS p
+                    ON p.product_id = o.product_id
+                LEFT JOIN `wfx2017`.`ecs_goods` AS g
+                    ON o.goods_id = g.goods_id
+                LEFT JOIN `wfx2017`.`ecs_brand` AS b
+                    ON g.brand_id = b.brand_id
+            WHERE o.order_id = '1'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT COUNT(delivery_id)
+            FROM `wfx2017`.`ecs_delivery_order`
+            WHERE order_id = '1'
+            AND status = 0
+
+SELECT * FROM `wfx2017`.`ecs_order_action` WHERE order_id = '1' ORDER BY log_time DESC,action_id DESC
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_goods` WHERE order_id = '1' AND is_real = 1
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693086', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";s:10:\"1487644977\";s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691286
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691288
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691288
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '1'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT COUNT(delivery_id)
+            FROM `wfx2017`.`ecs_delivery_order`
+            WHERE order_id = '1'
+            AND status = 0
+
+DESC `wfx2017`.`ecs_order_info`
+
+UPDATE `wfx2017`.`ecs_order_info` SET shipping_status = '3' WHERE order_id = '1'
+
+INSERT INTO `wfx2017`.`ecs_order_action` (order_id, action_user, order_status, shipping_status, pay_status, action_place, action_note, log_time) SELECT order_id, 'admin', '1', '3', '2', '0', '234', '1487664288' FROM `wfx2017`.`ecs_order_info` WHERE order_sn = '2017022113224271132'
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691288
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '1'
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT MAX(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id < '1'
+
+SELECT MIN(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id > '1'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT agency_id, agency_name FROM `wfx2017`.`ecs_agency`
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '1'
+
+SELECT action_note FROM `wfx2017`.`ecs_order_action` WHERE order_id = '1' AND shipping_status = 1 ORDER BY log_time DESC
+
+SELECT SUM(g.goods_weight * o.goods_number) AS weight, SUM(o.goods_price * o.goods_number) AS amount ,SUM(o.goods_number) AS number FROM `wfx2017`.`ecs_order_goods` AS o, `wfx2017`.`ecs_goods` AS g WHERE o.order_id = '1' AND o.goods_id = g.goods_id
+
+SELECT rank_name FROM `wfx2017`.`ecs_user_rank` WHERE min_points <= 0 ORDER BY min_points DESC 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_bonus_type` AS bt, `wfx2017`.`ecs_user_bonus` AS ub WHERE bt.type_id = ub.bonus_type_id AND ub.user_id = '1' AND ub.order_id = 0 AND bt.use_start_date <= '1487750399' AND bt.use_end_date >= '1487750399'
+
+SELECT * FROM `wfx2017`.`ecs_user_address` WHERE user_id = '1'
+
+SELECT o.*, IF(o.product_id > 0, p.product_number, g.goods_number) AS storage, o.goods_attr, g.suppliers_id, IFNULL(b.brand_name, '') AS brand_name, p.product_sn
+            FROM `wfx2017`.`ecs_order_goods` AS o
+                LEFT JOIN `wfx2017`.`ecs_products` AS p
+                    ON p.product_id = o.product_id
+                LEFT JOIN `wfx2017`.`ecs_goods` AS g
+                    ON o.goods_id = g.goods_id
+                LEFT JOIN `wfx2017`.`ecs_brand` AS b
+                    ON g.brand_id = b.brand_id
+            WHERE o.order_id = '1'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT COUNT(delivery_id)
+            FROM `wfx2017`.`ecs_delivery_order`
+            WHERE order_id = '1'
+            AND status = 0
+
+SELECT * FROM `wfx2017`.`ecs_order_action` WHERE order_id = '1' ORDER BY log_time DESC,action_id DESC
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_goods` WHERE order_id = '1' AND is_real = 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691289
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '1'
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_goods` WHERE order_id = '1' AND is_real = 1
+
+SELECT o.*, g.suppliers_id AS suppliers_id,IF(o.product_id > 0, p.product_number, g.goods_number) AS storage, o.goods_attr, IFNULL(b.brand_name, '') AS brand_name, p.product_sn FROM `wfx2017`.`ecs_order_goods` AS o LEFT JOIN `wfx2017`.`ecs_products` AS p ON o.product_id = p.product_id LEFT JOIN `wfx2017`.`ecs_goods` AS g ON o.goods_id = g.goods_id LEFT JOIN `wfx2017`.`ecs_brand` AS b ON g.brand_id = b.brand_id WHERE o.order_id = '1' 
+
+SELECT *
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE is_check = 1
+            ORDER BY suppliers_name ASC
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691292
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691292
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '1'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT COUNT(delivery_id)
+            FROM `wfx2017`.`ecs_delivery_order`
+            WHERE order_id = '1'
+            AND status = 0
+
+SELECT o.*, g.suppliers_id AS suppliers_id,IF(o.product_id > 0, p.product_number, g.goods_number) AS storage, o.goods_attr, IFNULL(b.brand_name, '') AS brand_name, p.product_sn FROM `wfx2017`.`ecs_order_goods` AS o LEFT JOIN `wfx2017`.`ecs_products` AS p ON o.product_id = p.product_id LEFT JOIN `wfx2017`.`ecs_goods` AS g ON o.goods_id = g.goods_id LEFT JOIN `wfx2017`.`ecs_brand` AS b ON g.brand_id = b.brand_id WHERE o.order_id = '1' 
+
+SELECT SUM(G.send_number) AS sums
+            FROM `wfx2017`.`ecs_delivery_goods` AS G, `wfx2017`.`ecs_delivery_order` AS O
+            WHERE O.delivery_id = G.delivery_id
+            AND O.status = 0
+            AND O.order_id = 1
+            AND G.extension_code <> "package_buy"
+            AND G.goods_id = 1
+
+SELECT goods_number FROM `wfx2017`.`ecs_goods` WHERE goods_id = '1' LIMIT 0,1
+
+select add_time from `wfx2017`.`ecs_order_info` WHERE order_sn = '2017022113224271132'
+
+DESC `wfx2017`.`ecs_delivery_order`
+
+INSERT INTO `wfx2017`.`ecs_delivery_order` (delivery_sn, order_sn, order_id, add_time, shipping_id, shipping_name, user_id, action_user, consignee, address, country, province, city, district, sign_building, email, zipcode, tel, mobile, best_time, postscript, how_oos, insure_fee, shipping_fee, update_time, suppliers_id, status, agency_id) VALUES ('20170222000412679', '2017022113224271132', '1', '1487625762', '1', '申通快递', '1', 'admin', 'test', 'test', '1', '2', '52', '512', '', '', '', '', '13155515225', '', '', '等待所有商品备齐后再发', '0', '15', '1487664294', '0', '2', '0')
+
+DESC `wfx2017`.`ecs_delivery_goods`
+
+INSERT INTO `wfx2017`.`ecs_delivery_goods` (delivery_id, goods_id, product_id, product_sn, goods_name, brand_name, goods_sn, is_real, parent_id, send_number, goods_attr) VALUES ('1', '1', '0', '', 'test', '', '234242', '1', '0', '1', '')
+
+UPDATE `wfx2017`.`ecs_order_goods`
+                            SET send_number = send_number + 1
+                            WHERE order_id = '1'
+                            AND rec_id = '1' 
+
+SELECT COUNT(rec_id)
+            FROM `wfx2017`.`ecs_order_goods`
+            WHERE order_id = '1'
+            AND goods_number > send_number
+
+DESC `wfx2017`.`ecs_order_info`
+
+UPDATE `wfx2017`.`ecs_order_info` SET order_status = '5', shipping_status = '5' WHERE order_id = '1'
+
+INSERT INTO `wfx2017`.`ecs_order_action` (order_id, action_user, order_status, shipping_status, pay_status, action_place, action_note, log_time) SELECT order_id, 'admin', '5', '5', '2', '0', '234', '1487664294' FROM `wfx2017`.`ecs_order_info` WHERE order_sn = '2017022113224271132'
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691294
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '1'
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT MAX(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id < '1'
+
+SELECT MIN(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id > '1'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT agency_id, agency_name FROM `wfx2017`.`ecs_agency`
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '1'
+
+SELECT action_note FROM `wfx2017`.`ecs_order_action` WHERE order_id = '1' AND shipping_status = 1 ORDER BY log_time DESC
+
+SELECT SUM(g.goods_weight * o.goods_number) AS weight, SUM(o.goods_price * o.goods_number) AS amount ,SUM(o.goods_number) AS number FROM `wfx2017`.`ecs_order_goods` AS o, `wfx2017`.`ecs_goods` AS g WHERE o.order_id = '1' AND o.goods_id = g.goods_id
+
+SELECT rank_name FROM `wfx2017`.`ecs_user_rank` WHERE min_points <= 0 ORDER BY min_points DESC 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_bonus_type` AS bt, `wfx2017`.`ecs_user_bonus` AS ub WHERE bt.type_id = ub.bonus_type_id AND ub.user_id = '1' AND ub.order_id = 0 AND bt.use_start_date <= '1487750399' AND bt.use_end_date >= '1487750399'
+
+SELECT * FROM `wfx2017`.`ecs_user_address` WHERE user_id = '1'
+
+SELECT o.*, IF(o.product_id > 0, p.product_number, g.goods_number) AS storage, o.goods_attr, g.suppliers_id, IFNULL(b.brand_name, '') AS brand_name, p.product_sn
+            FROM `wfx2017`.`ecs_order_goods` AS o
+                LEFT JOIN `wfx2017`.`ecs_products` AS p
+                    ON p.product_id = o.product_id
+                LEFT JOIN `wfx2017`.`ecs_goods` AS g
+                    ON o.goods_id = g.goods_id
+                LEFT JOIN `wfx2017`.`ecs_brand` AS b
+                    ON g.brand_id = b.brand_id
+            WHERE o.order_id = '1'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT * FROM `wfx2017`.`ecs_order_action` WHERE order_id = '1' ORDER BY log_time DESC,action_id DESC
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_goods` WHERE order_id = '1' AND is_real = 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693097', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";s:10:\"1487644977\";s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_admin_user`
+            WHERE user_id = '1'
+            LIMIT 0, 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_delivery_order`WHERE 1  AND order_sn LIKE '%2017022113224271132%'
+
+SELECT *
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE is_check = 1
+            ORDER BY suppliers_name ASC
+
+SELECT delivery_id, delivery_sn, order_sn, order_id, add_time, action_user, consignee, country,
+                       province, city, district, tel, status, update_time, email, suppliers_id
+                FROM `wfx2017`.`ecs_delivery_order`
+                WHERE 1  AND order_sn LIKE '%2017022113224271132%'
+                ORDER BY update_time DESC
+                LIMIT 0, 15 
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_admin_user`
+            WHERE user_id = '1'
+            LIMIT 0, 1
+
+SELECT * FROM `wfx2017`.`ecs_delivery_order` WHERE delivery_id = '1' LIMIT 0, 1
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '1'
+
+SELECT *
+                  FROM `wfx2017`.`ecs_delivery_goods`
+                  WHERE delivery_id = 1
+
+SELECT * FROM `wfx2017`.`ecs_order_action` WHERE order_id = '1' AND action_place = 1 ORDER BY log_time DESC,action_id DESC
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_admin_user`
+            WHERE user_id = '1'
+            LIMIT 0, 1
+
+SELECT * FROM `wfx2017`.`ecs_delivery_order` WHERE delivery_id = '1' LIMIT 0, 1
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '1'
+
+SELECT DG.goods_id, DG.is_real, DG.product_id, SUM(DG.send_number) AS sums, IF(DG.product_id > 0, P.product_number, G.goods_number) AS storage, G.goods_name, DG.send_number
+        FROM `wfx2017`.`ecs_delivery_goods` AS DG, `wfx2017`.`ecs_goods` AS G, `wfx2017`.`ecs_products` AS P
+        WHERE DG.goods_id = G.goods_id
+        AND DG.delivery_id = '1'
+        AND DG.product_id = P.product_id
+        GROUP BY DG.product_id 
+
+SELECT DG.goods_id, DG.is_real, SUM(DG.send_number) AS sums, G.goods_number, G.goods_name, DG.send_number
+        FROM `wfx2017`.`ecs_delivery_goods` AS DG, `wfx2017`.`ecs_goods` AS G
+        WHERE DG.goods_id = G.goods_id
+        AND DG.delivery_id = '1'
+        GROUP BY DG.goods_id 
+
+UPDATE `wfx2017`.`ecs_goods`
+                                    SET goods_number = goods_number - 1
+                                    WHERE goods_id = 1
+
+DESC `wfx2017`.`ecs_delivery_order`
+
+UPDATE `wfx2017`.`ecs_delivery_order` SET invoice_no = '2342244', status = '0' WHERE delivery_id = 1
+
+SELECT COUNT(rec_id)
+            FROM `wfx2017`.`ecs_order_goods`
+            WHERE order_id = '1'
+            AND goods_number > send_number
+
+SELECT COUNT(delivery_id)
+                FROM `wfx2017`.`ecs_delivery_order`
+                WHERE order_id = '1'
+                AND status = 2 
+
+DESC `wfx2017`.`ecs_order_info`
+
+UPDATE `wfx2017`.`ecs_order_info` SET shipping_status = '1', shipping_time = '1487664303', invoice_no = '2342244' WHERE order_id = '1'
+
+INSERT INTO `wfx2017`.`ecs_order_action` (order_id, action_user, order_status, shipping_status, pay_status, action_place, action_note, log_time) SELECT order_id, 'admin', '1', '1', '2', '1', '', '1487664303' FROM `wfx2017`.`ecs_order_info` WHERE order_sn = '2017022113224271132'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT SUM(og.goods_number * IF(g.give_integral > -1, g.give_integral, og.goods_price)) AS custom_points, SUM(og.goods_number * IF(g.rank_integral > -1, g.rank_integral, og.goods_price)) AS rank_points FROM `wfx2017`.`ecs_order_goods` AS og, `wfx2017`.`ecs_goods` AS g WHERE og.goods_id = g.goods_id AND og.order_id = '1' AND og.goods_id > 0 AND og.parent_id = 0 AND og.is_gift = 0 AND og.extension_code != 'package_buy'
+
+DESC `wfx2017`.`ecs_account_log`
+
+INSERT INTO `wfx2017`.`ecs_account_log` (user_id, user_money, frozen_money, rank_points, pay_points, change_time, change_desc, change_type) VALUES ('1', '0', '0', '1', '1', '1487664303', '订单 2017022113224271132 赠送的积分', '99')
+
+UPDATE `wfx2017`.`ecs_users` SET user_money = user_money + ('0'), frozen_money = frozen_money + ('0'), rank_points = rank_points + ('1'), pay_points = pay_points + ('1') WHERE user_id = '1' LIMIT 1
+
+SELECT b.type_id, b.type_money, SUM(o.goods_number) AS number FROM `wfx2017`.`ecs_order_goods` AS o, `wfx2017`.`ecs_goods` AS g, `wfx2017`.`ecs_bonus_type` AS b  WHERE o.order_id = '1'  AND o.is_gift = 0  AND o.goods_id = g.goods_id  AND g.bonus_type_id = b.type_id  AND b.send_type = '1'  AND b.send_start_date <= '1487750399'  AND b.send_end_date >= '1487750399'  GROUP BY b.type_id 
+
+SELECT SUM(goods_price * goods_number) FROM `wfx2017`.`ecs_order_goods` WHERE order_id = '1' AND is_gift = 0
+
+SELECT add_time  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '1' LIMIT 1
+
+SELECT type_id, type_money, IFNULL(FLOOR('1' / min_amount), 1) AS number FROM `wfx2017`.`ecs_bonus_type`WHERE send_type = '2' AND send_start_date <= '1487625762' AND send_end_date >= '1487625762' 
+
+SELECT name, config FROM `wfx2017`.`ecs_wechat_extend` where enable = 1 and command = "send_remind" limit 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691303
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_admin_user`
+            WHERE user_id = '1'
+            LIMIT 0, 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_delivery_order`WHERE 1 
+
+SELECT *
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE is_check = 1
+            ORDER BY suppliers_name ASC
+
+SELECT delivery_id, delivery_sn, order_sn, order_id, add_time, action_user, consignee, country,
+                       province, city, district, tel, status, update_time, email, suppliers_id
+                FROM `wfx2017`.`ecs_delivery_order`
+                WHERE 1 
+                ORDER BY update_time DESC
+                LIMIT 0, 15 
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691304
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_admin_user`
+            WHERE user_id = '1'
+            LIMIT 0, 1
+
+SELECT * FROM `wfx2017`.`ecs_delivery_order` WHERE delivery_id = '1' LIMIT 0, 1
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '1'
+
+SELECT *
+                  FROM `wfx2017`.`ecs_delivery_goods`
+                  WHERE delivery_id = 1
+
+SELECT * FROM `wfx2017`.`ecs_order_action` WHERE order_id = '1' AND action_place = 1 ORDER BY log_time DESC,action_id DESC
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691306
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691306
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693111', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";s:10:\"1487644977\";s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_service_type`
+
+SELECT * FROM `wfx2017`.`ecs_service_type` ORDER BY sort_order ASC LIMIT 15
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693179', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";s:10:\"1487644977\";s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691379
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487644977'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487644977
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693179', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664379;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_return` AS o WHERE 1 
+
+SELECT o.ret_id, o.rec_id, o.service_sn, o.order_sn, o.add_time, o.user_id, o.service_id, o.should_return , o.actual_return, o.is_check,o.return_status, o.refund_status, r.back_num, r.out_num, IFNULL(u.user_name, '') AS buyer  FROM `wfx2017`.`ecs_order_return` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id   LEFT JOIN `wfx2017`.`ecs_return_goods` AS r ON o.rec_id = r.rec_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT c.cause_id, c.cause_name, c.sort_order, c.is_show ,c.parent_id , COUNT(s.cause_id) AS has_children FROM `wfx2017`.`ecs_return_cause` AS c LEFT JOIN `wfx2017`.`ecs_return_cause` AS s ON s.parent_id=c.cause_id GROUP BY c.cause_id ORDER BY c.parent_id, c.sort_order ASC
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691382
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_return_cause` WHERE cause_id = 1
+
+SELECT c.cause_id, c.cause_name, c.sort_order, c.is_show ,c.parent_id , COUNT(s.cause_id) AS has_children FROM `wfx2017`.`ecs_return_cause` AS c LEFT JOIN `wfx2017`.`ecs_return_cause` AS s ON s.parent_id=c.cause_id GROUP BY c.cause_id ORDER BY c.parent_id, c.sort_order ASC
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691388
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_return_cause` WHERE cause_name = 'test'
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693192', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664379;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691392
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691392
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691393
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_return_cause` WHERE cause_id = 1
+
+SELECT c.cause_id, c.cause_name, c.sort_order, c.is_show ,c.parent_id , COUNT(s.cause_id) AS has_children FROM `wfx2017`.`ecs_return_cause` AS c LEFT JOIN `wfx2017`.`ecs_return_cause` AS s ON s.parent_id=c.cause_id GROUP BY c.cause_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_shop_config` WHERE type<>'hidden'   AND (parent_id<>'5' AND id<>'5') ORDER BY parent_id, sort_order, id
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '1' AND parent_id = '1'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '2' AND parent_id = '2'
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693202', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664379;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691402
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT id, value FROM `wfx2017`.`ecs_shop_config`
+
+SELECT * FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0 AND type = 'file'
+
+UPDATE `wfx2017`.`ecs_shop_config` SET value = 'a:2:{s:4:"type";a:3:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:0:"";}s:4:"rate";a:3:{i:0;d:1;i:1;d:1.5;i:2;d:0;}}' WHERE code = 'invoice_type'
+
+INSERT INTO `wfx2017`.`ecs_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1487664423', 1, '编辑商店设置: ', '192.168.1.16')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT region_name FROM `wfx2017`.`ecs_region` WHERE region_id='1'
+
+SELECT region_name FROM `wfx2017`.`ecs_region` WHERE region_id='2'
+
+SELECT region_name FROM `wfx2017`.`ecs_region` WHERE region_id='52'
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693223', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664379;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1 
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693243', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664379;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT c.cause_id, c.cause_name, c.sort_order, c.is_show ,c.parent_id , COUNT(s.cause_id) AS has_children FROM `wfx2017`.`ecs_return_cause` AS c LEFT JOIN `wfx2017`.`ecs_return_cause` AS s ON s.parent_id=c.cause_id GROUP BY c.cause_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_return` AS o WHERE 1 
+
+SELECT o.ret_id, o.rec_id, o.service_sn, o.order_sn, o.add_time, o.user_id, o.service_id, o.should_return , o.actual_return, o.is_check,o.return_status, o.refund_status, r.back_num, r.out_num, IFNULL(u.user_name, '') AS buyer  FROM `wfx2017`.`ecs_order_return` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id   LEFT JOIN `wfx2017`.`ecs_return_goods` AS r ON o.rec_id = r.rec_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691451
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_service_type`
+
+SELECT * FROM `wfx2017`.`ecs_service_type` ORDER BY sort_order ASC LIMIT 15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_return` AS o WHERE 1 
+
+SELECT o.ret_id, o.rec_id, o.service_sn, o.order_sn, o.add_time, o.user_id, o.service_id, o.should_return , o.actual_return, o.is_check,o.return_status, o.refund_status, r.back_num, r.out_num, IFNULL(u.user_name, '') AS buyer  FROM `wfx2017`.`ecs_order_return` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id   LEFT JOIN `wfx2017`.`ecs_return_goods` AS r ON o.rec_id = r.rec_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693253', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664379;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `wfx2017`.`ecs_category` AS c LEFT JOIN `wfx2017`.`ecs_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods_cat` AS gc , `wfx2017`.`ecs_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `wfx2017`.`ecs_brand` ORDER BY sort_order
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1'
+
+SELECT goods_id, goods_name, goods_type, goods_sn, virtual_sales, shop_price, is_on_sale, is_best, is_new, is_hot, sort_order, goods_number, integral,  (promote_price > 0 AND promote_start_date <= '1487750399' AND promote_end_date >= '1487750399') AS is_promote  FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1' ORDER BY goods_id DESC  LIMIT 0,15
+
+SELECT DISTINCT cat_id
+            FROM `wfx2017`.`ecs_attribute`
+            WHERE attr_type = 1
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693264', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664379;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691464
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_goods` SET is_new = '1', last_update=1487664465 WHERE goods_id = '1'
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT goods_id
+            FROM `wfx2017`.`ecs_products`
+            WHERE goods_id = '1'
+            
+            LIMIT 0, 1
+
+UPDATE `wfx2017`.`ecs_goods` SET goods_number = '110', last_update=1487664470 WHERE goods_id = '1'
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691470
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_goods` SET is_hot = '1', last_update=1487664471 WHERE goods_id = '1'
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1 
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693282', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664379;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691482
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '2'
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT MAX(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id < '2'
+
+SELECT MIN(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id > '2'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT agency_id, agency_name FROM `wfx2017`.`ecs_agency`
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '2'
+
+SELECT action_note FROM `wfx2017`.`ecs_order_action` WHERE order_id = '2' AND shipping_status = 1 ORDER BY log_time DESC
+
+SELECT SUM(g.goods_weight * o.goods_number) AS weight, SUM(o.goods_price * o.goods_number) AS amount ,SUM(o.goods_number) AS number FROM `wfx2017`.`ecs_order_goods` AS o, `wfx2017`.`ecs_goods` AS g WHERE o.order_id = '2' AND o.goods_id = g.goods_id
+
+SELECT rank_name FROM `wfx2017`.`ecs_user_rank` WHERE min_points <= 1 ORDER BY min_points DESC 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_bonus_type` AS bt, `wfx2017`.`ecs_user_bonus` AS ub WHERE bt.type_id = ub.bonus_type_id AND ub.user_id = '1' AND ub.order_id = 0 AND bt.use_start_date <= '1487750399' AND bt.use_end_date >= '1487750399'
+
+SELECT * FROM `wfx2017`.`ecs_user_address` WHERE user_id = '1'
+
+SELECT o.*, IF(o.product_id > 0, p.product_number, g.goods_number) AS storage, o.goods_attr, g.suppliers_id, IFNULL(b.brand_name, '') AS brand_name, p.product_sn
+            FROM `wfx2017`.`ecs_order_goods` AS o
+                LEFT JOIN `wfx2017`.`ecs_products` AS p
+                    ON p.product_id = o.product_id
+                LEFT JOIN `wfx2017`.`ecs_goods` AS g
+                    ON o.goods_id = g.goods_id
+                LEFT JOIN `wfx2017`.`ecs_brand` AS b
+                    ON g.brand_id = b.brand_id
+            WHERE o.order_id = '2'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT * FROM `wfx2017`.`ecs_order_action` WHERE order_id = '2' ORDER BY log_time DESC,action_id DESC
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_goods` WHERE order_id = '2' AND is_real = 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691484
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691486
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '2'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+DESC `wfx2017`.`ecs_order_info`
+
+UPDATE `wfx2017`.`ecs_order_info` SET order_status = '1', confirm_time = '1487664486' WHERE order_id = '2'
+
+UPDATE `wfx2017`.`ecs_order_info` SET order_amount =    goods_amount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee  - money_paid - surplus - integral_money - bonus - discount  WHERE order_id = '2' LIMIT 1
+
+INSERT INTO `wfx2017`.`ecs_order_action` (order_id, action_user, order_status, shipping_status, pay_status, action_place, action_note, log_time) SELECT order_id, 'admin', '1', '0', '0', '0', '234', '1487664486' FROM `wfx2017`.`ecs_order_info` WHERE order_sn = '2017022200075898443'
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691486
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '2'
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT MAX(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id < '2'
+
+SELECT MIN(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id > '2'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT agency_id, agency_name FROM `wfx2017`.`ecs_agency`
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '2'
+
+SELECT action_note FROM `wfx2017`.`ecs_order_action` WHERE order_id = '2' AND shipping_status = 1 ORDER BY log_time DESC
+
+SELECT SUM(g.goods_weight * o.goods_number) AS weight, SUM(o.goods_price * o.goods_number) AS amount ,SUM(o.goods_number) AS number FROM `wfx2017`.`ecs_order_goods` AS o, `wfx2017`.`ecs_goods` AS g WHERE o.order_id = '2' AND o.goods_id = g.goods_id
+
+SELECT rank_name FROM `wfx2017`.`ecs_user_rank` WHERE min_points <= 1 ORDER BY min_points DESC 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_bonus_type` AS bt, `wfx2017`.`ecs_user_bonus` AS ub WHERE bt.type_id = ub.bonus_type_id AND ub.user_id = '1' AND ub.order_id = 0 AND bt.use_start_date <= '1487750399' AND bt.use_end_date >= '1487750399'
+
+SELECT * FROM `wfx2017`.`ecs_user_address` WHERE user_id = '1'
+
+SELECT o.*, IF(o.product_id > 0, p.product_number, g.goods_number) AS storage, o.goods_attr, g.suppliers_id, IFNULL(b.brand_name, '') AS brand_name, p.product_sn
+            FROM `wfx2017`.`ecs_order_goods` AS o
+                LEFT JOIN `wfx2017`.`ecs_products` AS p
+                    ON p.product_id = o.product_id
+                LEFT JOIN `wfx2017`.`ecs_goods` AS g
+                    ON o.goods_id = g.goods_id
+                LEFT JOIN `wfx2017`.`ecs_brand` AS b
+                    ON g.brand_id = b.brand_id
+            WHERE o.order_id = '2'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT * FROM `wfx2017`.`ecs_order_action` WHERE order_id = '2' ORDER BY log_time DESC,action_id DESC
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_goods` WHERE order_id = '2' AND is_real = 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '2'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+DESC `wfx2017`.`ecs_order_info`
+
+UPDATE `wfx2017`.`ecs_order_info` SET pay_status = '2', money_paid = '16', order_amount = '0', pay_time = '1487664489' WHERE order_id = '2'
+
+INSERT INTO `wfx2017`.`ecs_order_action` (order_id, action_user, order_status, shipping_status, pay_status, action_place, action_note, log_time) SELECT order_id, 'admin', '1', '0', '2', '0', '234', '1487664489' FROM `wfx2017`.`ecs_order_info` WHERE order_sn = '2017022200075898443'
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '2'
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT MAX(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id < '2'
+
+SELECT MIN(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id > '2'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT agency_id, agency_name FROM `wfx2017`.`ecs_agency`
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '2'
+
+SELECT action_note FROM `wfx2017`.`ecs_order_action` WHERE order_id = '2' AND shipping_status = 1 ORDER BY log_time DESC
+
+SELECT SUM(g.goods_weight * o.goods_number) AS weight, SUM(o.goods_price * o.goods_number) AS amount ,SUM(o.goods_number) AS number FROM `wfx2017`.`ecs_order_goods` AS o, `wfx2017`.`ecs_goods` AS g WHERE o.order_id = '2' AND o.goods_id = g.goods_id
+
+SELECT rank_name FROM `wfx2017`.`ecs_user_rank` WHERE min_points <= 1 ORDER BY min_points DESC 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_bonus_type` AS bt, `wfx2017`.`ecs_user_bonus` AS ub WHERE bt.type_id = ub.bonus_type_id AND ub.user_id = '1' AND ub.order_id = 0 AND bt.use_start_date <= '1487750399' AND bt.use_end_date >= '1487750399'
+
+SELECT * FROM `wfx2017`.`ecs_user_address` WHERE user_id = '1'
+
+SELECT o.*, IF(o.product_id > 0, p.product_number, g.goods_number) AS storage, o.goods_attr, g.suppliers_id, IFNULL(b.brand_name, '') AS brand_name, p.product_sn
+            FROM `wfx2017`.`ecs_order_goods` AS o
+                LEFT JOIN `wfx2017`.`ecs_products` AS p
+                    ON p.product_id = o.product_id
+                LEFT JOIN `wfx2017`.`ecs_goods` AS g
+                    ON o.goods_id = g.goods_id
+                LEFT JOIN `wfx2017`.`ecs_brand` AS b
+                    ON g.brand_id = b.brand_id
+            WHERE o.order_id = '2'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT COUNT(delivery_id)
+            FROM `wfx2017`.`ecs_delivery_order`
+            WHERE order_id = '2'
+            AND status = 0
+
+SELECT * FROM `wfx2017`.`ecs_order_action` WHERE order_id = '2' ORDER BY log_time DESC,action_id DESC
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_goods` WHERE order_id = '2' AND is_real = 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691490
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691490
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693293', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664379;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '2'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT COUNT(delivery_id)
+            FROM `wfx2017`.`ecs_delivery_order`
+            WHERE order_id = '2'
+            AND status = 0
+
+DESC `wfx2017`.`ecs_order_info`
+
+UPDATE `wfx2017`.`ecs_order_info` SET shipping_status = '3' WHERE order_id = '2'
+
+INSERT INTO `wfx2017`.`ecs_order_action` (order_id, action_user, order_status, shipping_status, pay_status, action_place, action_note, log_time) SELECT order_id, 'admin', '1', '3', '2', '0', '234', '1487664493' FROM `wfx2017`.`ecs_order_info` WHERE order_sn = '2017022200075898443'
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '2'
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT MAX(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id < '2'
+
+SELECT MIN(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id > '2'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT agency_id, agency_name FROM `wfx2017`.`ecs_agency`
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '2'
+
+SELECT action_note FROM `wfx2017`.`ecs_order_action` WHERE order_id = '2' AND shipping_status = 1 ORDER BY log_time DESC
+
+SELECT SUM(g.goods_weight * o.goods_number) AS weight, SUM(o.goods_price * o.goods_number) AS amount ,SUM(o.goods_number) AS number FROM `wfx2017`.`ecs_order_goods` AS o, `wfx2017`.`ecs_goods` AS g WHERE o.order_id = '2' AND o.goods_id = g.goods_id
+
+SELECT rank_name FROM `wfx2017`.`ecs_user_rank` WHERE min_points <= 1 ORDER BY min_points DESC 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_bonus_type` AS bt, `wfx2017`.`ecs_user_bonus` AS ub WHERE bt.type_id = ub.bonus_type_id AND ub.user_id = '1' AND ub.order_id = 0 AND bt.use_start_date <= '1487750399' AND bt.use_end_date >= '1487750399'
+
+SELECT * FROM `wfx2017`.`ecs_user_address` WHERE user_id = '1'
+
+SELECT o.*, IF(o.product_id > 0, p.product_number, g.goods_number) AS storage, o.goods_attr, g.suppliers_id, IFNULL(b.brand_name, '') AS brand_name, p.product_sn
+            FROM `wfx2017`.`ecs_order_goods` AS o
+                LEFT JOIN `wfx2017`.`ecs_products` AS p
+                    ON p.product_id = o.product_id
+                LEFT JOIN `wfx2017`.`ecs_goods` AS g
+                    ON o.goods_id = g.goods_id
+                LEFT JOIN `wfx2017`.`ecs_brand` AS b
+                    ON g.brand_id = b.brand_id
+            WHERE o.order_id = '2'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT COUNT(delivery_id)
+            FROM `wfx2017`.`ecs_delivery_order`
+            WHERE order_id = '2'
+            AND status = 0
+
+SELECT * FROM `wfx2017`.`ecs_order_action` WHERE order_id = '2' ORDER BY log_time DESC,action_id DESC
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_goods` WHERE order_id = '2' AND is_real = 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691494
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '2'
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '2'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_goods` WHERE order_id = '2' AND is_real = 1
+
+SELECT o.*, g.suppliers_id AS suppliers_id,IF(o.product_id > 0, p.product_number, g.goods_number) AS storage, o.goods_attr, IFNULL(b.brand_name, '') AS brand_name, p.product_sn FROM `wfx2017`.`ecs_order_goods` AS o LEFT JOIN `wfx2017`.`ecs_products` AS p ON o.product_id = p.product_id LEFT JOIN `wfx2017`.`ecs_goods` AS g ON o.goods_id = g.goods_id LEFT JOIN `wfx2017`.`ecs_brand` AS b ON g.brand_id = b.brand_id WHERE o.order_id = '2' 
+
+SELECT *
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE is_check = 1
+            ORDER BY suppliers_name ASC
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691496
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '2'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT COUNT(delivery_id)
+            FROM `wfx2017`.`ecs_delivery_order`
+            WHERE order_id = '2'
+            AND status = 0
+
+SELECT o.*, g.suppliers_id AS suppliers_id,IF(o.product_id > 0, p.product_number, g.goods_number) AS storage, o.goods_attr, IFNULL(b.brand_name, '') AS brand_name, p.product_sn FROM `wfx2017`.`ecs_order_goods` AS o LEFT JOIN `wfx2017`.`ecs_products` AS p ON o.product_id = p.product_id LEFT JOIN `wfx2017`.`ecs_goods` AS g ON o.goods_id = g.goods_id LEFT JOIN `wfx2017`.`ecs_brand` AS b ON g.brand_id = b.brand_id WHERE o.order_id = '2' 
+
+SELECT SUM(G.send_number) AS sums
+            FROM `wfx2017`.`ecs_delivery_goods` AS G, `wfx2017`.`ecs_delivery_order` AS O
+            WHERE O.delivery_id = G.delivery_id
+            AND O.status = 0
+            AND O.order_id = 2
+            AND G.extension_code <> "package_buy"
+            AND G.goods_id = 1
+
+SELECT goods_number FROM `wfx2017`.`ecs_goods` WHERE goods_id = '1' LIMIT 0,1
+
+select add_time from `wfx2017`.`ecs_order_info` WHERE order_sn = '2017022200075898443'
+
+DESC `wfx2017`.`ecs_delivery_order`
+
+INSERT INTO `wfx2017`.`ecs_delivery_order` (delivery_sn, order_sn, order_id, add_time, shipping_id, shipping_name, user_id, action_user, consignee, address, country, province, city, district, sign_building, email, zipcode, tel, mobile, best_time, postscript, how_oos, insure_fee, shipping_fee, update_time, suppliers_id, status, agency_id) VALUES ('20170222000878426', '2017022200075898443', '2', '1487664478', '1', '申通快递', '1', 'admin', 'test', 'test', '1', '2', '52', '512', '', '', '', '', '13155515225', '', '', '等待所有商品备齐后再发', '0', '15', '1487664499', '0', '2', '0')
+
+DESC `wfx2017`.`ecs_delivery_goods`
+
+INSERT INTO `wfx2017`.`ecs_delivery_goods` (delivery_id, goods_id, product_id, product_sn, goods_name, brand_name, goods_sn, is_real, parent_id, send_number, goods_attr) VALUES ('2', '1', '0', '', 'test', '', '234242', '1', '0', '1', '')
+
+UPDATE `wfx2017`.`ecs_order_goods`
+                            SET send_number = send_number + 1
+                            WHERE order_id = '2'
+                            AND rec_id = '2' 
+
+SELECT COUNT(rec_id)
+            FROM `wfx2017`.`ecs_order_goods`
+            WHERE order_id = '2'
+            AND goods_number > send_number
+
+DESC `wfx2017`.`ecs_order_info`
+
+UPDATE `wfx2017`.`ecs_order_info` SET order_status = '5', shipping_status = '5' WHERE order_id = '2'
+
+INSERT INTO `wfx2017`.`ecs_order_action` (order_id, action_user, order_status, shipping_status, pay_status, action_place, action_note, log_time) SELECT order_id, 'admin', '5', '5', '2', '0', '234234', '1487664499' FROM `wfx2017`.`ecs_order_info` WHERE order_sn = '2017022200075898443'
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '2'
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT MAX(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id < '2'
+
+SELECT MIN(order_id) FROM `wfx2017`.`ecs_order_info` as o WHERE order_id > '2'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT agency_id, agency_name FROM `wfx2017`.`ecs_agency`
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '2'
+
+SELECT action_note FROM `wfx2017`.`ecs_order_action` WHERE order_id = '2' AND shipping_status = 1 ORDER BY log_time DESC
+
+SELECT SUM(g.goods_weight * o.goods_number) AS weight, SUM(o.goods_price * o.goods_number) AS amount ,SUM(o.goods_number) AS number FROM `wfx2017`.`ecs_order_goods` AS o, `wfx2017`.`ecs_goods` AS g WHERE o.order_id = '2' AND o.goods_id = g.goods_id
+
+SELECT rank_name FROM `wfx2017`.`ecs_user_rank` WHERE min_points <= 1 ORDER BY min_points DESC 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_bonus_type` AS bt, `wfx2017`.`ecs_user_bonus` AS ub WHERE bt.type_id = ub.bonus_type_id AND ub.user_id = '1' AND ub.order_id = 0 AND bt.use_start_date <= '1487750399' AND bt.use_end_date >= '1487750399'
+
+SELECT * FROM `wfx2017`.`ecs_user_address` WHERE user_id = '1'
+
+SELECT o.*, IF(o.product_id > 0, p.product_number, g.goods_number) AS storage, o.goods_attr, g.suppliers_id, IFNULL(b.brand_name, '') AS brand_name, p.product_sn
+            FROM `wfx2017`.`ecs_order_goods` AS o
+                LEFT JOIN `wfx2017`.`ecs_products` AS p
+                    ON p.product_id = o.product_id
+                LEFT JOIN `wfx2017`.`ecs_goods` AS g
+                    ON o.goods_id = g.goods_id
+                LEFT JOIN `wfx2017`.`ecs_brand` AS b
+                    ON g.brand_id = b.brand_id
+            WHERE o.order_id = '2'
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE pay_id = '1' AND enabled = 1
+
+SELECT * FROM `wfx2017`.`ecs_order_action` WHERE order_id = '2' ORDER BY log_time DESC,action_id DESC
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_goods` WHERE order_id = '2' AND is_real = 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691500
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693303', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664379;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_admin_user`
+            WHERE user_id = '1'
+            LIMIT 0, 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_delivery_order`WHERE 1  AND order_sn LIKE '%2017022200075898443%'
+
+SELECT *
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE is_check = 1
+            ORDER BY suppliers_name ASC
+
+SELECT delivery_id, delivery_sn, order_sn, order_id, add_time, action_user, consignee, country,
+                       province, city, district, tel, status, update_time, email, suppliers_id
+                FROM `wfx2017`.`ecs_delivery_order`
+                WHERE 1  AND order_sn LIKE '%2017022200075898443%'
+                ORDER BY update_time DESC
+                LIMIT 0, 15 
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691503
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_admin_user`
+            WHERE user_id = '1'
+            LIMIT 0, 1
+
+SELECT * FROM `wfx2017`.`ecs_delivery_order` WHERE delivery_id = '2' LIMIT 0, 1
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT concat(IFNULL(c.region_name, ''), '  ', IFNULL(p.region_name, ''), '  ', IFNULL(t.region_name, ''), '  ', IFNULL(d.region_name, '')) AS region FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_region` AS c ON o.country = c.region_id LEFT JOIN `wfx2017`.`ecs_region` AS p ON o.province = p.region_id LEFT JOIN `wfx2017`.`ecs_region` AS t ON o.city = t.region_id LEFT JOIN `wfx2017`.`ecs_region` AS d ON o.district = d.region_id WHERE o.order_id = '2'
+
+SELECT *
+                  FROM `wfx2017`.`ecs_delivery_goods`
+                  WHERE delivery_id = 2
+
+SELECT * FROM `wfx2017`.`ecs_order_action` WHERE order_id = '2' AND action_place = 1 ORDER BY log_time DESC,action_id DESC
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691506
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_admin_user`
+            WHERE user_id = '1'
+            LIMIT 0, 1
+
+SELECT * FROM `wfx2017`.`ecs_delivery_order` WHERE delivery_id = '2' LIMIT 0, 1
+
+SELECT *,  (goods_amount - discount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee) AS total_fee  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '2'
+
+SELECT DG.goods_id, DG.is_real, DG.product_id, SUM(DG.send_number) AS sums, IF(DG.product_id > 0, P.product_number, G.goods_number) AS storage, G.goods_name, DG.send_number
+        FROM `wfx2017`.`ecs_delivery_goods` AS DG, `wfx2017`.`ecs_goods` AS G, `wfx2017`.`ecs_products` AS P
+        WHERE DG.goods_id = G.goods_id
+        AND DG.delivery_id = '2'
+        AND DG.product_id = P.product_id
+        GROUP BY DG.product_id 
+
+SELECT DG.goods_id, DG.is_real, SUM(DG.send_number) AS sums, G.goods_number, G.goods_name, DG.send_number
+        FROM `wfx2017`.`ecs_delivery_goods` AS DG, `wfx2017`.`ecs_goods` AS G
+        WHERE DG.goods_id = G.goods_id
+        AND DG.delivery_id = '2'
+        GROUP BY DG.goods_id 
+
+UPDATE `wfx2017`.`ecs_goods`
+                                    SET goods_number = goods_number - 1
+                                    WHERE goods_id = 1
+
+DESC `wfx2017`.`ecs_delivery_order`
+
+UPDATE `wfx2017`.`ecs_delivery_order` SET invoice_no = '2342422', status = '0' WHERE delivery_id = 2
+
+SELECT COUNT(rec_id)
+            FROM `wfx2017`.`ecs_order_goods`
+            WHERE order_id = '2'
+            AND goods_number > send_number
+
+SELECT COUNT(delivery_id)
+                FROM `wfx2017`.`ecs_delivery_order`
+                WHERE order_id = '2'
+                AND status = 2 
+
+DESC `wfx2017`.`ecs_order_info`
+
+UPDATE `wfx2017`.`ecs_order_info` SET shipping_status = '1', shipping_time = '1487664509', invoice_no = '2342422' WHERE order_id = '2'
+
+INSERT INTO `wfx2017`.`ecs_order_action` (order_id, action_user, order_status, shipping_status, pay_status, action_place, action_note, log_time) SELECT order_id, 'admin', '1', '1', '2', '1', '', '1487664509' FROM `wfx2017`.`ecs_order_info` WHERE order_sn = '2017022200075898443'
+
+SELECT * FROM `wfx2017`.`ecs_users` WHERE user_id = '1'
+
+SELECT SUM(og.goods_number * IF(g.give_integral > -1, g.give_integral, og.goods_price)) AS custom_points, SUM(og.goods_number * IF(g.rank_integral > -1, g.rank_integral, og.goods_price)) AS rank_points FROM `wfx2017`.`ecs_order_goods` AS og, `wfx2017`.`ecs_goods` AS g WHERE og.goods_id = g.goods_id AND og.order_id = '2' AND og.goods_id > 0 AND og.parent_id = 0 AND og.is_gift = 0 AND og.extension_code != 'package_buy'
+
+DESC `wfx2017`.`ecs_account_log`
+
+INSERT INTO `wfx2017`.`ecs_account_log` (user_id, user_money, frozen_money, rank_points, pay_points, change_time, change_desc, change_type) VALUES ('1', '0', '0', '1', '1', '1487664509', '订单 2017022200075898443 赠送的积分', '99')
+
+UPDATE `wfx2017`.`ecs_users` SET user_money = user_money + ('0'), frozen_money = frozen_money + ('0'), rank_points = rank_points + ('1'), pay_points = pay_points + ('1') WHERE user_id = '1' LIMIT 1
+
+SELECT b.type_id, b.type_money, SUM(o.goods_number) AS number FROM `wfx2017`.`ecs_order_goods` AS o, `wfx2017`.`ecs_goods` AS g, `wfx2017`.`ecs_bonus_type` AS b  WHERE o.order_id = '2'  AND o.is_gift = 0  AND o.goods_id = g.goods_id  AND g.bonus_type_id = b.type_id  AND b.send_type = '1'  AND b.send_start_date <= '1487750399'  AND b.send_end_date >= '1487750399'  GROUP BY b.type_id 
+
+SELECT SUM(goods_price * goods_number) FROM `wfx2017`.`ecs_order_goods` WHERE order_id = '2' AND is_gift = 0
+
+SELECT add_time  FROM `wfx2017`.`ecs_order_info` WHERE order_id = '2' LIMIT 1
+
+SELECT type_id, type_money, IFNULL(FLOOR('1' / min_amount), 1) AS number FROM `wfx2017`.`ecs_bonus_type`WHERE send_type = '2' AND send_start_date <= '1487664478' AND send_end_date >= '1487664478' 
+
+SELECT name, config FROM `wfx2017`.`ecs_wechat_extend` where enable = 1 and command = "send_remind" limit 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_admin_user`
+            WHERE user_id = '1'
+            LIMIT 0, 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_delivery_order`WHERE 1 
+
+SELECT *
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE is_check = 1
+            ORDER BY suppliers_name ASC
+
+SELECT delivery_id, delivery_sn, order_sn, order_id, add_time, action_user, consignee, country,
+                       province, city, district, tel, status, update_time, email, suppliers_id
+                FROM `wfx2017`.`ecs_delivery_order`
+                WHERE 1 
+                ORDER BY update_time DESC
+                LIMIT 0, 15 
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693313', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664379;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691513
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_shop_config` WHERE type<>'hidden'   AND (parent_id<>'5' AND id<>'5') ORDER BY parent_id, sort_order, id
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '1' AND parent_id = '1'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '2' AND parent_id = '2'
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693331', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664379;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `wfx2017`.`ecs_category` AS c LEFT JOIN `wfx2017`.`ecs_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods_cat` AS gc , `wfx2017`.`ecs_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `wfx2017`.`ecs_brand` ORDER BY sort_order
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1'
+
+SELECT goods_id, goods_name, goods_type, goods_sn, virtual_sales, shop_price, is_on_sale, is_best, is_new, is_hot, sort_order, goods_number, integral,  (promote_price > 0 AND promote_start_date <= '1487750399' AND promote_end_date >= '1487750399') AS is_promote  FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1' ORDER BY goods_id DESC  LIMIT 0,15
+
+SELECT DISTINCT cat_id
+            FROM `wfx2017`.`ecs_attribute`
+            WHERE attr_type = 1
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693351', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664379;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691551
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_shop_config` WHERE type<>'hidden'   AND (parent_id<>'5' AND id<>'5') ORDER BY parent_id, sort_order, id
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '1' AND parent_id = '1'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '2' AND parent_id = '2'
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691553
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1 
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691560
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691560
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487664379'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487664379
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693360', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664560;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691560
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT c.cause_id, c.cause_name, c.sort_order, c.is_show ,c.parent_id , COUNT(s.cause_id) AS has_children FROM `wfx2017`.`ecs_return_cause` AS c LEFT JOIN `wfx2017`.`ecs_return_cause` AS s ON s.parent_id=c.cause_id GROUP BY c.cause_id ORDER BY c.parent_id, c.sort_order ASC
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691564
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT c.cause_id, c.cause_name, c.sort_order, c.is_show ,c.parent_id , COUNT(s.cause_id) AS has_children FROM `wfx2017`.`ecs_return_cause` AS c LEFT JOIN `wfx2017`.`ecs_return_cause` AS s ON s.parent_id=c.cause_id GROUP BY c.cause_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_return_cause` WHERE cause_name = '222'
+
+DESC `wfx2017`.`ecs_return_cause`
+
+INSERT INTO `wfx2017`.`ecs_return_cause` (cause_name, parent_id, sort_order, is_show) VALUES ('222', '0', '50', '1')
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691568
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT c.cause_id, c.cause_name, c.sort_order, c.is_show ,c.parent_id , COUNT(s.cause_id) AS has_children FROM `wfx2017`.`ecs_return_cause` AS c LEFT JOIN `wfx2017`.`ecs_return_cause` AS s ON s.parent_id=c.cause_id GROUP BY c.cause_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT c.cause_id, c.cause_name, c.sort_order, c.is_show ,c.parent_id , COUNT(s.cause_id) AS has_children FROM `wfx2017`.`ecs_return_cause` AS c LEFT JOIN `wfx2017`.`ecs_return_cause` AS s ON s.parent_id=c.cause_id GROUP BY c.cause_id ORDER BY c.parent_id, c.sort_order ASC
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693370', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"last_check\";i:1487664560;s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691570
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('a173b6047b42b868547c191f9de3c69c', '1487693484', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693484', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:0:{}' WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691684
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691685
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691685
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT `ec_salt` FROM `wfx2017`.`ecs_admin_user`WHERE user_name = 'admin'
+
+SELECT user_id, user_name, password, last_login, action_list, last_login,suppliers_id,ec_salt FROM `wfx2017`.`ecs_admin_user` WHERE user_name = 'admin' AND password = '7a7928959c7fb1210f5e0b51f0ea2e0a'
+
+UPDATE `wfx2017`.`ecs_admin_user` SET last_login='1487664692', last_ip='192.168.1.16' WHERE user_id='1'
+
+SELECT DISTINCT session_id FROM `wfx2017`.`ecs_cart` AS c, `wfx2017`.`ecs_sessions` AS s WHERE c.session_id = s.sesskey 
+
+DELETE FROM `wfx2017`.`ecs_cart` WHERE session_id NOT  IN ('') 
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693492', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";s:10:\"1487664261\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691692
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691692
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_return` AS o WHERE 1 
+
+SELECT o.ret_id, o.rec_id, o.service_sn, o.order_sn, o.add_time, o.user_id, o.service_id, o.should_return , o.actual_return, o.is_check,o.return_status, o.refund_status, r.back_num, r.out_num, IFNULL(u.user_name, '') AS buyer  FROM `wfx2017`.`ecs_order_return` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id   LEFT JOIN `wfx2017`.`ecs_return_goods` AS r ON o.rec_id = r.rec_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT bonus_type_id, COUNT(*) AS sent_count FROM `wfx2017`.`ecs_user_bonus` GROUP BY bonus_type_id
+
+SELECT bonus_type_id, COUNT(*) AS used_count FROM `wfx2017`.`ecs_user_bonus` WHERE used_time > 0 GROUP BY bonus_type_id
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_bonus_type`
+
+SELECT * FROM `wfx2017`.`ecs_bonus_type` ORDER BY type_id DESC LIMIT 15
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691695
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_drp_config`
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_shop_config` WHERE type<>'hidden'   AND (parent_id<>'5' AND id<>'5') ORDER BY parent_id, sort_order, id
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '1' AND parent_id = '1'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '2' AND parent_id = '2'
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691700
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487664261'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487664261
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693681', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487664881;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487691881
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `wfx2017`.`ecs_category` AS c LEFT JOIN `wfx2017`.`ecs_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods_cat` AS gc , `wfx2017`.`ecs_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `wfx2017`.`ecs_brand` ORDER BY sort_order
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1'
+
+SELECT goods_id, goods_name, goods_type, goods_sn, virtual_sales, shop_price, is_on_sale, is_best, is_new, is_hot, sort_order, goods_number, integral,  (promote_price > 0 AND promote_start_date <= '1487750399' AND promote_end_date >= '1487750399') AS is_promote  FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1' ORDER BY goods_id DESC  LIMIT 0,15
+
+SELECT DISTINCT cat_id
+            FROM `wfx2017`.`ecs_attribute`
+            WHERE attr_type = 1
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693724', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487664881;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691924
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT * FROM `wfx2017`.`ecs_goods` WHERE goods_id = '1'
+
+SELECT DISTINCT cat_id
+            FROM `wfx2017`.`ecs_attribute`
+            WHERE attr_type = 1
+
+SELECT g.goods_attr_id, g.attr_value, g.attr_id, a.attr_name
+            FROM `wfx2017`.`ecs_goods_attr` AS g
+                LEFT JOIN `wfx2017`.`ecs_attribute` AS a
+                    ON a.attr_id = g.attr_id
+            WHERE goods_id = '1'
+            AND a.attr_type = 1
+            ORDER BY g.goods_attr_id ASC
+
+SELECT cat_id FROM `wfx2017`.`ecs_goods_cat` WHERE goods_id = '1'
+
+SELECT lg.link_goods_id AS goods_id, g.goods_name, lg.is_double FROM `wfx2017`.`ecs_link_goods` AS lg, `wfx2017`.`ecs_goods` AS g WHERE lg.goods_id = '1' AND lg.link_goods_id = g.goods_id 
+
+SELECT gg.goods_id, gg.group_id, CONCAT(g.goods_name, ' -- [', gg.goods_price, ']') AS goods_name FROM `wfx2017`.`ecs_group_goods` AS gg, `wfx2017`.`ecs_goods` AS g WHERE gg.parent_id = '1' AND gg.goods_id = g.goods_id  order by gg.group_id asc, g.goods_id asc
+
+SELECT g.article_id, a.title FROM `wfx2017`.`ecs_goods_article` AS g, `wfx2017`.`ecs_article` AS a WHERE g.goods_id = '1' AND g.article_id = a.article_id 
+
+SELECT * FROM `wfx2017`.`ecs_goods_gallery` WHERE goods_id = '1'
+
+SELECT touch_sale,touch_fencheng FROM `wfx2017`.`ecs_drp_goods` WHERE goods_id = '1'
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `wfx2017`.`ecs_category` AS c LEFT JOIN `wfx2017`.`ecs_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods_cat` AS gc , `wfx2017`.`ecs_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `wfx2017`.`ecs_brand` ORDER BY sort_order
+
+SELECT * FROM `wfx2017`.`ecs_user_rank` ORDER BY min_points
+
+SELECT user_rank, user_price FROM `wfx2017`.`ecs_member_price` WHERE goods_id = '1'
+
+SELECT cat_id, cat_name FROM `wfx2017`.`ecs_goods_type` WHERE enabled = 1
+
+SELECT `volume_number` , `volume_price` FROM `wfx2017`.`ecs_volume_price` WHERE `goods_id` = '1' AND `price_type` = '1' ORDER BY `volume_number`
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487691926
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487664881'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487664881
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487693908', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487665108;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487692108
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487692108
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487665108'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487665108
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487694087', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487665287;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487692287
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487665287'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487665287
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487694267', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487665467;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487692467
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487665467'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487665467
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487694447', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487665647;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487692647
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487694544', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487665647;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487692744
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487692744
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_return` AS o WHERE 1 
+
+SELECT o.ret_id, o.rec_id, o.service_sn, o.order_sn, o.add_time, o.user_id, o.service_id, o.should_return , o.actual_return, o.is_check,o.return_status, o.refund_status, r.back_num, r.out_num, IFNULL(u.user_name, '') AS buyer  FROM `wfx2017`.`ecs_order_return` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id   LEFT JOIN `wfx2017`.`ecs_return_goods` AS r ON o.rec_id = r.rec_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `wfx2017`.`ecs_category` AS c LEFT JOIN `wfx2017`.`ecs_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods_cat` AS gc , `wfx2017`.`ecs_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `wfx2017`.`ecs_brand` ORDER BY sort_order
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1'
+
+SELECT goods_id, goods_name, goods_type, goods_sn, virtual_sales, shop_price, is_on_sale, is_best, is_new, is_hot, sort_order, goods_number, integral,  (promote_price > 0 AND promote_start_date <= '1487750399' AND promote_end_date >= '1487750399') AS is_promote  FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1' ORDER BY goods_id DESC  LIMIT 0,15
+
+SELECT DISTINCT cat_id
+            FROM `wfx2017`.`ecs_attribute`
+            WHERE attr_type = 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT * FROM `wfx2017`.`ecs_goods` WHERE goods_id = '1'
+
+SELECT DISTINCT cat_id
+            FROM `wfx2017`.`ecs_attribute`
+            WHERE attr_type = 1
+
+SELECT g.goods_attr_id, g.attr_value, g.attr_id, a.attr_name
+            FROM `wfx2017`.`ecs_goods_attr` AS g
+                LEFT JOIN `wfx2017`.`ecs_attribute` AS a
+                    ON a.attr_id = g.attr_id
+            WHERE goods_id = '1'
+            AND a.attr_type = 1
+            ORDER BY g.goods_attr_id ASC
+
+SELECT cat_id FROM `wfx2017`.`ecs_goods_cat` WHERE goods_id = '1'
+
+SELECT lg.link_goods_id AS goods_id, g.goods_name, lg.is_double FROM `wfx2017`.`ecs_link_goods` AS lg, `wfx2017`.`ecs_goods` AS g WHERE lg.goods_id = '1' AND lg.link_goods_id = g.goods_id 
+
+SELECT gg.goods_id, gg.group_id, CONCAT(g.goods_name, ' -- [', gg.goods_price, ']') AS goods_name FROM `wfx2017`.`ecs_group_goods` AS gg, `wfx2017`.`ecs_goods` AS g WHERE gg.parent_id = '1' AND gg.goods_id = g.goods_id  order by gg.group_id asc, g.goods_id asc
+
+SELECT g.article_id, a.title FROM `wfx2017`.`ecs_goods_article` AS g, `wfx2017`.`ecs_article` AS a WHERE g.goods_id = '1' AND g.article_id = a.article_id 
+
+SELECT * FROM `wfx2017`.`ecs_goods_gallery` WHERE goods_id = '1'
+
+SELECT touch_sale,touch_fencheng FROM `wfx2017`.`ecs_drp_goods` WHERE goods_id = '1'
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `wfx2017`.`ecs_category` AS c LEFT JOIN `wfx2017`.`ecs_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods_cat` AS gc , `wfx2017`.`ecs_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `wfx2017`.`ecs_brand` ORDER BY sort_order
+
+SELECT * FROM `wfx2017`.`ecs_user_rank` ORDER BY min_points
+
+SELECT user_rank, user_price FROM `wfx2017`.`ecs_member_price` WHERE goods_id = '1'
+
+SELECT cat_id, cat_name FROM `wfx2017`.`ecs_goods_type` WHERE enabled = 1
+
+SELECT `volume_number` , `volume_price` FROM `wfx2017`.`ecs_volume_price` WHERE `goods_id` = '1' AND `price_type` = '1' ORDER BY `volume_number`
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE goods_sn = '234242' AND goods_id <> '1'
+
+SELECT goods_id FROM `wfx2017`.`ecs_products`WHERE product_sn='234242'
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487692752
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487692752
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE goods_sn = '234242' AND goods_id <> '1'
+
+SELECT goods_id FROM `wfx2017`.`ecs_products`WHERE product_sn='234242'
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487694561', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487665647;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT message_id, sender_id, receiver_id, sent_time, readed, deleted, title, message, user_name FROM `wfx2017`.`ecs_admin_message` AS a, `wfx2017`.`ecs_admin_user` AS b WHERE a.sender_id = b.user_id AND a.receiver_id = '1' AND a.readed = 0 AND deleted = 0 ORDER BY a.sent_time DESC
+
+SELECT pay_id, is_cod FROM `wfx2017`.`ecs_payment` WHERE enabled = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE 1  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+SELECT pay_id FROM `wfx2017`.`ecs_payment` WHERE is_cod = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE 1  AND   order_status  IN ('1','5','6')  AND   shipping_status  IN ('0','3','5')  AND ( pay_status  IN ('2','1')  OR pay_id  IN ('') ) 
+
+SELECT pay_id FROM `wfx2017`.`ecs_payment` WHERE is_cod = 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE 1  AND   order_status  IN ('1','5')  AND   pay_status = '0' AND ( shipping_status  IN ('1','2')  OR pay_id  IN ('1') ) 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE 1  AND order_status = '0' 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE  shipping_status=4
+
+SELECT COUNT(*) AS oCount, IFNULL(SUM(order_amount), 0) AS oAmount FROM `wfx2017`.`ecs_order_info`
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_alone_sale = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_alone_sale = 1 AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_new = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_new = 1 AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_best = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_best = 1 AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_hot = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_hot = 1 AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND promote_price>0 AND promote_start_date <= '1487665765' AND promote_end_date >= '1487665765' AND is_real = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND promote_price>0 AND promote_start_date <= '1487665765' AND promote_end_date >= '1487665765' AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND goods_number <= warn_number AND is_real = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND goods_number <= warn_number AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_stats` WHERE access_time > 1487664000
+
+SELECT count(*) FROM `wfx2017`.`ecs_sessions`
+
+SELECT COUNT(f.msg_id) FROM `wfx2017`.`ecs_feedback` AS f LEFT JOIN `wfx2017`.`ecs_feedback` AS r ON r.parent_id=f.msg_id WHERE f.parent_id=0 AND ISNULL(r.msg_id) 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_comment` WHERE status = 0 AND parent_id = 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_booking_goods` WHERE is_dispose = 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_user_account` WHERE process_type = 1 AND is_paid = 0 
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) AS oCount, IFNULL(SUM(order_amount), 0) AS oAmount FROM `wfx2017`.`ecs_order_info`
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_alone_sale = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_users`
+
+SELECT value FROM `wfx2017`.`ecs_shop_config` WHERE code = 'template'
+
+SELECT value FROM `wfx2017`.`ecs_shop_config` WHERE code = 'stylename'
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487692768
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_shop_config` WHERE type<>'hidden'   AND (parent_id<>'5' AND id<>'5') ORDER BY parent_id, sort_order, id
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '1' AND parent_id = '1'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '2' AND parent_id = '2'
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487692768
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487692768
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_region` WHERE parent_id = '0' ORDER BY region_id
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487692770
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT user_id, user_name, email, add_time, last_login FROM `wfx2017`.`ecs_admin_user` ORDER BY user_id DESC
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487694571', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487665647;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487692771
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'a173b6047b42b868547c191f9de3c69c'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT DISTINCT ip_address FROM `wfx2017`.`ecs_admin_log`
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_admin_log` AS al  WHERE 1 
+
+SELECT al.*, u.user_name FROM `wfx2017`.`ecs_admin_log` AS al LEFT JOIN `wfx2017`.`ecs_admin_user` AS u ON u.user_id = al.user_id  WHERE 1  ORDER by al.log_id DESC LIMIT 15
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487692773
+

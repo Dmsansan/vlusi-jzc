@@ -1,0 +1,24 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" --><!-- #EndLibraryItem -->
+<div class="spread-info">
+    {if $info.avatar}
+    <img  src="{$info.avatar}" />
+    {else}
+    <img src="__TPL__/images/member-photo-img2.jpeg" />
+    {/if}
+    <div class="spread-info-text">
+        <h4>我是<span class="info-color">[{$info.name}]</span></h4>
+        <p>我为<span class="info-color">{:C('shop_name')}</span>代言</p>
+    </div>
+</div>
+<img src="{$mobile_qr}" style="width:100%;"/>
+<style>
+body{padding:0;margin:0;background-color: #1BA172;}
+.spread-info{background:#fff; padding: 2rem 1rem; text-align: center; overflow: hidden;}
+.spread-info img{display: block; float:left; height:5rem; width:5rem; margin-left:18%;}
+.spread-info-text{font-size:1.4rem; color:#333; text-align: left; margin-left:1.3rem; float: left; margin-top:0.6rem;}
+.spread-info-text h4{ font-weight: 100;}
+.spread-info-text p{margin-top:0.2rem;}
+.spread-info-text .info-color{color:#159D6E}
+</style>
+        </body>
+        </html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>微信墙</title>
+        <link rel="stylesheet" type="text/css" href="__TPL__/wall/css/wechat.css"/>
+        <script type="text/javascript">
+			window.onload=function(){
+				var con=document.getElementById('con');
+				var conHeight=con.offsetHeight;
+				var c=document.documentElement.clientHeight;
+				con.style.height=c+'px';
+			}
+		</script>
+    </head>
+    <body>
+        <div class="con" id="con" {if $wall.background}style="background-image:url({$wall.background})"{/if}>
+            <div class="main">
+                <!--logo-->
+                <div class="logo">
+                    <img src="{$wall.logo}" class="fl"/>
+                    <h1 class="fl">{$wall.name}</h1>
+                </div>
+                
+                <!--main-->
+                <div class="award-main">
+                    <!---->
+                    <div class="award-content fl">
+                        <div class="award-content-header">
+                            <img src="__TPL__/wall/img/choujiang.png" class="fl"/>
+                            <h1 class="fl">现场抽奖</h1>
+                            <h2 class="fr">参加抽奖人数<span>{$total}</span>人</h2>
+                        </div>
+                    
+                        <div class="award-content-detail">
+                            <ul class="award-detail-pic">
+                                <li class="active">
+                                    <img src="__TPL__/wall/img/unknow.png"/>
+                                    <p class="award-content-name">求中奖</p>
+                                </li>
+                                <li class="container" style="display:none;">
+                                    <img src="" />
+                                    <p class="award-content-name"></p>
+                                </li>
+                            </ul>
+                            <input type="button" name="start" id="start" value="开始抽奖" />
+                            <input type="button" name="stop" id="stop" value="停止抽奖" style="display:none;" />
+                        </div>
+                    </div>
+                    
+                    
+                    <!---->
+                    <div class="fr award-list">
+                        <div class="award-list-name">
+                            <h1 class="fl">获奖名单</h1>
+                            <h2 class="fr">获奖人数：<span id="prize_num">{$prize_num}</span></h2>
+                        </div>
+                        <div class="award-list-title">
+                            <h3 class="fl">序号</h3>
+                            <h4 class="fr">用户昵称</h4>
+                        </div>
+                        <ul id="award">
+                        {foreach from=$list item=list key=key}
+                            <li>
+                                <div class="fl award-list-info">
+                                    <span class="fl">{$key}</span>
+                                    <img src="{$list.headimgurl}" class="fl"/>
+                                </div>
+                                <p class="fr">{$list.wechatname}</p>
+                            </li>
+                        {/foreach}
+                        </ul>
+                        <input type="button" name="restart" value="重新抽奖" class="award-restart"/>
+                    </div>
+                </div>
+                
+                
+                <!--footer-->
+                <div class="footer">
+                    <div class="footer-msg">
+                        <h1>{$wall.content}</h1>
+                        <ul class="fr">
+                            <li class="footer-menu">
+                                <a href="{:url('wall_user', array('wall_id'=>$this->_var['wall']['id']))}">
+                                    <div class="footer-menu-pic shangqiang">
+                                    微信上墙</div>
+                                </a>
+                            </li>
+                            <li class="footer-menu">
+                                <a href="{:url('wall_msg', array('wall_id'=>$this->_var['wall']['id']))}">
+                                    <div class="footer-menu-pic liebiao">
+                                    留言列表</div>
+
+                                </a>
+                            </li>
+                            <li class="footer-menu">
+                                <a href="{:url('wall_prize', array('wall_id'=>$this->_var['wall']['id']))}" class="active">
+                                    <div class="footer-menu-pic choujiang active">
+                                    抽奖</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>{$wall.support}</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+        <script type="text/javascript" src="__TPL__/wall/js/jquery.nicescroll.js" ></script>
+        <script type="text/javascript" src="__TPL__/wall/js/jquery.scrollTo.min.js" ></script>
+        <script type="text/javascript" src="__TPL__/wall/js/wechat.js" ></script>
+        <script type="text/javascript">
+        $(function(){
+            //开始抽奖
+            var time;
+            $("#start").click(function(){
+                $.get("{:url('no_prize', array('wall_id'=>$this->_var['wall']['id']))}", '', function(result){
+                    if(result.errCode == 0){
+                        $("#stop").css("display", "inline-block");
+                        $("#start").css("display", "none");
+                        var len = result.data.length > 0 ? result.data.length - 1 : 0, i = 0;
+                        if(result.data.length > 0){
+                            var prize = result.data;
+                            time = setInterval(function(){
+                                if(i > len){
+                                    i = 0;
+                                }
+                                $(".container").html('<img src="'+prize[i].headimgurl+'" /><p class="award-content-name">'+prize[i].wechatname+'</p>').addClass("active").css("display", "block").siblings("li").removeClass("active");
+                                i++;
+                            }, 80);
+                        }
+                        else{
+                            alert("暂无参与抽奖用户");
+                        }
+                    }
+                    else if(result.errCode == 1){
+                        location.href = result.errMsg;
+                    }
+                    else{
+                        alert(result.errMsg);
+                    }
+                }, 'json');                
+            });
+            //停止抽奖
+            $("#stop").click(function(){
+                $.get("{:url('start_draw', array('wall_id'=>$this->_var['wall']['id']))}", '', function(result){
+                    if(result.errCode == 0){
+                        //中奖
+                        $(".container").html('<img src="'+result.data.headimgurl+'" /><p class="award-content-name">'+result.data.wechatname+'</p>').addClass("active").css("display", "block").siblings("li").removeClass("active");
+                        
+                        var key = $("#award li span.fl:last").text();
+                        key = key ? parseInt(key) + 1 : 1;
+                        var html = '<li><div class="fl award-list-info"><span class="fl">'+key+'</span><img src="'+result.data.headimgurl+'" class="fl"/></div><p class="fr">'+result.data.wechatname+'</p></li>';
+                        $("#award").append(html);
+                        //获奖人数
+                        $("#prize_num").html(result.data.prize_num);
+                        setTimeout(function(){remove_prize()}, 2000);
+                    }
+                    else if(result.errCode == 1){
+                        location.href = result.errMsg;
+                    }
+                    else{
+                        $(".award-detail-pic li:first").addClass("active").siblings("li").removeClass("active");
+                        alert(result.errMsg);
+                    }
+                    return false;
+                }, 'json');
+                clearInterval(time);
+                $("#stop").css("display", "none");
+                $("#start").css("display", "inline-block");
+            });
+            //重置抽奖
+            $(".award-restart").click(function(){
+                if(confirm("重置抽奖后，中奖用户将会重新放入奖池，确定要重置吗？")){
+                    $.get("{:url('reset_draw', array('wall_id'=>$this->_var['wall']['id']))}", '', function(result){
+                        if(result.errCode == 0){
+                            $("#award").empty();
+                            $(".award-detail-pic li:first").addClass("active").siblings("li").removeClass("active");
+                            $("#prize_num").html("0");
+                        }
+                        else if(result.errCode == 1){
+                            location.href = result.errMsg;
+                        }
+                        else{
+                            alert(result.errMsg);
+                        }
+                        return false;
+                    }, 'json');
+                }
+            });
+            
+        })
+        function remove_prize(){
+            $(".award-detail-pic li:first").addClass("active").siblings("li").removeClass("active");
+            $(".container").html("").css("display", "none");
+        }
+        </script>
+    </body>
+</html>

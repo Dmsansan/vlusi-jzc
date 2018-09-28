@@ -1,0 +1,48 @@
+{if $full_page}
+<!-- $Id: users_list.htm 15617 2009-02-18 05:18:00Z sunxiaodong $ -->
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+
+<div class="form-div">
+{$lang.page_note}{$lang.total_records}{$record_count}{$lang.how_many_user}
+</div>
+
+<form method="POST" action="" name="listForm">
+
+<!-- start users list -->
+<div class="list-div" id="listDiv">
+{/if}
+
+<table cellpadding="4" cellspacing="1">
+    <tr>
+        <td style="width:40%;">{$lang.cate_id}</td>
+        <td style="width:60%;">{$list.cat_id}</td>
+    </tr>
+    <tr>
+        <td>{$lang.cate_name}</td>
+        <td>{$list.cat_name}</td>
+    </tr>
+    <tr>
+        <td>{$lang.profit1}</td>
+        <td><input type="text" value="{$list.profit1}" name="data[profit1]">%</td>
+    </tr>
+    <tr>
+        <td>{$lang.profit2}</td>
+        <td><input type="text" value="{$list.profit2}" name="data[profit2]">%</td>
+    </tr>
+    <tr>
+        <td>{$lang.profit3}</td>
+        <td><input type="text" value="{$list.profit3}" name="data[profit3]">%</td>
+    </tr>
+    <tr>
+        <td><input type="hidden" value="{$list.cat_id}" name="cate_id"></td>
+        <td><input type="submit" value="{$lang.submit}" class="button" /></td>
+    </tr>
+</table>
+{if $full_page}
+</div>
+<!-- end users list -->
+</form>
+{/literal}
+{include file="pagefooter.htm"}
+{/if}

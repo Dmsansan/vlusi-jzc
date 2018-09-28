@@ -1,0 +1,2535 @@
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('704c50d53f21d541150778baa36a7240', '1487654466', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654466', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:0:{}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652666
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487652666
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652666
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT `ec_salt` FROM `wfx2017`.`ecs_admin_user`WHERE user_name = 'admin'
+
+SELECT user_id, user_name, password, last_login, action_list, last_login,suppliers_id,ec_salt FROM `wfx2017`.`ecs_admin_user` WHERE user_name = 'admin' AND password = '7a7928959c7fb1210f5e0b51f0ea2e0a'
+
+UPDATE `wfx2017`.`ecs_admin_user` SET last_login='1487625669', last_ip='192.168.1.16' WHERE user_id='1'
+
+SELECT DISTINCT session_id FROM `wfx2017`.`ecs_cart` AS c, `wfx2017`.`ecs_sessions` AS s WHERE c.session_id = s.sesskey 
+
+DELETE FROM `wfx2017`.`ecs_cart` WHERE session_id NOT  IN ('') 
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654469', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";s:1:\"0\";s:12:\"suppliers_id\";s:1:\"0\";s:10:\"shop_guide\";b:1;}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487652669
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487652669
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654470', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";s:1:\"0\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652670
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '1' AND parent_id = '1'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '2' AND parent_id = '2'
+
+SELECT value from `wfx2017`.`ecs_shop_config` WHERE code='shop_name'
+
+SELECT value from `wfx2017`.`ecs_shop_config` WHERE code='shop_title'
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487652670
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652670
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500'
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500' ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654472', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487625672;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652672
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_return` AS o WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500'
+
+SELECT o.ret_id, o.rec_id, o.service_sn, o.order_sn, o.add_time, o.user_id, o.service_id, o.should_return , o.actual_return, o.is_check,o.return_status, o.refund_status, r.back_num, r.out_num, IFNULL(u.user_name, '') AS buyer  FROM `wfx2017`.`ecs_order_return` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id   LEFT JOIN `wfx2017`.`ecs_return_goods` AS r ON o.rec_id = r.rec_id WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500' ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT c.cause_id, c.cause_name, c.sort_order, c.is_show ,c.parent_id , COUNT(s.cause_id) AS has_children FROM `wfx2017`.`ecs_return_cause` AS c LEFT JOIN `wfx2017`.`ecs_return_cause` AS s ON s.parent_id=c.cause_id GROUP BY c.cause_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_service_type`
+
+SELECT * FROM `wfx2017`.`ecs_service_type` ORDER BY sort_order ASC LIMIT 15
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487652674
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652674
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652676
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `wfx2017`.`ecs_category` AS c LEFT JOIN `wfx2017`.`ecs_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods_cat` AS gc , `wfx2017`.`ecs_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `wfx2017`.`ecs_brand` ORDER BY sort_order
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1'
+
+SELECT goods_id, goods_name, goods_type, goods_sn, virtual_sales, shop_price, is_on_sale, is_best, is_new, is_hot, sort_order, goods_number, integral,  (promote_price > 0 AND promote_start_date <= '1487663999' AND promote_end_date >= '1487663999') AS is_promote  FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1' ORDER BY goods_id DESC  LIMIT 0,15
+
+SELECT DISTINCT cat_id
+            FROM `wfx2017`.`ecs_attribute`
+            WHERE attr_type = 1
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654496', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487625672;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652696
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+DELETE FROM `wfx2017`.`ecs_link_goods` WHERE (goods_id = 0 OR link_goods_id = 0) AND admin_id = '1'
+
+DELETE FROM `wfx2017`.`ecs_group_goods` WHERE parent_id = 0 AND admin_id = '1'
+
+DELETE FROM `wfx2017`.`ecs_goods_article` WHERE goods_id = 0 AND admin_id = '1'
+
+DELETE FROM `wfx2017`.`ecs_goods_attr` WHERE goods_id = 0
+
+SELECT touch_sale,touch_fencheng FROM `wfx2017`.`ecs_drp_goods` WHERE goods_id = ''
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `wfx2017`.`ecs_category` AS c LEFT JOIN `wfx2017`.`ecs_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods_cat` AS gc , `wfx2017`.`ecs_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `wfx2017`.`ecs_brand` ORDER BY sort_order
+
+SELECT * FROM `wfx2017`.`ecs_user_rank` ORDER BY min_points
+
+SELECT cat_id, cat_name FROM `wfx2017`.`ecs_goods_type` WHERE enabled = 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487652699
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE goods_sn = '234242'
+
+SELECT goods_id FROM `wfx2017`.`ecs_products`WHERE product_sn='234242'
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487652704
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652704
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_category` WHERE parent_id = '0' AND cat_name = 'aaa' AND cat_id<>'0'
+
+INSERT INTO `wfx2017`.`ecs_category`(cat_name, parent_id, is_show)VALUES ( 'aaa', '0', 1)
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE goods_sn = '234242'
+
+SELECT goods_id FROM `wfx2017`.`ecs_products`WHERE product_sn='234242'
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654509', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487625672;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE goods_sn = '234242' AND is_delete = 0 AND goods_id <> '0'
+
+INSERT INTO `wfx2017`.`ecs_goods` (goods_name, goods_name_style, goods_sn, cat_id, brand_id, shop_price, market_price, virtual_sales, is_promote, promote_price, promote_start_date, promote_end_date, goods_img, goods_thumb, original_img, keywords, goods_brief, seller_note, goods_weight, goods_number, warn_number, integral, give_integral, is_best, is_new, is_hot, is_on_sale, is_alone_sale, is_shipping, goods_desc, add_time, last_update, goods_type, rank_integral, suppliers_id)VALUES ('test', '+', '234242', '1', '', '1', '1.2', '0', '0','0', '0', '0', '', '', '', '', '', '', '0', '1', '1', '0', '-1', '0', '0', '0', '1', '1', 0,  '', '1487625709', '1487625709', '0', '-1', '0')
+
+SELECT count(*) FROM `wfx2017`.`ecs_drp_goods`WHERE goods_id='1'
+
+INSERT INTO `wfx2017`.`ecs_drp_goods` (goods_id, touch_sale, touch_fencheng)VALUES ( '1', '0', '0')
+
+INSERT INTO `wfx2017`.`ecs_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1487625709', 1, '添加商品: test', '192.168.1.16')
+
+SELECT attr_id, attr_index FROM `wfx2017`.`ecs_attribute` WHERE cat_id = '0'
+
+SELECT g.*, a.attr_type
+                FROM `wfx2017`.`ecs_goods_attr` AS g
+                    LEFT JOIN `wfx2017`.`ecs_attribute` AS a
+                        ON a.attr_id = g.attr_id
+                WHERE g.goods_id = '1'
+
+UPDATE `wfx2017`.`ecs_goods` SET keywords = '' WHERE goods_id = '1' LIMIT 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_member_price` WHERE goods_id = '1' AND user_rank = '1'
+
+DELETE FROM `wfx2017`.`ecs_volume_price` WHERE price_type = '1' AND goods_id = '1'
+
+UPDATE `wfx2017`.`ecs_link_goods` SET  goods_id = '1'  WHERE goods_id = '0' AND admin_id = '1'
+
+UPDATE `wfx2017`.`ecs_link_goods` SET  link_goods_id = '1'  WHERE link_goods_id = '0' AND admin_id = '1'
+
+UPDATE `wfx2017`.`ecs_group_goods` SET  parent_id = '1'  WHERE parent_id = '0' AND admin_id = '1'
+
+UPDATE `wfx2017`.`ecs_goods_article` SET  goods_id = '1'  WHERE goods_id = '0' AND admin_id = '1'
+
+SELECT COUNT(a.attr_id)
+            FROM `wfx2017`.`ecs_attribute` AS a, `wfx2017`.`ecs_goods` AS g
+            WHERE a.cat_id = g.goods_type
+            AND g.goods_id = '1'
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `wfx2017`.`ecs_category` AS c LEFT JOIN `wfx2017`.`ecs_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods_cat` AS gc , `wfx2017`.`ecs_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `wfx2017`.`ecs_brand` ORDER BY sort_order
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1'
+
+SELECT goods_id, goods_name, goods_type, goods_sn, virtual_sales, shop_price, is_on_sale, is_best, is_new, is_hot, sort_order, goods_number, integral,  (promote_price > 0 AND promote_start_date <= '1487663999' AND promote_end_date >= '1487663999') AS is_promote  FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1' ORDER BY goods_id DESC  LIMIT 0,15
+
+SELECT DISTINCT cat_id
+            FROM `wfx2017`.`ecs_attribute`
+            WHERE attr_type = 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_goods` SET is_best = '1', last_update=1487625712 WHERE goods_id = '1'
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652714
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_shop_config` WHERE type<>'hidden'   AND (parent_id<>'5' AND id<>'5') ORDER BY parent_id, sort_order, id
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '1' AND parent_id = '1'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '2' AND parent_id = '2'
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654538', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487625672;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652738
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_payment` WHERE enabled = '1' ORDER BY pay_order
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652742
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_payment` WHERE pay_name = '支付宝' AND pay_code <> 'alipay'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_payment` WHERE pay_code = 'alipay'
+
+INSERT INTO `wfx2017`.`ecs_payment` (pay_code, pay_name, pay_desc, pay_config, is_cod, pay_fee, enabled, is_online)VALUES ('alipay', '支付宝', '支付宝(www.alipay.com)是国内先进的网上支付平台。', 'a:3:{i:0;a:3:{s:4:"name";s:14:"alipay_account";s:4:"type";s:4:"text";s:5:"value";s:7:"2343424";}i:1;a:3:{s:4:"name";s:10:"alipay_key";s:4:"type";s:4:"text";s:5:"value";s:8:"23424242";}i:2;a:3:{s:4:"name";s:14:"alipay_partner";s:4:"type";s:4:"text";s:5:"value";s:6:"234242";}}', '0', '0', 1, '1')
+
+INSERT INTO `wfx2017`.`ecs_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1487625746', 1, '安装支付方式: 支付宝', '192.168.1.16')
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652746
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_region` WHERE parent_id = '0' ORDER BY region_id
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654548', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487625672;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652748
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT shipping_id, shipping_name, shipping_desc, insure, support_cod,shipping_order FROM `wfx2017`.`ecs_shipping` WHERE shipping_code='cac' ORDER BY shipping_order
+
+SELECT shipping_id, shipping_name, shipping_desc, insure, support_cod,shipping_order FROM `wfx2017`.`ecs_shipping` WHERE shipping_code='city_express' ORDER BY shipping_order
+
+SELECT shipping_id, shipping_name, shipping_desc, insure, support_cod,shipping_order FROM `wfx2017`.`ecs_shipping` WHERE shipping_code='ems' ORDER BY shipping_order
+
+SELECT shipping_id, shipping_name, shipping_desc, insure, support_cod,shipping_order FROM `wfx2017`.`ecs_shipping` WHERE shipping_code='flat' ORDER BY shipping_order
+
+SELECT shipping_id, shipping_name, shipping_desc, insure, support_cod,shipping_order FROM `wfx2017`.`ecs_shipping` WHERE shipping_code='fpd' ORDER BY shipping_order
+
+SELECT shipping_id, shipping_name, shipping_desc, insure, support_cod,shipping_order FROM `wfx2017`.`ecs_shipping` WHERE shipping_code='post_express' ORDER BY shipping_order
+
+SELECT shipping_id, shipping_name, shipping_desc, insure, support_cod,shipping_order FROM `wfx2017`.`ecs_shipping` WHERE shipping_code='post_mail' ORDER BY shipping_order
+
+SELECT shipping_id, shipping_name, shipping_desc, insure, support_cod,shipping_order FROM `wfx2017`.`ecs_shipping` WHERE shipping_code='presswork' ORDER BY shipping_order
+
+SELECT shipping_id, shipping_name, shipping_desc, insure, support_cod,shipping_order FROM `wfx2017`.`ecs_shipping` WHERE shipping_code='sf_express' ORDER BY shipping_order
+
+SELECT shipping_id, shipping_name, shipping_desc, insure, support_cod,shipping_order FROM `wfx2017`.`ecs_shipping` WHERE shipping_code='sto_express' ORDER BY shipping_order
+
+SELECT shipping_id, shipping_name, shipping_desc, insure, support_cod,shipping_order FROM `wfx2017`.`ecs_shipping` WHERE shipping_code='yto' ORDER BY shipping_order
+
+SELECT shipping_id, shipping_name, shipping_desc, insure, support_cod,shipping_order FROM `wfx2017`.`ecs_shipping` WHERE shipping_code='zto' ORDER BY shipping_order
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT shipping_id FROM `wfx2017`.`ecs_shipping` WHERE shipping_code = 'sto_express'
+
+INSERT INTO `wfx2017`.`ecs_shipping` (shipping_code, shipping_name, shipping_desc, insure, support_cod, enabled, print_bg, config_lable, print_model) VALUES ('sto_express', '申通快递', '江、浙、沪地区首重为15元/KG，其他地区18元/KG， 续重均为5-6元/KG， 云南地区为8元', '0', '0', 1, '/images/receipt/dly_sto_express.jpg', 't_shop_address,网店-地址,235,48,131,152,b_shop_address||,||t_shop_name,网店-名称,237,26,131,200,b_shop_name||,||t_shop_tel,网店-联系电话,96,36,144,257,b_shop_tel||,||t_customer_post,收件人-邮编,86,23,578,268,b_customer_post||,||t_customer_address,收件人-详细地址,232,49,434,149,b_customer_address||,||t_customer_name,收件人-姓名,151,27,449,231,b_customer_name||,||t_customer_tel,收件人-电话,90,32,452,261,b_customer_tel||,||', '2')
+
+INSERT INTO `wfx2017`.`ecs_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1487625751', 1, '安装配送方式: 申通快递', '192.168.1.16')
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT shipping_name, shipping_code FROM `wfx2017`.`ecs_shipping` WHERE shipping_id='1'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652752
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_shipping_area` WHERE shipping_id='1' AND shipping_area_name='aaa'
+
+SELECT shipping_code FROM `wfx2017`.`ecs_shipping` WHERE shipping_id='1'
+
+INSERT INTO `wfx2017`.`ecs_shipping_area` (shipping_area_name, shipping_id, configure) VALUES ('aaa', '1', 'a:5:{i:0;a:2:{s:4:"name";s:8:"item_fee";s:5:"value";s:2:"15";}i:1;a:2:{s:4:"name";s:8:"base_fee";s:5:"value";s:2:"15";}i:2;a:2:{s:4:"name";s:8:"step_fee";s:5:"value";s:1:"5";}i:3;a:2:{s:4:"name";s:10:"free_money";s:5:"value";s:0:"";}i:4;a:2:{s:4:"name";s:16:"fee_compute_mode";s:5:"value";s:9:"by_weight";}}')
+
+INSERT INTO `wfx2017`.`ecs_area_region` (shipping_area_id, region_id) VALUES ('1', '1')
+
+INSERT INTO `wfx2017`.`ecs_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1487625755', 1, '添加配送区域: aaa', '192.168.1.16')
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_shipping_area` WHERE shipping_id = '1'
+
+SELECT r.region_name FROM `wfx2017`.`ecs_area_region` AS a, `wfx2017`.`ecs_region` AS r WHERE a.region_id = r.region_id AND a.shipping_area_id = '1'
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654559', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487625672;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487625672'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487625672
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654740', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487625940;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652940
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500'
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500' ORDER BY add_time DESC  LIMIT 0,15
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654777', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487625940;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500'
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500' ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500'
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500' ORDER BY add_time DESC  LIMIT 0,15
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652980
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500'
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500' ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500'
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500' ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_shop_config` WHERE type<>'hidden'   AND (parent_id<>'5' AND id<>'5') ORDER BY parent_id, sort_order, id
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '1' AND parent_id = '1'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '2' AND parent_id = '2'
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487652984
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652984
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500'
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500' ORDER BY add_time DESC  LIMIT 0,15
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652986
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT shipping_id, shipping_name FROM `wfx2017`.`ecs_shipping` WHERE enabled = 1
+
+SELECT pay_id, pay_name FROM `wfx2017`.`ecs_payment` WHERE enabled = 1
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654790', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487625940;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652990
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT o.order_sn, u.user_name FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_users` AS u ON o.user_id = u.user_id WHERE o.user_id > 0 AND o.extension_code = ''  AND order_status  IN ('0','1')  AND shipping_status = '0' AND pay_status = '0' 
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652990
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT o.order_sn, u.user_name FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_users` AS u ON o.user_id = u.user_id WHERE o.user_id > 0 AND o.extension_code = ''  AND order_status  IN ('0','1')  AND shipping_status = '0' AND pay_status = '0' 
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500'
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500' ORDER BY add_time DESC  LIMIT 0,15
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487652994
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654806', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487625940;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487653006
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT o.order_sn, u.user_name FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_users` AS u ON o.user_id = u.user_id WHERE o.user_id > 0 AND o.extension_code = ''  AND order_status  IN ('0','1')  AND shipping_status = '0' AND pay_status = '0' 
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487653006
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487653006
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT o.order_sn, u.user_name FROM `wfx2017`.`ecs_order_info` AS o LEFT JOIN `wfx2017`.`ecs_users` AS u ON o.user_id = u.user_id WHERE o.user_id > 0 AND o.extension_code = ''  AND order_status  IN ('0','1')  AND shipping_status = '0' AND pay_status = '0' 
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487653008
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT shipping_id, shipping_name FROM `wfx2017`.`ecs_shipping` WHERE enabled = 1
+
+SELECT pay_id, pay_name FROM `wfx2017`.`ecs_payment` WHERE enabled = 1
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487653010
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500'
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500' ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_shop_config` WHERE type<>'hidden'   AND (parent_id<>'5' AND id<>'5') ORDER BY parent_id, sort_order, id
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '1' AND parent_id = '1'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '2' AND parent_id = '2'
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `wfx2017`.`ecs_category` AS c LEFT JOIN `wfx2017`.`ecs_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods_cat` AS gc , `wfx2017`.`ecs_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `wfx2017`.`ecs_brand` ORDER BY sort_order
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1'
+
+SELECT goods_id, goods_name, goods_type, goods_sn, virtual_sales, shop_price, is_on_sale, is_best, is_new, is_hot, sort_order, goods_number, integral,  (promote_price > 0 AND promote_start_date <= '1487663999' AND promote_end_date >= '1487663999') AS is_promote  FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1' ORDER BY goods_id DESC  LIMIT 0,15
+
+SELECT DISTINCT cat_id
+            FROM `wfx2017`.`ecs_attribute`
+            WHERE attr_type = 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487653014
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500'
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500' ORDER BY add_time DESC  LIMIT 0,15
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487653015
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500'
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500' ORDER BY add_time DESC  LIMIT 0,15
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654817', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487625940;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487653017
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487625940'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487625940
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487654999', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487626199;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487653199
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487626199'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487626199
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487655177', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487626377;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '704c50d53f21d541150778baa36a7240' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_shop_config` WHERE type<>'hidden'   AND (parent_id<>'5' AND id<>'5') ORDER BY parent_id, sort_order, id
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '1' AND parent_id = '1'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '2' AND parent_id = '2'
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487653544
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '704c50d53f21d541150778baa36a7240'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT id, value FROM `wfx2017`.`ecs_shop_config`
+
+UPDATE `wfx2017`.`ecs_shop_config` SET value = '1' WHERE id = '901'
+
+SELECT * FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0 AND type = 'file'
+
+UPDATE `wfx2017`.`ecs_shop_config` SET value = 'a:2:{s:4:"type";a:3:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:0:"";}s:4:"rate";a:3:{i:0;d:1;i:1;d:1.5;i:2;d:0;}}' WHERE code = 'invoice_type'
+
+INSERT INTO `wfx2017`.`ecs_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1487626548', 1, '编辑商店设置: ', '192.168.1.16')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT region_name FROM `wfx2017`.`ecs_region` WHERE region_id='1'
+
+SELECT region_name FROM `wfx2017`.`ecs_region` WHERE region_id='2'
+
+SELECT region_name FROM `wfx2017`.`ecs_region` WHERE region_id='52'
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487653548
+
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('ae1fb6579cb54d042883d833bd742d24', '1487657803', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487657803', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:0:{}' WHERE sesskey = 'ae1fb6579cb54d042883d833bd742d24' LIMIT 1
+
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('0e4d7859988168e63cb50992940d458d', '1487657803', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487657803', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:0:{}' WHERE sesskey = '0e4d7859988168e63cb50992940d458d' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487656003
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487656003
+
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('5735416281418677c3d1e360fc5d95dc', '1487657803', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487657803', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:0:{}' WHERE sesskey = '5735416281418677c3d1e360fc5d95dc' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487656003
+
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('1c4e4722eb34a2544926b98ee7e662d1', '1487657804', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487657804', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:0:{}' WHERE sesskey = '1c4e4722eb34a2544926b98ee7e662d1' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487656004
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT `ec_salt` FROM `wfx2017`.`ecs_admin_user`WHERE user_name = 'admin'
+
+SELECT user_id, user_name, password, last_login, action_list, last_login,suppliers_id,ec_salt FROM `wfx2017`.`ecs_admin_user` WHERE user_name = 'admin' AND password = '7a7928959c7fb1210f5e0b51f0ea2e0a'
+
+UPDATE `wfx2017`.`ecs_admin_user` SET last_login='1487629191', last_ip='192.168.1.16' WHERE user_id='1'
+
+SELECT DISTINCT session_id FROM `wfx2017`.`ecs_cart` AS c, `wfx2017`.`ecs_sessions` AS s WHERE c.session_id = s.sesskey 
+
+DELETE FROM `wfx2017`.`ecs_cart` WHERE session_id NOT  IN ('') 
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487657991', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";s:10:\"1487625669\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '0e4d7859988168e63cb50992940d458d' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487656191
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500'
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500' ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487625669'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487625669
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487657991', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487629191;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '0e4d7859988168e63cb50992940d458d' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SHOW TABLES LIKE 'ecs\_%'
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487656192
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_template` WHERE 1  AND theme <> 'default' 
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487656194
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_drp_config`
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487658000', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487629191;s:12:\"suppliers_id\";s:1:\"0\";s:12:\"captcha_word\";s:16:\"YWRiMTZkMWI2OA==\";}' WHERE sesskey = '0e4d7859988168e63cb50992940d458d' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487656200
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT rank_id, rank_name, min_points FROM `wfx2017`.`ecs_user_rank` ORDER BY min_points ASC 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_users` WHERE 1 
+
+SELECT user_id, user_name,sex,birthday,mobile_phone,email, is_validated, user_money, frozen_money, rank_points, pay_points, reg_time  FROM `wfx2017`.`ecs_users` WHERE 1  ORDER by user_id DESC LIMIT 0,15
+
+DESC `wfx2017`.`ecs_sessions_data`
+
+INSERT INTO `wfx2017`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('0e4d7859988168e63cb50992940d458d', '1487658001', 'a:6:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487629191;s:12:\"suppliers_id\";s:1:\"0\";s:12:\"captcha_word\";s:16:\"YWRiMTZkMWI2OA==\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"test\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:18:\"te234424st@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2017-02-21\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1487658001, data = 'a:6:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487629191;s:12:\"suppliers_id\";s:1:\"0\";s:12:\"captcha_word\";s:16:\"YWRiMTZkMWI2OA==\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"test\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:18:\"te234424st@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2017-02-21\";}}}'
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487658001', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = '0e4d7859988168e63cb50992940d458d' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487656201
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT data, expiry FROM `wfx2017`.`ecs_sessions_data` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_shop_config` WHERE type<>'hidden'   AND (parent_id<>'5' AND id<>'5') ORDER BY parent_id, sort_order, id
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '1' AND parent_id = '1'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '2' AND parent_id = '2'
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487656202
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT data, expiry FROM `wfx2017`.`ecs_sessions_data` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT bonus_type_id, COUNT(*) AS sent_count FROM `wfx2017`.`ecs_user_bonus` GROUP BY bonus_type_id
+
+SELECT bonus_type_id, COUNT(*) AS used_count FROM `wfx2017`.`ecs_user_bonus` WHERE used_time > 0 GROUP BY bonus_type_id
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_bonus_type`
+
+SELECT * FROM `wfx2017`.`ecs_bonus_type` ORDER BY type_id DESC LIMIT 15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT data, expiry FROM `wfx2017`.`ecs_sessions_data` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_users`
+
+SELECT COUNT(DISTINCT user_id) FROM `wfx2017`.`ecs_order_info` WHERE user_id > 0  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+SELECT COUNT(*) AS order_num,  SUM(   goods_amount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee ) AS turnover FROM `wfx2017`.`ecs_order_info` WHERE user_id > 0  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+SELECT COUNT(*) AS order_num,  SUM(   goods_amount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee ) AS turnover FROM `wfx2017`.`ecs_order_info` WHERE user_id = 0  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT data, expiry FROM `wfx2017`.`ecs_sessions_data` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487629191'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487629191
+
+DESC `wfx2017`.`ecs_sessions_data`
+
+INSERT INTO `wfx2017`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('0e4d7859988168e63cb50992940d458d', '1487673187', 'a:6:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487644387;s:12:\"suppliers_id\";s:1:\"0\";s:12:\"captcha_word\";s:16:\"YWRiMTZkMWI2OA==\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"test\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:18:\"te234424st@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2017-02-21\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1487673187, data = 'a:6:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487644387;s:12:\"suppliers_id\";s:1:\"0\";s:12:\"captcha_word\";s:16:\"YWRiMTZkMWI2OA==\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"test\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:18:\"te234424st@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2017-02-21\";}}}'
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487673187', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = '0e4d7859988168e63cb50992940d458d' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT data, expiry FROM `wfx2017`.`ecs_sessions_data` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) AS total_order_num,  SUM(   goods_amount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee ) AS total_turnover  FROM `wfx2017`.`ecs_order_info` WHERE 1  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+SELECT SUM(click_count) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0
+
+SELECT COUNT(*) AS unconfirmed_num FROM `wfx2017`.`ecs_order_info` WHERE order_status = '0' AND add_time >= '1487088000' AND add_time < '1487779200'
+
+SELECT COUNT(*) AS confirmed_num FROM `wfx2017`.`ecs_order_info` WHERE order_status = '1' AND shipping_status NOT  IN ('1','2')  AND pay_status NOT IN ('2','1')  AND add_time >= '1487088000' AND add_time < '1487779200'
+
+SELECT COUNT(*) AS succeed_num FROM `wfx2017`.`ecs_order_info` WHERE 1  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')   AND add_time >= '1487088000' AND add_time < '1487779200'
+
+SELECT COUNT(*) AS invalid_num FROM `wfx2017`.`ecs_order_info` WHERE order_status > '1' AND order_status < '4'   AND add_time >= '1487088000' AND add_time < '1487779200'
+
+SELECT i.pay_id, p.pay_name, COUNT(i.order_id) AS order_num FROM `wfx2017`.`ecs_payment` AS p, `wfx2017`.`ecs_order_info` AS i WHERE p.pay_id = i.pay_id  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  AND i.add_time >= '1487088000' AND i.add_time <= '1487692800' GROUP BY i.pay_id ORDER BY order_num DESC
+
+SELECT sp.shipping_id, sp.shipping_name AS ship_name, COUNT(i.order_id) AS order_num FROM `wfx2017`.`ecs_shipping` AS sp, `wfx2017`.`ecs_order_info` AS i WHERE sp.shipping_id = i.shipping_id  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  AND i.add_time >= '1487088000' AND i.add_time <= '1487692800' GROUP BY i.shipping_id ORDER BY order_num DESC
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487671402
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487671402
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT data, expiry FROM `wfx2017`.`ecs_sessions_data` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT DATE_FORMAT(FROM_UNIXTIME(shipping_time), '%Y-%m') AS period, COUNT(*) AS order_count, SUM(goods_amount + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee - discount) AS order_amount FROM `wfx2017`.`ecs_order_info` WHERE (order_status = '1' OR order_status >= '5') AND (pay_status = '2' OR pay_status = '1')  AND (shipping_status = '1' OR shipping_status = '2')  AND shipping_time >= '1483171200' AND shipping_time <= '1487644403' GROUP BY period 
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487671403
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT data, expiry FROM `wfx2017`.`ecs_sessions_data` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(og.goods_id) FROM `wfx2017`.`ecs_order_info` AS oi,`wfx2017`.`ecs_order_goods` AS og  WHERE og.order_id = oi.order_id AND oi.order_status  IN ('1','5')  AND oi.shipping_status  IN ('1','2')  AND oi.pay_status  IN ('2','1')   AND oi.add_time >= '1487039604' AND oi.add_time < '1487664000'
+
+SELECT og.goods_id, og.goods_sn, og.goods_name, og.goods_number AS goods_num, og.goods_price AS sales_price, oi.add_time AS sales_time, oi.order_id, oi.order_sn FROM `wfx2017`.`ecs_order_goods` AS og, `wfx2017`.`ecs_order_info` AS oi  WHERE og.order_id = oi.order_id AND oi.order_status  IN ('1','5')  AND oi.shipping_status  IN ('1','2')  AND oi.pay_status  IN ('2','1')   AND oi.add_time >= '1487039604' AND oi.add_time < '1487664000' ORDER BY sales_time DESC, goods_num DESC LIMIT 0, 15
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487671404
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT data, expiry FROM `wfx2017`.`ecs_sessions_data` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(distinct(og.goods_id)) FROM `wfx2017`.`ecs_order_info` AS oi,`wfx2017`.`ecs_order_goods` AS og  WHERE og.order_id = oi.order_id  AND oi.order_status  IN ('1','5')  AND oi.shipping_status  IN ('1','2')  AND oi.pay_status  IN ('2','1')   AND oi.add_time >= '-28800' AND oi.add_time <= '-28800'
+
+SELECT og.goods_id, og.goods_sn, og.goods_name, oi.order_status, SUM(og.goods_number) AS goods_num, SUM(og.goods_number * og.goods_price) AS turnover FROM `wfx2017`.`ecs_order_goods` AS og, `wfx2017`.`ecs_order_info` AS oi   WHERE og.order_id = oi.order_id  AND oi.order_status  IN ('1','5')  AND oi.shipping_status  IN ('1','2')  AND oi.pay_status  IN ('2','1')   AND oi.add_time >= '-28800' AND oi.add_time <= '-28800' GROUP BY og.goods_id  ORDER BY goods_num DESC LIMIT 0, 15
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487671405
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT data, expiry FROM `wfx2017`.`ecs_sessions_data` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_drp_config`
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT data, expiry FROM `wfx2017`.`ecs_sessions_data` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500'
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  AND o.province = '2' AND o.city = '52' AND o.district = '500' ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT data, expiry FROM `wfx2017`.`ecs_sessions_data` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487644387'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487644387
+
+DESC `wfx2017`.`ecs_sessions_data`
+
+INSERT INTO `wfx2017`.`ecs_sessions_data` (sesskey, expiry, data) VALUES ('0e4d7859988168e63cb50992940d458d', '1487673647', 'a:6:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487644847;s:12:\"suppliers_id\";s:1:\"0\";s:12:\"captcha_word\";s:16:\"YWRiMTZkMWI2OA==\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"test\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:18:\"te234424st@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2017-02-21\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1487673647, data = 'a:6:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487644847;s:12:\"suppliers_id\";s:1:\"0\";s:12:\"captcha_word\";s:16:\"YWRiMTZkMWI2OA==\";s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"test\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"0000-00-00\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:18:\"te234424st@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2017-02-21\";}}}'
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487673647', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = '0e4d7859988168e63cb50992940d458d' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487671847
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('0e4d7859988168e63cb50992940d458d', '1487673734', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487673734', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:0:{}' WHERE sesskey = '0e4d7859988168e63cb50992940d458d' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487671934
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487671934
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487671934
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487673746', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:0:{}' WHERE sesskey = '0e4d7859988168e63cb50992940d458d' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487671946
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487671946
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT `ec_salt` FROM `wfx2017`.`ecs_admin_user`WHERE user_name = 'admin'
+
+SELECT user_id, user_name, password, last_login, action_list, last_login,suppliers_id,ec_salt FROM `wfx2017`.`ecs_admin_user` WHERE user_name = 'admin' AND password = '7a7928959c7fb1210f5e0b51f0ea2e0a'
+
+UPDATE `wfx2017`.`ecs_admin_user` SET last_login='1487644949', last_ip='192.168.1.16' WHERE user_id='1'
+
+SELECT DISTINCT session_id FROM `wfx2017`.`ecs_cart` AS c, `wfx2017`.`ecs_sessions` AS s WHERE c.session_id = s.sesskey 
+
+DELETE FROM `wfx2017`.`ecs_cart` WHERE session_id NOT  IN ('') 
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487673749', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";s:10:\"1487629191\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = '0e4d7859988168e63cb50992940d458d' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(distinct(og.goods_id)) FROM `wfx2017`.`ecs_order_info` AS oi,`wfx2017`.`ecs_order_goods` AS og  WHERE og.order_id = oi.order_id  AND oi.order_status  IN ('1','5')  AND oi.shipping_status  IN ('1','2')  AND oi.pay_status  IN ('2','1')   AND oi.add_time >= '-28800' AND oi.add_time <= '-28800'
+
+SELECT og.goods_id, og.goods_sn, og.goods_name, oi.order_status, SUM(og.goods_number) AS goods_num, SUM(og.goods_number * og.goods_price) AS turnover FROM `wfx2017`.`ecs_order_goods` AS og, `wfx2017`.`ecs_order_info` AS oi   WHERE og.order_id = oi.order_id  AND oi.order_status  IN ('1','5')  AND oi.shipping_status  IN ('1','2')  AND oi.pay_status  IN ('2','1')   AND oi.add_time >= '-28800' AND oi.add_time <= '-28800' GROUP BY og.goods_id  ORDER BY goods_num DESC LIMIT 0, 15
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487671949
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT message_id, sender_id, receiver_id, sent_time, readed, deleted, title, message, user_name FROM `wfx2017`.`ecs_admin_message` AS a, `wfx2017`.`ecs_admin_user` AS b WHERE a.sender_id = b.user_id AND a.receiver_id = '1' AND a.readed = 0 AND deleted = 0 ORDER BY a.sent_time DESC
+
+SELECT pay_id, is_cod FROM `wfx2017`.`ecs_payment` WHERE enabled = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE 1  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+SELECT pay_id FROM `wfx2017`.`ecs_payment` WHERE is_cod = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE 1  AND   order_status  IN ('1','5','6')  AND   shipping_status  IN ('0','3','5')  AND ( pay_status  IN ('2','1')  OR pay_id  IN ('') ) 
+
+SELECT pay_id FROM `wfx2017`.`ecs_payment` WHERE is_cod = 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE 1  AND   order_status  IN ('1','5')  AND   pay_status = '0' AND ( shipping_status  IN ('1','2')  OR pay_id  IN ('1') ) 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE 1  AND order_status = '0' 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE  shipping_status=4
+
+SELECT COUNT(*) AS oCount, IFNULL(SUM(order_amount), 0) AS oAmount FROM `wfx2017`.`ecs_order_info`
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_alone_sale = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_alone_sale = 1 AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_new = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_new = 1 AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_best = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_best = 1 AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_hot = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_hot = 1 AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND promote_price>0 AND promote_start_date <= '1487644953' AND promote_end_date >= '1487644953' AND is_real = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND promote_price>0 AND promote_start_date <= '1487644953' AND promote_end_date >= '1487644953' AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND goods_number <= warn_number AND is_real = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND goods_number <= warn_number AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_stats` WHERE access_time > 1487577600
+
+SELECT count(*) FROM `wfx2017`.`ecs_sessions`
+
+SELECT COUNT(f.msg_id) FROM `wfx2017`.`ecs_feedback` AS f LEFT JOIN `wfx2017`.`ecs_feedback` AS r ON r.parent_id=f.msg_id WHERE f.parent_id=0 AND ISNULL(r.msg_id) 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_comment` WHERE status = 0 AND parent_id = 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_booking_goods` WHERE is_dispose = 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_user_account` WHERE process_type = 1 AND is_paid = 0 
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487671953
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '0e4d7859988168e63cb50992940d458d'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) AS oCount, IFNULL(SUM(order_amount), 0) AS oAmount FROM `wfx2017`.`ecs_order_info`
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_alone_sale = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_users`
+
+SELECT value FROM `wfx2017`.`ecs_shop_config` WHERE code = 'template'
+
+SELECT value FROM `wfx2017`.`ecs_shop_config` WHERE code = 'stylename'
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487671956
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487671956
+
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('4790929afedf97be1979ca6beed27792', '1487673761', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487673761', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:0:{}' WHERE sesskey = '4790929afedf97be1979ca6beed27792' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '4790929afedf97be1979ca6beed27792'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '4790929afedf97be1979ca6beed27792'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487671961
+
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('f9c378464d150c47a4e1a4b3c63eb59e', '1487673777', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT `ec_salt` FROM `wfx2017`.`ecs_admin_user`WHERE user_name = 'admin'
+
+SELECT user_id, user_name, password, last_login, action_list, last_login,suppliers_id,ec_salt FROM `wfx2017`.`ecs_admin_user` WHERE user_name = 'admin' AND password = '7a7928959c7fb1210f5e0b51f0ea2e0a'
+
+UPDATE `wfx2017`.`ecs_admin_user` SET last_login='1487644977', last_ip='192.168.1.16' WHERE user_id='1'
+
+SELECT DISTINCT session_id FROM `wfx2017`.`ecs_cart` AS c, `wfx2017`.`ecs_sessions` AS s WHERE c.session_id = s.sesskey 
+
+DELETE FROM `wfx2017`.`ecs_cart` WHERE session_id NOT  IN ('') 
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487673777', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";s:10:\"1487644949\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(distinct(og.goods_id)) FROM `wfx2017`.`ecs_order_info` AS oi,`wfx2017`.`ecs_order_goods` AS og  WHERE og.order_id = oi.order_id  AND oi.order_status  IN ('1','5')  AND oi.shipping_status  IN ('1','2')  AND oi.pay_status  IN ('2','1')   AND oi.add_time >= '-28800' AND oi.add_time <= '-28800'
+
+SELECT og.goods_id, og.goods_sn, og.goods_name, oi.order_status, SUM(og.goods_number) AS goods_num, SUM(og.goods_number * og.goods_price) AS turnover FROM `wfx2017`.`ecs_order_goods` AS og, `wfx2017`.`ecs_order_info` AS oi   WHERE og.order_id = oi.order_id  AND oi.order_status  IN ('1','5')  AND oi.shipping_status  IN ('1','2')  AND oi.pay_status  IN ('2','1')   AND oi.add_time >= '-28800' AND oi.add_time <= '-28800' GROUP BY og.goods_id  ORDER BY goods_num DESC LIMIT 0, 15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_shop_config` WHERE type<>'hidden'   AND (parent_id<>'5' AND id<>'5') ORDER BY parent_id, sort_order, id
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '1' AND parent_id = '1'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '2' AND parent_id = '2'
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487673833', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";s:10:\"1487644949\";s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `wfx2017`.`ecs_shop_config` WHERE type<>'hidden'   AND (parent_id<>'5' AND id<>'5') ORDER BY parent_id, sort_order, id
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '0' AND parent_id = '0'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '1' AND parent_id = '1'
+
+SELECT region_id, region_name FROM `wfx2017`.`ecs_region` WHERE region_type = '2' AND parent_id = '2'
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487672040
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487644949'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487644949
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487673842', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487645042;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487672042
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1 
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487674003', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487645042;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487672203
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `wfx2017`.`ecs_category` AS c LEFT JOIN `wfx2017`.`ecs_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `wfx2017`.`ecs_goods_cat` AS gc , `wfx2017`.`ecs_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `wfx2017`.`ecs_brand` ORDER BY sort_order
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `wfx2017`.`ecs_suppliers`
+            WHERE  is_check = 1 
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1'
+
+SELECT goods_id, goods_name, goods_type, goods_sn, virtual_sales, shop_price, is_on_sale, is_best, is_new, is_hot, sort_order, goods_number, integral,  (promote_price > 0 AND promote_start_date <= '1487663999' AND promote_end_date >= '1487663999') AS is_promote  FROM `wfx2017`.`ecs_goods` AS g WHERE is_delete='0'  AND is_real='1' ORDER BY goods_id DESC  LIMIT 0,15
+
+SELECT DISTINCT cat_id
+            FROM `wfx2017`.`ecs_attribute`
+            WHERE attr_type = 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487672212
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` AS o WHERE 1 
+
+SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `wfx2017`.`ecs_order_info` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487672212
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT c.cause_id, c.cause_name, c.sort_order, c.is_show ,c.parent_id , COUNT(s.cause_id) AS has_children FROM `wfx2017`.`ecs_return_cause` AS c LEFT JOIN `wfx2017`.`ecs_return_cause` AS s ON s.parent_id=c.cause_id GROUP BY c.cause_id ORDER BY c.parent_id, c.sort_order ASC
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487674017', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487645042;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487672217
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT c.cause_id, c.cause_name, c.sort_order, c.is_show ,c.parent_id , COUNT(s.cause_id) AS has_children FROM `wfx2017`.`ecs_return_cause` AS c LEFT JOIN `wfx2017`.`ecs_return_cause` AS s ON s.parent_id=c.cause_id GROUP BY c.cause_id ORDER BY c.parent_id, c.sort_order ASC
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487672220
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487672220
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_return_cause` WHERE cause_name = 'test'
+
+DESC `wfx2017`.`ecs_return_cause`
+
+INSERT INTO `wfx2017`.`ecs_return_cause` (cause_name, parent_id, sort_order, is_show) VALUES ('test', '0', '50', '0')
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_return` AS o WHERE 1 
+
+SELECT o.ret_id, o.rec_id, o.service_sn, o.order_sn, o.add_time, o.user_id, o.service_id, o.should_return , o.actual_return, o.is_check,o.return_status, o.refund_status, r.back_num, r.out_num, IFNULL(u.user_name, '') AS buyer  FROM `wfx2017`.`ecs_order_return` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id   LEFT JOIN `wfx2017`.`ecs_return_goods` AS r ON o.rec_id = r.rec_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487645042'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487645042
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487674025', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487645225;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_service_type`
+
+SELECT * FROM `wfx2017`.`ecs_service_type` ORDER BY sort_order ASC LIMIT 15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_return` AS o WHERE 1 
+
+SELECT o.ret_id, o.rec_id, o.service_sn, o.order_sn, o.add_time, o.user_id, o.service_id, o.should_return , o.actual_return, o.is_check,o.return_status, o.refund_status, r.back_num, r.out_num, IFNULL(u.user_name, '') AS buyer  FROM `wfx2017`.`ecs_order_return` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id   LEFT JOIN `wfx2017`.`ecs_return_goods` AS r ON o.rec_id = r.rec_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487672234
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_return` AS o WHERE 1 
+
+SELECT o.ret_id, o.rec_id, o.service_sn, o.order_sn, o.add_time, o.user_id, o.service_id, o.should_return , o.actual_return, o.is_check,o.return_status, o.refund_status, r.back_num, r.out_num, IFNULL(u.user_name, '') AS buyer  FROM `wfx2017`.`ecs_order_return` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id   LEFT JOIN `wfx2017`.`ecs_return_goods` AS r ON o.rec_id = r.rec_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487674040', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487645225;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487672240
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487674067', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487645225;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487672267
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `wfx2017`.`ecs_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_return` AS o WHERE 1 
+
+SELECT o.ret_id, o.rec_id, o.service_sn, o.order_sn, o.add_time, o.user_id, o.service_id, o.should_return , o.actual_return, o.is_check,o.return_status, o.refund_status, r.back_num, r.out_num, IFNULL(u.user_name, '') AS buyer  FROM `wfx2017`.`ecs_order_return` AS o  LEFT JOIN `wfx2017`.`ecs_users` AS u ON u.user_id=o.user_id   LEFT JOIN `wfx2017`.`ecs_return_goods` AS r ON o.rec_id = r.rec_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487645225'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487645225
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487674251', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487645451;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487645451'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487645451
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487674431', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487645631;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487645631'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487645631
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487674611', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487645811;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487672811
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487645811'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487645811
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487674791', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487645991;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487672991
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487645991'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487645991
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487674971', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487646171;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487646171'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487646171
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487675151', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487646351;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487673351
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487646351'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487646351
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487675331', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487646531;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487646531'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487646531
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487675511', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487646711;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('0585ea6aecbff63bfc8d5ace832bbc68', '1487675679', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487675679', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:0:{}' WHERE sesskey = '0585ea6aecbff63bfc8d5ace832bbc68' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487646711'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487646711
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487675691', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487646891;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487673891
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487646891'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487646891
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487675871', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487647071;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487674071
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487647071'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487647071
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487676051', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487647251;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487647251'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487647251
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487676231', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487647431;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487674431
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487647431'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487647431
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487676411', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487647611;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487647611'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487647611
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487676591', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487647791;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487647791'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487647791
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487676771', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487647971;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487647971'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487647971
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487676951', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487648151;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487648151'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487648151
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487677131', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487648331;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487648331'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487648331
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487677311', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487648511;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487648511'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487648511
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487677491', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487648691;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487675691
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487648691'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487648691
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487677671', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487648871;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487648871'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487648871
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487677851', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487649051;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487676051
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487649051'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487649051
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487678031', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487649231;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487649231'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487649231
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487678211', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487649411;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487676411
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487649411'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487649411
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487678391', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487649591;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487649591'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487649591
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487678571', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487649771;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487649771'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487649771
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487678751', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487649951;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487649951'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487649951
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487678931', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487650131;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487650131'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487650131
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487679111', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487650311;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487677311
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487650311'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487650311
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487679291', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487650491;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487677491
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487650491'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487650491
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487679471', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487650671;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487650671'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487650671
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487679651', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487650851;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487650851'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487650851
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487679831', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487651031;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487678031
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487651031'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487651031
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487680011', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487651211;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487651211'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487651211
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487680191', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487651391;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487651391'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487651391
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487680371', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487651571;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('ba88e043bfe023220df449a2484956cb', '1487680372', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487680372', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:0:{}' WHERE sesskey = 'ba88e043bfe023220df449a2484956cb' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487678572
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487651571'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487651571
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487680551', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487651751;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487651751'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487651751
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487680731', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487651931;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487651931'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487651931
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487680911', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487652111;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487652111'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487652111
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487681091', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487652291;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487652291'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487652291
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487681271', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487652471;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487679471
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487652471'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487652471
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487681451', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487652651;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487652651'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487652651
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487681631', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487652831;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487652831'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487652831
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487681811', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487653011;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487680011
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487653011'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487653011
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487681991', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487653191;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487653191'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487653191
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487682171', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487653371;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487653371'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487653371
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487682351', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487653551;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487653551'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487653551
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487682531', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487653731;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487653731'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487653731
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487682711', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487653911;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487653911'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487653911
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487682891', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487654091;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487681091
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487654091'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487654091
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487683071', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487654271;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487654271'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487654271
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487683251', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487654451;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487654451'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487654451
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487683431', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487654631;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487654631'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487654631
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487683611', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487654811;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487654811'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487654811
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487683791', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487654991;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487681991
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487654991'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487654991
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487683971', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487655171;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487682171
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487655171'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487655171
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487684151', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487655351;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487655351'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487655351
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487684331', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487655531;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487655531'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487655531
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487684511', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487655711;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487682711
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487655711'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487655711
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487684691', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487655891;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487655891'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487655891
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487684871', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487656071;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487656071'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487656071
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487685051', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487656251;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487656251'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487656251
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487685231', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487656431;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487656431'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487656431
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487685411', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487656611;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487656611'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487656611
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487685591', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487656791;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487656791'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487656791
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487685771', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487656971;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487656971'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487656971
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487685951', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487657151;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487684151
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487657151'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487657151
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487686131', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487657331;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487684331
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487657331'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487657331
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487686311', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487657511;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487657511'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487657511
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487686491', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487657691;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487684691
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487657691'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487657691
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487686671', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487657871;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487684871
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487657871'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487657871
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487686851', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487658051;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487658051'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487658051
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487687031', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487658231;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487685231
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487658231'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487658231
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487687211', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487658411;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487685411
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487658411'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487658411
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487687391', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487658591;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487658591'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487658591
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487687571', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487658771;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487658771'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487658771
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487687751', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487658951;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487685951
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487658951'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487658951
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487687931', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487659131;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487659131'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487659131
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487688111', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487659311;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487659311'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487659311
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487688291', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487659491;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487686491
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487659491'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487659491
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487688471', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487659671;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487659671'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487659671
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487688651', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487659851;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487686851
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487659851'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487659851
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487688831', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487660031;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487687031
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487660031'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487660031
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487689011', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487660211;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487660211'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487660211
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487689191', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487660391;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487660391'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487660391
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487689371', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487660571;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487660571'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487660571
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487689551', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487660751;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487660751'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487660751
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487689731', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487660931;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487660931'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487660931
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487689911', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487661111;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487688111
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487661111'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487661111
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487690091', ip = '192.168.1.16', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1487661291;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'f9c378464d150c47a4e1a4b3c63eb59e' LIMIT 1
+
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('3defb85adec797de41d17a29e3f90df5', '1487690271', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487690271', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487661471;}' WHERE sesskey = '3defb85adec797de41d17a29e3f90df5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3defb85adec797de41d17a29e3f90df5'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487661471'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487661471
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487690451', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487661651;}' WHERE sesskey = '3defb85adec797de41d17a29e3f90df5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3defb85adec797de41d17a29e3f90df5'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487661651'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487661651
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487690631', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487661831;}' WHERE sesskey = '3defb85adec797de41d17a29e3f90df5' LIMIT 1
+
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('504a7c2aa4fa641c07046a61b36ed14d', '1487690632', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487690632', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:0:{}' WHERE sesskey = '504a7c2aa4fa641c07046a61b36ed14d' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions` WHERE expiry < 1487688832
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3defb85adec797de41d17a29e3f90df5'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487661831'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487661831
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487690811', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487662011;}' WHERE sesskey = '3defb85adec797de41d17a29e3f90df5' LIMIT 1
+
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('27e05a9ac7b77df5aeeb4a6a350c5942', '1487690991', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487690991', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487662191;}' WHERE sesskey = '27e05a9ac7b77df5aeeb4a6a350c5942' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '27e05a9ac7b77df5aeeb4a6a350c5942'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487662191'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487662191
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487691171', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487662371;}' WHERE sesskey = '27e05a9ac7b77df5aeeb4a6a350c5942' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487689371
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '27e05a9ac7b77df5aeeb4a6a350c5942'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487662371'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487662371
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487691351', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487662551;}' WHERE sesskey = '27e05a9ac7b77df5aeeb4a6a350c5942' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487689551
+
+INSERT INTO `wfx2017`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('3c90bb631f5e8b8e002e36697712ccc4', '1487691531', '192.168.1.16', 'a:0:{}')
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487691531', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487662731;}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487689731
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487662731'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487662731
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487691711', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487662911;}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487689911
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487662911'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487662911
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487691891', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487663091;}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487663091'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487663091
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487692071', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487663271;}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487663271'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487663271
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487692251', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487663451;}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487690451
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487663451'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487663451
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487692431', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487663631;}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+DELETE FROM `wfx2017`.`ecs_sessions_data` WHERE expiry < 1487690631
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487663631'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487663631
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487692611', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487663811;}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `wfx2017`.`ecs_sessions` WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4'
+
+SELECT code, value FROM `wfx2017`.`ecs_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE add_time >= '1487663811'
+
+SELECT COUNT(*) FROM `wfx2017`.`ecs_order_info` WHERE pay_time >= 1487663811
+
+UPDATE `wfx2017`.`ecs_sessions` SET expiry = '1487692791', ip = '192.168.1.16', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1487663991;}' WHERE sesskey = '3c90bb631f5e8b8e002e36697712ccc4' LIMIT 1
+

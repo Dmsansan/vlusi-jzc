@@ -1,0 +1,185 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" -->
+<!-- #EndLibraryItem -->
+<div id="box">
+	<!--<header class="n-lv-bg">
+		<ul class="dis-box padding-all">
+			<li class="slae-width-l"><a href="javascript:history.go(-1)"><i class="iconfont icon-jiantou"></i></a></li>
+			<li class="box-flex header-title"><span class="text-c f-08 color-whie">{$title}</span></li>
+			<li class="slae-width-l"><a href="{:url('sale/add_bank')}"><span class="color-whie f-05 "><i class="iconfont icon-jiahao"></i></span></a></li>
+		</ul>
+	</header>-->
+	{if $list}
+	<form action="{:url('Sale/select_bank')}" method="post" name="theForm">
+		<div class="bank-card">
+			<ul>
+				<!--{foreach from=$list item=li}-->
+
+				<li>
+					<input type="radio" name="bank" id="banck-check-{$li.id}" value="{$li.id}" checked="checked" />
+					<label for="banck-check-{$li.id}"><i></i></label>
+					<h4>{$li.bank_name}</h4>
+					<span>{$li.bank_card}</span>
+				</li>
+				<!-- {/foreach} -->
+			</ul>
+
+		</div>
+		<div class="t-a-center">
+			<input type="submit" value="确定" class="set-4-submit">
+			<input type="button" onclick="del()" value="删除" class="set-4-submit">
+			<input type="button" onclick="updata()" value="修改" class="set-4-submit">
+		</div>
+	</form>
+	{else}
+	<div class="padding-all">
+		<div class="n-t-a-center">
+			<input type="button" value="添加银行卡" onclick="location.href='{:url('sale/add_bank')}'" class="n-set-4-submit">
+		</div>
+	</div>
+	{/if}
+	<script>
+		function del() {
+			if (confirm('确实要删除吗?')) {
+				var id = $("input[name='bank']:checked").val();
+				location = '{:url("sale/del_bank")}' + '&id=' + id;
+			}
+		}
+
+		function updata() {
+			if (confirm('确实要修改吗?')) {
+				var id = $("input[name='bank']:checked").val();
+				location = '{:url("sale/edit_bank")}' + '&id=' + id;
+			}
+		}
+	</script>
+	<style>
+		body {
+			background: #f0f0f6;
+		}
+		
+		.wdyj_content11 {
+			margin-top: -1.7rem;
+		}
+		
+		.a-raply-info {
+			background: #FCF8E3;
+			padding: 1rem 0;
+			text-align: center;
+			font-size: 1.5rem;
+			color: #494949;
+			border-bottom: 1px solid #DEDEE5;
+		}
+		
+		.bank-card ul {
+			margin-top: 0.8rem;
+			border-top: 1px solid #DEDEE5;
+			border-bottom: 1px solid #DEDEE5;
+		}
+		
+		.bank-card ul li {
+			position: relative;
+			padding: 1.6rem;
+			background: #fff;
+			border-bottom: 1px solid #EBEBEF;
+		}
+		
+		.bank-card ul li:last-child {
+			border-bottom: none;
+		}
+		
+		.bank-card ul li label {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+		
+		.bank-card ul li label i {
+			position: absolute;
+			right: 1.6rem;
+			top: 50%;
+			margin-top: -1rem;
+			display: block;
+			height: 2rem;
+			width: 3rem;
+		}
+		
+		.bank-card input:checked+label i {
+			background: url(images/check_ok_03.png) center center no-repeat;
+			background-size: cover;
+		}
+		
+		.bank-card input[type=radio] {
+			display: none;
+		}
+		
+		.bank-card ul li h4 {
+			font-size: 1.9rem;
+			color: #303030;
+			font-weight: 100;
+		}
+		
+		.bank-card ul li span {
+			font-size: 1.2rem;
+			color: #a4a4a4;
+			margin-top: 0.2rem;
+			display: block;
+		}
+		
+		.jg-text {
+			margin: 0;
+			padding: 1.4rem;
+			border-bottom: 1px solid #dedee5;
+			border-top: 1px solid #dedee5;
+			font-size: 1.5rem;
+			position: relative;
+			background: #fff;
+			margin-top: 1rem;
+		}
+		
+		.jg-text-input {
+			position: absolute;
+			left: 7rem;
+			right: 1.6rem;
+			top: 1.3rem;
+			color: #303030
+		}
+		
+		.jg-text-input input[type=text] {
+			width: 100%;
+			font-size: 1.4rem;
+			border: 0;
+		}
+		
+		.jg-text label {
+			color: #303030;
+		}
+		
+		.jg-text span {
+			color: #7a7a7a;
+			margin-left: .2rem;
+		}
+		
+		.t-a-center input {
+			width: 25%;
+			margin: 1rem;
+		}
+		
+		.m-sale-box {
+			width: 90%;
+			margin: 0 auto;
+			margin-top: 2rem;
+		}
+		
+		.t-a-center-1 input {
+			width: 100%;
+		}
+	</style>
+	</body>
+
+	</html>
+
+	</body>
+
+	</html>

@@ -1,0 +1,48 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" -->
+<!-- #EndLibraryItem -->
+	<body class="f-bg">
+		<!--{foreach from=$orders_list item=item}-->
+		<div class="f-goods-detail-box">
+			<header class="text-c color-whie n-lv-bg">
+				<p>订单佣金（元）</p>
+				<h1>{$item.log.user_money}</h1>
+			</header>
+			<div class="f-goods-cont-box ">
+				<ul class="f-goods-detail-list dis-box">
+					<li class="f-goods-name-box">订单号:</li>
+					<li class="box-flex f-goods-num">{$item.order_sn}</li>
+				</ul>
+				<ul class="f-goods-detail-list dis-box">
+					<li class="f-goods-name-box">下单时间:</li>
+					<li class="box-flex f-goods-num">{$item.order_time}</li>
+				</ul>
+
+				<ul class="f-goods-detail-list dis-box">
+					<li class="f-goods-name-box">姓名:</li>
+					<li class="box-flex f-goods-num">{$item.user_name}</li>
+				</ul>
+				<ul class="f-goods-detail-list dis-box">
+					<li class="f-goods-name-box">电话:</li>
+					<li class="box-flex f-goods-num">{$item.shop_mobile}</li>
+				</ul>
+			</div>
+			<!--{foreach from=$item.goods item=goods_info}-->
+			<div class="f-goods-cont-box">				
+				<ul class="dis-box">
+					<li class="f-shop-list"><img src="{$goods_info.goods_thumb}"></li>
+					<li class="box-flex f-shop-content">
+						<h3 class="n-order-list-tit f-05 col-4">{$goods_info.goods_name}</h3>
+		    	<h4 class="f-03"><span>价格：</span>{$goods_info.goods_price}<span class="f-y-num">数量：</span>{$goods_info.goods_number}</h4>
+				<h5><span>销售佣金总额：</span>{$goods_info.touch_sale}</h5>
+		        <h5 class="col-lv"><span>佣金比例：</span>{$goods_info.profit}%<span class="f-y-num">佣金金额：</span>{$goods_info.money}</h5>
+		    </li>			
+		    </ul>		
+		</div>
+		<!--{/foreach}-->
+		<div class="f-goods-cont-box">	
+		<h2 class="col-lv f-08 text-r">合计:{$item.log.user_money}元</h2>
+			</div>
+	</div>
+	<!--{/foreach}-->
+</body>
+</html>

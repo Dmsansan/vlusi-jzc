@@ -1,0 +1,51 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" -->
+<!-- #EndLibraryItem -->
+
+<body class="n-hs-bg">
+	<div id="box">
+		<div class="n-list-box">
+		<!--{foreach from=$orders_list item=item}-->		
+		<section>
+			<a href="{:url('sale/goods_detai',array('order_id'=>$this->_var['item']['order_id']))}">
+				<ul class="dis-box padding-all order-list-b n-bs-f">
+					<li class="box-flex">
+						<h4 class="f-07 col-4">订单号：{$item.order_sn}</h4></li>
+					<li class="n-ord-width"><span class="f-02 col-7 f-r">{$item.order_time}</span></li>
+				</ul>
+			</a>
+			<!--{foreach from=$item.goods item=goods_info}-->
+			<a href="{:url('sale/goods_detai',array('order_id'=>$this->_var['item']['order_id']))}">
+				<div class="f-goods-cont-box padding-all">
+					<ul class="dis-box">
+						<li class="f-shop-list"><img src="{$goods_info.goods_thumb}"></li>
+						<li class="box-flex f-shop-content">
+							<h3 class="f-05 col-4 n-order-list-tit">{$goods_info.goods_name}</h3>
+							<h5><span>销售佣金总额：</span><label class="col-lv"><!--{if $goods_info.touch_sale}-->{$goods_info.touch_sale}<!--{else}-->0.00<!--{/if}--></label><span class="f-y-num">数量：</span><label class="col-lv">{$goods_info.goods_number}</label></h5>
+							<h5 class="f-yongjin-color col-lv"><span>佣金比例：</span><!--{if $goods_info.profit}-->{$goods_info.profit}%<!--{else}-->0.00%<!--{/if}--></h5>
+							<h5 class="f-yongjin-color"><span class="bdda_nav2">{$item.fencheng}</span></h5>
+						</li>
+					</ul>
+				</div>
+			</a>
+
+			<!--{/foreach}-->
+			<a href="{:url('sale/goods_detai',array('order_id'=>$this->_var['item']['order_id']))}">
+				<ul class="dis-box padding-all n-bot-tit n-bs-f">
+					<li class="box-flex">
+						<h4 class="f-06 col-8">买家：{$item.user_name}</h4>
+						<p class="col-4 f-06">{$item.is_separate}</p>
+					</li>
+					<li class="box-flex">
+						<h2 class="f-r col-lv f-08">合计：{$item.log.user_money}元</h2></li>
+				</ul>
+			</a>
+		</section>
+		
+		<!--{/foreach}-->
+			{include file='library/sale_page.lbi '}
+</div>
+	
+	</div>
+</body>
+
+</html>

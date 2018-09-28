@@ -1,0 +1,52 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" -->
+<!-- #EndLibraryItem -->
+<div id="box">
+	<header class="dis-box padding-all open-header-bg">
+		<div class="box-flex">
+			<div class="header-left-box p-r">
+				<div class="header-x p-a o-hs-x active"></div>
+				<div class="header-y p-a o-hs-bg active"><span class="text-c color-whie f-03">1</span></div>
+			</div>
+			<label class="o-hs active">设置微店信息</label>
+		</div>
+		<div class="box-flex">
+			<div class="header-left-box p-r">
+				<div class="header-x p-a o-hs-x active"></div>
+				<div class="header-y p-a o-hs-bg active"><span class="text-c color-whie f-03">2</span></div>
+			</div>
+			<label class="o-hs active">设置分类信息</label>
+		</div>
+		<div class="box-flex">
+			<div class="header-left-box p-r">
+				<div class="header-x p-a o-hs-x active"></div>
+				<div class="header-y p-a o-hs-bg active"><span class="text-c color-whie f-03">3</span></div>
+			</div>
+			<label class="o-hs active">完成</label>
+		</div>
+	</header>
+	<section class="padding-all">
+		<div class="padding-all huang-bg n-ti-bg open-two-box b-r">
+			<h4 class="n-set3_list2">注册成功！请保存以下信息：<i class="iconfont icon-huangse icon-hao f-r" onClick="close_class('set2_content')"></i></h4>
+			<p class="f-03 n-set_list"><span>微店地址：<br>{$sale_url}</span></p>
+		</div>
+
+		<div class="n-con-sale">
+			<h4 class="f-07 col-4 m-t05">新手必读</h4>
+			<p class="col-6 f-03 m-t ">{$novice}</p>
+		</div>
+
+		<div class="n-but-box n-lv-bg  b-r">
+			<a href="{:url('store/index', array('drp_id'=>$this->_var['drp_id']))}"><span class="text-c color-whie f-08">进入我的微店</span></a>
+		</div>
+	</section>
+	</body>
+	<script type="text/javascript" src="__TPL__/sale/js/jquery-1.9.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+				$(".open-two-box i").click(function() {
+					$(".open-two-box").hide();
+				});
+			});
+	</script>
+
+	</html>

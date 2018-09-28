@@ -1,0 +1,30 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" -->
+<!-- #EndLibraryItem -->
+
+<body class="n-hs-bg">
+	<div>
+		<!--{foreach from=$account_log item=li}-->
+			<ul class="padding-all n-bs-f n-b-b">
+				<li>
+					<span class="f-l f-07 col-4">{$li.change_type}</span>
+					<span class="f-r f-07 col-6">{$li.amount}</span>
+				</li>
+				
+				<li>
+					<span class="f-l f-02 col-7 p-t05 n-money-box2">{$li.change_time}</span> {if $li.status eq 0}
+					<span class="f-r n-dd-color f-03">等待处理</span> {else}
+					<span class="f-r col-lv">成功</span> {/if}
+				</li>
+				<!--{foreach from=$li.order_status item=status}-->
+				<p class="f-02 col-7 n-money-box2">订单状态：{$status.order_status}</p>
+				<!--{/foreach}-->
+				<p class="f-02 col-7 n-money-box2">{$li.change_desc}</p>
+				
+			</ul>
+		<!--{/foreach}-->
+		{include file='library/sale_page.lbi '}
+
+	</div>
+</body>
+
+</html>

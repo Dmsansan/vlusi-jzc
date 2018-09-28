@@ -1,0 +1,39 @@
+{include file="pageheader"}
+<div class="container-fluid" style="padding:0">
+  <div class="row" style="margin:0">
+    <div class="col-md-12 col-sm-12 col-lg-12" style="padding:0;">
+      <div class="panel panel-default">
+	<div class="panel-heading">{$lang['template_title']}</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="table table-hover table-bordered table-striped">
+		{loop $list $key $val}
+		<tr>
+			<td width="200">{$val['title']}</td>
+			<td><input id="number" value="{$val['open_id']}" type="hidden">
+                <div class="btn-group"  data-toggle="buttons" id="btn1">
+                    <label class="btn btn-primary {if $val['switch'] == 0}active{/if}" ><input type="radio" name="data[status]" value="0"  {if $val['switch'] == 0}checked{/if} >{$lang['wechat_close']}</label>
+                    <label class="btn btn-primary {if $val['switch'] == 1}active{/if}" ><input type="radio" name="data[status]" value="1" {if $val['switch'] == 1}checked{/if} > {$lang['wechat_open']}</label>
+                </div>
+			</td>
+		</tr>
+		{/loop}
+	</table>
+      </div>
+    </div>
+  </div>
+</div>	
+<script type="text/javascript">
+$(function(){
+	$('.btn-primary input').bind('change',function(){
+		var toggle = 0,id = '';
+		if(parseInt($(this).val())){
+			toggle = 1;
+		}else{
+			toggle = 0;
+			}
+		id = $(this).parents('td').find('#number').val();
+		$.get('<?php echo url('wechat/is_switch');?>',{"open_id":id,"value":toggle},function(data){
+			},'json');
+		})
+})
+</script>
+{include file="pagefooter"}

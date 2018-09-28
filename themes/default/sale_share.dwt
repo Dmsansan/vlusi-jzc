@@ -1,0 +1,13 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" --><!-- #EndLibraryItem -->
+		<div id="box">   		  
+			<div class="header">
+				<div class="yjfd_content10">
+				<a href="{:url('sale/index')}"><i class="iconfont icon-jiantou"></i></a><span class="tltle">{$title}</span>
+				</div>                  
+			</div>  
+		<div style="margin:2rem;text-align:center;">		
+			<img src="{$mobile_qr}" style="width:80%;"/>
+			<div>长按二维码，关注公众号</div>
+		</div>	
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" --><!-- #EndLibraryItem -->
+<div id="box">   		  
+		  <div class="header">
+			  <div class="yjfd_content10">
+			 <a href="{:url('sale/index')}"><i class="iconfont icon-jiantou"></i></a><span class="tltle">本店订单</span>                 
+		  </div>     
+		  </div>  
+		  <div class="bdda2_nav">
+			  <div class="bdda2_content10">
+				  <ul>
+						<li class="bdda2_nav1"><a href="{:url('sale/order_list_wfk')}">未付款（{$count_wfk}）</a></li>
+						<li class="bdda2_nav2"><a href="{:url('sale/order_list_yfk')}">已付款（{$count_yfk}）</a></li>
+						<li class="bdda2_nav3"><a href="{:url('sale/order_list_ywc')}"><span class="bdda2_content" >已完成（{$count_ywc}）</span></a></li>
+				  </ul>
+		  </div>
+	  </div>
+          <div class="dpxq_border"></div>
+          	<!--{foreach from=$orders_list item=item}-->	
+				<div class="dpgl_list">                                 
+				   <span class="bdda2_list2">订单号：{$item.order_sn}</span>
+				   <span class="bdda2_list">分销时间：{$item.order_time}</span>
+			    </div>
+				<div class="dpxq_border"></div>
+                <div class="bdda_content">                  
+                    <div class="bdda2_content3">
+                     	<a href="bdda.html"><img class="bdda2_img" src="images/bao.png" />	
+                    </div> 
+                  <!--{foreach from=$item.goods item=goods_info}-->
+                     <div class="bdda2_content1">
+                                 <span class="bdda_nav1">{$goods_info.goods_name}</span><br>
+                                 <span class="bdda_nav1">价格：</span><span class="bdda_nav2">{$goods_info.market_price}</span>&nbsp;&nbsp;<span class="bdda_nav">数量：</span><span class="bdda_nav2">0</span><br>
+                                 <span class="bdda_nav1">佣金比率:</span> <span class="bdda_nav2">15.00% </span>&nbsp;&nbsp; <sapn class="bdda_nav">佣金金额</sapn> 
+                                 <span class="bdda_nav2">{$item.fencheng}</span></span></a>
+                     </div>
+				  <!--{/foreach}-->
+              </div>
+              <div class="bdda2_border"></div>                       
+              <div class="bdda_content2"><span class="bdda2_list4">买家：ECTouch</span></a><br><span class="bdda2_list3">未付款</span><span class="bdda2_content10">合计：200元</span></div><br>
+          	  <div class="dpxq_border" ></div>
+			<!--{/foreach}-->     
+    </div>
+</body>
+</html>

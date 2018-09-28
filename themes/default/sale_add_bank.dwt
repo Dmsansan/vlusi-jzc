@@ -1,0 +1,40 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" -->
+<!-- #EndLibraryItem -->
+<div id="box">
+	<form action="{:url('sale/add_bank')}" method="post">
+		<section class="padding-all">
+			<div class="n-sale-set-box">
+				<h4 class="f-07 col-3 m-t">开户所在地:</h4>
+				<div class="n-sale-input">
+					<input type="text" name="data[bank_region]" placeholder="开户所在地" class="set-4-input"></input>
+				</div>
+			</div>
+			<div class="n-sale-set-box">
+				<h4 class="f-07 col-3 m-t">开户银行:</h4>
+				<div class="n-sale-input">
+					<input type="text" name="data[bank_name]" placeholder="银行名称（建设银行/支付宝）" class="set-4-input"></input>
+				</div>
+			</div>
+			<div class="n-sale-set-box">
+				<h4 class="f-07 col-3 m-t">开户姓名:</h4>
+				<div class="n-sale-input">
+					<input type="text" name="data[bank_user_name]" placeholder="开户姓名" class="set-4-input"></input>
+				</div>
+			</div>
+			<div class="n-sale-set-box">
+				<h4 class="f-07 col-3 m-t">卡号:</h4>
+				<div class="n-sale-input">
+					<input type="text" name="data[bank_card]" placeholder="银行卡号" class="set-4-input"></input>
+				</div>
+			</div>
+		</section>
+		<div class="padding-all">
+			<div class="n-t-a-center">
+				<button type="submit" class="n-set-4-submit">{:L('next_step')}</button>
+			</div>
+		</div>
+	</form>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" -->
+<!-- #EndLibraryItem -->
+
+<body class="n-hs-bg">
+	<div id="box">
+		<section class="padding-all shop-money-box n-lv-bg">
+			<p class="f-02 color-whie text-c">可提现金额（元）</p>
+			<h4 class="color-whie text-c">{$saleMoney_surplus}</h4>
+			<span class="f-02 color-whie text-c">总佣金{$saleMoney}元</span>
+		</section>
+		<div class="padding-alla text-c col-8 n-bs-f">
+			<p class="f-02">交易成功{$info.value}天后才可分成佣金提现</p>
+		</div>
+
+		<section class="n-sale-list-box n-bs-f m-t006">
+			<!--分类1-->
+			<ul class="int-nav-box-a my-new-m padding-all shop-b">
+				<li>
+					<label class="cate-shop-box"><i class="iconfont icon-jinbichongzhi"></i><span>未分成订单佣金</span></label>
+					<span class="t-jiantou f-r f-02 n-right-box n-sect-i"><label class="n-right-tit f-05 col-lv">{$sale_no_money_num}元<label><i class="iconfont icon-jiantou1 tf-180 jian-top int-jt-box "></i></span>
+				</li>
+			</ul>
+			<a href="{:url('sale/order_list')}">
+				<div class="int-cont-a padding-all shop-b" style="display: none;">
+					<lable class="two-shop-tit">本店销售佣金<span class="f-r col-lv sale-right-tit f-04">{$sale_no_money}元</span></lable>
+				</div>
+			</a>
+			<a href="{:url('sale/my_shop_info')}">
+				<div class="int-cont-a padding-all shop-b" style="display: none;">
+					<lable class="two-shop-tit">一级分店佣金<span class="f-r col-lv sale-right-tit f-04">{$sale_no_money1}元</span></lable>
+				</div>
+			</a>
+			<a href="{:url('sale/my_shop_info')}">
+				<div class="int-cont-a padding-all shop-b" style="display: none;">
+					<lable class="two-shop-tit">二级分店佣金<span class="f-r col-lv sale-right-tit f-04">{$sale_no_money2}元</span></lable>
+				</div>
+			</a>
+			<!--分类2-->
+			<ul class="int-nav-box-b my-new-m padding-all shop-b">
+				<li>
+					<label class="cate-shop-box"><i class="iconfont icon-jinbichongzhi"></i><span>已分成订单佣金</span></label>
+					<span class="t-jiantou f-r f-02 n-right-box n-sect-i"><label class="n-right-tit f-05 col-lv">{$sale_money_num}元<label><i class="iconfont icon-jiantou1 tf-180 jian-top int-jt-box"></i></span>
+				</li>
+			</ul>
+			<a href="{:url('sale/order_list')}">
+				<div class="int-cont-b padding-all shop-b" style="display: none;">
+					<lable class="two-shop-tit">本店销售佣金<span class="f-r col-lv sale-right-tit f-04">{$sale_money}元</span></lable>
+				</div>
+			</a>
+			<a href="{:url('sale/my_shop_info')}">
+				<div class="int-cont-b padding-all shop-b" style="display: none;">
+					<lable class="two-shop-tit">一级分店佣金<span class="f-r col-lv sale-right-tit f-04">{$sale_money1}元</span></lable>
+				</div>
+			</a>
+			<a href="{:url('sale/my_shop_info')}">
+				<div class="int-cont-b padding-all shop-b" style="display: none;">
+					<lable class="two-shop-tit">二级分店佣金<span class="f-r col-lv sale-right-tit f-04">{$sale_money2}元</span></lable>
+				</div>
+			</a>
+		</section>
+		<div class="padding-all">
+			<div class="n-but-box n-lv-bg  b-r">
+				<a href="{:url('sale/account_raply')}"><span class="text-c color-whie f-08">申请提现</span></a>
+			</div>
+			</section>
+		</div>
+
+	</div>
+</body>
+<script>
+	/*个人店铺手风琴*/
+	$(function($) {
+		$(".int-nav-box-a").click(function() {
+			$(this).find(".int-jt-box").toggleClass("current");
+			$(this).parent().find(".int-cont-a").slideToggle();
+		});
+		$(".int-nav-box-b").click(function() {
+			$(this).find(".int-jt-box").toggleClass("current");
+			$(this).parent().find(".int-cont-b").slideToggle();
+		});
+	})
+</script>
+
+</html>

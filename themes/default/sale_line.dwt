@@ -1,0 +1,85 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" --><!-- #EndLibraryItem -->
+<script src="__TPL__/sale/js/TouchSlide.1.1.js"></script>
+<style type="text/css">
+	
+	.tabBox .hd{ height:40px; line-height:40px; padding:0 10px; font-size:20px; background:#f4f4f4; border-bottom:1px solid #F5AB38; position:relative;  }
+	.tabBox .hd ul{ position:absolute; height:41px; top:0; overflow:hidden;  }
+	.tabBox .hd ul li{ float:left; padding:0 10px; color:#666; font-size:1.4rem }
+	.tabBox .hd ul .on{ border-bottom-color:#fff;color:red;   }
+	.tabBox .hd ul .on a{ display:block; /* 修复Android 4.0.x 默认浏览器当前样色无效果bug */  }
+	.tabBox .bd ul{ padding:10px 0 10px 10px;  }
+	.tabBox .bd li{ height:33px; line-height:33px;   }
+	.tabBox .bd li a{ color:#666;  }
+	.tabBox .bd li a{ -webkit-tap-highlight-color:rgba(0,0,0,0); }  /* 去掉链接触摸高亮 */
+</style>
+<div id="leftTabBox" class="tabBox">
+	<div class="hd">
+				<ul>
+					{if $itemCount > 0}<li>一级(<span style="color:red;">{$listCount}</span>)</li>{/if}
+					{if $itemCount > 1}<li>二级(<span style="color:red;">{$listCount2}</span>)</li>{/if}
+					{if $itemCount > 2}<li>三级(<span style="color:red;">{$listCount3}</span>)</li>{/if}
+				</ul>
+			</div>
+			<div class="bd">
+					<ul class="sale">
+					{if $list}
+					<!--{foreach from=$list item=item}-->
+						<li style="overflow:hidden; height:6rem; border-bottom:1px dotted #ccc;">
+							<a href="{:url('sale/order_list',array('uid'=>$this->_var['item']['user_id']))}" >
+							<img src="{$item.headimgurl}" style="width:4rem;height:auto;margin-top:0.8rem;" class="pull-left">
+							<div class="pull-left" style="margin-left:1rem;width: auto;">
+								<strong style="height:2rem;line-height:2rem; font-size:1.7rem;">{if $item.nikename}{$item.nikename}{else}{$item.user_name}{/if}</strong>
+								<span style="height:2rem;line-height:2rem; overflow:hidden; font-size:1.4rem; display:block; color:#999;">{$item.reg_time}</span>
+								
+							</div> <span style="color:red; height:2rem;line-height:2rem;width:0.5rem; overflow:hidden; display:block; float:right;">{$item.saleCount}</span>
+							</a>
+						</li>
+						<!--{/foreach}-->
+					{else}
+					暂无下线
+					{/if}
+						
+					</ul>
+					<ul class="sale">
+						{if $list2.saleList}
+						<!--{foreach from=$list2.saleList item=item}-->
+						<li>
+							<a href="{:url('sale/order_list',array('uid'=>$this->_var['item']['user_id']))}" >
+							<img src="{$item.headimgurl}" style="width:4rem;height:auto;" class="pull-left">
+							<div class="pull-left" style="margin-left:1rem;width: auto;">
+								<strong style="height:2rem;line-height:2rem; font-size:1.5rem;">{$item.user_name}</strong>
+								<span style="height:2rem;line-height:2rem; overflow:hidden; display:block; color:#999;">{$item.reg_time}</span>
+								
+							</div> <span style="color:red; height:2rem;line-height:2rem;width:0.5rem; overflow:hidden; display:block; float:right;">{$item.saleCount}</span>
+							</a>
+						</li>
+						<!--{/foreach}-->
+						{else}
+							暂无下线
+						{/if}
+					</ul>
+					<ul class="sale">
+						{if list3.saleList}
+						<!--{foreach from=$list3.saleList item=item}-->
+						<li>
+							<a href="{:url('sale/order_list',array('uid'=>$this->_var['item']['user_id']))}" >
+							<img src="{$item.headimgurl}" style="width:4rem;height:auto;" class="pull-left">
+							<div class="pull-left" style="margin-left:1rem;width: auto;">
+								<strong style="height:2rem;line-height:2rem; font-size:1.5rem;">{$item.user_name}</strong>
+								<span style="height:2rem;line-height:2rem; overflow:hidden; display:block; color:#999;">{$item.reg_time}</span>
+								
+							</div> <span style="color:red; height:2rem;line-height:2rem;width:0.5rem; overflow:hidden; display:block; float:right;">{$item.saleCount}</span>
+							</a>
+						</li>
+						<!--{/foreach}-->
+						{else}
+							暂无下线
+						{/if}
+					</ul>
+					
+			</div>
+		</div>
+		<script type="text/javascript">TouchSlide({ slideCell:"#leftTabBox" });</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" -->
+<!-- #EndLibraryItem -->
+
+<body class="n-hs-bg">
+	<div id="box">
+
+		<header class="n-lv-bg n-shop-deta-header">
+			<div class="n-shop-deta-img">
+				<a href="">
+                    {if $shop_user.headimgurl}
+                    <img class="index_image2" src="{$shop_user.headimgurl}" />
+                    {else}
+                    <img class="index_image2" src="__TPL__/images/member-photo-img2.jpeg" />
+                    {/if}
+                    </a>
+			</div>
+			<h4 class="f-07 color-whie text-c p-t1">{$shop_user.shop_name}</h4>
+			<p class="f-03 color-whie text-c p-t05">{$shop_user.username|truncate:10}</p>
+			<p class="f-03 color-whie text-c">{$shop_user.shop_mobile}</p>
+		</header>
+		<div class="padding-alla text-c col-7 f-01  n-b-b">
+			<time>{$custom}时间：{$shop_user.time}</time>
+		</div>
+		<section>
+			<ul class="dis-box padding-all n-bs-f n-b-b">
+				<li class="box-flex"><span class="f-07 col-6">累计销售额</span></li>
+				<li class="box-flex"><span class="f-r col-lv f-06">{$money}元</span></li>
+			</ul>
+		</section>	
+		<section class="m-t006">
+			<ul class="dis-box padding-all n-bs-f n-b-b">
+				<li class="box-flex"><span class="f-07 col-6">累计订单</span></li>
+				<li class="box-flex"><span class="f-r col-lv f-06">{$order_count}</span></li>
+			</ul>
+			<ul class="dis-box padding-all n-bs-f n-b-b">
+				<li class="box-flex"><span class="f-07 col-6">累计分店</span></li>
+				<li class="box-flex"><span class="f-r col-lv f-06">{$shop_count}</span></li>
+			</ul>
+			<ul class="dis-box padding-all n-bs-f n-b-b">
+				<li class="box-flex"><span class="f-07 col-6">累计会员</span></li>
+				<li class="box-flex"><span class="f-r col-lv f-06">{$user_count}</span></li>
+			</ul>
+			</section>	
+	</div>
+</body>
+
+</html>

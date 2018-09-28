@@ -1,0 +1,9 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" --><!-- #EndLibraryItem -->
+
+            <img src="{$mobile_qr}" style="width:100%;"/>
+            <style>
+                body{padding:0;margin:0;background-color: #1BA172;}
+
+            </style>
+</body>
+</html>

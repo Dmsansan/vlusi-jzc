@@ -1,0 +1,76 @@
+<!-- $Id: account_list.htm 14928 2008-10-06 09:25:48Z testyang $ -->
+{if $full_page}
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+<div class="form-div">
+    <!--<form action="affiliate_ck.php?act=list">-->
+        <!--搜索订单号-->
+        <!--<input type="hidden" name="act" value="list">-->
+        <!--<input name="order_sn" type="text" id="order_sn" size="15"><input type="submit" value=" 搜索 " class="button">-->
+    <!--</form>-->
+
+    销售时间:  <a href="drp.php?act=ranking">全部</a>
+    <a href="drp.php?act=ranking&time=1">一年</a>
+    <a href="drp.php?act=ranking&time=2">半年</a>
+    <a href="drp.php?act=ranking&time=3">一个月</a>
+</div>
+<form method="post" action="" name="listForm">
+<div class="list-div" id="listDiv">
+{/if}  
+<table cellpadding="4" cellspacing="1">
+    <tr>
+        <th style="">{$lang.cate_id}</th>
+        <th style="">{$lang.user.user_name}</th>
+        <th style="">{$lang.user.sale_money}</th>
+        <th style="">{$lang.user.sales_volume}</th>
+        <th style="">{$lang.user.shop_name}</th>
+        <th style="">{$lang.user.shop_mobile}</th>
+        <th style="">{$lang.user.shop_qq}</th>
+        <th style="">{$lang.user.create_time}</th>
+    </tr>
+    {foreach from=$list item=li}
+    <tr>
+        <td>{$li.id}</td>
+        <td>{$li.user_name}</td>
+        <td>{$li.sale_money}</td>
+        <td>{$li.sales_volume}</td>
+        <td>{$li.shop_name}</td>
+        <td>{$li.shop_mobile}</td>
+        <td>{$li.shop_qq}</td>
+        <td>{$li.create_time}</td>
+    </tr>
+    {/foreach}
+</table>
+<table id="page-table" cellspacing="0">
+  <tr>
+    <td align="right" nowrap="true">
+    {include file="page.htm"}
+    </td>
+  </tr>
+</table>
+
+{if $full_page}
+</div>
+</form>
+
+<script type="text/javascript" language="javascript">
+  <!--
+  listTable.query = 'ranking_query';
+  listTable.recordCount = {$record_count};
+  listTable.pageCount = {$page_count};
+
+  {foreach from=$filter item=item key=key}
+  listTable.filter.{$key} = '{$item}';
+  {/foreach}
+
+  {literal}
+  onload = function()
+  {
+      // 开始检查订单
+      startCheckOrder();
+  }
+  {/literal}
+  //-->
+</script>
+{include file="pagefooter.htm"}
+{/if}

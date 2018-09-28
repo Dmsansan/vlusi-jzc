@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>聊天室</title>
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link href="__TPL__/wall/css/ectouch.css?v={$version}" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="con">
+            <!--header-->
+            <!-- <header>
+                <a href="javascript:history.go(-1);" class="fl">
+                    <i class="iconfont">&#xe600;</i>
+                </a>
+                <h1>聊天（<span>{$user_num}</span>人）</h1>
+            </header> -->
+            <!--main-->
+            <div class="main chat-main">
+                <div class="user-chat">
+                    {foreach from=$list item=list}
+                    {if $list.id == $user.id}
+                    <div class="chat-me">
+                        <div class="fr chat-img">
+                            <img src="{$list.headimg}"/>
+                        </div>
+                        <div class="fr chat-content">
+                            <h2><span>{$list.nickname}</span></h2>
+                            <div class="chat-others-content">
+                                <div class="arrow"></div>
+                                {$list.content}
+                            </div>
+                        </div>
+                    </div>
+                    {else}
+                    <div class="chat-others">
+                        <div class="fl chat-img">
+                            <img src="{$list.headimg}"/>
+                        </div>
+                        <div class="fl chat-content">
+                            <h2><span>{$list.nickname}</span></h2>
+                            <div class="chat-others-content">
+                                <div class="arrow"></div>
+                                {$list.content}
+                            </div>
+                        </div>
+                    </div>
+                    {/if}
+                    {/foreach}
+                </div>
+            </div>
+            <div class="user-chat-comment">
+                <form action="{:url('wall_msg_wechat')}" method="post" class="msg-form">
+                    <input type="hidden" name="wall_id" value="{$wall_id}">
+                    <input type="hidden" name="user_id" value="{$user.id}">
+                    <textarea name="content" rows="2" placeholder="请输入信息"></textarea>
+                    <a href="javascript:;" class="fr send">发送</a>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $(".send").click(function(){
+                    $.post("{:url('wall_msg_wechat')}", $(".msg-form").serialize(), function(result){
+                        if(result.code > 0){
+                            alert(result.errMsg);
+                        }
+                        $("textarea[name=content]").val("");
+                    }, 'json');
+                });
+                refresh();
+            })
+            var start = {$msg_count};
+            var num = 5;
+            var user = {$user.id};
+            var wall_id = {$wall_id};
+            function refresh(){
+                $.get("{:url('get_wall_msg')}", {start:start, num:num, wall_id:wall_id}, function(result){
+                    if(result.code == 0 && result.data.length > 0){
+                        var html = '', j=0;
+                        for(var i=result.data.length; i>0; i--){
+                            if(result['data'][j]['id'] == user){
+                                html += '<div class="chat-me"><div class="fr chat-img"><img src="'+result['data'][j]['headimg']+'"/></div><div class="fr chat-content"><h2><span>'+result['data'][j]['nickname']+'</span></h2><div class="chat-others-content"><div class="arrow"></div>'+result['data'][j]['content']+'</div></div></div>';
+                            }
+                            else{
+                                html += '<div class="chat-others"><div class="fl chat-img"><img src="'+result['data'][j]['headimg']+'"/></div><div class="fl chat-content"><h2><span>'+result['data'][j]['nickname']+'</span></h2><div class="chat-others-content"><div class="arrow"></div>'+result['data'][j]['content']+'</div></div></div>';
+                            }
+                            j++;
+                        }
+                        if(html){
+                            $(".user-chat").append(html);
+                        }
+                        start = parseInt(start) + parseInt(result.data.length);
+                    }
+                }, 'json');
+                setTimeout("refresh()", 3000);
+            }
+        </script>
+	</body>
+</html>

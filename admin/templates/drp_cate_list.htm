@@ -1,0 +1,43 @@
+{if $full_page}
+<!-- $Id: users_list.htm 15617 2009-02-18 05:18:00Z sunxiaodong $ -->
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+<form method="POST" action="" name="listForm">
+
+<!-- start users list -->
+<div class="list-div" id="listDiv">
+{/if}
+<!--用户列表部分-->
+<table cellpadding="3" cellspacing="1">
+  <tr>
+    <th>{$lang.cate_id}</th>
+    <th>{$lang.cate_name}</th>
+    <th>{$lang.profit1}</th>
+    <th>{$lang.profit2}</th>
+    <th>{$lang.profit3}</th>
+
+    <th>{$lang.handler}</th>
+  <tr>
+  {foreach from=$list item=li}
+  <tr>
+    <td>{$li.cat_id}</td>
+    <td class="first-cell">{$li.cat_name|escape}</td>
+    <td class="first-cell">{$li.profit1}%</td>
+    <td>{$li.profit2}%</td>
+    <td>{$li.profit3}%</td>
+    <td align="center">
+      <a href="drp.php?act=edit&id={$li.cat_id}" title="{$lang.edit}"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>
+    </td>
+  </tr>
+  {foreachelse}
+  <tr><td class="no-records" colspan="10">{$lang.no_records}</td></tr>
+  {/foreach}
+</table>
+
+{if $full_page}
+</div>
+<!-- end users list -->
+</form>
+{/literal}
+{include file="pagefooter.htm"}
+{/if}

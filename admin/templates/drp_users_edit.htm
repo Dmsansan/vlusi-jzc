@@ -1,0 +1,80 @@
+{if $full_page}
+<!-- $Id: users_list.htm 15617 2009-02-18 05:18:00Z sunxiaodong $ -->
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+
+<form method="POST" action="" name="listForm">
+
+<!-- start users list -->
+<div class="list-div" id="listDiv">
+{/if}
+
+<table cellpadding="4" cellspacing="1">
+    <tr>
+        <td style="width:40%">{$lang.user.user_name}</td>
+        <td style="width:60%"><input type="text" value="{$info.user_name}" readonly style="border:none; "/></td>
+    </tr>
+    <tr>
+        <td style="width:40%">{$lang.user.real_name}</td>
+        <td style="width:60%"><input type="text" value="{$info.real_name}" name="data[real_name]" /></td>
+    </tr>
+    <tr>
+        <td style="width:40%">{$lang.user.shop_name}</td>
+        <td style="width:60%"><input type="text" value="{$info.shop_name}" name="data[shop_name]" /></td>
+    </tr>
+    <tr>
+        <td style="width:40%">{$lang.user.shop_mobile}</td>
+        <td style="width:60%"><input type="text" value="{$info.shop_mobile}" name="data[shop_mobile]" /></td>
+    </tr>
+    <tr>
+        <td style="width:40%">{$lang.user.shop_qq}</td>
+        <td style="width:60%"><input type="text" value="{$info.shop_qq}" name="data[shop_qq]" /></td>
+    </tr>
+    <tr>
+        <td style="width:40%">{$lang.user.open}</td>
+        <td style="width:60%">
+            <label for="open1">
+                <input id="open1" type="radio" name="data[open]" value="1" {if $info.open eq 1}checked{/if}>{$lang.user.open_true}
+            </label>
+            <label for="open2">
+                <input id="open2" type="radio" name="data[open]" value="0" {if $info.open eq 0}checked{/if} >{$lang.user.open_false}
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:40%">{$lang.user.audit}</td>
+        <td style="width:60%">
+            <label for="audit1">
+                <input id="audit1" type="radio" name="data[audit]" value="1" {if $info.audit eq 1}checked{/if}>{$lang.user.audit_true}
+            </label>
+            <label for="audit2">
+                <input id="audit2" type="radio" name="data[audit]" value="0" {if $info.audit eq 0}checked{/if}>{$lang.user.audit_false}
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:40%">{$lang.user.drp_cat}</td>
+        <td style="width:60%">
+            {foreach from=$category item=cate}
+            <p style="width: 33%; float: left;">
+                <label for="p-{$cate.cat_id}">
+                        <input id="p-{$cate.cat_id}" name="data[cat_id][]" type="checkbox" value="{$cate.cat_id}" {if $cate.is_select eq 1}checked{/if}>{$cate.cat_name}
+                </label>
+            </p>
+            {/foreach}
+        </td>
+    </tr>
+    <tr>
+        <td style="width:40%;"><input type="hidden" name="id" value="{$info.id}" /></td>
+        <td><input type="submit" value="{$lang.submit}" class="button" /></td>
+    </tr>
+
+
+</table>
+{if $full_page}
+</div>
+<!-- end users list -->
+</form>
+{/literal}
+{include file="pagefooter.htm"}
+{/if}

@@ -1,0 +1,61 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" -->
+<!-- #EndLibraryItem -->
+<div id="box">
+	<header class="dis-box padding-all open-header-bg">
+		<div class="box-flex">
+			<div class="header-left-box p-r">
+				<div class="header-x p-a o-hs-x active"></div>
+				<div class="header-y p-a o-hs-bg active"><span class="text-c color-whie f-03">1</span></div>
+			</div>
+			<label class="o-hs active">设置微店信息</label>
+		</div>
+		<div class="box-flex">
+			<div class="header-left-box p-r">
+				<div class="header-x p-a o-hs-x"></div>
+				<div class="header-y p-a o-hs-bg"><span class="text-c color-whie f-03">2</span></div>
+			</div>
+			<label class="o-hs">设置分类信息</label>
+		</div>
+		<div class="box-flex">
+			<div class="header-left-box p-r">
+				<div class="header-x p-a o-hs-x"></div>
+				<div class="header-y p-a o-hs-bg"><span class="text-c color-whie f-03">3</span></div>
+			</div>
+			<label class="o-hs">完成</label>
+		</div>
+	</header>
+
+	<form action="{:url('sale/sale_set')}" method="post" id="formSub" onsubmit="return submit_saleSet();">
+		<section class="padding-all m-t">
+		<div class="n-sale-set-box">
+			<h4 class="f-07 col-3">店铺名称:<span class="f-02 col-8">例：天使试衣间</span></h4>
+			<div class="n-sale-input">
+				<input type="text" name="data[shop_name]" id="shop_name" placeholder="请输入您的店名" value="" class="set-4-input" />
+			</div>
+		</div>
+		<div class="n-sale-set-box">
+			<h4 class="f-07 col-3 m-t">真实姓名:</h4>
+			<div class="n-sale-input">
+				<input type="text" name="data[real_name]" id="real_name" placeholder="姓名(必填)" value="" class="set-4-input" />
+			</div>
+		</div>
+		<div class="n-sale-set-box">
+			<h4 class="f-07 col-3 m-t">手机号:</h4>
+			<div class="n-sale-input">
+				<input type="text" name="data[shop_mobile]" id="shop_mobile" placeholder="手机号码(必填)" value="" class="set-4-input" />
+			</div>
+		</div>
+		<div class="n-sale-set-box">
+			<h4 class="f-07 col-3 m-t">QQ号:</h4>
+			<div class="n-sale-input">
+				<input type="text" name="data[shop_qq]" id="shop_qq" placeholder="QQ号(选填)" value="" class="set-4-input" />
+			</div>
+		</div>
+		<div class="n-t-a-center">
+			<button type="submit" class="n-set-4-submit">{:L('next_step')}</button>
+		</div>
+	</form>
+</div>
+
+</body>
+</html>

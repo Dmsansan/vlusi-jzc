@@ -1,0 +1,44 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" -->
+<!-- #EndLibraryItem -->
+
+<body class="n-hs-bg">
+	<div id="box">
+
+		<nav class="shop-info-nav padding-all">
+			<ul class="dis-box">
+				<li class="box-flex"><a href="{:url('sale/my_shop_list',array('key'=>'1'))}"><span>一级分店</span></a></li>
+				<li class="box-flex"><a href="{:url('sale/my_shop_list',array('key'=>'2'))}"><span>二级分店</span></a></li>
+				<li class="box-flex"><a href="{:url('sale/my_shop_list',array('key'=>'3'))}"><span>三级分店</span></a></li>
+			</ul>
+		</nav>
+		<section class="padding-all shop-money n-lv-bg">
+			<p>总销售额（元）</p>
+			<h4>{$money}</h4>
+		</section>
+		<ul class="dis-box shop-nav-two padding-all n-bs-f">
+			<li class="box-flex">
+				<p>我的分店数</p>
+				<h4>{$shop_count}</h4>
+			</li>
+			<li class="box-flex">
+				<p>累计会员数</p>
+				<h4>{$user_count}</h4>
+			</li>
+			<li class="box-flex">
+				<p>累计订单数</p>
+				<h4>{$order_count}</h4>
+			</li>
+		</ul>
+
+		<section class="padding-all">
+			<div class="n-t-a-center">
+				<a href="{:url('sale/my_shop_list',array('key'=>'1'))}"><button type="submit" class="n-set-4-submit"><span class="n-wdfd_content5">查看我的分店</span></button></a>
+			</div>
+			<div class="n-t-a-center">
+				<a href="{:url('sale/my_user_list',array('key'=>'1'))}"><button type="submit" class="n-set-4-submit n-shop-but"><span class="col-lv">查看本店会员</span></button>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" -->
+<!-- #EndLibraryItem -->
+<div id="box">
+	<section class="padding-all">
+		<form action="{:url('sale/shop_config')}" method="post" id="formSub" enctype="multipart/form-data" onsubmit="return submit_saleSet();">
+
+			<div class="n-sale-set-box">
+				<h4 class="f-07 col-3">店铺名称:<span class="f-02 col-8">例：天使试衣间</span></h4>
+				<div class="n-sale-input n-z-col">
+					<input type="text" name="data[shop_name]" id="shop_name" placeholder="店名" value="{$drp_info.shop_name}" class="set-4-input" />
+				</div>
+			</div>
+			<div class="n-sale-set-box">
+				<h4 class="f-07 col-3 m-t">真实姓名:</h4>
+				<div class="n-sale-input n-z-col">
+					<input type="text" name="data[real_name]" id="real_name" placeholder="姓名" value="{$drp_info.real_name}" class="set-4-input" />
+				</div>
+			</div>
+			<div class="n-sale-set-box">
+				<h4 class="f-07 col-3 m-t">手机号:</h4>
+				<div class="n-sale-input n-z-col">
+					<input type="text" name="data[shop_mobile]" id="shop_mobile" placeholder="手机号码" value="{$drp_info.shop_mobile}" class="set-4-input" />
+				</div>
+			</div>
+			<div class="n-sale-set-box">
+				<h4 class="f-07 col-3 m-t">QQ号:</h4>
+				<div class="n-sale-input n-z-col">
+					<input type="text" name="data[shop_qq]" id="shop_qq" placeholder="QQ号" value="{$drp_info.shop_qq}" class="set-4-input" />
+				</div>
+			</div>
+			<div class="n-sale-set-box">
+				<h4 class="f-07 col-3 m-t">店铺图片:</h4>
+				<div class="n-sale-input n-z-col">
+					<input type="file" name="shop_img" id="shop_img" class="shop-img-box" style="border:none;background:none;">
+				</div>
+			</div>
+			<div class="n-t-a-center">
+				<button type="submit" class="n-set-4-submit">{:L('now_edit')}</button>
+			</div>
+		</form>
+	</section>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>聊天室</title>
+		<link rel="stylesheet" type="text/css" href="__TPL__/wall/css/wechat.css"/>
+		<script type="text/javascript">
+			window.onload=function(){
+				var con=document.getElementById('con');
+				var conHeight=con.offsetHeight;
+				var c=document.documentElement.clientHeight;
+				con.style.height=c+'px';
+			}
+		</script>
+	</head>
+	<body>
+		<div class="con wall-con" id="con" {if $wall.background}style="background-image:url({$wall.background})"{/if}>
+			<div class="main">
+				<!--logo-->
+				<div class="logo">
+                    <img src="{$wall.logo}" class="fl"/>
+                    <h1 class="fl">{$wall.name}</h1>
+                </div>
+				
+				<!--main-->
+				<div class="content">
+					<div class="msg-list" id="ul">
+					<ul>
+						{foreach from=$list item=list}
+						<li>
+							<img src="{$list.headimg}" class="fl"/>
+							<div class="fl">
+								<div class="msg-list-info">
+									<span class="msg-name">{$list.nickname}</span>
+									<span>{$list.addtime}</span>
+								</div>
+								<div class="msg-content">
+									<div class="arrow"></div>
+									{$list.content}
+								</div>
+							</div>
+						</li>
+						{/foreach}
+					</ul>
+					</div>
+				</div>
+				
+				<!--footer-->
+				 <div class="footer">
+                    <div class="footer-msg">
+                        <h1>{$wall.content}</h1>
+                        <ul class="fr">
+                            <li class="footer-menu">
+                                <a href="{:url('wall_user', array('wall_id'=>$this->_var['wall']['id']))}">
+                                    <div class="footer-menu-pic shangqiang">
+                                    微信上墙</div>
+                                </a>
+                            </li>
+                            <li class="footer-menu">
+                                <a href="{:url('wall_msg', array('wall_id'=>$this->_var['wall']['id']))}">
+                                    <div class="footer-menu-pic liebiao">
+                                    留言列表</div>
+
+                                </a>
+                            </li>
+                            <li class="footer-menu">
+                                <a href="{:url('wall_prize', array('wall_id'=>$this->_var['wall']['id']))}" class="active">
+                                    <div class="footer-menu-pic choujiang active">
+                                    抽奖</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>{$wall.support}</p>
+                </div>
+			</div>
+		</div>
+		<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+        <script type="text/javascript" src="__TPL__/wall/js/jquery.nicescroll.js" ></script>
+        <script type="text/javascript" src="__TPL__/wall/js/jquery.scrollTo.min.js" ></script>
+        <script type="text/javascript" src="__TPL__/wall/js/wechat.js?v=1.0" ></script>
+        <script type="text/javascript">
+        $(function(){
+			refresh();
+			$("#ul").animate({scrollTop:$("#ul ul").height()}, 800);
+        })
+        var start = {$msg_count};
+        var num = 10;
+        var wall_id = {$wall.id};
+        function refresh(){
+            $.get("{:url('get_wall_msg')}", {start:start, num:num, wall_id:wall_id}, function(result){
+                if(result.code == 0 && result.data.length > 0){
+                    var html = '';
+                    for(var i=0; i<result.data.length; i++){
+                        html += '<li><img src="'+result['data'][i]['headimg']+'" class="fl" /><div class="fl"><div class="msg-list-info"><span class="msg-name">'+result['data'][i]['nickname']+'</span><span>'+result['data'][i]['addtime']+'</span></div><div class="msg-content"><div class="arrow"></div>'+result['data'][i]['content']+'</div></div></li>';
+                    }
+                    if(html){
+                        $("#ul ul").append(html);
+                        //添加跳转锚点
+                        $("#ul").animate({scrollTop:$("#ul ul").height()}, 800);
+                    }
+                    start = parseInt(start) + parseInt(result.data.length);
+                }
+            }, 'json');
+            setTimeout("refresh()", 3000);
+        }
+        </script>
+	</body>
+</html>

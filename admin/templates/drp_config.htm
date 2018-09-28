@@ -1,0 +1,45 @@
+{if $full_page}
+<!-- $Id: users_list.htm 15617 2009-02-18 05:18:00Z sunxiaodong $ -->
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+
+<form method="POST" action="" name="listForm">
+
+<!-- start users list -->
+<div class="list-div" id="listDiv">
+{/if}
+
+<table cellpadding="4" cellspacing="1">
+    {foreach from=$info item=li}
+    <tr>
+        <td style="width:20%;">{$li.name}</td>
+        <td style="width:40%;">
+            {if $li.type == 'textarea'}
+                <textarea cols="40" rows="5" name="data[{$li.keyword}]">{$li.value}</textarea>
+
+            {elseif $li.type == 'text'}
+                <input type="text" size="40" name="data[{$li.keyword}]" value="{$li.value}">
+            {elseif $li.type == 'radio'}
+                {foreach from=$li.centent item=c}
+                    <input type="radio" name="data[{$li.keyword}]" value="{$c}" {if $li.value == $c}checked{/if} >{$c}
+                {/foreach}
+            {/if}
+
+        </td>
+        <td><span>{$li.remarks}</span></td>
+    </tr>
+    {/foreach}
+    <tr>
+        <td ></td>
+        <td><input type="submit" value="{$lang.submit}" class="button" /></td>
+        <td></td>
+    </tr>
+
+</table>
+{if $full_page}
+</div>
+<!-- end users list -->
+</form>
+{/literal}
+{include file="pagefooter.htm"}
+{/if}

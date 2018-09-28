@@ -1,0 +1,17 @@
+<!-- #BeginLibraryItem "/library/sale_header.lbi" -->
+<!-- #EndLibraryItem -->
+
+<body class="n-hs-bg">
+	<div id="box">
+		<!--{foreach from=$list item=li}-->
+		<a href="{:url('sale/shop_detail',array('id'=>$this->_var['li']['user_id']))}">
+			<div class="padding-all n-bs-f n-b-b">
+				<h4 class="f-06 col-4"><span class="col-7">店名：</span>{$li.shop_name}<i class="iconfont icon-huise icon-jiantou1 is-user-jt f-r"></i></h4>
+				<p class="f-02 col-7">{$custom}时间：{$li.time}</p>
+			</div>
+		</a>		
+		<!-- {/foreach}-->
+	</div>
+</body>
+
+</html>

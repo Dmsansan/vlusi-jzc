@@ -1,0 +1,109 @@
+{if $full_page}
+<!-- $Id: user_account_list.htm 17030 2010-02-08 09:39:33Z sxc_shop $ -->
+{include file="pageheader.htm"}
+{insert_scripts files="../admin/styles/general.css"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+<script type="text/javascript" src="../data/assets/js/calendar.php?lang={$cfg_lang}"></script>
+<link href="../data/assets/js/calendar/calendar.css" rel="stylesheet" type="text/css" />
+<!--<div class="form-div">-->
+  <!--<form action="drp.php?act=search" name="searchForm" method="post" >-->
+    <!--<img src="images/icon_search.gif" width="25" height="22" border="0" alt="SEARCH" />-->
+    <!--{$lang.delete_search} <input type="text" name="keyword" size="10" />-->
+      <!--<input type="submit" value="{$lang.button_search}" class="button" />-->
+  <!--</form>-->
+<!--</div>-->
+
+<div>
+    
+    <form action="drp.php?act=drplogexport" method="post" name="listForm">
+      <input name="start_time" type="text" id="start_time" size="22" value='{$stime}' readonly="readonly" />
+      <input name="selbtn1" type="button" id="selbtn1" onclick="return showCalendar('start_time', '%Y-%m-%d %H:%M', '24', false, 'selbtn1');" value="{$lang.btn_select}" class="button"/>
+      <input name="end_time" type="text" id="end_time" size="22" value='{$etime}' readonly="readonly" />
+      <input name="selbtn2" type="button" id="selbtn2" onclick="return showCalendar('end_time', '%Y-%m-%d %H:%M', '24', false, 'selbtn2');" value="{$lang.btn_select}" class="button"/>  
+      <input type="submit" value="{$lang.download}" class='button' onclick="this.form.target = '_blank'"/>
+    </form>
+
+</div>
+
+
+
+
+<form method="POST" action="" name="listForm">
+<!-- start user_deposit list -->
+<div class="list-div" id="listDiv">
+{/if}
+<table cellpadding="3" cellspacing="1">
+  <tr>
+  	<th><input onclick='listTable.selectAll(this, "checkboxes")' type="checkbox">
+  	<a href="javascript:listTable.sort('log_id'); ">{$lang.cate_id}</a>{$sort_log_id}</th>
+    <th><a href="javascript:listTable.sort('user_name', 'DESC'); ">{$lang.shop_name}</a>{$sort_user_name}</th>
+    <th><a href="javascript:listTable.sort('add_time', 'DESC'); ">{$lang.user_id}</a>{$sort_add_time}</th>
+    <th><a href="javascript:listTable.sort('add_time', 'DESC'); ">{$lang.add_date}</a>{$sort_add_time}</th>
+    <th><a href="javascript:listTable.sort('payment', 'DESC'); ">{$lang.withdraw_gold}</a>{$sort_payment}</th>
+    <th><a href="javascript:listTable.sort('is_paid', 'DESC'); ">{$lang.withdrawals_info}</a>{$sort_is_paid}</th>
+    <th><a href="javascript:listTable.sort('is_paid', 'DESC'); ">{$lang.commission_fettle}</a>{$sort_is_paid}</th>
+    <th>{$lang.handler}</th>
+  </tr>
+  {foreach from=$list item=item}
+  <tr>
+
+    <td width="10%"><span><input name="checkboxes[]" type="checkbox" value="{$item.log_id}" />{$item.log_id}</span></td>
+    <td align="center">{$item.shop_name}</td>
+    <td align="center">{$item.user_name}</td>
+    <td align="right">{$item.change_time}</td>
+    <td align="right">{$item.user_money}</td>
+    <td align="center">{$item.bank_info}</td>
+    <td align="center">{$item.status_show}</td>
+    <td align="center">{$item.admin_user}
+    {if $item.status == 0 }<a rel="drp.php?act=drp_refer&id={$item.log_id}" title="{$lang.withdraw}"><img src="images/icon_send_bonus.gif" class="withdraw" border="0" height="16" width="16" />
+    {else}<a rel="drp.php?act=order_delete&id={$item.log_id}" title="{$lang.drop}"><img src="images/icon_drop.gif" class="drop" border="0" height="16" width="16" />
+    {/if}</td>
+  </tr>
+  {/foreach}
+</table>
+<table id="page-table" cellspacing="0">
+
+<tr>
+    <td align="right" nowrap="true" colspan="10">{include file="page.htm"}</td>
+  </tr>
+</table>
+{if $full_page}
+</div>
+</form>
+<!-- end ad_position list -->
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" language="JavaScript">
+$(function(){
+	$(".withdraw").on('click',function(){
+		var toggle = confirm('确定要提现吗?'),
+			rel = $(this).parent().attr('rel');
+		if(toggle){
+			window.location.href = rel;
+		}
+	})
+	$(".drop").on('click',function(){
+		var toggle = confirm('确定要删除?'),
+			rel = $(this).parent().attr('rel');
+		if(toggle){
+			window.location.href = rel;
+		}
+	})
+	
+})
+</script>
+<script type="text/javascript" language="JavaScript">
+    listTable.query = "drp_log_query";
+    listTable.recordCount = {$record_count};
+    listTable.pageCount = {$page_count};
+
+  {foreach from=$filter item=item key=key}
+  listTable.filter.{$key} = '{$item}';
+  {/foreach}
+  {literal}
+
+  {/literal}
+
+  
+</script>
+{include file="pagefooter.htm"}
+{/if}
