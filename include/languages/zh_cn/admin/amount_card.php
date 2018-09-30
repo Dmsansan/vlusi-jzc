@@ -39,16 +39,18 @@ $_LANG['notice_goodsid'] ='需要先搜索商品，生成商品列表，然后�
 $_LANG['notice_integral'] ='兑换本商品需要消耗的积分值';
 
 /* 提示信息 */
-$_LANG['goods_exist'] ='商品已经存在';
-$_LANG['back_list'] ='返回商品列表';
-$_LANG['continue_add'] ='继续添加新商品';
-$_LANG['articleadd_succeed'] ='商品已经添加成功';
-$_LANG['articleedit_succeed'] ='商品成功编辑';
-$_LANG['drop_confirm'] = '您确认要删除这件商品吗？';
-$_LANG['batch_remove_succeed'] = '您已经成功删除 %d 件商品';
-$_LANG['exchange_integral_invalid'] = '积分值为空或不是数字';
+$_LANG['card_exist'] ='代金卡已经存在';
+$_LANG['back_list'] ='返回代金卡列表';
+$_LANG['continue_add'] ='继续添加新的代金卡';
+$_LANG['articleadd_succeed'] ='代金卡已经添加成功';
+$_LANG['articleedit_succeed'] ='代金卡成功编辑';
+$_LANG['drop_confirm'] = '您确认要删除代金卡吗？';
+$_LANG['batch_remove_succeed'] = '您已经成功删除 %d 代金卡';
 
 /*JS 语言项*/
-$_LANG['js_languages']['no_goods_id'] = '没有选择商品';
-$_LANG['js_languages']['invalid_exchange_integral'] = '积分值为空或不是数字';
+$_LANG['js_languages']['amount_list'] = '代金卡批次格式不正确！';
+$_LANG['js_languages']['amount_number'] = '代金卡卡号格式不正确！';
+$_LANG['js_languages']['amount_password'] = '代金卡密码不正确！';
+$_LANG['js_languages']['amount_count'] = '金额格式不正确！';
+$_LANG['js_languages']['expry_date'] = '有效日期格式不正确！';
 ?>

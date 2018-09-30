@@ -18,16 +18,16 @@ define('IN_ECTOUCH', true);
 require(dirname(__FILE__) . '/includes/init.php');
 
 /*初始化数据交换对象 */
-$exc   = new exchange($ecs->table("exchange_goods"), $db, 'goods_id', 'exchange_integral');
+$exc   = new exchange($ecs->table("amount_card"), $db, 'amount_number', 'amount_number');
 //$image = new cls_image();
 
 /*------------------------------------------------------ */
-//-- 商品列表
+//-- 代金卡列表
 /*------------------------------------------------------ */
 if ($_REQUEST['act'] == 'list')
 {
     /* 权限判断 */
-    admin_priv('exchange_goods');
+    admin_priv('amount_card');
 
     /* 取得过滤条件 */
     $filter = array();
@@ -72,26 +72,24 @@ elseif ($_REQUEST['act'] == 'query')
 }
 
 /*------------------------------------------------------ */
-//-- 添加商品
+//-- 添加代金卡
 /*------------------------------------------------------ */
 if ($_REQUEST['act'] == 'add')
 {
     /* 权限判断 */
-    admin_priv('exchange_goods');
+    admin_priv('amount_card');
 
     /*初始化*/
-    $goods = array();
-    $goods['is_exchange'] = 1;
-    $goods['is_hot']      = 0;
-    $goods['option']      = '<option value="0">'.$_LANG['make_option'].'</option>';
+    $cards = array();
+    $cards['status'] = 1;
 
-    $smarty->assign('goods',       $goods);
-    $smarty->assign('ur_here',     $_LANG['exchange_goods_add']);
-    $smarty->assign('action_link', array('text' => $_LANG['15_exchange_goods_list'], 'href' => 'exchange_goods.php?act=list'));
+    $smarty->assign('cards',       $cards);
+    $smarty->assign('ur_here',     $_LANG['amount_card_add']);
+    $smarty->assign('action_link', array('text' => $_LANG['16_amount_card_list'], 'href' => 'amount_card.php?act=list'));
     $smarty->assign('form_action', 'insert');
 
     assign_query_info();
-    $smarty->display('exchange_goods_info.htm');
+    $smarty->display('amount_card_info.htm');
 }
 
 /*------------------------------------------------------ */
@@ -100,33 +98,33 @@ if ($_REQUEST['act'] == 'add')
 if ($_REQUEST['act'] == 'insert')
 {
     /* 权限判断 */
-    admin_priv('exchange_goods');
+    admin_priv('amount_card');
 
     /*检查是否重复*/
-    $is_only = $exc->is_only('goods_id', $_POST['goods_id'],0, " goods_id ='$_POST[goods_id]'");
+    $is_only = $exc->is_only('amount_number', $_POST['amount_number'],0, " amount_number='$_POST[amount_number]'");
 
     if (!$is_only)
     {
-        sys_msg($_LANG['goods_exist'], 1);
+        sys_msg($_LANG['card_exist'], 1);
     }
 
     /*插入数据*/
     $add_time = gmtime();
-    if (empty($_POST['goods_id']))
+    if (empty($_POST['amount_status']))
     {
-        $_POST['goods_id'] = 0;
+        $_POST['amount_status'] = 1;
     }
-    $sql = "INSERT INTO ".$ecs->table('exchange_goods')."(goods_id, exchange_integral, is_exchange, is_hot) ".
-            "VALUES ('$_POST[goods_id]', '$_POST[exchange_integral]', '$_POST[is_exchange]', '$_POST[is_hot]')";
+    $sql = "INSERT INTO ".$ecs->table('amount_card')."(amount_list, amount_number, amount_password, amount_status, amount_count, expry_date, add_date) ".
+            "VALUES ('$_POST[amount_list]', '$_POST[amount_number]', '$_POST[amount_password]', '$_POST[amount_status]', '$_POST[amount_count]', '$_POST[expry_date]', $add_time)";
     $db->query($sql);
 
     $link[0]['text'] = $_LANG['continue_add'];
-    $link[0]['href'] = 'exchange_goods.php?act=add';
+    $link[0]['href'] = 'amount_card.php?act=add';
 
     $link[1]['text'] = $_LANG['back_list'];
-    $link[1]['href'] = 'exchange_goods.php?act=list';
+    $link[1]['href'] = 'amount_card.php?act=list';
 
-    admin_log($_POST['goods_id'],'add','exchange_goods');
+    admin_log($_POST['amount_number'],'add','amount_card');
 
     clear_cache_files(); // 清除相关的缓存文件
 
