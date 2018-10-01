@@ -35,8 +35,11 @@ $_LANG['isnotexchange'] ='不可兑换';
 $_LANG['ishot'] ='热销';
 $_LANG['isnothot'] ='非热销';
 
-$_LANG['notice_goodsid'] ='需要先搜索商品，生成商品列表，然后再选择';
-$_LANG['notice_integral'] ='兑换本商品需要消耗的积分值';
+$_LANG['notice_amount_list'] = '添加代金卡批次规则：000001';
+$_LANG['notice_amount_number'] = '代金卡卡号示例：JZC15383606060001';
+$_LANG['notice_amount_password'] = '代金卡密码示例：AEET-IDUJ-OIUJ-786H';
+$_LANG['notice_amount_count'] = '代金卡金额两位小数：100.00';
+$_LANG['notice_expry_date'] = '代金卡有效期时间至当日24:00:00';
 
 /* 提示信息 */
 $_LANG['card_exist'] ='代金卡已经存在';

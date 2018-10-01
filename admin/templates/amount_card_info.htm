@@ -6,30 +6,31 @@
 <form  action="amount_card.php" method="post" name="theForm" onsubmit="return validate();">
   <table width="90%" id="general-table">
     <tr>
-      <td align="right" class="label">{$lang.amount_list}</td>
-      <td><input type="text" name="amount_list" size="30" />
+      <td align="right" class="label"><a href="javascript:showNotice('noticeAmountlist');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.amount_list}</td>
+      <td><input type="text" name="amount_list" size="30" /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeAmountlist">{$lang.notice_amount_list}</span></td>
     </tr>
     <tr>
-      <td align="right" class="label">{$lang.amount_number}</td>
-      <td><input type="text" name="amount_number" id="amoun_number" size="30" />
+      <td align="right" class="label"><a href="javascript:showNotice('noticeAmountnumber');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.amount_number}</td>
+      <td><input type="text" name="amount_number" id="amoun_number" size="30" /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeAmountnumber">{$lang.notice_amount_number}</span></td>
     </tr>
     <tr>
-      <td align="right" class="label">{$lang.amount_password}</td>
-      <td><input type="text" name="amount_password" size="30" />
+      <td align="right" class="label"><a href="javascript:showNotice('noticeAmountpassword');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.amount_password}</td>
+      <td><input type="text" name="amount_password" size="30" /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeAmountpassword">{$lang.notice_amount_password}</span></td>
     </tr>
     <tr>
-      <td align="right" class="label">{$lang.amount_password}</td>
+      <td align="right" class="label">{$lang.amount_status}</td>
       <td>
         <input type="radio" name="amount_status" value="0" {if $cards.amount_status eq 0}checked{/if}> {$lang.down}
-        <input type="radio" name="amount_status" value="1" {if $cards.amount_status eq 1}checked{/if}> {$lang.up}</td>
+        <input type="radio" name="amount_status" value="1" {if $cards.amount_status eq 1}checked{/if}> {$lang.up}
+      </td>
     </tr>
     <tr>
-      <td align="right" class="label">{$lang.amount_count}</td>
-      <td><input type="text" name="amount_count" size="30" />
+      <td align="right" class="label"><a href="javascript:showNotice('noticeAmountcount');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.amount_count}</td>
+      <td><input type="text" name="amount_count" size="30" /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeAmountcount">{$lang.notice_amount_count}</span></td>
     </tr>
     <tr>
-      <td align="right" class="label">{$lang.expry_date}</td>
-      <td><input type="date" name="expry_date" size="30" />
+      <td align="right" class="label"><a href="javascript:showNotice('noticeExprydate');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.expry_date}</td>
+      <td><input type="date" name="expry_date" size="30" /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeExprydate">{$lang.notice_expry_date}</span></td>
     </tr>
   </table>
 
@@ -54,8 +55,8 @@ function validate()
 {
   var validator = new Validator('theForm');
   validator.isNullOption("amount_list",amount_list);
-  validator.isNumber("amount_number",amount_number, true);
-  validator.isNullOption("amount_password",amount_password);
+  validator.isAmountNumber("amount_number",amount_number, true);
+  validator.isAmountPassword("amount_password",amount_password,true);
   validator.isNullOption("amount_count",amount_count);
   validator.isNullOption("expry_date",expry_date);
 

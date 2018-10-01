@@ -39,9 +39,8 @@
     <td align="center"><span>{$list.expry_date}</span></td>
     <td align="center"><span>{$list.add_date}</span></td>
     <td align="center" nowrap="true"><span>
-      <a href="../index.php?c=exchange&a=exchange_goods&gid={$list.goods_id}" target="_blank" title="{$lang.view}"><img src="images/icon_view.gif" border="0" height="16" width="16" /></a>&nbsp;
-      <a href="exchange_goods.php?act=edit&id={$list.goods_id}" title="{$lang.edit}"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
-      <a href="javascript:;" onclick="listTable.remove({$list.goods_id}, '{$lang.drop_confirm}')" title="{$lang.remove}"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
+      <a href="amount_card.php?act=edit&id={$list.amount_id}" title="{$lang.edit}"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
+      <a href="javascript:;" onclick="listTable.remove({$list.amount_id}, '{$lang.drop_confirm}')" title="{$lang.remove}"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
     </td>
    </tr>
    {foreachelse}

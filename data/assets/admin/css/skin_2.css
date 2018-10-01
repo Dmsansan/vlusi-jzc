@@ -291,7 +291,7 @@ tfoot label { +display: inline-block; +float:left; +line-height:38px; /* IE */}
 /* Page title
 ---------------------------------------------------------------------*/
 
-#title { width: 120px; height: 50px; position: absolute; top: 17px; left: 21px; background: url(../images/default/ectouch_logo.png) no-repeat; float:left;}
+#title { width: 120px; height: 50px; position: absolute; top: 17px; left: 21px; background: url(../images/default/jzc_logo.png) no-repeat; float:left;}
 .txt-short, .txt , .txt2 , .select{ height: 20px; line-height: 20px;}
 .thead {line-height: 34px; height: 34px; font-weight: bold; color: #444; text-align: center;}
 .thead td {border-bottom: 1px solid #bbdbf1;}

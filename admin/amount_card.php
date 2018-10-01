@@ -55,20 +55,20 @@ if ($_REQUEST['act'] == 'list')
 /*------------------------------------------------------ */
 elseif ($_REQUEST['act'] == 'query')
 {
-    check_authz_json('exchange_goods');
+    check_authz_json('amount_card');
 
-    $goods_list = get_exchange_goodslist();
+    $cards_list = get_amount_cardlist();
 
-    $smarty->assign('goods_list',    $goods_list['arr']);
+    $smarty->assign('cards_list',    $goods_list['arr']);
     $smarty->assign('filter',        $goods_list['filter']);
     $smarty->assign('record_count',  $goods_list['record_count']);
     $smarty->assign('page_count',    $goods_list['page_count']);
 
-    $sort_flag  = sort_flag($goods_list['filter']);
+    $sort_flag  = sort_flag($cards_list['filter']);
     $smarty->assign($sort_flag['tag'], $sort_flag['img']);
 
-    make_json_result($smarty->fetch('exchange_goods_list.htm'), '',
-        array('filter' => $goods_list['filter'], 'page_count' => $goods_list['page_count']));
+    make_json_result($smarty->fetch('amount_card_list.htm'), '',
+        array('filter' => $cards_list['filter'], 'page_count' => $cards_list['page_count']));
 }
 
 /*------------------------------------------------------ */
@@ -81,7 +81,7 @@ if ($_REQUEST['act'] == 'add')
 
     /*初始化*/
     $cards = array();
-    $cards['status'] = 1;
+    $cards['amount_status'] = 1;
 
     $smarty->assign('cards',       $cards);
     $smarty->assign('ur_here',     $_LANG['amount_card_add']);
@@ -109,13 +109,13 @@ if ($_REQUEST['act'] == 'insert')
     }
 
     /*插入数据*/
-    $add_time = gmtime();
+    $add_time = date("Y-m-d H:i:s");
     if (empty($_POST['amount_status']))
     {
         $_POST['amount_status'] = 1;
     }
     $sql = "INSERT INTO ".$ecs->table('amount_card')."(amount_list, amount_number, amount_password, amount_status, amount_count, expry_date, add_date) ".
-            "VALUES ('$_POST[amount_list]', '$_POST[amount_number]', '$_POST[amount_password]', '$_POST[amount_status]', '$_POST[amount_count]', '$_POST[expry_date]', $add_time)";
+            "VALUES ('$_POST[amount_list]', '$_POST[amount_number]', '$_POST[amount_password]', '$_POST[amount_status]', '$_POST[amount_count]', '$_POST[expry_date]', '$add_time')";
     $db->query($sql);
 
     $link[0]['text'] = $_LANG['continue_add'];
@@ -274,11 +274,11 @@ elseif ($_REQUEST['act'] == 'batch_remove')
 }
 
 /*------------------------------------------------------ */
-//-- 删除商品
+//-- 删除代金卡
 /*------------------------------------------------------ */
 elseif ($_REQUEST['act'] == 'remove')
 {
-    check_authz_json('exchange_goods');
+    check_authz_json('amount_card');
 
     $id = intval($_GET['id']);
     if ($exc->drop($id))
@@ -287,7 +287,7 @@ elseif ($_REQUEST['act'] == 'remove')
         clear_cache_files();
     }
 
-    $url = 'exchange_goods.php?act=query&' . str_replace('act=remove', '', $_SERVER['QUERY_STRING']);
+    $url = 'amount_card.php?act=query&' . str_replace('act=remove', '', $_SERVER['QUERY_STRING']);
 
     ecs_header("Location: $url\n");
     exit;

@@ -133,6 +133,34 @@ var Validator = function(name)
     }
   }
 
+  //检查代金卡卡号规则
+  this.isAmountNumber = function(controlId, msg, required){
+      var obj = document.forms[this.formName].elements[controlId];
+      obj.value = Utils.trim(obj.value);
+
+      if(obj.value == '' && ! required){
+        return;
+      }else{
+        if(obj.value.length !== 17 || obj.value.indexOf('JZC') === -1){
+          this.addErrorMsg(msg);
+        }
+      }
+  }
+
+  //检查代金卡密码规则
+  this.isAmountPassword = function(controlId, msg, required){
+      var obj = document.forms[this.formName].elements[controlId];
+      obj.value = Utils.trim(obj.value);
+      
+      var arr = obj.value.split("-");
+      if(obj.value == '' && ! required){
+        return;
+      }else{
+        if(obj.value.length !== 19 || arr.length !== 4){
+          this.addErrorMsg(msg);
+        }
+      }
+  }
   /* *
   * 检查输入的内容是否是一个整数
   *

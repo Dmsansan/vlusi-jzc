@@ -41,9 +41,8 @@
     <td align="center"><span><?php echo $this->_var['list']['expry_date']; ?></span></td>
     <td align="center"><span><?php echo $this->_var['list']['add_date']; ?></span></td>
     <td align="center" nowrap="true"><span>
-      <a href="../index.php?c=exchange&a=exchange_goods&gid=<?php echo $this->_var['list']['goods_id']; ?>" target="_blank" title="<?php echo $this->_var['lang']['view']; ?>"><img src="images/icon_view.gif" border="0" height="16" width="16" /></a>&nbsp;
-      <a href="exchange_goods.php?act=edit&id=<?php echo $this->_var['list']['goods_id']; ?>" title="<?php echo $this->_var['lang']['edit']; ?>"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
-      <a href="javascript:;" onclick="listTable.remove(<?php echo $this->_var['list']['goods_id']; ?>, '<?php echo $this->_var['lang']['drop_confirm']; ?>')" title="<?php echo $this->_var['lang']['remove']; ?>"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
+      <a href="amount_card.php?act=edit&id=<?php echo $this->_var['list']['amount_id']; ?>" title="<?php echo $this->_var['lang']['edit']; ?>"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
+      <a href="javascript:;" onclick="listTable.remove(<?php echo $this->_var['list']['amount_id']; ?>, '<?php echo $this->_var['lang']['drop_confirm']; ?>')" title="<?php echo $this->_var['lang']['remove']; ?>"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
     </td>
    </tr>
    <?php endforeach; else: ?>
