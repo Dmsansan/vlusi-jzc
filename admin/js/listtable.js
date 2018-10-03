@@ -174,7 +174,6 @@ listTable.remove = function(id, cfm, opt)
   if (confirm(cfm))
   {
     var args = "act=" + opt + "&id=" + id + this.compileFilter();
-
     Ajax.call(this.url, args, this.listCallback, "GET", "JSON");
   }
 }

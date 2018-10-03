@@ -45,6 +45,7 @@ class exchange
         $this->table     = $table;
         $this->db        = &$db;
         $this->id        = $id;
+        $this->amount_id= $id;
         $this->name      = $name;
         $this->error_msg = '';
     }
@@ -109,6 +110,22 @@ class exchange
     }
 
     /**
+    *编辑代金卡
+    **/
+     function edit_amount_card($set, $id)
+    {
+        $sql = 'UPDATE ' . $this->table . ' SET ' . $set . " WHERE $this->amount_id = '$id'";
+
+        if ($this->db->query($sql))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    /**
      * 取得某个字段的值
      *
      * @access  public
@@ -140,6 +157,13 @@ class exchange
     function drop($id)
     {
         $sql = 'DELETE FROM ' . $this->table . " WHERE $this->id = '$id'";
+
+        return $this->db->query($sql);
+    }
+
+    //删除代金卡记录
+    function drop_amount_card($id){
+        $sql = 'DELETE FROM '.$this->table ."WHERE $this->amount_id = '$id'";
 
         return $this->db->query($sql);
     }

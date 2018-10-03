@@ -5,12 +5,12 @@
 <div class="form-div">
   <form action="javascript:searchArticle()" name="searchForm">
     <img src="images/icon_search.gif" width="26" height="22" border="0" alt="SEARCH" />
-    <?php echo $this->_var['lang']['title']; ?> <input type="text" name="keyword" id="keyword" />
+    <?php echo $this->_var['lang']['amount_title']; ?> <input type="text" name="keyword" id="keyword" />
     <input type="submit" value="<?php echo $this->_var['lang']['button_search']; ?>" class="button" />
   </form>
 </div>
 
-<form method="POST" action="exchange_goods.php?act=batch_remove" name="listForm">
+<form method="POST" action="amount_card.php?act=batch_remove" name="listForm">
 <!-- start cat list -->
 <div class="list-div" id="listDiv">
 <?php endif; ?>
