@@ -137,11 +137,10 @@ var Validator = function(name)
   this.isAmountNumber = function(controlId, msg, required){
       var obj = document.forms[this.formName].elements[controlId];
       obj.value = Utils.trim(obj.value);
-
       if(obj.value == '' && ! required){
         return;
       }else{
-        if(obj.value.length !== 17 || obj.value.indexOf('JZC') === -1){
+        if(obj.value.length !== 20 || obj.value.indexOf('JZC') === -1){
           this.addErrorMsg(msg);
         }
       }
@@ -334,6 +333,7 @@ function showNotice(objId)
     }
   }
 }
+
 
 /* *
  * add one option of a select to another select.

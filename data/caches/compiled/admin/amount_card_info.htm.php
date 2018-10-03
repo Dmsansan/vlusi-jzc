@@ -1,6 +1,6 @@
 <!-- $Id: exchange_goods_info.htm 15544 2009-01-09 01:54:28Z zblikai $ -->
 <?php echo $this->fetch('pageheader.htm'); ?>
-<?php echo $this->smarty_insert_scripts(array('files'=>'../js/utils.js,selectzone.js,validator.js')); ?>
+<?php echo $this->smarty_insert_scripts(array('files'=>'../js/utils.js,selectzone.js,validator.js,jquery-3.3.1.min.js')); ?>
 <!-- start cards form -->
 <div class="tab-div">
 <form  action="amount_card.php" method="post" name="theForm" onsubmit="return validate();">
@@ -12,11 +12,11 @@
     </tr>
     <tr>
       <td align="right" class="label"><a href="javascript:showNotice('noticeAmountnumber');" title="<?php echo $this->_var['lang']['form_notice']; ?>"><img src="images/notice.gif" width="16" height="16" border="0" alt="<?php echo $this->_var['lang']['form_notice']; ?>"></a><?php echo $this->_var['lang']['amount_number']; ?></td>
-      <td><input type="text" name="amount_number" id="amoun_number" size="30" value="<?php echo $this->_var['cards']['amount_number']; ?>" <?php if ($this->_var['cards']['amount_number']): ?> readonly="readonly"<?php endif; ?>/><span class="notice-span" <?php if ($this->_var['help_open']): ?>style="display:block" <?php else: ?> style="display:none" <?php endif; ?> id="noticeAmountnumber"><?php echo $this->_var['lang']['notice_amount_number']; ?></span></td>
+      <td><input type="text" name="amount_number" id="amount_number" size="30" value="<?php echo $this->_var['cards']['amount_number']; ?>" <?php if ($this->_var['cards']['amount_number']): ?> readonly="readonly"<?php endif; ?>/><a href="javascript:autoCreateNumOrPassword('amount_number')"><?php echo $this->_var['lang']['autoCreateNum']; ?></a><span class="notice-span" <?php if ($this->_var['help_open']): ?>style="display:block" <?php else: ?> style="display:none" <?php endif; ?> id="noticeAmountnumber"><?php echo $this->_var['lang']['notice_amount_number']; ?></span></td>
     </tr>
     <tr>
       <td align="right" class="label"><a href="javascript:showNotice('noticeAmountpassword');" title="<?php echo $this->_var['lang']['form_notice']; ?>"><img src="images/notice.gif" width="16" height="16" border="0" alt="<?php echo $this->_var['lang']['form_notice']; ?>"></a><?php echo $this->_var['lang']['amount_password']; ?></td>
-      <td><input type="text" name="amount_password" size="30" value="<?php echo $this->_var['cards']['amount_password']; ?>" <?php if ($this->_var['cards']['amount_password']): ?> readonly="readonly"<?php endif; ?>/><span class="notice-span" <?php if ($this->_var['help_open']): ?>style="display:block" <?php else: ?> style="display:none" <?php endif; ?> id="noticeAmountpassword"><?php echo $this->_var['lang']['notice_amount_password']; ?></span></td>
+      <td><input type="text" name="amount_password" id="amount_password" size="30" value="<?php echo $this->_var['cards']['amount_password']; ?>" <?php if ($this->_var['cards']['amount_password']): ?> readonly="readonly"<?php endif; ?>/><a href="javascript:autoCreateNumOrPassword('amount_password')"><?php echo $this->_var['lang']['autoCreatePass']; ?></a><span class="notice-span" <?php if ($this->_var['help_open']): ?>style="display:block" <?php else: ?> style="display:none" <?php endif; ?> id="noticeAmountpassword"><?php echo $this->_var['lang']['notice_amount_password']; ?></span></td>
     </tr>
     <tr>
       <td align="right" class="label"><?php echo $this->_var['lang']['amount_status']; ?></td>
@@ -64,8 +64,57 @@ function validate()
   return validator.passed();
 }
 
+/**
+*自动生成代金卡号函数
+**/
+function autoCreateNumOrPassword(obj){
+  var amount_number = "JZC";
+  amount_number = amount_number+new Date().valueOf()+RndNum(4);
+  var str = '';
+  for(var i=0;i<4;i++){
+    if(i<3){
+      str +=randomWord(false,4,5)+"-";
+    }else{
+      str +=randomWord(false,4,5);
+    }  
+  }
+  if(obj === "amount_number"){
+     document.getElementById(obj).value = amount_number;
+  }else{
+    document.getElementById(obj).value = str;
+  }
+ 
+}
 
+//产生随机数函数
+function RndNum(n){
+    var rnd="";
+    for(var i=0;i<n;i++)
+        rnd+=Math.floor(Math.random()*10);
+    return rnd;
+}
 
+/*
+** randomWord 产生任意长度随机字母数字组合
+** randomFlag-是否任意长度 min-任意长度最小位[固定位数] max-任意长度最大位
+** xuanfeng 2014-08-28
+*/
+ 
+function randomWord(randomFlag, min, max){
+    var str = "",
+        range = min,
+        arr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+ 
+    // 随机产生
+    if(randomFlag){
+        range = Math.round(Math.random() * (max-min)) + min;
+    }
+    for(var i=0; i<range; i++){
+        pos = Math.round(Math.random() * (arr.length-1));
+        str += arr[pos];
+    }
+    return str;
+}
 
 </script>
 <?php echo $this->fetch('pagefooter.htm'); ?>
