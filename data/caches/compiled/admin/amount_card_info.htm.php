@@ -12,11 +12,11 @@
     </tr>
     <tr>
       <td align="right" class="label"><a href="javascript:showNotice('noticeAmountnumber');" title="<?php echo $this->_var['lang']['form_notice']; ?>"><img src="images/notice.gif" width="16" height="16" border="0" alt="<?php echo $this->_var['lang']['form_notice']; ?>"></a><?php echo $this->_var['lang']['amount_number']; ?></td>
-      <td><input type="text" name="amount_number" id="amount_number" size="30" value="<?php echo $this->_var['cards']['amount_number']; ?>" <?php if ($this->_var['cards']['amount_number']): ?> readonly="readonly"<?php endif; ?>/><a href="javascript:autoCreateNumOrPassword('amount_number')"><?php echo $this->_var['lang']['autoCreateNum']; ?></a><span class="notice-span" <?php if ($this->_var['help_open']): ?>style="display:block" <?php else: ?> style="display:none" <?php endif; ?> id="noticeAmountnumber"><?php echo $this->_var['lang']['notice_amount_number']; ?></span></td>
+      <td><input type="text" name="amount_number" id="amount_number" size="30" value="<?php echo $this->_var['cards']['amount_number']; ?>" <?php if ($this->_var['cards']['amount_number']): ?> readonly="readonly"<?php endif; ?>/><?php if (! $this->_var['cards']['amount_number']): ?><a href="javascript:autoCreateNumOrPassword('amount_number')"><?php echo $this->_var['lang']['autoCreateNum']; ?></a><?php endif; ?><span class="notice-span" <?php if ($this->_var['help_open']): ?>style="display:block" <?php else: ?> style="display:none" <?php endif; ?> id="noticeAmountnumber"><?php echo $this->_var['lang']['notice_amount_number']; ?></span></td>
     </tr>
     <tr>
       <td align="right" class="label"><a href="javascript:showNotice('noticeAmountpassword');" title="<?php echo $this->_var['lang']['form_notice']; ?>"><img src="images/notice.gif" width="16" height="16" border="0" alt="<?php echo $this->_var['lang']['form_notice']; ?>"></a><?php echo $this->_var['lang']['amount_password']; ?></td>
-      <td><input type="text" name="amount_password" id="amount_password" size="30" value="<?php echo $this->_var['cards']['amount_password']; ?>" <?php if ($this->_var['cards']['amount_password']): ?> readonly="readonly"<?php endif; ?>/><a href="javascript:autoCreateNumOrPassword('amount_password')"><?php echo $this->_var['lang']['autoCreatePass']; ?></a><span class="notice-span" <?php if ($this->_var['help_open']): ?>style="display:block" <?php else: ?> style="display:none" <?php endif; ?> id="noticeAmountpassword"><?php echo $this->_var['lang']['notice_amount_password']; ?></span></td>
+      <td><input type="text" name="amount_password" id="amount_password" size="30" value="<?php echo $this->_var['cards']['amount_password']; ?>" <?php if ($this->_var['cards']['amount_password']): ?> readonly="readonly"<?php endif; ?>/><?php if (! $this->_var['cards']['amount_password']): ?><a href="javascript:autoCreateNumOrPassword('amount_password')"><?php echo $this->_var['lang']['autoCreatePass']; ?></a><?php endif; ?><span class="notice-span" <?php if ($this->_var['help_open']): ?>style="display:block" <?php else: ?> style="display:none" <?php endif; ?> id="noticeAmountpassword"><?php echo $this->_var['lang']['notice_amount_password']; ?></span></td>
     </tr>
     <tr>
       <td align="right" class="label"><?php echo $this->_var['lang']['amount_status']; ?></td>
@@ -27,7 +27,13 @@
     </tr>
     <tr>
       <td align="right" class="label"><a href="javascript:showNotice('noticeAmountcount');" title="<?php echo $this->_var['lang']['form_notice']; ?>"><img src="images/notice.gif" width="16" height="16" border="0" alt="<?php echo $this->_var['lang']['form_notice']; ?>"></a><?php echo $this->_var['lang']['amount_count']; ?></td>
-      <td><input type="text" name="amount_count" size="30" value="<?php echo $this->_var['cards']['amount_count']; ?>" /><span class="notice-span" <?php if ($this->_var['help_open']): ?>style="display:block" <?php else: ?> style="display:none" <?php endif; ?> id="noticeAmountcount"><?php echo $this->_var['lang']['notice_amount_count']; ?></span></td>
+      <td> <?php $_from = $this->_var['card_count']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'list');if (count($_from)):
+    foreach ($_from AS $this->_var['list']):
+?>
+        <input type="radio" name="amount_count" value="<?php echo $this->_var['list']['id']; ?>" <?php if ($this->_var['cards']['type_id'] == $this->_var['list']['id']): ?>checked<?php endif; ?>> <?php echo $this->_var['list']['card_count']; ?>
+        <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+       <?php if (! $this->_var['card_count']): ?><a href="<?php echo $this->_var['card_type_add_url']; ?>"><?php echo $this->_var['lang']['add_card_type_first']; ?></a><?php endif; ?>
+        <span class="notice-span" <?php if ($this->_var['help_open']): ?>style="display:block" <?php else: ?> style="display:none" <?php endif; ?> id="noticeAmountcount"><?php echo $this->_var['lang']['notice_amount_count']; ?></span></td>
     </tr>
     <tr>
       <td align="right" class="label"><a href="javascript:showNotice('noticeExprydate');" title="<?php echo $this->_var['lang']['form_notice']; ?>"><img src="images/notice.gif" width="16" height="16" border="0" alt="<?php echo $this->_var['lang']['form_notice']; ?>"></a><?php echo $this->_var['lang']['expry_date']; ?></td>

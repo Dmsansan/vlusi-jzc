@@ -18,13 +18,16 @@ var {$key} = "{$item}";
 </head>
 <body>
 
-{if $action_link || $action_link2}
+{if $action_link || $action_link2 || $action_link3}
 <h1>
 {if $action_link}
 <span class="action-span"><a href="{$action_link.href}">{$action_link.text}</a></span>
 {/if}
 {if $action_link2}
 <span class="action-span"><a href="{$action_link2.href}">{$action_link2.text}</a>&nbsp;&nbsp;</span>
+{/if}
+{if $action_link3}
+<span class="action-span"><a href="{$action_link3.href}">{$action_link3.text}</a>&nbsp;&nbsp;</span>
 {/if}
 <div style="clear:both"></div>
 </h1>

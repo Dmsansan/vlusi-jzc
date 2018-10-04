@@ -1,0 +1,48 @@
+<!-- $Id: exchange_goods_info.htm 15544 2009-01-09 01:54:28Z zblikai $ -->
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,selectzone.js,validator.js,jquery-3.3.1.min.js"}
+<!-- start cards form -->
+<div class="tab-div">
+<form  action="card_type.php" method="post" name="theForm" onsubmit="return validate();">
+  <table width="90%" id="general-table">
+    <input type='text' name='id' value= "{$cards.id}" style="display: none"/>
+    <tr>
+      <td align="right" class="label"><a href="javascript:showNotice('noticeCardName');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.card_name}</td>
+      <td><input type="text" name="card_name" size="30" value="{$cards.card_name}" /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeCardName">{$lang.notice_card_name}</span></td>
+    </tr>
+     
+    <tr>
+      <td align="right" class="label"><a href="javascript:showNotice('noticeCardCount');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.card_count}</td>
+      <td><input type="text" name="card_count" size="30" value="{$cards.card_count}" {if $cards.card_count}readonly="readonly" {/if}/><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeCardCount">{$lang.notice_card_count}</span></td>
+    </tr>
+  </table>
+
+  <div class="button-div">
+    <input type="hidden" name="act" value="{$form_action}" />
+    <input type="submit" value="{$lang.button_submit}" class="button"  />
+    <input type="reset" value="{$lang.button_reset}" class="button" />
+  </div>
+</form>
+</div>
+<!-- end goods form -->
+<script language="JavaScript">
+
+{literal}
+onload = function()
+{
+  // 开始检查订单
+  startCheckOrder();
+}
+
+function validate()
+{
+  var validator = new Validator('theForm');
+  validator.isNullOption("card_name",card_name);
+  validator.isNumber("card_count",card_count,true);
+
+  return validator.passed();
+}
+
+{/literal}
+</script>
+{include file="pagefooter.htm"}

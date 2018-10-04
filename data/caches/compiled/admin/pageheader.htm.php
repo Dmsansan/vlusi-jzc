@@ -20,13 +20,16 @@ var <?php echo $this->_var['key']; ?> = "<?php echo $this->_var['item']; ?>";
 </head>
 <body>
 
-<?php if ($this->_var['action_link'] || $this->_var['action_link2']): ?>
+<?php if ($this->_var['action_link'] || $this->_var['action_link2'] || $this->_var['action_link3']): ?>
 <h1>
 <?php if ($this->_var['action_link']): ?>
 <span class="action-span"><a href="<?php echo $this->_var['action_link']['href']; ?>"><?php echo $this->_var['action_link']['text']; ?></a></span>
 <?php endif; ?>
 <?php if ($this->_var['action_link2']): ?>
 <span class="action-span"><a href="<?php echo $this->_var['action_link2']['href']; ?>"><?php echo $this->_var['action_link2']['text']; ?></a>&nbsp;&nbsp;</span>
+<?php endif; ?>
+<?php if ($this->_var['action_link3']): ?>
+<span class="action-span"><a href="<?php echo $this->_var['action_link3']['href']; ?>"><?php echo $this->_var['action_link3']['text']; ?></a>&nbsp;&nbsp;</span>
 <?php endif; ?>
 <div style="clear:both"></div>
 </h1>

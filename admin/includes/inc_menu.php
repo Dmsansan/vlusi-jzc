@@ -99,6 +99,7 @@ $modules['05_menu_content']['02_articlecat_list']        = 'articlecat.php?act=l
 //$modules['03_promotion']['ebao_commend']            = 'ebao_commend.php?act=list';
 //$modules['06_menu_promotion']['15_exchange_goods']       = 'exchange_goods.php?act=list';
 $modules['06_menu_promotion']['16_amount_card'] = 'amount_card.php?act=list';
+$modules['06_menu_promotion']['17_card_type'] = 'card_type.php?act=list';
 
 
 // 报表

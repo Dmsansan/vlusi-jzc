@@ -1,0 +1,77 @@
+<!-- $Id: exchange_goods_info.htm 15544 2009-01-09 01:54:28Z zblikai $ -->
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,selectzone.js,validator.js,jquery-3.3.1.min.js"}
+<!-- start cards form -->
+<div class="tab-div">
+<form  action="amount_card.php" method="post" name="theForm" onsubmit="return validate();">
+  <table width="90%" id="general-table">
+    <input type='text' name='amount_id' value= "{$cards.amount_id}" style="display: none"/>
+    <tr>
+      <td align="right" class="label"><a href="javascript:showNotice('noticeAmountlist');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.amount_list}</td>
+      <td><input type="text" name="amount_list" size="30" value="{$cards.amount_list}" {if $cards.amount_list} readonly="readonly"{/if} /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeAmountlist">{$lang.notice_amount_list}</span></td>
+    </tr>
+    
+    
+    <tr>
+      <td align="right" class="label">{$lang.amount_status}</td>
+      <td>
+        <input type="radio" name="amount_status" value="0" {if $cards.amount_status eq 0}checked{/if}> {$lang.down}
+        <input type="radio" name="amount_status" value="1" {if $cards.amount_status eq 1}checked{/if}> {$lang.up}
+      </td>
+    </tr>
+    <tr>
+      <td align="right" class="label"><a href="javascript:showNotice('noticeAmountcount');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.amount_count}</td>
+      <td>
+        {foreach from=$card_count item=list}
+        <input type="radio" name="amount_count" value="{$list.id}" > {$list.card_count}
+        {/foreach}
+        {if !$card_count}<a href="{$card_type_add_url}">{$lang.add_card_type_first}</a>{/if}
+      <span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeAmountcount">{$lang.notice_amount_count}</span></td>
+    </tr>
+    <tr>
+      <td align="right" class="label"><a href="javascript:showNotice('noticeAmountnum');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.amount_num}</td>
+      <td>
+        <input type="radio" name="amount_num" value="20" > 20
+        <input type="radio" name="amount_num" value="50" > 50
+        <input type="radio" name="amount_num" value="100" > 100
+        <input type="radio" name="amount_num" value="200" > 200
+        <input type="radio" name="amount_num" value="500" > 500
+      <span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeAmountnum">{$lang.notice_amount_num}</span></td>
+    </tr>
+    <tr>
+      <td align="right" class="label"><a href="javascript:showNotice('noticeExprydate');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.expry_date}</td>
+      <td><input type="date" name="expry_date" size="30" value="{$cards.expry_date}" /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeExprydate">{$lang.notice_expry_date}</span></td>
+    </tr>
+  </table>
+
+  <div class="button-div">
+    <input type="hidden" name="act" value="{$form_action}" />
+    <input type="submit" value="{$lang.button_submit}" class="button"  />
+    <input type="reset" value="{$lang.button_reset}" class="button" />
+  </div>
+</form>
+</div>
+<!-- end goods form -->
+<script language="JavaScript">
+
+{literal}
+onload = function()
+{
+  // 开始检查订单
+  startCheckOrder();
+}
+
+function validate()
+{
+  var validator = new Validator('theForm');
+  validator.isNullOption("amount_list",amount_list);
+  validator.isNullOption("amount_num",amount_num);
+  validator.isNullOption("amount_count",amount_count);
+  validator.isNullOption("expry_date",expry_date);
+
+  return validator.passed();
+}
+
+{/literal}
+</script>
+{include file="pagefooter.htm"}

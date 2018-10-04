@@ -12,11 +12,11 @@
     </tr>
     <tr>
       <td align="right" class="label"><a href="javascript:showNotice('noticeAmountnumber');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.amount_number}</td>
-      <td><input type="text" name="amount_number" id="amount_number" size="30" value="{$cards.amount_number}" {if $cards.amount_number} readonly="readonly"{/if}/><a href="javascript:autoCreateNumOrPassword('amount_number')">{$lang.autoCreateNum}</a><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeAmountnumber">{$lang.notice_amount_number}</span></td>
+      <td><input type="text" name="amount_number" id="amount_number" size="30" value="{$cards.amount_number}" {if $cards.amount_number} readonly="readonly"{/if}/>{if !$cards.amount_number}<a href="javascript:autoCreateNumOrPassword('amount_number')">{$lang.autoCreateNum}</a>{/if}<span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeAmountnumber">{$lang.notice_amount_number}</span></td>
     </tr>
     <tr>
       <td align="right" class="label"><a href="javascript:showNotice('noticeAmountpassword');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.amount_password}</td>
-      <td><input type="text" name="amount_password" id="amount_password" size="30" value="{$cards.amount_password}" {if $cards.amount_password} readonly="readonly"{/if}/><a href="javascript:autoCreateNumOrPassword('amount_password')">{$lang.autoCreatePass}</a><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeAmountpassword">{$lang.notice_amount_password}</span></td>
+      <td><input type="text" name="amount_password" id="amount_password" size="30" value="{$cards.amount_password}" {if $cards.amount_password} readonly="readonly"{/if}/>{if !$cards.amount_password}<a href="javascript:autoCreateNumOrPassword('amount_password')">{$lang.autoCreatePass}</a>{/if}<span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeAmountpassword">{$lang.notice_amount_password}</span></td>
     </tr>
     <tr>
       <td align="right" class="label">{$lang.amount_status}</td>
@@ -27,7 +27,11 @@
     </tr>
     <tr>
       <td align="right" class="label"><a href="javascript:showNotice('noticeAmountcount');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.amount_count}</td>
-      <td><input type="text" name="amount_count" size="30" value="{$cards.amount_count}" /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeAmountcount">{$lang.notice_amount_count}</span></td>
+      <td> {foreach from=$card_count item=list}
+        <input type="radio" name="amount_count" value="{$list.id}" {if $cards.type_id ==$list.id}checked{/if}> {$list.card_count}
+        {/foreach}
+       {if !$card_count}<a href="{$card_type_add_url}">{$lang.add_card_type_first}</a>{/if}
+        <span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeAmountcount">{$lang.notice_amount_count}</span></td>
     </tr>
     <tr>
       <td align="right" class="label"><a href="javascript:showNotice('noticeExprydate');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.expry_date}</td>

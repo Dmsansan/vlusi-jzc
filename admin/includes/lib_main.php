@@ -836,4 +836,41 @@ function suppliers_list_name()
 
     return $suppliers_name;
 }
+
+/**
+ * 生成代金卡号
+ *
+ * @return  string
+ */
+function create_amount_number()
+{
+    $amount_number = "JZC";
+    $amount_number .=getMillisecond();
+    $amount_number .=rand(1000,10000);
+    return $amount_number;
+}
+/**
+*返回13位时间戳
+**/
+function getMillisecond() {
+    list($t1, $t2) = explode(' ', microtime());
+    return (float)sprintf('%.0f',(floatval($t1)+floatval($t2))*1000);
+}
+
+/**
+ * 生成代金卡密码
+ *
+ * @return  string
+ */
+function create_amount_password($length){
+    $str = null;
+  $strPol = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  $max = strlen($strPol)-1;
+  
+  for($i=0;$i<$length;$i++){
+    $str.=$strPol[rand(0,$max)]; //rand($min,$max)生成介于min和max两个数之间的一个随机整数
+  }
+  
+  return $str;
+}
 ?>
