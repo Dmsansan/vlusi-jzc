@@ -21,8 +21,8 @@
       <a href="javascript:listTable.sort('id'); ">{$lang.id}</a>{$sort_id}</th>
     <th><a href="javascript:listTable.sort('card_name'); ">{$lang.card_name}</a>{$sort_card_name}</th>
      <th><a href="javascript:listTable.sort('card_count'); ">{$lang.card_count}</a>{$sort_card_count}</th>
-      <th><a href="javascript:listTable.sort('card_count'); ">{$lang.create_card_count}</a></th>
-      <th><a href="javascript:listTable.sort('card_count'); ">{$lang.used_card_count}</a></th>
+      <th><a href="javascript:listTable.sort('card_count'); ">{$lang.create_card_count}</a>{$sort_create_card_count}</th>
+      <th><a href="javascript:listTable.sort('card_count'); ">{$lang.used_card_count}</a>{$sort_used_card_count}</th>
     <th>{$lang.handler}</th>
   </tr>
   {foreach from=$cards_list item=list}

@@ -2,15 +2,6 @@
 
 /**
  * 代金卡管理程序文件
- * ============================================================================
- * * 版权所有 2005-2012 上海商派网络科技有限公司，并保留所有权利。
- * 网站地址: http://www.ecshop.com；
- * ----------------------------------------------------------------------------
- * 这不是一个自由软件！您只能在不用于商业目的的前提下对程序代码进行修改和
- * 使用；不允许对程序代码以任何形式任何目的的再发布。
- * ============================================================================
- * $Author $
- * $Id $
 */
 
 define('IN_ECTOUCH', true);
@@ -139,7 +130,7 @@ if ($_REQUEST['act'] == 'group_add')
 }
 
 /*------------------------------------------------------ */
-//-- 添加商品
+//-- 添加代金卡
 /*------------------------------------------------------ */
 if ($_REQUEST['act'] == 'insert')
 {
@@ -185,7 +176,7 @@ if ($_REQUEST['act'] == 'insert')
 }
 
 /*------------------------------------------------------ */
-//-- 批量添加商品
+//-- 批量添加代金卡
 /*------------------------------------------------------ */
 if ($_REQUEST['act'] == 'group_insert')
 {
@@ -317,71 +308,8 @@ if ($_REQUEST['act'] =='update')
         die($db->error());
     }
 }
-
 /*------------------------------------------------------ */
-//-- 编辑使用积分值
-/*------------------------------------------------------ */
-elseif ($_REQUEST['act'] == 'edit_exchange_integral')
-{
-    check_authz_json('exchange_goods');
-
-    $id                = intval($_POST['id']);
-    $exchange_integral = floatval($_POST['val']);
-
-    /* 检查文章标题是否重复 */
-    if ($exchange_integral < 0 || $exchange_integral == 0 && $_POST['val'] != "$goods_price")
-    {
-        make_json_error($_LANG['exchange_integral_invalid']);
-    }
-    else
-    {
-        if ($exc->edit("exchange_integral = '$exchange_integral'", $id))
-        {
-            clear_cache_files();
-            admin_log($id, 'edit', 'exchange_goods');
-            make_json_result(stripslashes($exchange_integral));
-        }
-        else
-        {
-            make_json_error($db->error());
-        }
-    }
-}
-
-/*------------------------------------------------------ */
-//-- 切换是否兑换
-/*------------------------------------------------------ */
-elseif ($_REQUEST['act'] == 'toggle_exchange')
-{
-    check_authz_json('exchange_goods');
-
-    $id     = intval($_POST['id']);
-    $val    = intval($_POST['val']);
-
-    $exc->edit("is_exchange = '$val'", $id);
-    clear_cache_files();
-
-    make_json_result($val);
-}
-
-/*------------------------------------------------------ */
-//-- 切换是否兑换
-/*------------------------------------------------------ */
-elseif ($_REQUEST['act'] == 'toggle_hot')
-{
-    check_authz_json('exchange_goods');
-
-    $id     = intval($_POST['id']);
-    $val    = intval($_POST['val']);
-
-    $exc->edit("is_hot = '$val'", $id);
-    clear_cache_files();
-
-    make_json_result($val);
-}
-
-/*------------------------------------------------------ */
-//-- 批量删除商品
+//-- 批量删除代金卡
 /*------------------------------------------------------ */
 elseif ($_REQUEST['act'] == 'batch_remove')
 {
@@ -426,23 +354,7 @@ elseif ($_REQUEST['act'] == 'remove')
     exit;
 }
 
-/*------------------------------------------------------ */
-//-- 搜索商品
-/*------------------------------------------------------ */
-
-elseif ($_REQUEST['act'] == 'search_goods')
-{
-    // include_once(ROOT_PATH . 'includes/cls_json.php');
-    $json = new JSON;
-
-    $filters = $json->decode($_GET['JSON']);
-
-    $arr = get_goods_list($filters);
-
-    make_json_result($arr);
-}
-
-/* 获得商品列表 */
+/* 获得代金卡列表 */
 function get_amount_cardlist()
 {
     $result = get_filter();

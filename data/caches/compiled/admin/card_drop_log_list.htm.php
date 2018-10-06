@@ -10,7 +10,7 @@
   </form>
 </div>
 
-<form method="POST" action="create_card_log.php?act=batch_remove" name="listForm">
+<form method="POST" action="card_drop_log.php?act=batch_remove" name="listForm">
 <!-- start cat list -->
 <div class="list-div" id="listDiv">
 <?php endif; ?>
@@ -19,34 +19,35 @@
   <tr>
     <th><input onclick='listTable.selectAll(this, "checkboxes")' type="checkbox">
       <a href="javascript:listTable.sort('id'); "><?php echo $this->_var['lang']['id']; ?></a><?php echo $this->_var['sort_id']; ?></th>
-    <th><a href="javascript:listTable.sort('amount_list'); "><?php echo $this->_var['lang']['amount_list']; ?></a><?php echo $this->_var['sort_id']; ?></th>
-    <th><a href="javascript:listTable.sort('card_type'); "><?php echo $this->_var['lang']['card_type']; ?></a><?php echo $this->_var['sort_card_type']; ?></th>
+    <th><a href="javascript:listTable.sort('user_name'); "><?php echo $this->_var['lang']['user_name']; ?></a><?php echo $this->_var['sort_user_name']; ?></th>
     <th><a href="javascript:listTable.sort('card_number'); "><?php echo $this->_var['lang']['card_number']; ?></a><?php echo $this->_var['sort_card_number']; ?></th>
-     <th><a href="javascript:listTable.sort('card_number'); "><?php echo $this->_var['lang']['card_used']; ?></a><?php echo $this->_var['sort_card_used']; ?></th>
-    <th><a href="javascript:listTable.sort('create_date'); "><?php echo $this->_var['lang']['create_date']; ?></a><?php echo $this->_var['sort_create_date']; ?></th>
+    <th><a href="javascript:listTable.sort('card_password'); "><?php echo $this->_var['lang']['card_password']; ?></a><?php echo $this->_var['sort_card_password']; ?></th>
+    <th><a href="javascript:listTable.sort('card_type'); "><?php echo $this->_var['lang']['card_type']; ?></a><?php echo $this->_var['sort_card_type']; ?></th>
+    <th><a href="javascript:listTable.sort('card_count'); "><?php echo $this->_var['lang']['card_count']; ?></a><?php echo $this->_var['sort_card_count']; ?></th>
+    <th><a href="javascript:listTable.sort('drop_date'); "><?php echo $this->_var['lang']['drop_date']; ?></a><?php echo $this->_var['sort_drop_date']; ?></th>
     <th><?php echo $this->_var['lang']['handler']; ?></th>
   </tr>
   <?php $_from = $this->_var['cards_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'list');if (count($_from)):
     foreach ($_from AS $this->_var['list']):
 ?>
   <tr>
-    <td align="center"><span><input name="checkboxes[]" type="checkbox" value="<?php echo $this->_var['list']['batch_remove']; ?>"/><?php echo $this->_var['list']['id']; ?></span></td>
-    <td class="first-cell" align="center"><span><?php echo htmlspecialchars($this->_var['list']['amount_list']); ?></span></td>
-    <td align="center"><span><?php echo $this->_var['list']['card_type']; ?></span></td>
+    <td align="center"><span><input name="checkboxes[]" type="checkbox" value="<?php echo $this->_var['list']['id']; ?>"/><?php echo $this->_var['list']['id']; ?></span></td>
+    <td class="first-cell" align="center"><span><?php echo htmlspecialchars($this->_var['list']['user_name']); ?></span></td>
     <td align="center"><span><?php echo $this->_var['list']['card_number']; ?></span></td>
-    <td align="center"><span><?php echo $this->_var['list']['card_used']; ?></span></td>
-    <td align="center"><span><?php echo $this->_var['list']['create_date']; ?></span></td>
+    <td align="center"><span><?php echo $this->_var['list']['card_password']; ?></span></td>
+    <td align="center"><span><?php echo $this->_var['list']['card_type']; ?></span></td>
+    <td align="center"><span><?php echo $this->_var['list']['card_count']; ?></span></td>
+    <td align="center"><span><?php echo $this->_var['list']['drop_date']; ?></span></td>
     <td align="center" nowrap="true"><span>
-      <a href="create_card_log.php?act=edit&id=<?php echo $this->_var['list']['amount_id']; ?>" title="<?php echo $this->_var['lang']['edit']; ?>"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
-      <a href="create_card_log.php?act=remove&id=<?php echo $this->_var['list']['id']; ?>&used_card=<?php echo $this->_var['list']['card_used']; ?>" title="<?php echo $this->_var['lang']['remove']; ?>"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
+      <a href="javascript:;" onclick="listTable.remove(<?php echo $this->_var['list']['id']; ?>, '<?php echo $this->_var['lang']['drop_confirm']; ?>')" title="<?php echo $this->_var['lang']['remove']; ?>"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
     </td>
    </tr>
    <?php endforeach; else: ?>
-    <tr><td class="no-records" colspan="9"><?php echo $this->_var['lang']['no_records']; ?></td></tr>
+    <tr><td class="no-records" colspan="8"><?php echo $this->_var['lang']['no_records']; ?></td></tr>
   <?php endif; unset($_from); ?><?php $this->pop_vars();; ?>
   <tr>
-    <td colspan="2"><input type="submit" class="button" id="btnSubmit" value="<?php echo $this->_var['lang']['button_remove']; ?>" disabled="true" /></td>
-    <td align="right" nowrap="true" colspan="8"><?php echo $this->fetch('page.htm'); ?></td>
+    <td colspan="5"><input type="submit" class="button" id="btnSubmit" value="<?php echo $this->_var['lang']['button_remove']; ?>" disabled="true" /></td>
+    <td align="right" nowrap="true" colspan="3"><?php echo $this->fetch('page.htm'); ?></td>
   </tr>
 </table>
 

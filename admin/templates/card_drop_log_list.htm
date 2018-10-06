@@ -10,7 +10,7 @@
   </form>
 </div>
 
-<form method="POST" action="create_card_log.php?act=batch_remove" name="listForm">
+<form method="POST" action="card_drop_log.php?act=batch_remove" name="listForm">
 <!-- start cat list -->
 <div class="list-div" id="listDiv">
 {/if}
@@ -19,32 +19,33 @@
   <tr>
     <th><input onclick='listTable.selectAll(this, "checkboxes")' type="checkbox">
       <a href="javascript:listTable.sort('id'); ">{$lang.id}</a>{$sort_id}</th>
-    <th><a href="javascript:listTable.sort('amount_list'); ">{$lang.amount_list}</a>{$sort_id}</th>
-    <th><a href="javascript:listTable.sort('card_type'); ">{$lang.card_type}</a>{$sort_card_type}</th>
+    <th><a href="javascript:listTable.sort('user_name'); ">{$lang.user_name}</a>{$sort_user_name}</th>
     <th><a href="javascript:listTable.sort('card_number'); ">{$lang.card_number}</a>{$sort_card_number}</th>
-     <th><a href="javascript:listTable.sort('card_number'); ">{$lang.card_used}</a>{$sort_card_used}</th>
-    <th><a href="javascript:listTable.sort('create_date'); ">{$lang.create_date}</a>{$sort_create_date}</th>
+    <th><a href="javascript:listTable.sort('card_password'); ">{$lang.card_password}</a>{$sort_card_password}</th>
+    <th><a href="javascript:listTable.sort('card_type'); ">{$lang.card_type}</a>{$sort_card_type}</th>
+    <th><a href="javascript:listTable.sort('card_count'); ">{$lang.card_count}</a>{$sort_card_count}</th>
+    <th><a href="javascript:listTable.sort('drop_date'); ">{$lang.drop_date}</a>{$sort_drop_date}</th>
     <th>{$lang.handler}</th>
   </tr>
   {foreach from=$cards_list item=list}
   <tr>
-    <td align="center"><span><input name="checkboxes[]" type="checkbox" value="{$list.batch_remove}"/>{$list.id}</span></td>
-    <td class="first-cell" align="center"><span>{$list.amount_list|escape:html}</span></td>
-    <td align="center"><span>{$list.card_type}</span></td>
+    <td align="center"><span><input name="checkboxes[]" type="checkbox" value="{$list.id}"/>{$list.id}</span></td>
+    <td class="first-cell" align="center"><span>{$list.user_name|escape:html}</span></td>
     <td align="center"><span>{$list.card_number}</span></td>
-    <td align="center"><span>{$list.card_used}</span></td>
-    <td align="center"><span>{$list.create_date}</span></td>
+    <td align="center"><span>{$list.card_password}</span></td>
+    <td align="center"><span>{$list.card_type}</span></td>
+    <td align="center"><span>{$list.card_count}</span></td>
+    <td align="center"><span>{$list.drop_date}</span></td>
     <td align="center" nowrap="true"><span>
-      <a href="create_card_log.php?act=edit&id={$list.amount_id}" title="{$lang.edit}"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
-      <a href="create_card_log.php?act=remove&id={$list.id}&used_card={$list.card_used}" title="{$lang.remove}"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
+      <a href="javascript:;" onclick="listTable.remove({$list.id}, '{$lang.drop_confirm}')" title="{$lang.remove}"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
     </td>
    </tr>
    {foreachelse}
-    <tr><td class="no-records" colspan="9">{$lang.no_records}</td></tr>
+    <tr><td class="no-records" colspan="8">{$lang.no_records}</td></tr>
   {/foreach}
   <tr>
-    <td colspan="2"><input type="submit" class="button" id="btnSubmit" value="{$lang.button_remove}" disabled="true" /></td>
-    <td align="right" nowrap="true" colspan="8">{include file="page.htm"}</td>
+    <td colspan="5"><input type="submit" class="button" id="btnSubmit" value="{$lang.button_remove}" disabled="true" /></td>
+    <td align="right" nowrap="true" colspan="3">{include file="page.htm"}</td>
   </tr>
 </table>
 

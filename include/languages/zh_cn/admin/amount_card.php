@@ -23,13 +23,6 @@ $_LANG['yes'] = '是';
 $_LANG['no'] = '否';
 
 $_LANG['keywords'] = '关键字';
-$_LANG['goodsid'] ='商品';
-$_LANG['make_option'] = '请先搜索商品生成选项列表';
-$_LANG['integral'] ='积分值';
-$_LANG['isexchange'] ='可兑换';
-$_LANG['isnotexchange'] ='不可兑换';
-$_LANG['ishot'] ='热销';
-$_LANG['isnothot'] ='非热销';
 
 $_LANG['notice_amount_list'] = '添加代金卡批次规则：000001';
 $_LANG['notice_amount_number'] = '代金卡卡号示例：JZC15385571601911226';

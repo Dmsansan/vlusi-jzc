@@ -63,7 +63,7 @@ elseif ($_REQUEST['act'] == 'query')
 }
 
 /*------------------------------------------------------ */
-//-- 添加代金卡
+//-- 添加代金卡类型
 /*------------------------------------------------------ */
 if ($_REQUEST['act'] == 'add')
 {
@@ -79,28 +79,7 @@ if ($_REQUEST['act'] == 'add')
 }
 
 /*------------------------------------------------------ */
-//-- 批量添加代金卡
-/*------------------------------------------------------ */
-if ($_REQUEST['act'] == 'group_add')
-{
-    /* 权限判断 */
-    admin_priv('card_type');
-
-    /*初始化*/
-    $cards = array();
-    $cards['amount_status'] = 1;
-
-    $smarty->assign('cards',       $cards);
-    $smarty->assign('ur_here',     $_LANG['card_type_group_add']);
-    $smarty->assign('action_link', array('text' => $_LANG['16_card_type_list'], 'href' => 'card_type.php?act=list'));
-    $smarty->assign('form_action', 'group_insert');
-
-    assign_query_info();
-    $smarty->display('card_type_group_add.htm');
-}
-
-/*------------------------------------------------------ */
-//-- 添加商品
+//-- 添加代金卡类型
 /*------------------------------------------------------ */
 if ($_REQUEST['act'] == 'insert')
 {
@@ -132,55 +111,6 @@ if ($_REQUEST['act'] == 'insert')
     sys_msg($_LANG['articleadd_succeed'],0, $link);
 }
 
-/*------------------------------------------------------ */
-//-- 批量添加商品
-/*------------------------------------------------------ */
-if ($_REQUEST['act'] == 'group_insert')
-{
-    /* 权限判断 */
-    admin_priv('card_type');
-    $amount_num = $_POST['amount_num'];//生卡数量
-    for($j = 0; $j<$amount_num; $j++){
-           //自动生成代金卡号
-            $amount_number =  create_amount_number();
-            //自动生成密码
-            for($i=0;$i<3;$i++){
-                $amount_password .= create_amount_password(4)."-";
-            }
-            $amount_password .= create_amount_password(4);
-            /*检查是否重复*/
-            $is_only = $exc->is_only('amount_number', $amount_number,0, " amount_number='$amount_number'");
-
-            if (!$is_only)
-            {
-                sys_msg($_LANG['card_exist'], 1);
-            }
-
-            /*插入数据*/
-            $add_time = date("Y-m-d H:i:s");
-            if (empty($_POST['amount_status']))
-            {
-                $_POST['amount_status'] = 1;
-            }
-            $sql = "INSERT INTO ".$ecs->table('card_type')."(amount_list, amount_number, amount_password, amount_status, amount_count, expry_date, add_date) ".
-                    "VALUES ('$_POST[amount_list]', '$amount_number', '$amount_password', '$_POST[amount_status]', '$_POST[amount_count]', '$_POST[expry_date]', '$add_time')";
-            $db->query($sql);
-            $amount_password = '';
-    }
- 
-
-    $link[0]['text'] = $_LANG['continue_add'];
-    $link[0]['href'] = 'card_type.php?act=group_add';
-
-    $link[1]['text'] = $_LANG['back_list'];
-    $link[1]['href'] = 'card_type.php?act=list';
-
-    admin_log($_POST['amount_number'],'add','card_type');
-
-    clear_cache_files(); // 清除相关的缓存文件
-
-    sys_msg($_LANG['articleadd_succeed'],0, $link);
-}
 /*------------------------------------------------------ */
 //-- 编辑
 /*------------------------------------------------------ */
@@ -228,69 +158,7 @@ if ($_REQUEST['act'] =='update')
 }
 
 /*------------------------------------------------------ */
-//-- 编辑使用积分值
-/*------------------------------------------------------ */
-elseif ($_REQUEST['act'] == 'edit_exchange_integral')
-{
-    check_authz_json('exchange_goods');
-
-    $id                = intval($_POST['id']);
-    $exchange_integral = floatval($_POST['val']);
-
-    /* 检查文章标题是否重复 */
-    if ($exchange_integral < 0 || $exchange_integral == 0 && $_POST['val'] != "$goods_price")
-    {
-        make_json_error($_LANG['exchange_integral_invalid']);
-    }
-    else
-    {
-        if ($exc->edit("exchange_integral = '$exchange_integral'", $id))
-        {
-            clear_cache_files();
-            admin_log($id, 'edit', 'exchange_goods');
-            make_json_result(stripslashes($exchange_integral));
-        }
-        else
-        {
-            make_json_error($db->error());
-        }
-    }
-}
-
-/*------------------------------------------------------ */
-//-- 切换是否兑换
-/*------------------------------------------------------ */
-elseif ($_REQUEST['act'] == 'toggle_exchange')
-{
-    check_authz_json('exchange_goods');
-
-    $id     = intval($_POST['id']);
-    $val    = intval($_POST['val']);
-
-    $exc->edit("is_exchange = '$val'", $id);
-    clear_cache_files();
-
-    make_json_result($val);
-}
-
-/*------------------------------------------------------ */
-//-- 切换是否兑换
-/*------------------------------------------------------ */
-elseif ($_REQUEST['act'] == 'toggle_hot')
-{
-    check_authz_json('exchange_goods');
-
-    $id     = intval($_POST['id']);
-    $val    = intval($_POST['val']);
-
-    $exc->edit("is_hot = '$val'", $id);
-    clear_cache_files();
-
-    make_json_result($val);
-}
-
-/*------------------------------------------------------ */
-//-- 批量删除商品
+//-- 批量删除代金卡类型
 /*------------------------------------------------------ */
 elseif ($_REQUEST['act'] == 'batch_remove')
 {
@@ -315,7 +183,7 @@ elseif ($_REQUEST['act'] == 'batch_remove')
 }
 
 /*------------------------------------------------------ */
-//-- 删除代金卡
+//-- 删除代金卡类型
 /*------------------------------------------------------ */
 elseif ($_REQUEST['act'] == 'remove')
 {
@@ -334,24 +202,7 @@ elseif ($_REQUEST['act'] == 'remove')
     ecs_header("Location: $url\n");
     exit;
 }
-
-/*------------------------------------------------------ */
-//-- 搜索商品
-/*------------------------------------------------------ */
-
-elseif ($_REQUEST['act'] == 'search_goods')
-{
-    // include_once(ROOT_PATH . 'includes/cls_json.php');
-    $json = new JSON;
-
-    $filters = $json->decode($_GET['JSON']);
-
-    $arr = get_goods_list($filters);
-
-    make_json_result($arr);
-}
-
-/* 获得商品列表 */
+/* 获得代金卡类型列表 */
 function get_card_typelist()
 {
     $result = get_filter();

@@ -20,13 +20,13 @@
     <th><input onclick='listTable.selectAll(this, "checkboxes")' type="checkbox">
       <a href="javascript:listTable.sort('amount_id'); "><?php echo $this->_var['lang']['amount_id']; ?></a><?php echo $this->_var['sort_amount_id']; ?></th>
     <th><a href="javascript:listTable.sort('amount_list'); "><?php echo $this->_var['lang']['amount_list']; ?></a><?php echo $this->_var['sort_amount_list']; ?></th>
-    <th><a href="javascript:listTable.sort('amount_number'); "><?php echo $this->_var['lang']['amount_number']; ?></a><?php echo $this->_var['sort_exchange_integral']; ?></th>
-    <th><a href="javascript:listTable.sort('amount_password'); "><?php echo $this->_var['lang']['amount_password']; ?></a><?php echo $this->_var['sort_is_exchange']; ?></th>
-    <th><a href="javascript:listTable.sort('status'); "><?php echo $this->_var['lang']['amount_status']; ?></a><?php echo $this->_var['sort_is_hot']; ?></th>
-    <th><a href="javascript:listTable.sort('amount_count'); "><?php echo $this->_var['lang']['amount_count']; ?></a><?php echo $this->_var['sort_amount_count']; ?></th>
-    <th><a href="javascript:listTable.sort('expry_date'); "><?php echo $this->_var['lang']['expry_date']; ?></a></th>
-     <th><a href="javascript:listTable.sort('is_used'); "><?php echo $this->_var['lang']['is_used']; ?></a></th>
-    <th><a href="javascript:listTable.sort('add_date'); "><?php echo $this->_var['lang']['add_date']; ?></a></th>
+    <th><a href="javascript:listTable.sort('amount_number'); "><?php echo $this->_var['lang']['amount_number']; ?></a><?php echo $this->_var['sort_amount_number']; ?></th>
+    <th><a href="javascript:listTable.sort('amount_password'); "><?php echo $this->_var['lang']['amount_password']; ?></a><?php echo $this->_var['sort_amount_password']; ?></th>
+    <th><a href="javascript:listTable.sort('status'); "><?php echo $this->_var['lang']['amount_status']; ?></a><?php echo $this->_var['sort_amount_status']; ?></th>
+    <th><a href="javascript:listTable.sort('amount_count'); "><?php echo $this->_var['lang']['amount_count']; ?></a><?php echo $this->_var['sort_expry_date']; ?></th>
+    <th><a href="javascript:listTable.sort('expry_date'); "><?php echo $this->_var['lang']['expry_date']; ?></a><?php echo $this->_var['sort_amount_count']; ?></th>
+     <th><a href="javascript:listTable.sort('is_used'); "><?php echo $this->_var['lang']['is_used']; ?></a><?php echo $this->_var['sort_is_used']; ?></th>
+    <th><a href="javascript:listTable.sort('add_date'); "><?php echo $this->_var['lang']['add_date']; ?></a><?php echo $this->_var['sort_add_date']; ?></th>
     <th><?php echo $this->_var['lang']['handler']; ?></th>
   </tr>
   <?php $_from = $this->_var['cards_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'list');if (count($_from)):

@@ -12,13 +12,6 @@ $_LANG['used_card_count'] = '已使用代金卡数量';
 $_LANG['button_remove'] ='批量删除';
 
 $_LANG['keywords'] = '关键字';
-$_LANG['goodsid'] ='商品';
-$_LANG['make_option'] = '请先搜索商品生成选项列表';
-$_LANG['integral'] ='积分值';
-$_LANG['isexchange'] ='可兑换';
-$_LANG['isnotexchange'] ='不可兑换';
-$_LANG['ishot'] ='热销';
-$_LANG['isnothot'] ='非热销';
 
 $_LANG['notice_card_name'] = '代金卡类型名称';
 $_LANG['notice_card_count'] = '代金卡金额两位小数：100.00';

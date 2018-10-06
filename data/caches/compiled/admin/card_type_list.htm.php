@@ -21,8 +21,8 @@
       <a href="javascript:listTable.sort('id'); "><?php echo $this->_var['lang']['id']; ?></a><?php echo $this->_var['sort_id']; ?></th>
     <th><a href="javascript:listTable.sort('card_name'); "><?php echo $this->_var['lang']['card_name']; ?></a><?php echo $this->_var['sort_card_name']; ?></th>
      <th><a href="javascript:listTable.sort('card_count'); "><?php echo $this->_var['lang']['card_count']; ?></a><?php echo $this->_var['sort_card_count']; ?></th>
-      <th><a href="javascript:listTable.sort('card_count'); "><?php echo $this->_var['lang']['create_card_count']; ?></a></th>
-      <th><a href="javascript:listTable.sort('card_count'); "><?php echo $this->_var['lang']['used_card_count']; ?></a></th>
+      <th><a href="javascript:listTable.sort('card_count'); "><?php echo $this->_var['lang']['create_card_count']; ?></a><?php echo $this->_var['sort_create_card_count']; ?></th>
+      <th><a href="javascript:listTable.sort('card_count'); "><?php echo $this->_var['lang']['used_card_count']; ?></a><?php echo $this->_var['sort_used_card_count']; ?></th>
     <th><?php echo $this->_var['lang']['handler']; ?></th>
   </tr>
   <?php $_from = $this->_var['cards_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'list');if (count($_from)):
