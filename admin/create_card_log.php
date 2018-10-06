@@ -361,7 +361,7 @@ elseif ($_REQUEST['act'] == 'toggle_hot')
 }
 
 /*------------------------------------------------------ */
-//-- 批量删除商品
+//-- 批量删除生卡记录
 /*------------------------------------------------------ */
 elseif ($_REQUEST['act'] == 'batch_remove')
 {
@@ -374,7 +374,18 @@ elseif ($_REQUEST['act'] == 'batch_remove')
     $count = 0;
     foreach ($_POST['checkboxes'] AS $key => $id)
     {
-        if ($exc->drop_create_card_log($id))
+        $arr = explode('-', $id);
+        if($arr[1] != 0){
+             $lnk[] = array('text' => $_LANG['back_list'], 'href' => 'create_card_log.php?act=list');
+             sys_msg(sprintf($_LANG['exit_card_log'], $count), 0, $lnk);
+             exit;
+        }
+    }
+
+    foreach ($_POST['checkboxes'] AS $key => $id)
+    {
+        $arr = explode('-', $id);
+        if ($exc->drop($arr[0]))
         {
             admin_log($id,'remove','create_card_log');
             $count++;
@@ -393,17 +404,21 @@ elseif ($_REQUEST['act'] == 'remove')
     check_authz_json('create_card_log');
 
     $id = intval($_GET['id']);
+    
+    $card_used = intval($_GET['used_card']);//代金卡已经使用的数量
 
-    if ($exc->drop_create_card_log($id))
-    {
-        admin_log($id,'remove','article');
-        clear_cache_files();
+    if($card_used != 0){//这批卡已经被使用不能删除生卡记录
+        $lnk[] = array('text' => $_LANG['back_list'], 'href' => 'create_card_log.php?act=list');
+        sys_msg(sprintf($_LANG['exit_card_log'], $count), 0, $lnk);
+    }else{
+        if ($exc->drop($id))
+        {
+            admin_log($id,'remove','article');
+            clear_cache_files();
+            $lnk[] = array('text' => $_LANG['back_list'], 'href' => 'create_card_log.php?act=list');
+            sys_msg(sprintf($_LANG['drop_card_log_success'], $count), 0, $lnk);
+        }
     }
-
-    $url = 'create_card_log.php?act=query&' . str_replace('act=remove', '', $_SERVER['QUERY_STRING']);
-
-    ecs_header("Location: $url\n");
-    exit;
 }
 
 /*------------------------------------------------------ */
@@ -479,6 +494,8 @@ function get_create_card_loglist()
                'WHERE 1 AND ac.amount_number IN ('.$amount_str.
                ') AND ac.use_status=1';
         $rows['card_used'] = $GLOBALS['db']->getOne($num_sql);
+        //批量删除生卡记录判断数据
+        $rows['batch_remove'] = $rows['id']."-".$rows['card_used'];
         $arr[] = $rows;
     }
     return array('arr' => $arr, 'filter' => $filter, 'page_count' => $filter['page_count'], 'record_count' => $filter['record_count']);

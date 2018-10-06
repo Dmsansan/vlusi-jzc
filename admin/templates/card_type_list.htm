@@ -21,6 +21,8 @@
       <a href="javascript:listTable.sort('id'); ">{$lang.id}</a>{$sort_id}</th>
     <th><a href="javascript:listTable.sort('card_name'); ">{$lang.card_name}</a>{$sort_card_name}</th>
      <th><a href="javascript:listTable.sort('card_count'); ">{$lang.card_count}</a>{$sort_card_count}</th>
+      <th><a href="javascript:listTable.sort('card_count'); ">{$lang.create_card_count}</a></th>
+      <th><a href="javascript:listTable.sort('card_count'); ">{$lang.used_card_count}</a></th>
     <th>{$lang.handler}</th>
   </tr>
   {foreach from=$cards_list item=list}
@@ -28,13 +30,15 @@
     <td align="center"><span><input name="checkboxes[]" type="checkbox" value="{$list.id}"/>{$list.id}</span></td>
     <td class="first-cell" align="center"><span>{$list.card_name|escape:html}</span></td>
     <td align="center"><span>{$list.card_count}</span></td>
+    <td align="center"><span>{$list.create_card_count}</span></td>
+    <td align="center"><span>{$list.used_card_count}</span></td>
     <td align="center" nowrap="true"><span>
       <a href="card_type.php?act=edit&id={$list.id}" title="{$lang.edit}"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
       <a href="javascript:;" onclick="listTable.remove({$list.id}, '{$lang.drop_confirm}')" title="{$lang.remove}"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
     </td>
    </tr>
    {foreachelse}
-    <tr><td class="no-records" colspan="4">{$lang.no_records}</td></tr>
+    <tr><td class="no-records" colspan="6">{$lang.no_records}</td></tr>
   {/foreach}
   <tr>
     <td colspan="2"><input type="submit" class="button" id="btnSubmit" value="{$lang.button_remove}" disabled="true" /></td>

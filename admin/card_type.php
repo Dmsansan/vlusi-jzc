@@ -397,6 +397,15 @@ function get_card_typelist()
 
     while ($rows = $GLOBALS['db']->fetchRow($res))
     {
+        //生卡数量
+        $create_card_count_sql = 'SELECT COUNT(*) FROM ' .$GLOBALS['ecs']->table('amount_card'). ' AS ac '.
+            'WHERE 1 AND ac.type_id = '.$rows['id'];
+        $rows['create_card_count'] =  $GLOBALS['db']->getOne($create_card_count_sql);
+
+        $used_card_count_sql = 'SELECT COUNT(*) FROM ' .$GLOBALS['ecs']->table('amount_card'). ' AS ac '.
+            'WHERE 1 AND ac.type_id = '.$rows['id'].' AND ac.use_status=1';
+        $rows['used_card_count'] =  $GLOBALS['db']->getOne($used_card_count_sql);
+
         $arr[] = $rows;
     }
     return array('arr' => $arr, 'filter' => $filter, 'page_count' => $filter['page_count'], 'record_count' => $filter['record_count']);

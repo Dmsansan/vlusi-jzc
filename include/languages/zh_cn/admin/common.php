@@ -195,7 +195,7 @@ $_LANG['17_card_type'] = '代金卡类型管理';
 $_LANG['card_type_add'] = '添加代金卡类型';
 
 $_LANG['18_create_card_log'] = '生卡记录管理';
-$_LANG['19_card_math_count'] = '生卡数据统计管理';
+// $_LANG['19_card_math_count'] = '生卡数据统计管理';
 $_LANG['20_card_drop_log'] = '生卡充值记录管理';
 /* 订单管理 */
 $_LANG['02_order_list'] = '订单列表';

@@ -53,7 +53,7 @@ if (!defined('IN_ECTOUCH'))
     $purview['17_card_type']        = 'card_type';//代金卡类型管理
     $purview['16_amount_card']        = 'amount_card';//代金卡管理
     $purview['18_create_card_log']        = 'create_card_log';//生卡记录管理
-    $purview['19_card_math_count']        = 'card_math_count';//生卡数据统计
+    // $purview['19_card_math_count']        = 'card_math_count';//生卡数据统计
     $purview['20_card_drop_log']        = 'card_drop_log';//生卡充值记录
 
 

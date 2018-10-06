@@ -28,7 +28,7 @@
   </tr>
   {foreach from=$cards_list item=list}
   <tr>
-    <td align="center"><span><input name="checkboxes[]" type="checkbox" value="{$list.amount_id}"/>{$list.id}</span></td>
+    <td align="center"><span><input name="checkboxes[]" type="checkbox" value="{$list.batch_remove}"/>{$list.id}</span></td>
     <td class="first-cell" align="center"><span>{$list.amount_list|escape:html}</span></td>
     <td align="center"><span>{$list.card_type}</span></td>
     <td align="center"><span>{$list.card_number}</span></td>
@@ -36,7 +36,7 @@
     <td align="center"><span>{$list.create_date}</span></td>
     <td align="center" nowrap="true"><span>
       <a href="create_card_log.php?act=edit&id={$list.amount_id}" title="{$lang.edit}"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
-      <a href="javascript:;" onclick="listTable.remove({$list.amount_id}, '{$lang.drop_confirm}')" title="{$lang.remove}"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
+      <a href="create_card_log.php?act=remove&id={$list.id}&used_card={$list.card_used}" title="{$lang.remove}"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
     </td>
    </tr>
    {foreachelse}

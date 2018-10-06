@@ -21,6 +21,8 @@
       <a href="javascript:listTable.sort('id'); "><?php echo $this->_var['lang']['id']; ?></a><?php echo $this->_var['sort_id']; ?></th>
     <th><a href="javascript:listTable.sort('card_name'); "><?php echo $this->_var['lang']['card_name']; ?></a><?php echo $this->_var['sort_card_name']; ?></th>
      <th><a href="javascript:listTable.sort('card_count'); "><?php echo $this->_var['lang']['card_count']; ?></a><?php echo $this->_var['sort_card_count']; ?></th>
+      <th><a href="javascript:listTable.sort('card_count'); "><?php echo $this->_var['lang']['create_card_count']; ?></a></th>
+      <th><a href="javascript:listTable.sort('card_count'); "><?php echo $this->_var['lang']['used_card_count']; ?></a></th>
     <th><?php echo $this->_var['lang']['handler']; ?></th>
   </tr>
   <?php $_from = $this->_var['cards_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'list');if (count($_from)):
@@ -30,13 +32,15 @@
     <td align="center"><span><input name="checkboxes[]" type="checkbox" value="<?php echo $this->_var['list']['id']; ?>"/><?php echo $this->_var['list']['id']; ?></span></td>
     <td class="first-cell" align="center"><span><?php echo htmlspecialchars($this->_var['list']['card_name']); ?></span></td>
     <td align="center"><span><?php echo $this->_var['list']['card_count']; ?></span></td>
+    <td align="center"><span><?php echo $this->_var['list']['create_card_count']; ?></span></td>
+    <td align="center"><span><?php echo $this->_var['list']['used_card_count']; ?></span></td>
     <td align="center" nowrap="true"><span>
       <a href="card_type.php?act=edit&id=<?php echo $this->_var['list']['id']; ?>" title="<?php echo $this->_var['lang']['edit']; ?>"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
       <a href="javascript:;" onclick="listTable.remove(<?php echo $this->_var['list']['id']; ?>, '<?php echo $this->_var['lang']['drop_confirm']; ?>')" title="<?php echo $this->_var['lang']['remove']; ?>"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
     </td>
    </tr>
    <?php endforeach; else: ?>
-    <tr><td class="no-records" colspan="4"><?php echo $this->_var['lang']['no_records']; ?></td></tr>
+    <tr><td class="no-records" colspan="6"><?php echo $this->_var['lang']['no_records']; ?></td></tr>
   <?php endif; unset($_from); ?><?php $this->pop_vars();; ?>
   <tr>
     <td colspan="2"><input type="submit" class="button" id="btnSubmit" value="<?php echo $this->_var['lang']['button_remove']; ?>" disabled="true" /></td>

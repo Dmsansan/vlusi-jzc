@@ -195,6 +195,7 @@ if ($_REQUEST['act'] == 'group_insert')
     for($j = 0; $j<$amount_num; $j++){
            //自动生成代金卡号
             $amount_number =  create_amount_number();
+            $amount_number_str .= $amount_num.',';
             //自动生成密码
             for($i=0;$i<3;$i++){
                 $amount_password .= create_amount_password(4)."-";
@@ -227,6 +228,15 @@ if ($_REQUEST['act'] == 'group_insert')
             $amount_password = '';
     }
  
+    //添加生卡记录
+    $create_card_list = $_POST['amount_list'];
+    $create_card_type = $_POST['amount_count'];
+    $create_card_number = $amount_num;
+    $create_amount_number = $amount_number_str;
+
+    $create_card_sql = "INSERT INTO ".$ecs->table('create_card_log')."(amount_list, card_type, card_number, amount_number, create_date) ".
+                    "VALUES ('$create_card_list', '$create_card_type', '$create_card_number', '$create_amount_number', '$add_time')";
+    $db->query($create_card_sql);
 
     $link[0]['text'] = $_LANG['continue_add'];
     $link[0]['href'] = 'amount_card.php?act=group_add';

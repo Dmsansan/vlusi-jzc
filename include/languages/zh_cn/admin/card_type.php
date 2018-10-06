@@ -7,6 +7,8 @@ $_LANG['title'] ='名称';
 $_LANG['id'] ='编号';
 $_LANG['card_name'] ='名称';
 $_LANG['card_count'] = '金额';
+$_LANG['create_card_count'] = '生卡数量';
+$_LANG['used_card_count'] = '已使用代金卡数量';
 $_LANG['button_remove'] ='批量删除';
 
 $_LANG['keywords'] = '关键字';
