@@ -100,7 +100,9 @@ $modules['05_menu_content']['02_articlecat_list']        = 'articlecat.php?act=l
 //$modules['06_menu_promotion']['15_exchange_goods']       = 'exchange_goods.php?act=list';
 $modules['06_menu_promotion']['16_amount_card'] = 'amount_card.php?act=list';
 $modules['06_menu_promotion']['17_card_type'] = 'card_type.php?act=list';
-
+$modules['06_menu_promotion']['18_create_card_log'] = 'create_card_log.php?act=list';
+$modules['06_menu_promotion']['19_card_math_count'] = 'card_math_count.php?act=list';
+$modules['06_menu_promotion']['20_card_drop_log'] = 'card_drop_log.php?act=list';
 
 // 报表
 // $modules['07_menu_stats']['flow_stats']                  = 'flow_stats.php?act=view';

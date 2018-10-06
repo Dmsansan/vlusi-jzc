@@ -24,8 +24,9 @@
     <th><a href="javascript:listTable.sort('amount_password'); "><?php echo $this->_var['lang']['amount_password']; ?></a><?php echo $this->_var['sort_is_exchange']; ?></th>
     <th><a href="javascript:listTable.sort('status'); "><?php echo $this->_var['lang']['amount_status']; ?></a><?php echo $this->_var['sort_is_hot']; ?></th>
     <th><a href="javascript:listTable.sort('amount_count'); "><?php echo $this->_var['lang']['amount_count']; ?></a><?php echo $this->_var['sort_amount_count']; ?></th>
-    <th><a href="javascript:listTable.sort('expry_date'); "><?php echo $this->_var['lang']['expry_date']; ?></a><?php echo $this->_var['sort_is_hot']; ?></th>
-    <th><a href="javascript:listTable.sort('add_date'); "><?php echo $this->_var['lang']['add_date']; ?></a><?php echo $this->_var['sort_is_hot']; ?></th>
+    <th><a href="javascript:listTable.sort('expry_date'); "><?php echo $this->_var['lang']['expry_date']; ?></a></th>
+     <th><a href="javascript:listTable.sort('is_used'); "><?php echo $this->_var['lang']['is_used']; ?></a></th>
+    <th><a href="javascript:listTable.sort('add_date'); "><?php echo $this->_var['lang']['add_date']; ?></a></th>
     <th><?php echo $this->_var['lang']['handler']; ?></th>
   </tr>
   <?php $_from = $this->_var['cards_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'list');if (count($_from)):
@@ -39,6 +40,7 @@
     <td align="center"><span><?php if ($this->_var['list']['amount_status'] == 0): ?><?php echo $this->_var['lang']['down']; ?><?php else: ?><?php echo $this->_var['lang']['up']; ?><?php endif; ?></span></td>
     <td align="center"><span><?php echo $this->_var['list']['amount_count']; ?></span></td>
     <td align="center"><span><?php echo $this->_var['list']['expry_date']; ?></span></td>
+    <td align="center"><span><?php if ($this->_var['list']['use_status'] == 0): ?><?php echo $this->_var['lang']['no']; ?> <?php else: ?><span style="color:red"><?php echo $this->_var['lang']['yes']; ?></span><?php endif; ?></span></td>
     <td align="center"><span><?php echo $this->_var['list']['add_date']; ?></span></td>
     <td align="center" nowrap="true"><span>
       <a href="amount_card.php?act=edit&id=<?php echo $this->_var['list']['amount_id']; ?>" title="<?php echo $this->_var['lang']['edit']; ?>"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
@@ -46,7 +48,7 @@
     </td>
    </tr>
    <?php endforeach; else: ?>
-    <tr><td class="no-records" colspan="9"><?php echo $this->_var['lang']['no_records']; ?></td></tr>
+    <tr><td class="no-records" colspan="10"><?php echo $this->_var['lang']['no_records']; ?></td></tr>
   <?php endif; unset($_from); ?><?php $this->pop_vars();; ?>
   <tr>
     <td colspan="2"><input type="submit" class="button" id="btnSubmit" value="<?php echo $this->_var['lang']['button_remove']; ?>" disabled="true" /></td>

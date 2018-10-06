@@ -121,6 +121,5 @@ function randomWord(randomFlag, min, max){
     }
     return str;
 }
-
 </script>
 <?php echo $this->fetch('pagefooter.htm'); ?>

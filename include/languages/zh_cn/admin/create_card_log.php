@@ -3,24 +3,13 @@
 *代金卡语言项
 **/
 
-$_LANG['amount_title'] ='代金卡号码';
-$_LANG['amount_id'] ='编号';
-$_LANG['amount_list'] ='代金卡批次';
-$_LANG['amount_number'] = '代金卡号';
-$_LANG['amount_num'] = '代金卡数量';
-$_LANG['amount_password'] ='代金卡密码';
-$_LANG['amount_status'] ='状态';
-$_LANG['amount_count'] = '金额';
-$_LANG['expry_date'] = '有效日期';
-$_LANG['add_date'] = '添加时间';
-$_LANG['button_remove'] ='批量删除';
-$_LANG['is_used'] = '是否被使用';
-
-$_LANG['up'] = '已激活';
-$_LANG['down'] = '未激活';
-
-$_LANG['yes'] = '是';
-$_LANG['no'] = '否';
+$_LANG['title'] ='生卡批次';
+$_LANG['id'] ='编号';
+$_LANG['amount_list'] ='生卡批次';
+$_LANG['card_type'] = '卡片类型';
+$_LANG['card_number'] = '生卡数量';
+$_LANG['card_used'] = '已使用卡片数量';
+$_LANG['create_date'] = '生卡时间';
 
 $_LANG['keywords'] = '关键字';
 $_LANG['goodsid'] ='商品';

@@ -24,8 +24,9 @@
     <th><a href="javascript:listTable.sort('amount_password'); ">{$lang.amount_password}</a>{$sort_is_exchange}</th>
     <th><a href="javascript:listTable.sort('status'); ">{$lang.amount_status}</a>{$sort_is_hot}</th>
     <th><a href="javascript:listTable.sort('amount_count'); ">{$lang.amount_count}</a>{$sort_amount_count}</th>
-    <th><a href="javascript:listTable.sort('expry_date'); ">{$lang.expry_date}</a>{$sort_is_hot}</th>
-    <th><a href="javascript:listTable.sort('add_date'); ">{$lang.add_date}</a>{$sort_is_hot}</th>
+    <th><a href="javascript:listTable.sort('expry_date'); ">{$lang.expry_date}</a></th>
+     <th><a href="javascript:listTable.sort('is_used'); ">{$lang.is_used}</a></th>
+    <th><a href="javascript:listTable.sort('add_date'); ">{$lang.add_date}</a></th>
     <th>{$lang.handler}</th>
   </tr>
   {foreach from=$cards_list item=list}
@@ -37,6 +38,7 @@
     <td align="center"><span>{if $list.amount_status == 0}{$lang.down}{else}{$lang.up}{/if}</span></td>
     <td align="center"><span>{$list.amount_count}</span></td>
     <td align="center"><span>{$list.expry_date}</span></td>
+    <td align="center"><span>{if $list.use_status eq 0}{$lang.no} {else}<span style="color:red">{$lang.yes}</span>{/if}</span></td>
     <td align="center"><span>{$list.add_date}</span></td>
     <td align="center" nowrap="true"><span>
       <a href="amount_card.php?act=edit&id={$list.amount_id}" title="{$lang.edit}"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
@@ -44,7 +46,7 @@
     </td>
    </tr>
    {foreachelse}
-    <tr><td class="no-records" colspan="9">{$lang.no_records}</td></tr>
+    <tr><td class="no-records" colspan="10">{$lang.no_records}</td></tr>
   {/foreach}
   <tr>
     <td colspan="2"><input type="submit" class="button" id="btnSubmit" value="{$lang.button_remove}" disabled="true" /></td>
