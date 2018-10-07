@@ -3014,7 +3014,9 @@ class UserController extends CommonController {
                             //代金卡使用状态改变 时间紧缺少事务管理
                             $res = $this->model->table('amount_card')->data(array('use_status' => 1))->where(array('amount_number' => $cardNumber,'amount_password' => $cardPassword))->update(); 
                             //充值金额到用户账户
-                            $res1 = $this->model->table('users')->data(array('user_money' => $amount_count))->where(array('user_name' => $username))->update();
+                            $user_money = $this->model->table('users')->field('user_money')->where(array('user_name' => $username))->getOne();
+                            $new_amount_count = $amount_count + $user_money;
+                            $res1 = $this->model->table('users')->data(array('user_money' => $new_amount_count))->where(array('user_name' => $username))->update();
                             //充值记录保存
                             $res2 = $this->model->table('card_drop_log')
                                 ->data(array('user_name' => $username, 'card_number' => $cardNumber, 'card_password' => $cardPassword, 'card_type' => $type_id,'card_count' => $amount_count,'drop_date' => date('Y-m-d H:i:s')))

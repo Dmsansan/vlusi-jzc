@@ -397,7 +397,7 @@ elseif ($_REQUEST['act'] == 'batch_remove')
 }
 
 /*------------------------------------------------------ */
-//-- 删除代金卡
+//-- 删除生卡记录
 /*------------------------------------------------------ */
 elseif ($_REQUEST['act'] == 'remove')
 {
@@ -420,23 +420,6 @@ elseif ($_REQUEST['act'] == 'remove')
         }
     }
 }
-
-/*------------------------------------------------------ */
-//-- 搜索商品
-/*------------------------------------------------------ */
-
-elseif ($_REQUEST['act'] == 'search_goods')
-{
-    // include_once(ROOT_PATH . 'includes/cls_json.php');
-    $json = new JSON;
-
-    $filters = $json->decode($_GET['JSON']);
-
-    $arr = get_goods_list($filters);
-
-    make_json_result($arr);
-}
-
 /* 获得生卡记录列表 */
 function get_create_card_loglist()
 {

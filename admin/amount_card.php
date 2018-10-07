@@ -186,7 +186,7 @@ if ($_REQUEST['act'] == 'group_insert')
     for($j = 0; $j<$amount_num; $j++){
            //自动生成代金卡号
             $amount_number =  create_amount_number();
-            $amount_number_str .= $amount_num.',';
+            $amount_number_str .= $amount_number.',';
             //自动生成密码
             for($i=0;$i<3;$i++){
                 $amount_password .= create_amount_password(4)."-";
