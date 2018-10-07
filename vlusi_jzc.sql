@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-10-01 09:27:42
+Date: 2018-10-08 07:50:36
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -254,11 +254,291 @@ CREATE TABLE `jzc_admin_log` (
   PRIMARY KEY (`log_id`),
   KEY `log_time` (`log_time`),
   KEY `user_id` (`user_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=281 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of jzc_admin_log
 -- ----------------------------
+INSERT INTO `jzc_admin_log` VALUES ('1', '1538330358', '1', '添加: 678876678', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('2', '1538332803', '1', '添加: 15383606060001123', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('3', '1538332915', '1', '添加: 15383606060001321', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('4', '1538333129', '1', '添加: JZC15383606060001131', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('5', '1538353531', '1', '添加: JZC15383606060001111', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('6', '1538353898', '1', '添加: JZC15383606060001221', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('7', '1538354119', '1', '添加: QEW15383606060001', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('8', '1538354199', '1', '添加: dwe15383606060001', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('9', '1538354386', '1', '添加: SWE15383606060001', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('10', '1538354491', '1', '添加: JZC15383606060001', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('11', '1538355023', '1', '添加: JZC15383601060001', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('12', '1538355321', '1', '删除文章: 12', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('13', '1538355511', '1', '删除文章: 10', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('14', '1538355515', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('15', '1538355590', '1', '删除文章: 8', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('16', '1538355657', '1', '删除文章: 8', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('17', '1538355782', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('18', '1538355790', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('19', '1538506423', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('20', '1538506557', '1', '删除文章: 5', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('21', '1538506571', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('22', '1538506731', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('23', '1538506737', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('24', '1538506743', '1', '删除文章: 6', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('25', '1538507167', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('26', '1538507177', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('27', '1538507235', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('28', '1538507378', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('29', '1538507393', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('30', '1538507596', '1', '删除文章: 12', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('31', '1538508547', '1', '删除: 11', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('32', '1538509339', '1', '删除: 2', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('33', '1538509339', '1', '删除: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('34', '1538510906', '1', '添加: JZC15383606060001', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('35', '1538511153', '1', '编辑: 13', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('36', '1538511162', '1', '编辑: 13', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('37', '1538511169', '1', '编辑: 13', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('38', '1538511193', '1', '添加: JZC15383606060101', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('39', '1538511199', '1', '编辑: 14', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('40', '1538511300', '1', '删除: 10', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('41', '1538511300', '1', '删除: 9', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('42', '1538511300', '1', '删除: 8', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('43', '1538511300', '1', '删除: 7', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('44', '1538511300', '1', '删除: 6', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('45', '1538511300', '1', '删除: 5', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('46', '1538511300', '1', '删除: 4', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('47', '1538511300', '1', '删除: 3', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('48', '1538528059', '1', '删除: 14', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('49', '1538528059', '1', '删除: 13', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('50', '1538528366', '1', '添加: JZC15385571601911226', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('51', '1538531678', '1', '添加: ', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('52', '1538540062', '1', '添加: ', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('53', '1538540149', '1', '删除: 66', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('54', '1538540149', '1', '删除: 65', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('55', '1538540149', '1', '删除: 64', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('56', '1538540149', '1', '删除: 63', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('57', '1538540149', '1', '删除: 62', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('58', '1538540149', '1', '删除: 61', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('59', '1538540149', '1', '删除: 60', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('60', '1538540149', '1', '删除: 59', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('61', '1538540149', '1', '删除: 58', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('62', '1538540149', '1', '删除: 57', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('63', '1538540149', '1', '删除: 56', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('64', '1538540149', '1', '删除: 55', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('65', '1538540149', '1', '删除: 54', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('66', '1538540149', '1', '删除: 53', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('67', '1538540149', '1', '删除: 52', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('68', '1538540153', '1', '删除: 51', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('69', '1538540153', '1', '删除: 50', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('70', '1538540153', '1', '删除: 49', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('71', '1538540153', '1', '删除: 48', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('72', '1538540153', '1', '删除: 47', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('73', '1538540153', '1', '删除: 46', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('74', '1538540153', '1', '删除: 45', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('75', '1538540153', '1', '删除: 44', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('76', '1538540153', '1', '删除: 43', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('77', '1538540153', '1', '删除: 42', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('78', '1538540153', '1', '删除: 41', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('79', '1538540153', '1', '删除: 40', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('80', '1538540153', '1', '删除: 39', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('81', '1538540153', '1', '删除: 38', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('82', '1538540153', '1', '删除: 37', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('83', '1538540161', '1', '删除: 36', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('84', '1538540161', '1', '删除: 35', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('85', '1538540161', '1', '删除: 34', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('86', '1538540161', '1', '删除: 33', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('87', '1538540161', '1', '删除: 32', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('88', '1538540161', '1', '删除: 31', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('89', '1538540161', '1', '删除: 30', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('90', '1538540161', '1', '删除: 29', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('91', '1538540161', '1', '删除: 28', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('92', '1538540161', '1', '删除: 27', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('93', '1538540161', '1', '删除: 26', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('94', '1538540161', '1', '删除: 25', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('95', '1538540161', '1', '删除: 24', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('96', '1538540161', '1', '删除: 23', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('97', '1538540161', '1', '删除: 22', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('98', '1538540166', '1', '删除: 21', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('99', '1538540166', '1', '删除: 20', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('100', '1538540166', '1', '删除: 19', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('101', '1538540166', '1', '删除: 18', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('102', '1538540166', '1', '删除: 17', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('103', '1538540166', '1', '删除: 16', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('104', '1538540166', '1', '删除: 15', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('105', '1538540228', '1', '添加: ', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('106', '1538541914', '1', '添加: ', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('107', '1538590920', '1', '添加: 2000元代金卡', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('108', '1538591659', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('109', '1538591663', '1', '删除: 3', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('110', '1538591663', '1', '删除: 2', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('111', '1538591674', '1', '编辑: 5', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('112', '1538591681', '1', '编辑: 5', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('113', '1538591722', '1', '编辑: 5', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('114', '1538591726', '1', '编辑: 5', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('115', '1538591803', '1', '添加: 100元代金卡', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('116', '1538591815', '1', '添加: 200元代金卡', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('117', '1538591824', '1', '添加: 500元代金卡', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('118', '1538593265', '1', '添加: ', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('119', '1538593470', '1', '添加: ', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('120', '1538594078', '1', '编辑: 176', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('121', '1538594085', '1', '编辑: 176', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('122', '1538594133', '1', '删除: 101', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('123', '1538594133', '1', '删除: 100', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('124', '1538594133', '1', '删除: 99', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('125', '1538594133', '1', '删除: 98', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('126', '1538594133', '1', '删除: 97', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('127', '1538594133', '1', '删除: 96', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('128', '1538594133', '1', '删除: 95', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('129', '1538594133', '1', '删除: 94', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('130', '1538594133', '1', '删除: 93', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('131', '1538594133', '1', '删除: 92', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('132', '1538594133', '1', '删除: 91', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('133', '1538594133', '1', '删除: 90', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('134', '1538594133', '1', '删除: 89', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('135', '1538594133', '1', '删除: 88', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('136', '1538594133', '1', '删除: 87', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('137', '1538594136', '1', '删除: 176', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('138', '1538594136', '1', '删除: 175', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('139', '1538594136', '1', '删除: 174', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('140', '1538594136', '1', '删除: 173', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('141', '1538594136', '1', '删除: 172', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('142', '1538594136', '1', '删除: 171', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('143', '1538594136', '1', '删除: 170', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('144', '1538594136', '1', '删除: 169', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('145', '1538594136', '1', '删除: 168', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('146', '1538594136', '1', '删除: 167', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('147', '1538594136', '1', '删除: 166', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('148', '1538594136', '1', '删除: 165', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('149', '1538594136', '1', '删除: 164', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('150', '1538594136', '1', '删除: 163', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('151', '1538594136', '1', '删除: 162', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('152', '1538594140', '1', '删除: 161', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('153', '1538594140', '1', '删除: 160', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('154', '1538594140', '1', '删除: 159', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('155', '1538594140', '1', '删除: 158', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('156', '1538594140', '1', '删除: 157', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('157', '1538594140', '1', '删除: 156', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('158', '1538594140', '1', '删除: 155', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('159', '1538594140', '1', '删除: 154', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('160', '1538594140', '1', '删除: 153', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('161', '1538594140', '1', '删除: 152', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('162', '1538594140', '1', '删除: 151', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('163', '1538594140', '1', '删除: 150', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('164', '1538594140', '1', '删除: 149', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('165', '1538594140', '1', '删除: 148', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('166', '1538594140', '1', '删除: 147', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('167', '1538594143', '1', '删除: 146', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('168', '1538594143', '1', '删除: 145', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('169', '1538594143', '1', '删除: 144', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('170', '1538594143', '1', '删除: 143', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('171', '1538594143', '1', '删除: 142', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('172', '1538594143', '1', '删除: 141', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('173', '1538594143', '1', '删除: 140', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('174', '1538594143', '1', '删除: 139', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('175', '1538594143', '1', '删除: 138', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('176', '1538594143', '1', '删除: 137', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('177', '1538594143', '1', '删除: 136', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('178', '1538594143', '1', '删除: 135', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('179', '1538594143', '1', '删除: 134', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('180', '1538594143', '1', '删除: 133', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('181', '1538594143', '1', '删除: 132', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('182', '1538594145', '1', '删除: 131', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('183', '1538594145', '1', '删除: 130', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('184', '1538594145', '1', '删除: 129', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('185', '1538594145', '1', '删除: 128', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('186', '1538594145', '1', '删除: 127', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('187', '1538594145', '1', '删除: 126', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('188', '1538594145', '1', '删除: 125', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('189', '1538594145', '1', '删除: 124', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('190', '1538594145', '1', '删除: 123', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('191', '1538594145', '1', '删除: 122', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('192', '1538594145', '1', '删除: 121', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('193', '1538594145', '1', '删除: 120', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('194', '1538594145', '1', '删除: 119', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('195', '1538594145', '1', '删除: 118', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('196', '1538594145', '1', '删除: 117', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('197', '1538594149', '1', '删除: 116', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('198', '1538594149', '1', '删除: 115', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('199', '1538594149', '1', '删除: 114', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('200', '1538594149', '1', '删除: 113', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('201', '1538594149', '1', '删除: 112', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('202', '1538594149', '1', '删除: 111', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('203', '1538594149', '1', '删除: 110', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('204', '1538594149', '1', '删除: 109', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('205', '1538594149', '1', '删除: 108', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('206', '1538594149', '1', '删除: 107', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('207', '1538594149', '1', '删除: 106', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('208', '1538594149', '1', '删除: 105', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('209', '1538594149', '1', '删除: 104', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('210', '1538594149', '1', '删除: 103', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('211', '1538594149', '1', '删除: 102', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('212', '1538594153', '1', '删除: 86', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('213', '1538594153', '1', '删除: 85', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('214', '1538594153', '1', '删除: 84', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('215', '1538594153', '1', '删除: 83', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('216', '1538594153', '1', '删除: 82', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('217', '1538594153', '1', '删除: 81', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('218', '1538594153', '1', '删除: 80', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('219', '1538594153', '1', '删除: 79', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('220', '1538594153', '1', '删除: 78', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('221', '1538594153', '1', '删除: 77', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('222', '1538594153', '1', '删除: 76', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('223', '1538594153', '1', '删除: 75', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('224', '1538594153', '1', '删除: 74', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('225', '1538594153', '1', '删除: 73', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('226', '1538594153', '1', '删除: 72', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('227', '1538594155', '1', '删除: 71', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('228', '1538594155', '1', '删除: 70', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('229', '1538594155', '1', '删除: 69', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('230', '1538594155', '1', '删除: 68', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('231', '1538594155', '1', '删除: 67', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('232', '1538594352', '1', '删除: 8', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('233', '1538594352', '1', '删除: 7', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('234', '1538594352', '1', '删除: 6', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('235', '1538594352', '1', '删除: 5', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('236', '1538594352', '1', '删除: 4', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('237', '1538594677', '1', '添加: 100元代金卡', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('238', '1538594828', '1', '删除: 9', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('239', '1538594850', '1', '添加: 100元代金卡', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('240', '1538594857', '1', '添加: 200元代金卡', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('241', '1538594866', '1', '添加: 500元代金卡', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('242', '1538594875', '1', '添加: 1000元代金卡', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('243', '1538594883', '1', '添加: 2000元代金卡', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('244', '1538594896', '1', '添加: ', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('245', '1538779201', '1', '删除文章: 219', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('246', '1538779282', '1', '删除: 220', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('247', '1538779282', '1', '删除: 218', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('248', '1538780585', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('249', '1538780898', '1', '删除文章: 3', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('250', '1538781134', '1', '删除: 2', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('251', '1538781949', '1', '删除: 4-0', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('252', '1538784062', '1', '添加: ', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('253', '1538839793', '1', '删除文章: 14', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('254', '1538839884', '1', '删除文章: 16', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('255', '1538839889', '1', '删除文章: 1', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('256', '1538839960', '1', '删除: 6', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('257', '1538839960', '1', '删除: 5', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('258', '1538839960', '1', '删除: 4', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('259', '1538839960', '1', '删除: 3', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('260', '1538839960', '1', '删除: 2', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('261', '1538839986', '1', '删除: 9', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('262', '1538839986', '1', '删除: 8', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('263', '1538839986', '1', '删除: 7', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('264', '1538840839', '1', '删除文章: 10', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('265', '1538840842', '1', '删除: 12', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('266', '1538840842', '1', '删除: 11', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('267', '1538841841', '1', '删除文章: 13', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('268', '1538841842', '1', '删除文章: 15', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('269', '1538841976', '1', '添加: 100元代金卡', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('270', '1538841988', '1', '添加: 200元代金卡', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('271', '1538842005', '1', '添加: ', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('272', '1538842024', '1', '添加: ', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('273', '1538886901', '1', '添加会员账号: haha', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('274', '1538893490', '1', '删除文章: 17', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('275', '1538893567', '1', '删除文章: 18', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('276', '1538894003', '1', '添加: ', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('277', '1538898122', '1', '删除: 7-0', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('278', '1538898154', '1', '删除: 15', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('279', '1538898197', '1', '删除: 8-0', '0.0.0.0');
+INSERT INTO `jzc_admin_log` VALUES ('280', '1538899855', '1', '添加: ', '0.0.0.0');
 
 -- ----------------------------
 -- Table structure for jzc_admin_message
@@ -311,7 +591,7 @@ CREATE TABLE `jzc_admin_user` (
 -- ----------------------------
 -- Records of jzc_admin_user
 -- ----------------------------
-INSERT INTO `jzc_admin_user` VALUES ('1', 'admin', '15601590617@163.com', '084cbe6b1c964b4391bd491d4841647f', '9889', '1538356766', '1538328414', '0.0.0.0', 'all', '', '', '0', '0', null, null);
+INSERT INTO `jzc_admin_user` VALUES ('1', 'admin', '15601590617@163.com', '084cbe6b1c964b4391bd491d4841647f', '9889', '1538356766', '1538838227', '0.0.0.0', 'all', '', '', '0', '0', null, null);
 
 -- ----------------------------
 -- Table structure for jzc_adsense
@@ -439,14 +719,125 @@ CREATE TABLE `jzc_amount_card` (
   `amount_status` int(1) DEFAULT NULL COMMENT '代金卡状态：0未激活 1已激活',
   `amount_count` float(11,2) DEFAULT NULL COMMENT '代金卡金额',
   `expry_date` datetime DEFAULT NULL COMMENT '有效期',
+  `type_id` int(11) DEFAULT NULL COMMENT '代金卡类型ID',
+  `use_status` int(1) DEFAULT '0' COMMENT '是否被使用 0未使用 1已使用',
   `add_date` datetime DEFAULT NULL COMMENT '添加时间',
   PRIMARY KEY (`amount_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=407 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of jzc_amount_card
 -- ----------------------------
-INSERT INTO `jzc_amount_card` VALUES ('1', '000001', '978978978', '789789789', '1', '88.88', '2018-10-27 09:26:05', '2018-10-01 09:26:12');
+INSERT INTO `jzc_amount_card` VALUES ('297', '000001', 'JZC15388708058325510', 'FS4P-E47M-LROM-9LJ9', '1', '100.00', '2018-10-18 00:00:00', '15', '1', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('298', '000001', 'JZC15388708058338126', 'Y9O9-ORFL-4KM8-3LUX', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('299', '000001', 'JZC15388708058347360', 'D7VL-TASB-E7XX-4JZU', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('300', '000001', 'JZC15388708058362550', 'C6VB-A8C8-EC44-AAJI', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('301', '000001', 'JZC15388708058378274', '7GAC-V706-HNL5-S3IE', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('302', '000001', 'JZC15388708058387167', 'ERIQ-XRJC-IJ4I-HIBF', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('303', '000001', 'JZC15388708058394841', 'ORTI-HIXQ-X6GQ-GUMC', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('304', '000001', 'JZC15388708058408016', '44W6-28AS-BMTE-YIBW', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('305', '000001', 'JZC15388708058423495', 'N5U8-865K-0QAN-5M83', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('306', '000001', 'JZC15388708058432111', '9GZZ-FYWL-H5YH-A1PD', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('307', '000001', 'JZC15388708058449265', '2BF0-8BF3-ZUJB-AGJZ', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('308', '000001', 'JZC15388708058454183', '9LYY-UGKR-BCN0-9XL5', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('309', '000001', 'JZC15388708058465520', 'H76G-PUJE-UD76-K2OW', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('310', '000001', 'JZC15388708058478430', 'UV57-0A21-EV6E-E5MF', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('311', '000001', 'JZC15388708058485726', '0YWZ-ZBZS-0AGJ-KXH3', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('312', '000001', 'JZC15388708058494270', 'VSTN-6NIM-HPJZ-T8RQ', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('313', '000001', 'JZC15388708058516192', 'XHBM-0LPR-7EDB-QRAX', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('314', '000001', 'JZC15388708058521089', '0XO4-085X-2PFX-3B4U', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('315', '000001', 'JZC15388708058531818', 'IBXR-9MUM-13UR-TDNK', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('316', '000001', 'JZC15388708058547996', 'JGVQ-6ZZB-DHSR-RNMK', '1', '100.00', '2018-10-18 00:00:00', '15', '0', '2018-10-07 08:06:45');
+INSERT INTO `jzc_amount_card` VALUES ('317', '000002', 'JZC15388708249161853', 'PBOU-D7K9-U577-VI2S', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('318', '000002', 'JZC15388708249174560', '33LY-9SQX-V3RB-8ISC', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('319', '000002', 'JZC15388708249189636', 'ZGR6-ZSQX-HEZT-XERP', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('320', '000002', 'JZC15388708249191578', 'ERX5-F8BB-5V9C-MWJ5', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('321', '000002', 'JZC15388708249202348', '0J9O-H2MZ-YIPE-QPGK', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('322', '000002', 'JZC15388708249212810', 'YDIF-5EWA-M1SA-77S5', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('323', '000002', 'JZC15388708249239771', 'FY3L-NXTL-BRK2-G32D', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('324', '000002', 'JZC15388708249242737', 'ZHDD-1LDL-CK95-I6CH', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('325', '000002', 'JZC15388708249254022', 'LHJ9-K0UI-ASB0-I5GT', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('326', '000002', 'JZC15388708249262308', 'Y7JR-I1AQ-OYM2-TDNY', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('327', '000002', 'JZC15388708249275318', 'BY6U-7NVW-2BUB-A18W', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('328', '000002', 'JZC15388708249296691', 'FS0D-LRHM-3TO6-17EY', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('329', '000002', 'JZC15388708249307717', 'N1H4-CEOZ-1U0M-X8HP', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('330', '000002', 'JZC15388708249315023', 'WK9O-N6YG-WUTC-FHH0', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('331', '000002', 'JZC15388708249323871', 'L0P9-504R-MLHY-YCI5', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('332', '000002', 'JZC15388708249334159', 'CG7M-6ZHD-YCTV-A8JM', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('333', '000002', 'JZC15388708249349777', 'WIJF-213X-X0AC-6RKR', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('334', '000002', 'JZC15388708249358424', '4XSD-GSH7-K5HC-UHV0', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('335', '000002', 'JZC15388708249378524', 'R8WP-GN8H-HQQR-EKMF', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('336', '000002', 'JZC15388708249388359', 'RMS2-EYQB-2CJ9-VZ3V', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('337', '000002', 'JZC15388708249392045', 'LQOQ-FBLH-553R-1354', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('338', '000002', 'JZC15388708249405478', 'I8OL-8B07-LV8T-GVX6', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('339', '000002', 'JZC15388708249418870', 'R7HI-JMGW-NBB5-2USM', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('340', '000002', 'JZC15388708249421010', 'B348-CX1E-ZJ7Q-UMXR', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('341', '000002', 'JZC15388708249447867', 'E3D5-M138-HLVY-O36C', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('342', '000002', 'JZC15388708249452655', 'E01J-VR34-BH5Y-3L98', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('343', '000002', 'JZC15388708249468003', '30OJ-FJID-KFFX-ZRP1', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('344', '000002', 'JZC15388708249484331', '3011-LLS3-T5MB-UWDO', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('345', '000002', 'JZC15388708249491085', 'LEM8-EK4A-35NJ-U26K', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('346', '000002', 'JZC15388708249501924', 'M5GX-NLU8-JXTH-34XD', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('347', '000002', 'JZC15388708249514517', 'OA63-JILR-6OUG-KDMK', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('348', '000002', 'JZC15388708249529042', 'P5WY-96TE-5W6G-X2AM', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('349', '000002', 'JZC15388708249535043', 'U1U4-ZQL7-P8UK-QV1C', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('350', '000002', 'JZC15388708249549755', 'I720-HRU8-MOBL-AGJD', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('351', '000002', 'JZC15388708249561505', '0392-V3GD-Z5PK-TB7H', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('352', '000002', 'JZC15388708249571358', '8PIZ-YEGR-20O5-PS02', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('353', '000002', 'JZC15388708249582586', 'ES1D-2W03-KMFP-2VBR', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('354', '000002', 'JZC15388708249591113', 'X2EG-OQ7B-FP92-206E', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('355', '000002', 'JZC15388708249606562', '31KS-WFA2-YFSL-6OQP', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('356', '000002', 'JZC15388708249628002', '9E8K-QHK5-77HT-AADZ', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('357', '000002', 'JZC15388708249638056', 'Y1O4-WVBK-DPWZ-2VWG', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('358', '000002', 'JZC15388708249649472', '79MJ-2HI8-AHR2-7SG7', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('359', '000002', 'JZC15388708249654781', 'B7E2-L2U7-JN9E-M1WJ', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('360', '000002', 'JZC15388708249666190', 'VGXO-75G1-MPFG-8BPU', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('361', '000002', 'JZC15388708249674297', 'QNPX-620O-CB80-G8BI', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('362', '000002', 'JZC15388708249699796', '6Q9X-0HU7-1ZEB-38GZ', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('363', '000002', 'JZC15388708249703756', 'Q6EA-E3AL-PCWB-NIXT', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('364', '000002', 'JZC15388708249714642', 'OLXR-GL0E-X7VI-N3WL', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('365', '000002', 'JZC15388708249725654', 'HWMW-4922-7SUW-GTIH', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('366', '000002', 'JZC15388708249738555', '8YFV-COTY-0O82-LDSG', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-07 08:07:04');
+INSERT INTO `jzc_amount_card` VALUES ('367', '000004', 'JZC15389228033127612', '7FSW-BJKT-8GZ6-0EWZ', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('368', '000004', 'JZC15389228033141052', '2NP4-O3A3-ZJ7C-5UFG', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('369', '000004', 'JZC15389228033156911', 'DGHJ-Y72P-X79M-5CP0', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('370', '000004', 'JZC15389228033166962', '6G45-M4N5-5STR-Q1BC', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('371', '000004', 'JZC15389228033176310', '0FQH-9T82-VPRL-HULI', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('372', '000004', 'JZC15389228033188984', 'FMTH-65YL-C2X1-LP5W', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('373', '000004', 'JZC15389228033209010', 'VMTS-XUVO-QPNJ-MR9M', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('374', '000004', 'JZC15389228033212580', 'W9MJ-NRQR-ZDQE-B6SD', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('375', '000004', 'JZC15389228033224428', 'SNZG-9I3P-741U-PONV', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('376', '000004', 'JZC15389228033242060', 'WA8B-0SW4-QICU-AAK3', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('377', '000004', 'JZC15389228033251951', 'FYZ8-UK4K-TTKM-8PW2', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('378', '000004', 'JZC15389228033262328', 'O968-P7MZ-9VNJ-BSZ9', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('379', '000004', 'JZC15389228033271684', '4TYB-EWZO-RF7F-S4XZ', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('380', '000004', 'JZC15389228033283628', '70DP-ET29-W6ZV-HGLM', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('381', '000004', 'JZC15389228033301202', 'FX23-IEC4-I011-T694', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('382', '000004', 'JZC15389228033319302', 'XJ11-P117-HBU0-QHNA', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('383', '000004', 'JZC15389228033322299', '46F0-BO8G-OU29-BWQD', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('384', '000004', 'JZC15389228033345530', 'JN97-1LW5-2YQQ-UJSJ', '1', '200.00', '2018-10-25 00:00:00', '16', '0', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('385', '000004', 'JZC15389228033358734', 'PHN4-BSPI-O7QJ-OODX', '1', '200.00', '2018-10-25 00:00:00', '16', '1', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('386', '000004', 'JZC15389228033364092', 'OPWD-6C69-MCY5-1BYD', '1', '200.00', '2018-10-25 00:00:00', '16', '1', '2018-10-07 22:33:23');
+INSERT INTO `jzc_amount_card` VALUES ('387', '000001', 'JZC15389286552567239', 'J08T-DI4T-FRPJ-H3F2', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('388', '000001', 'JZC15389286552585314', 'C90X-VPG9-JP0F-MQQO', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('389', '000001', 'JZC15389286552597832', 'R9Q3-9OSM-6KK0-00B2', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('390', '000001', 'JZC15389286552615056', 'NQ4R-I124-8X89-WOF5', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('391', '000001', 'JZC15389286552638402', 'Y19X-0VJZ-IAHD-R52N', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('392', '000001', 'JZC15389286552642122', 'RPYO-0FUB-7OFJ-7FA2', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('393', '000001', 'JZC15389286552651603', '5J3H-SSCY-U22L-91YR', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('394', '000001', 'JZC15389286552673368', 'R7AM-TLJZ-BACK-V11W', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('395', '000001', 'JZC15389286552683430', '2GWY-2Z26-9FCS-D58X', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('396', '000001', 'JZC15389286552704116', 'ZO6Q-95LX-ULTW-3JXW', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('397', '000001', 'JZC15389286552715975', 'WHME-6MBM-BXNW-SHW0', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('398', '000001', 'JZC15389286552733911', 'WRD6-9FRI-5NJ1-NMKR', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('399', '000001', 'JZC15389286552742168', '365G-975G-U08F-2GE0', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('400', '000001', 'JZC15389286552754265', 'U3AS-09U8-CFS7-OIPE', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('401', '000001', 'JZC15389286552771539', '0O26-VBVJ-KQ39-3HEO', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('402', '000001', 'JZC15389286552786407', 'O1OX-WQJO-AO64-DMVQ', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('403', '000001', 'JZC15389286552809959', 'QIGL-SERE-ZFMC-1WJG', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('404', '000001', 'JZC15389286552819037', 'OFD3-4T50-1MEO-SB8B', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('405', '000001', 'JZC15389286552839392', 'W8LN-THRZ-2KKI-2L62', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
+INSERT INTO `jzc_amount_card` VALUES ('406', '000001', 'JZC15389286552856072', '6B1T-E89Z-TN2S-KQA8', '1', '200.00', '2018-10-18 00:00:00', '16', '0', '2018-10-08 00:10:55');
 
 -- ----------------------------
 -- Table structure for jzc_area_region
@@ -737,6 +1128,44 @@ CREATE TABLE `jzc_card` (
 -- ----------------------------
 
 -- ----------------------------
+-- Table structure for jzc_card_drop_log
+-- ----------------------------
+DROP TABLE IF EXISTS `jzc_card_drop_log`;
+CREATE TABLE `jzc_card_drop_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '充值记录ID',
+  `user_name` varchar(30) DEFAULT NULL COMMENT '用户名',
+  `card_number` varchar(60) DEFAULT NULL COMMENT '卡号',
+  `card_password` varchar(60) DEFAULT NULL COMMENT '卡密',
+  `card_type` int(11) DEFAULT NULL COMMENT '卡片类型',
+  `card_count` float DEFAULT NULL COMMENT '充值金额',
+  `drop_date` datetime DEFAULT NULL COMMENT '充值时间',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of jzc_card_drop_log
+-- ----------------------------
+INSERT INTO `jzc_card_drop_log` VALUES ('19', 'haha', 'JZC15388708058325510', 'FS4P-E47M-LROM-9LJ9', '15', '100', '2018-10-07 22:26:19');
+INSERT INTO `jzc_card_drop_log` VALUES ('20', 'haha', 'JZC15389228033364092', 'OPWD-6C69-MCY5-1BYD', '16', '200', '2018-10-07 22:34:17');
+INSERT INTO `jzc_card_drop_log` VALUES ('21', 'haha', 'JZC15389228033358734', 'PHN4-BSPI-O7QJ-OODX', '16', '200', '2018-10-07 22:43:34');
+
+-- ----------------------------
+-- Table structure for jzc_card_type
+-- ----------------------------
+DROP TABLE IF EXISTS `jzc_card_type`;
+CREATE TABLE `jzc_card_type` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '代金卡类型ID',
+  `card_name` varchar(30) DEFAULT NULL COMMENT '代金卡类型名称',
+  `card_count` float(11,2) DEFAULT NULL COMMENT '代金卡金额',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of jzc_card_type
+-- ----------------------------
+INSERT INTO `jzc_card_type` VALUES ('16', '200元代金卡', '200.00');
+
+-- ----------------------------
 -- Table structure for jzc_cart
 -- ----------------------------
 DROP TABLE IF EXISTS `jzc_cart`;
@@ -855,6 +1284,26 @@ CREATE TABLE `jzc_comment` (
 -- ----------------------------
 -- Records of jzc_comment
 -- ----------------------------
+
+-- ----------------------------
+-- Table structure for jzc_create_card_log
+-- ----------------------------
+DROP TABLE IF EXISTS `jzc_create_card_log`;
+CREATE TABLE `jzc_create_card_log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '生卡记录ID',
+  `amount_list` varchar(30) DEFAULT NULL COMMENT '生卡批次',
+  `card_type` int(11) DEFAULT NULL COMMENT '生卡卡片类型',
+  `card_number` int(11) DEFAULT NULL COMMENT '生卡卡片数量',
+  `amount_number` varchar(600) DEFAULT NULL COMMENT '生卡记录卡号',
+  `create_date` datetime DEFAULT NULL COMMENT '生卡日期',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of jzc_create_card_log
+-- ----------------------------
+INSERT INTO `jzc_create_card_log` VALUES ('10', '000001', '16', '20', 'JZC15389286552567239,JZC15389286552585314,JZC15389286552597832,JZC15389286552615056,JZC15389286552638402,JZC15389286552642122,JZC15389286552651603,JZC15389286552673368,JZC15389286552683430,JZC15389286552704116,JZC15389286552715975,JZC15389286552733911,JZC15389286552742168,JZC15389286552754265,JZC15389286552771539,JZC15389286552786407,JZC15389286552809959,JZC15389286552819037,JZC15389286552839392,JZC15389286552856072,', '2018-10-08 00:10:55');
+INSERT INTO `jzc_create_card_log` VALUES ('9', '000004', '16', '20', 'JZC15389228033127612,JZC15389228033141052,JZC15389228033156911,JZC15389228033166962,JZC15389228033176310,JZC15389228033188984,JZC15389228033209010,JZC15389228033212580,JZC15389228033224428,JZC15389228033242060,JZC15389228033251951,JZC15389228033262328,JZC15389228033271684,JZC15389228033283628,JZC15389228033301202,JZC15389228033319302,JZC15389228033322299,JZC15389228033345530,JZC15389228033358734,JZC15389228033364092,', '2018-10-07 22:33:23');
 
 -- ----------------------------
 -- Table structure for jzc_crons
@@ -5489,8 +5938,7 @@ CREATE TABLE `jzc_sessions` (
 -- ----------------------------
 -- Records of jzc_sessions
 -- ----------------------------
-INSERT INTO `jzc_sessions` VALUES ('7871c90358d77f6ab4f998f14feba52b', '1538357201', '0', '0', '0.0.0.0', '0', '0', '1.00', '0', 'a:2:{s:9:\"parent_id\";i:0;s:8:\"drp_shop\";a:0:{}}');
-INSERT INTO `jzc_sessions` VALUES ('da4bc6163309b3955f3660ff44147811', '1538357234', '0', '1', '0.0.0.0', '0', '0', '0.00', '0', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538328421;s:12:\"suppliers_id\";s:1:\"0\";}');
+INSERT INTO `jzc_sessions` VALUES ('ed9716df90d652df3f69dbf5edb77d25', '1538956065', '0', '1', '0.0.0.0', '0', '0', '0.00', '0', '');
 
 -- ----------------------------
 -- Table structure for jzc_sessions_data
@@ -5507,6 +5955,7 @@ CREATE TABLE `jzc_sessions_data` (
 -- ----------------------------
 -- Records of jzc_sessions_data
 -- ----------------------------
+INSERT INTO `jzc_sessions_data` VALUES ('ed9716df90d652df3f69dbf5edb77d25', '4294967295', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538927265;s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:6:\"400.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}s:9:\"wechat_id\";i:1;}');
 
 -- ----------------------------
 -- Table structure for jzc_shipping
@@ -6100,11 +6549,12 @@ CREATE TABLE `jzc_users` (
   KEY `email` (`email`),
   KEY `parent_id` (`parent_id`),
   KEY `flag` (`flag`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of jzc_users
 -- ----------------------------
+INSERT INTO `jzc_users` VALUES ('1', '15601590617@163.com', 'haha', 'a2a0ddee0a1cdace6b720e9542cb4e3c', '', '', '0', '1958-01-01', '400.00', '0.00', '0', '0', '0', '1538886901', '1538891637', '0000-00-00 00:00:00', '0.0.0.0', '4', '0', '0', '9828', '0', '0', '0', '', '', '', '', '', '', '0', '0.00', null, null, '0');
 
 -- ----------------------------
 -- Table structure for jzc_user_account
@@ -6332,11 +6782,12 @@ CREATE TABLE `jzc_wechat` (
   `status` int(1) unsigned NOT NULL DEFAULT '1' COMMENT '状态',
   `default_wx` int(1) NOT NULL DEFAULT '1' COMMENT '1为默认使用，0为不默认',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of jzc_wechat
 -- ----------------------------
+INSERT INTO `jzc_wechat` VALUES ('1', '', '', '', '', '', '', '2', '0', null, null, '0', '1538923611', '0', '1', '1');
 
 -- ----------------------------
 -- Table structure for jzc_wechat_custom_message
