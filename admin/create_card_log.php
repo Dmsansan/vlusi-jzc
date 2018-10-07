@@ -223,8 +223,8 @@ elseif ($_REQUEST['act'] == 'operate')
                 }
             $cards_list = get_create_card_loglist();
             $create_card_log = $cards_list['arr'];//所有生卡记录
-              // var_dump($create_card_log);
-              // die();
+            // var_dump($create_card_log);
+            // die();
             // foreach ($create_card_log as $key => $log) {
             //     if(in_array($log['id'], $arr_id)){
             //         $arr[] = $log;
@@ -240,6 +240,8 @@ elseif ($_REQUEST['act'] == 'operate')
                 $PHPExcel->getActiveSheet()->setCellValue('D' . ($hang), $log['card_number']);
                 $PHPExcel->getActiveSheet()->setCellValue('E' . ($hang), $log['card_used']);
                 $PHPExcel->getActiveSheet()->setCellValue('F' . ($hang), $log['create_date']." ");
+
+                $hang++;
             }
             //设置单元格边框
             $PHPExcel->getActiveSheet()->getStyle('A1:F'.$hang)->applyFromArray($styleArray);
