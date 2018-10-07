@@ -10,7 +10,7 @@
   </form>
 </div>
 
-<form method="POST" action="create_card_log.php?act=batch_remove" name="listForm">
+<form method="POST" action="create_card_log.php?act=operate" name="listForm">
 <!-- start cat list -->
 <div class="list-div" id="listDiv">
 <?php endif; ?>
@@ -37,7 +37,6 @@
     <td align="center"><span><?php echo $this->_var['list']['card_used']; ?></span></td>
     <td align="center"><span><?php echo $this->_var['list']['create_date']; ?></span></td>
     <td align="center" nowrap="true"><span>
-      <a href="create_card_log.php?act=edit&id=<?php echo $this->_var['list']['amount_id']; ?>" title="<?php echo $this->_var['lang']['edit']; ?>"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
       <a href="create_card_log.php?act=remove&id=<?php echo $this->_var['list']['id']; ?>&used_card=<?php echo $this->_var['list']['card_used']; ?>" title="<?php echo $this->_var['lang']['remove']; ?>"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
     </td>
    </tr>
@@ -45,7 +44,8 @@
     <tr><td class="no-records" colspan="9"><?php echo $this->_var['lang']['no_records']; ?></td></tr>
   <?php endif; unset($_from); ?><?php $this->pop_vars();; ?>
   <tr>
-    <td colspan="2"><input type="submit" class="button" id="btnSubmit" value="<?php echo $this->_var['lang']['button_remove']; ?>" disabled="true" /></td>
+    <td colspan="2"><input name="batch_remove" type="submit" class="button" id="btnSubmit" value="<?php echo $this->_var['lang']['button_remove']; ?>" disabled="true" />
+     <input name="export" type="submit" id="btnSubmit1" value="导出为EXCEL" class="button" disabled="true"  />  </td>
     <td align="right" nowrap="true" colspan="8"><?php echo $this->fetch('page.htm'); ?></td>
   </tr>
 </table>

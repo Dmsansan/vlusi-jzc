@@ -10,7 +10,7 @@
   </form>
 </div>
 
-<form method="POST" action="create_card_log.php?act=batch_remove" name="listForm">
+<form method="POST" action="create_card_log.php?act=operate" name="listForm">
 <!-- start cat list -->
 <div class="list-div" id="listDiv">
 {/if}
@@ -35,7 +35,6 @@
     <td align="center"><span>{$list.card_used}</span></td>
     <td align="center"><span>{$list.create_date}</span></td>
     <td align="center" nowrap="true"><span>
-      <a href="create_card_log.php?act=edit&id={$list.amount_id}" title="{$lang.edit}"><img src="images/icon_edit.gif" border="0" height="16" width="16" /></a>&nbsp;
       <a href="create_card_log.php?act=remove&id={$list.id}&used_card={$list.card_used}" title="{$lang.remove}"><img src="images/icon_drop.gif" border="0" height="16" width="16"></a></span>
     </td>
    </tr>
@@ -43,7 +42,8 @@
     <tr><td class="no-records" colspan="9">{$lang.no_records}</td></tr>
   {/foreach}
   <tr>
-    <td colspan="2"><input type="submit" class="button" id="btnSubmit" value="{$lang.button_remove}" disabled="true" /></td>
+    <td colspan="2"><input name="batch_remove" type="submit" class="button" id="btnSubmit" value="{$lang.button_remove}" disabled="true" />
+     <input name="export" type="submit" id="btnSubmit1" value="导出为EXCEL" class="button" disabled="true"  />  </td>
     <td align="right" nowrap="true" colspan="8">{include file="page.htm"}</td>
   </tr>
 </table>

@@ -23,7 +23,6 @@ if ($_REQUEST['act'] == 'list')
     /* 取得过滤条件 */
     $filter = array();
     $smarty->assign('ur_here',      $_LANG['18_create_card_log']);
-    
     $smarty->assign('full_page',    1);
     $smarty->assign('filter',       $filter);
 
@@ -63,174 +62,6 @@ elseif ($_REQUEST['act'] == 'query')
 }
 
 /*------------------------------------------------------ */
-//-- 添加代金卡
-/*------------------------------------------------------ */
-if ($_REQUEST['act'] == 'add')
-{
-    /* 权限判断 */
-    admin_priv('create_card_log');
-
-    /*初始化*/
-    $cards = array();
-    $cards['amount_status'] = 1;
-
-    /*初始化金额选项*/
-    $sql = "SELECT cc.id,cc.card_count".
-           " FROM " . $ecs->table('card_type') . " AS cc ".
-           "ORDER BY cc.id DESC";
-    $res = $db->query($sql);
-    while ($rows = $GLOBALS['db']->fetchRow($res))
-    {
-        $arr[] = $rows;
-    }
-
-    $smarty->assign('card_count',  $arr);//类型集合
-    $smarty->assign('card_type_add_url', 'card_type.php?act=add');
-    $smarty->assign('cards',       $cards);
-    $smarty->assign('ur_here',     $_LANG['create_card_log_add']);
-    $smarty->assign('action_link', array('text' => $_LANG['16_create_card_log_list'], 'href' => 'create_card_log.php?act=list'));
-    $smarty->assign('form_action', 'insert');
-
-    assign_query_info();
-    $smarty->display('create_card_log_info.htm');
-}
-
-/*------------------------------------------------------ */
-//-- 批量添加代金卡
-/*------------------------------------------------------ */
-if ($_REQUEST['act'] == 'group_add')
-{
-    /* 权限判断 */
-    admin_priv('create_card_log');
-
-    /*初始化*/
-    $cards = array();
-    $cards['amount_status'] = 1;
-
-    /*初始化金额选项*/
-    $sql = "SELECT cc.id,cc.card_count".
-           " FROM " . $ecs->table('card_type') . " AS cc ".
-           "ORDER BY cc.id DESC";
-    $res = $db->query($sql);
-    while ($rows = $GLOBALS['db']->fetchRow($res))
-    {
-        $arr[] = $rows;
-    }
-
-    $smarty->assign('card_count',  $arr);//类型集合
-    $smarty->assign('card_type_add_url', 'card_type.php?act=add');
-    $smarty->assign('cards',       $cards);
-    $smarty->assign('ur_here',     $_LANG['create_card_log_group_add']);
-    $smarty->assign('action_link', array('text' => $_LANG['16_create_card_log_list'], 'href' => 'create_card_log.php?act=list'));
-    $smarty->assign('form_action', 'group_insert');
-
-    assign_query_info();
-    $smarty->display('create_card_log_group_add.htm');
-}
-
-/*------------------------------------------------------ */
-//-- 添加商品
-/*------------------------------------------------------ */
-if ($_REQUEST['act'] == 'insert')
-{
-    /* 权限判断 */
-    admin_priv('create_card_log');
-
-    /*检查是否重复*/
-    $is_only = $exc->is_only('amount_number', $_POST['amount_number'],0, " amount_number='$_POST[amount_number]'");
-
-    if (!$is_only)
-    {
-        sys_msg($_LANG['card_exist'], 1);
-    }
-
-    /*插入数据*/
-    $add_time = date("Y-m-d H:i:s");
-    if (empty($_POST['amount_status']))
-    {
-        $_POST['amount_status'] = 1;
-    }
-    /*查找类型金额*/
-    $id = $_POST['amount_count'];
-    $sql_type = "SELECT cc.card_count".
-                " FROM " . $ecs->table('card_type') . " AS cc ".
-                " WHERE cc.id='$id'";
-    $count = $db->GetRow($sql_type);
-
-    $sql = "INSERT INTO ".$ecs->table('create_card_log')."(amount_list, amount_number, amount_password, amount_status, amount_count, type_id, expry_date, add_date) ".
-                    "VALUES ('$_POST[amount_list]', '$amount_number', '$amount_password', '$_POST[amount_status]', '$count[card_count]', '$id' ,'$_POST[expry_date]', '$add_time')";
-    $db->query($sql);
-
-    $link[0]['text'] = $_LANG['continue_add'];
-    $link[0]['href'] = 'create_card_log.php?act=add';
-
-    $link[1]['text'] = $_LANG['back_list'];
-    $link[1]['href'] = 'create_card_log.php?act=list';
-
-    admin_log($_POST['amount_number'],'add','create_card_log');
-
-    clear_cache_files(); // 清除相关的缓存文件
-
-    sys_msg($_LANG['articleadd_succeed'],0, $link);
-}
-
-/*------------------------------------------------------ */
-//-- 批量添加商品
-/*------------------------------------------------------ */
-if ($_REQUEST['act'] == 'group_insert')
-{
-    /* 权限判断 */
-    admin_priv('create_card_log');
-    $amount_num = $_POST['amount_num'];//生卡数量
-    for($j = 0; $j<$amount_num; $j++){
-           //自动生成代金卡号
-            $amount_number =  create_amount_number();
-            //自动生成密码
-            for($i=0;$i<3;$i++){
-                $amount_password .= create_amount_password(4)."-";
-            }
-            $amount_password .= create_amount_password(4);
-            /*检查是否重复*/
-            $is_only = $exc->is_only('amount_number', $amount_number,0, " amount_number='$amount_number'");
-
-            if (!$is_only)
-            {
-                sys_msg($_LANG['card_exist'], 1);
-            }
-
-            /*插入数据*/
-            $add_time = date("Y-m-d H:i:s");
-            if (empty($_POST['amount_status']))
-            {
-                $_POST['amount_status'] = 1;
-            }
-            /*查找类型金额*/
-            $id = $_POST['amount_count'];
-            $sql_type = "SELECT cc.card_count".
-           " FROM " . $ecs->table('card_type') . " AS cc ".
-           " WHERE cc.id='$id'";
-            $count = $db->GetRow($sql_type);
-
-            $sql = "INSERT INTO ".$ecs->table('create_card_log')."(amount_list, amount_number, amount_password, amount_status, amount_count, type_id, expry_date, add_date) ".
-                    "VALUES ('$_POST[amount_list]', '$amount_number', '$amount_password', '$_POST[amount_status]', '$count[card_count]', '$id' ,'$_POST[expry_date]', '$add_time')";
-            $db->query($sql);
-            $amount_password = '';
-    }
- 
-
-    $link[0]['text'] = $_LANG['continue_add'];
-    $link[0]['href'] = 'create_card_log.php?act=group_add';
-
-    $link[1]['text'] = $_LANG['back_list'];
-    $link[1]['href'] = 'create_card_log.php?act=list';
-
-    admin_log($_POST['amount_number'],'add','create_card_log');
-
-    clear_cache_files(); // 清除相关的缓存文件
-
-    sys_msg($_LANG['articleadd_succeed'],0, $link);
-}
-/*------------------------------------------------------ */
 //-- 编辑
 /*------------------------------------------------------ */
 if ($_REQUEST['act'] == 'edit')
@@ -268,132 +99,167 @@ if ($_REQUEST['act'] == 'edit')
 }
 
 /*------------------------------------------------------ */
-//-- 编辑
+//-- 批量删除和导出生卡记录
 /*------------------------------------------------------ */
-if ($_REQUEST['act'] =='update')
-{
-    /* 权限判断 */
-    admin_priv('create_card_log');
-
-    /*查找类型金额*/
-    $id = $_POST['amount_count'];
-    $sql_type = "SELECT cc.card_count".
-           " FROM " . $ecs->table('card_type') . " AS cc ".
-           " WHERE cc.id='$id'";
-    $count = $db->GetRow($sql_type);
-
-    if ($exc->edit_create_card_log("amount_status='$_POST[amount_status]', amount_count='$count[card_count]', type_id= '$id',expry_date='$_POST[expry_date]' ", $_POST['amount_id']))
-    {
-        $link[0]['text'] = $_LANG['back_list'];
-        $link[0]['href'] = 'create_card_log.php?act=list&' . list_link_postfix();
-
-        admin_log($_POST['amount_id'], 'edit', 'create_card_log');
-
-        clear_cache_files();
-        sys_msg($_LANG['articleedit_succeed'], 0, $link);
-    }
-    else
-    {
-        die($db->error());
-    }
-}
-
-/*------------------------------------------------------ */
-//-- 编辑使用积分值
-/*------------------------------------------------------ */
-elseif ($_REQUEST['act'] == 'edit_exchange_integral')
-{
-    check_authz_json('exchange_goods');
-
-    $id                = intval($_POST['id']);
-    $exchange_integral = floatval($_POST['val']);
-
-    /* 检查文章标题是否重复 */
-    if ($exchange_integral < 0 || $exchange_integral == 0 && $_POST['val'] != "$goods_price")
-    {
-        make_json_error($_LANG['exchange_integral_invalid']);
-    }
-    else
-    {
-        if ($exc->edit("exchange_integral = '$exchange_integral'", $id))
-        {
-            clear_cache_files();
-            admin_log($id, 'edit', 'exchange_goods');
-            make_json_result(stripslashes($exchange_integral));
-        }
-        else
-        {
-            make_json_error($db->error());
-        }
-    }
-}
-
-/*------------------------------------------------------ */
-//-- 切换是否兑换
-/*------------------------------------------------------ */
-elseif ($_REQUEST['act'] == 'toggle_exchange')
-{
-    check_authz_json('exchange_goods');
-
-    $id     = intval($_POST['id']);
-    $val    = intval($_POST['val']);
-
-    $exc->edit("is_exchange = '$val'", $id);
-    clear_cache_files();
-
-    make_json_result($val);
-}
-
-/*------------------------------------------------------ */
-//-- 切换是否兑换
-/*------------------------------------------------------ */
-elseif ($_REQUEST['act'] == 'toggle_hot')
-{
-    check_authz_json('exchange_goods');
-
-    $id     = intval($_POST['id']);
-    $val    = intval($_POST['val']);
-
-    $exc->edit("is_hot = '$val'", $id);
-    clear_cache_files();
-
-    make_json_result($val);
-}
-
-/*------------------------------------------------------ */
-//-- 批量删除生卡记录
-/*------------------------------------------------------ */
-elseif ($_REQUEST['act'] == 'batch_remove')
+elseif ($_REQUEST['act'] == 'operate')
 {
     admin_priv('create_card_log');
-    if (!isset($_POST['checkboxes']) || !is_array($_POST['checkboxes']))
-    {
-        sys_msg($_LANG['no_select_create_card_log'], 1);
+    if(isset($_POST['batch_remove'])){
+            if (!isset($_POST['checkboxes']) || !is_array($_POST['checkboxes']))
+                {
+                    sys_msg($_LANG['no_select_create_card_log'], 1);
+                }
+
+                $count = 0;
+                foreach ($_POST['checkboxes'] AS $key => $id)
+                {
+                    $arr = explode('-', $id);
+                    if($arr[1] != 0){
+                         $lnk[] = array('text' => $_LANG['back_list'], 'href' => 'create_card_log.php?act=list');
+                         sys_msg(sprintf($_LANG['exit_card_log'], $count), 0, $lnk);
+                         exit;
+                    }
+                }
+
+                foreach ($_POST['checkboxes'] AS $key => $id)
+                {
+                    $arr = explode('-', $id);
+                    if ($exc->drop($arr[0]))
+                    {
+                        admin_log($id,'remove','create_card_log');
+                        $count++;
+                    }
+                }
+
+                $lnk[] = array('text' => $_LANG['back_list'], 'href' => 'create_card_log.php?act=list');
+                sys_msg(sprintf($_LANG['batch_remove_succeed'], $count), 0, $lnk);
+            }elseif(isset($_POST['export'])){
+        
+            if (!isset($_POST['checkboxes']) || !is_array($_POST['checkboxes']))
+                {
+                    sys_msg($_LANG['no_select_create_card_log'], 1);
+                }
+            /* 赋值公用信息 */
+            $smarty->assign('shop_name',    $_CFG['shop_name']);
+            $smarty->assign('shop_url',     $ecs->url());
+            $smarty->assign('shop_address', $_CFG['shop_address']);
+            $smarty->assign('service_phone',$_CFG['service_phone']);
+            $smarty->assign('print_time',   local_date($_CFG['time_format']));
+            $smarty->assign('action_user',  $_SESSION['admin_name']);
+
+            $html = '';
+            $order_sn_list = explode(',', $_POST['order_id']);
+            include_once (ROOT_PATH . 'include/vendor/PHPExcel.php');
+            include_once (ROOT_PATH . 'include/vendor/PHPExcel/IOFactory.php');
+            //require_once dirname(__FILE__) . '/Classes/PHPExcel.php';
+            //require_once dirname(__FILE__) . '/Classes/PHPExcel/IOFactory.php';
+            $PHPExcel = new PHPExcel();
+        
+            //设置excel属性基本信息
+            $PHPExcel->getProperties()->setCreator("Neo")
+            ->setLastModifiedBy("Neo")
+            ->setTitle("111")
+            ->setSubject("生卡记录列表")
+            ->setDescription("")
+            ->setKeywords("生卡记录列表")
+            ->setCategory("");
+            $PHPExcel->setActiveSheetIndex(0);
+            $PHPExcel->getActiveSheet()->setTitle("生卡记录列表");
+            //填入表头主标题
+            $PHPExcel->getActiveSheet()->setCellValue('A1', $_CFG['shop_name'].'生卡记录列表');
+            //填入表头副标题
+            $PHPExcel->getActiveSheet()->setCellValue('A2', '操作者：'.$_SESSION['admin_name'].' 导出日期：'.date('Y-m-d',time()).' 地址：'.$_CFG['shop_address'].' 电话：'.$_CFG['service_phone']);
+            //合并表头单元格
+            $PHPExcel->getActiveSheet()->mergeCells('A1:F1');
+            $PHPExcel->getActiveSheet()->mergeCells('A2:F2');
+        
+            //设置表头行高
+            $PHPExcel->getActiveSheet()->getRowDimension(1)->setRowHeight(40);
+            $PHPExcel->getActiveSheet()->getRowDimension(2)->setRowHeight(20);
+            $PHPExcel->getActiveSheet()->getRowDimension(3)->setRowHeight(30);
+            
+            //设置表头字体
+            $PHPExcel->getActiveSheet()->getStyle('A1')->getFont()->setName('黑体');
+            $PHPExcel->getActiveSheet()->getStyle('A1')->getFont()->setSize(20);
+            $PHPExcel->getActiveSheet()->getStyle('A1')->getFont()->setBold(true);
+            $PHPExcel->getActiveSheet()->getStyle('A2')->getFont()->setName('宋体');
+            $PHPExcel->getActiveSheet()->getStyle('A2')->getFont()->setSize(14);
+            $PHPExcel->getActiveSheet()->getStyle('A3:F3')->getFont()->setBold(true);
+ 
+            //设置单元格边框
+            $styleArray = array(  
+                'borders' => array(  
+                    'allborders' => array(  
+                        //'style' => PHPExcel_Style_Border::BORDER_THICK,//边框是粗的  
+                        'style' => PHPExcel_Style_Border::BORDER_THIN,//细边框  
+                        //'color' => array('argb' => 'FFFF0000'),  
+                    ),  
+                ),  
+            );
+        
+            //表格宽度
+            $PHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(18);//编号
+            $PHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(20);//生卡批次
+            $PHPExcel->getActiveSheet()->getColumnDimension('C')->setWidth(20);//卡片类型
+            $PHPExcel->getActiveSheet()->getColumnDimension('D')->setWidth(20);//生卡数量
+            $PHPExcel->getActiveSheet()->getColumnDimension('E')->setWidth(18);//已使用卡片数量
+            $PHPExcel->getActiveSheet()->getColumnDimension('F')->setWidth(20);//生卡时间
+
+            //表格标题
+            $PHPExcel->getActiveSheet()->setCellValue('A3', '编号');
+            $PHPExcel->getActiveSheet()->setCellValue('B3', '生卡批次');
+            $PHPExcel->getActiveSheet()->setCellValue('C3', '卡片类型');
+            $PHPExcel->getActiveSheet()->setCellValue('D3', '生卡数量');
+            $PHPExcel->getActiveSheet()->setCellValue('E3', '已使用卡片数量');
+            $PHPExcel->getActiveSheet()->setCellValue('F3', '生卡时间');
+ 
+            $hang = 4;
+
+            foreach ($_POST['checkboxes'] AS $key => $id)
+                {
+                    $arr = explode('-', $id);
+                    //生卡记录ID
+                    $arr_id[] = $arr[0];
+                }
+            $cards_list = get_create_card_loglist();
+            $create_card_log = $cards_list['arr'];//所有生卡记录
+              // var_dump($create_card_log);
+              // die();
+            // foreach ($create_card_log as $key => $log) {
+            //     if(in_array($log['id'], $arr_id)){
+            //         $arr[] = $log;
+            //     }
+            // }
+            // var_dump(count($arr));
+            // die();
+          foreach ($create_card_log as $key => $log){
+                 // $PHPExcel->getActiveSheet()->setCellValue('A' . ($hang), $order['order_sn']." ");//加个空格，防止时间戳被转换
+                $PHPExcel->getActiveSheet()->setCellValue('A' . ($hang), $log['id']);
+                $PHPExcel->getActiveSheet()->setCellValue('B' . ($hang), $log['amount_list']);
+                $PHPExcel->getActiveSheet()->setCellValue('C' . ($hang), $log['card_type']);
+                $PHPExcel->getActiveSheet()->setCellValue('D' . ($hang), $log['card_number']);
+                $PHPExcel->getActiveSheet()->setCellValue('E' . ($hang), $log['card_used']);
+                $PHPExcel->getActiveSheet()->setCellValue('F' . ($hang), $log['create_date']." ");
+            }
+            //设置单元格边框
+            $PHPExcel->getActiveSheet()->getStyle('A1:F'.$hang)->applyFromArray($styleArray);
+            //设置自动换行
+            $PHPExcel->getActiveSheet()->getStyle('A4:F'.$hang)->getAlignment()->setWrapText(true);
+            //设置字体大小
+            $PHPExcel->getActiveSheet()->getStyle('A4:F'.$hang)->getFont()->setSize(12);
+            //垂直居中
+            $PHPExcel->getActiveSheet()->getStyle('A1:F'.$hang)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+            //水平居中
+            $PHPExcel->getActiveSheet()->getStyle('A1:F'.$hang)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+
+            header('Content-Type: application/vnd.ms-excel');
+            header('Content-Disposition: attachment;filename="create_card_log_'.date('Y-m-d').'.xls"');
+            header('Cache-Control: max-age=0');
+            $Writer = PHPExcel_IOFactory::createWriter($PHPExcel, 'Excel5');
+            $Writer->save("php://output");
+            exit;
     }
 
-    $count = 0;
-    foreach ($_POST['checkboxes'] AS $key => $id)
-    {
-        $arr = explode('-', $id);
-        if($arr[1] != 0){
-             $lnk[] = array('text' => $_LANG['back_list'], 'href' => 'create_card_log.php?act=list');
-             sys_msg(sprintf($_LANG['exit_card_log'], $count), 0, $lnk);
-             exit;
-        }
-    }
-
-    foreach ($_POST['checkboxes'] AS $key => $id)
-    {
-        $arr = explode('-', $id);
-        if ($exc->drop($arr[0]))
-        {
-            admin_log($id,'remove','create_card_log');
-            $count++;
-        }
-    }
-
-    $lnk[] = array('text' => $_LANG['back_list'], 'href' => 'create_card_log.php?act=list');
-    sys_msg(sprintf($_LANG['batch_remove_succeed'], $count), 0, $lnk);
 }
 
 /*------------------------------------------------------ */
@@ -420,6 +286,7 @@ elseif ($_REQUEST['act'] == 'remove')
         }
     }
 }
+
 /* 获得生卡记录列表 */
 function get_create_card_loglist()
 {
