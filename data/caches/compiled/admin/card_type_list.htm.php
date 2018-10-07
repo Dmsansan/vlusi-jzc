@@ -43,7 +43,7 @@
     <tr><td class="no-records" colspan="6"><?php echo $this->_var['lang']['no_records']; ?></td></tr>
   <?php endif; unset($_from); ?><?php $this->pop_vars();; ?>
   <tr>
-    <td colspan="2"><input type="submit" class="button" id="btnSubmit" value="<?php echo $this->_var['lang']['button_remove']; ?>" disabled="true" /></td>
+    <td colspan="3"><input type="submit" class="button" id="btnSubmit" value="<?php echo $this->_var['lang']['button_remove']; ?>" disabled="true" /></td>
     <td align="right" nowrap="true" colspan="3"><?php echo $this->fetch('page.htm'); ?></td>
   </tr>
 </table>

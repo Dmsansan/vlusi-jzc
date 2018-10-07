@@ -63,52 +63,6 @@ elseif ($_REQUEST['act'] == 'query')
 }
 
 /*------------------------------------------------------ */
-//-- 用户充值代金卡
-/*------------------------------------------------------ */
-if ($_REQUEST['act'] == 'insert')
-{
-    /* 权限判断 */
-    admin_priv('card_drop_log');
-
-    /*检查是否重复*/
-    $is_only = $exc->is_only('amount_number', $_POST['amount_number'],0, " amount_number='$_POST[amount_number]'");
-
-    if (!$is_only)
-    {
-        sys_msg($_LANG['card_exist'], 1);
-    }
-
-    /*插入数据*/
-    $add_time = date("Y-m-d H:i:s");
-    if (empty($_POST['amount_status']))
-    {
-        $_POST['amount_status'] = 1;
-    }
-    /*查找类型金额*/
-    $id = $_POST['amount_count'];
-    $sql_type = "SELECT cc.card_count".
-                " FROM " . $ecs->table('card_type') . " AS cc ".
-                " WHERE cc.id='$id'";
-    $count = $db->GetRow($sql_type);
-
-    $sql = "INSERT INTO ".$ecs->table('card_drop_log')."(amount_list, amount_number, amount_password, amount_status, amount_count, type_id, expry_date, add_date) ".
-                    "VALUES ('$_POST[amount_list]', '$amount_number', '$amount_password', '$_POST[amount_status]', '$count[card_count]', '$id' ,'$_POST[expry_date]', '$add_time')";
-    $db->query($sql);
-
-    $link[0]['text'] = $_LANG['continue_add'];
-    $link[0]['href'] = 'card_drop_log.php?act=add';
-
-    $link[1]['text'] = $_LANG['back_list'];
-    $link[1]['href'] = 'card_drop_log.php?act=list';
-
-    admin_log($_POST['amount_number'],'add','card_drop_log');
-
-    clear_cache_files(); // 清除相关的缓存文件
-
-    sys_msg($_LANG['articleadd_succeed'],0, $link);
-}
-
-/*------------------------------------------------------ */
 //-- 批量删除生卡消费记录
 /*------------------------------------------------------ */
 elseif ($_REQUEST['act'] == 'batch_remove')

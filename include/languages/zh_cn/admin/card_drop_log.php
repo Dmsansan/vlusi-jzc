@@ -19,5 +19,7 @@ $_LANG['back_list'] ='返回代金卡充值记录列表';
 $_LANG['drop_confirm'] = '您确认要删除代金卡充值记录吗？';
 $_LANG['batch_remove_succeed'] = '您已经成功删除 %d 代金卡充值记录';
 $_LANG['no_select_card_drop_log'] = '未选中代金卡充值记录';
+
+$_LANG['card_is_not_exit'] = '代金卡账号密码不正确';
 /*JS 语言项*/
 ?>

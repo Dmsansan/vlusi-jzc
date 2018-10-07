@@ -2978,5 +2978,12 @@ class UserController extends CommonController {
          }
 		 
 	}
+
+    /*用户根据代金卡充值金额*/
+    //需要登录才能调用该接口
+    public function user_drop_card(){
+        /*代金卡账号密码监测->代金卡使用状态监测->代金卡激活状态监测->代金卡使用状态改变->金额充值到用户余额*/
+        echo 123;
+    }
 	
 }

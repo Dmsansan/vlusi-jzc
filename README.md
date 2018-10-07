@@ -15,3 +15,9 @@
         'DB_PORT'   => '3306',
         'DB_CHARSET'   => 'utf8',
     );
+
+会员根据代金卡账号密码进行充值操作接口：
+http://localhost:8080/vlusi_jzc/index.php?m=default&c=user&a=user_drop_card
+参数：user_name 用户名  
+      card_number 卡号
+      card_password 密码
