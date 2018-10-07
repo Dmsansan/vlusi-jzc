@@ -2982,8 +2982,79 @@ class UserController extends CommonController {
     /*用户根据代金卡充值金额*/
     //需要登录才能调用该接口
     public function user_drop_card(){
-        /*代金卡账号密码监测->代金卡使用状态监测->代金卡激活状态监测->代金卡使用状态改变->金额充值到用户余额*/
-        echo 123;
+        /*代金卡账号密码监测->代金卡使用状态监测->代金卡激活状态监测->代金卡使用状态改变->金额充值到用户余额->充值记录保存*/
+        if(IS_POST){
+            if($this->varible_isNull($_POST)){
+                echo json_encode(array('status' => 2, 'msg' => '缺少必要参数'));
+            }else{
+                $username = trim($_POST['user_name']);
+                $cardNumber = trim($_POST['card_number']);
+                $cardPassword = trim($_POST['card_password']);
+
+                //判断卡号密码是否正确？
+                if(!$this->is_exit($cardNumber,$cardPassword)){
+                    echo json_encode(array('status' => 3, 'msg' => '卡号或者密码不正确'));
+                }else{
+                    //判断代金卡的使用状态 0 未使用 1已使用
+                    $use_status = $this->model->table('amount_card')->field('use_status')->where(array('amount_number' => $cardNumber,'amount_password' => $cardPassword))->getOne();
+                    if($use_status['use_status']){
+                        echo json_encode(array('status' => 4,'msg' => '代金卡已经被使用，请勿重复使用'));
+                    }else{
+                        //判断代金卡的激活状态 0未激活 1已激活
+                        $status = $this->model->table('amount_card')->field('amount_status')->where(array('amount_number' => $cardNumber,'amount_password' => $cardPassword))->getOne();
+                        if(!$status){
+                            echo json_encode(array('status' => 5, 'msg' => '代金卡状态异常，请联系管理员'));
+                        }else{
+                            $amount_card_res =  $this->model->table('amount_card')->field('amount_count,type_id')->where(array('amount_number' => $cardNumber,'amount_password' => $cardPassword))->select();
+                            foreach ($amount_card_res as $key => $amount_card) {
+                                $amount_count = $amount_card['amount_count'];
+                                $type_id = $amount_card['type_id'];
+                            }
+                           
+                            //代金卡使用状态改变 时间紧缺少事务管理
+                            $res = $this->model->table('amount_card')->data(array('use_status' => 1))->where(array('amount_number' => $cardNumber,'amount_password' => $cardPassword))->update(); 
+                            //充值金额到用户账户
+                            $res1 = $this->model->table('users')->data(array('user_money' => $amount_count))->where(array('user_name' => $username))->update();
+                            //充值记录保存
+                            $res2 = $this->model->table('card_drop_log')
+                                ->data(array('user_name' => $username, 'card_number' => $cardNumber, 'card_password' => $cardPassword, 'card_type' => $type_id,'card_count' => $amount_count,'drop_date' => date('Y-m-d H:i:s')))
+                                ->insert();
+                            if($res && $res1 && $res2){
+                                echo json_encode(array('status' => 1,'msg' => '充值成功'));
+                            }else{
+                                echo json_encode(array('status' => 6,'msg' => '服务器异常，请稍后再试'));
+                            }
+                            
+                            }
+                        }
+                       
+                    }
+                }
+           
+        }else{
+            echo json_encode(array('status' => 0, 'msg' => '接口请求方式错误，POST请求'));
+        }
+    }
+
+    /*判断传递参事是否为空*/
+    public function varible_isNull($post){
+        if(empty($post['user_name']) || empty($post['card_number']) || empty($_POST['card_password'])){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    /*判断卡号密码是否正确*/
+    public function is_exit($cardNumber,$cardPassword){
+        $condition['amount_number'] = $cardNumber;
+        $condition['amount_password'] = $cardPassword;
+        $res = $this->model->table('amount_card')->field('COUNT(*)')->where($condition)->getOne();
+        if($res){
+            return true;
+        }else{
+            return false;
+        }
     }
 	
 }
