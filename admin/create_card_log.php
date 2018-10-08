@@ -214,7 +214,7 @@ elseif ($_REQUEST['act'] == 'operate')
             $PHPExcel->getActiveSheet()->setCellValue('F3', '生卡时间');
  
             $hang = 4;
-
+            $shuliang = 0;
             foreach ($_POST['checkboxes'] AS $key => $id)
                 {
                     $arr = explode('-', $id);
@@ -223,16 +223,24 @@ elseif ($_REQUEST['act'] == 'operate')
                 }
             $cards_list = get_create_card_loglist();
             $create_card_log = $cards_list['arr'];//所有生卡记录
-            // var_dump($create_card_log);
-            // die();
-            // foreach ($create_card_log as $key => $log) {
-            //     if(in_array($log['id'], $arr_id)){
-            //         $arr[] = $log;
-            //     }
-            // }
-            // var_dump(count($arr));
-            // die();
-          foreach ($create_card_log as $key => $log){
+        for($i =0; $i<count($create_card_log); $i++){
+            if(in_array($create_card_log[$i]['id'],$arr_id)){
+                $arr_log[$i] = $create_card_log[$i];
+            }
+        }
+        for($j=0;$j<count($arr_log);$j++){
+            $shuliang = $shuliang+1;
+        }
+        for ($kk = $hang; $kk < ($hang + $shuliang); $kk++) {
+            //合并单元格
+            $PHPExcel->getActiveSheet()->mergeCells('A' . $hang . ':A' . $kk);
+            $PHPExcel->getActiveSheet()->mergeCells('B' . $hang . ':B' . $kk);
+            $PHPExcel->getActiveSheet()->mergeCells('C' . $hang . ':C' . $kk);
+            $PHPExcel->getActiveSheet()->mergeCells('D' . $hang . ':D' . $kk);
+            $PHPExcel->getActiveSheet()->mergeCells('E' . $hang . ':E' . $kk);
+            $PHPExcel->getActiveSheet()->mergeCells('F' . $hang . ':F' . $kk);
+        }
+          foreach ($arr_log as $key => $log){
                  // $PHPExcel->getActiveSheet()->setCellValue('A' . ($hang), $order['order_sn']." ");//加个空格，防止时间戳被转换
                 $PHPExcel->getActiveSheet()->setCellValue('A' . ($hang), $log['id']);
                 $PHPExcel->getActiveSheet()->setCellValue('B' . ($hang), $log['amount_list']);
@@ -241,7 +249,7 @@ elseif ($_REQUEST['act'] == 'operate')
                 $PHPExcel->getActiveSheet()->setCellValue('E' . ($hang), $log['card_used']);
                 $PHPExcel->getActiveSheet()->setCellValue('F' . ($hang), $log['create_date']." ");
 
-                $hang++;
+                $hang = $hang+$shuliang;
             }
             //设置单元格边框
             $PHPExcel->getActiveSheet()->getStyle('A1:F'.$hang)->applyFromArray($styleArray);
