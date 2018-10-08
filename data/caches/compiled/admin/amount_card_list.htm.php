@@ -10,7 +10,7 @@
   </form>
 </div>
 
-<form method="POST" action="amount_card.php?act=batch_remove" name="listForm">
+<form method="POST" action="amount_card.php?act=operate" name="listForm">
 <!-- start cat list -->
 <div class="list-div" id="listDiv">
 <?php endif; ?>
@@ -51,7 +51,8 @@
     <tr><td class="no-records" colspan="10"><?php echo $this->_var['lang']['no_records']; ?></td></tr>
   <?php endif; unset($_from); ?><?php $this->pop_vars();; ?>
   <tr>
-    <td colspan="2"><input type="submit" class="button" id="btnSubmit" value="<?php echo $this->_var['lang']['button_remove']; ?>" disabled="true" /></td>
+    <td colspan="3"><input type="submit" name="batch_remove" class="button" id="btnSubmit" value="<?php echo $this->_var['lang']['button_remove']; ?>" disabled="true" />
+      <input name="export" type="submit" id="btnSubmit1" value="导出为EXCEL" class="button" disabled="true"  /> </td>
     <td align="right" nowrap="true" colspan="8"><?php echo $this->fetch('page.htm'); ?></td>
   </tr>
 </table>

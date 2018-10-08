@@ -134,140 +134,125 @@ elseif ($_REQUEST['act'] == 'operate')
                 $lnk[] = array('text' => $_LANG['back_list'], 'href' => 'create_card_log.php?act=list');
                 sys_msg(sprintf($_LANG['batch_remove_succeed'], $count), 0, $lnk);
             }elseif(isset($_POST['export'])){
-        
-            if (!isset($_POST['checkboxes']) || !is_array($_POST['checkboxes']))
-                {
-                    sys_msg($_LANG['no_select_create_card_log'], 1);
-                }
-            /* 赋值公用信息 */
-            $smarty->assign('shop_name',    $_CFG['shop_name']);
-            $smarty->assign('shop_url',     $ecs->url());
-            $smarty->assign('shop_address', $_CFG['shop_address']);
-            $smarty->assign('service_phone',$_CFG['service_phone']);
-            $smarty->assign('print_time',   local_date($_CFG['time_format']));
-            $smarty->assign('action_user',  $_SESSION['admin_name']);
+                if (!isset($_POST['checkboxes']) || !is_array($_POST['checkboxes']))
+                    {
+                        sys_msg($_LANG['no_select_create_card_log'], 1);
+                    }
+                /* 赋值公用信息 */
+                $smarty->assign('shop_name',    $_CFG['shop_name']);
+                $smarty->assign('shop_url',     $ecs->url());
+                $smarty->assign('shop_address', $_CFG['shop_address']);
+                $smarty->assign('service_phone',$_CFG['service_phone']);
+                $smarty->assign('print_time',   local_date($_CFG['time_format']));
+                $smarty->assign('action_user',  $_SESSION['admin_name']);
 
-            $html = '';
-            $order_sn_list = explode(',', $_POST['order_id']);
-            include_once (ROOT_PATH . 'include/vendor/PHPExcel.php');
-            include_once (ROOT_PATH . 'include/vendor/PHPExcel/IOFactory.php');
-            //require_once dirname(__FILE__) . '/Classes/PHPExcel.php';
-            //require_once dirname(__FILE__) . '/Classes/PHPExcel/IOFactory.php';
-            $PHPExcel = new PHPExcel();
+                $html = '';
+                include_once (ROOT_PATH . 'include/vendor/PHPExcel.php');
+                include_once (ROOT_PATH . 'include/vendor/PHPExcel/IOFactory.php');
+                //require_once dirname(__FILE__) . '/Classes/PHPExcel.php';
+                //require_once dirname(__FILE__) . '/Classes/PHPExcel/IOFactory.php';
+                $PHPExcel = new PHPExcel();
         
-            //设置excel属性基本信息
-            $PHPExcel->getProperties()->setCreator("Neo")
-            ->setLastModifiedBy("Neo")
-            ->setTitle("111")
-            ->setSubject("生卡记录列表")
-            ->setDescription("")
-            ->setKeywords("生卡记录列表")
-            ->setCategory("");
-            $PHPExcel->setActiveSheetIndex(0);
-            $PHPExcel->getActiveSheet()->setTitle("生卡记录列表");
-            //填入表头主标题
-            $PHPExcel->getActiveSheet()->setCellValue('A1', $_CFG['shop_name'].'生卡记录列表');
-            //填入表头副标题
-            $PHPExcel->getActiveSheet()->setCellValue('A2', '操作者：'.$_SESSION['admin_name'].' 导出日期：'.date('Y-m-d',time()).' 地址：'.$_CFG['shop_address'].' 电话：'.$_CFG['service_phone']);
-            //合并表头单元格
-            $PHPExcel->getActiveSheet()->mergeCells('A1:F1');
-            $PHPExcel->getActiveSheet()->mergeCells('A2:F2');
+                //设置excel属性基本信息
+                $PHPExcel->getProperties()->setCreator("Neo")
+                ->setLastModifiedBy("Neo")
+                ->setTitle("111")
+                ->setSubject("生卡记录列表")
+                ->setDescription("")
+                ->setKeywords("生卡记录列表")
+                ->setCategory("");
+                $PHPExcel->setActiveSheetIndex(0);
+                $PHPExcel->getActiveSheet()->setTitle("生卡记录列表");
+                //填入表头主标题
+                $PHPExcel->getActiveSheet()->setCellValue('A1', $_CFG['shop_name'].'生卡记录列表');
+                //填入表头副标题
+                $PHPExcel->getActiveSheet()->setCellValue('A2', '操作者：'.$_SESSION['admin_name'].' 导出日期：'.date('Y-m-d',time()).' 地址：'.$_CFG['shop_address'].' 电话：'.$_CFG['service_phone']);
+                //合并表头单元格
+                $PHPExcel->getActiveSheet()->mergeCells('A1:F1');
+                $PHPExcel->getActiveSheet()->mergeCells('A2:F2');
         
-            //设置表头行高
-            $PHPExcel->getActiveSheet()->getRowDimension(1)->setRowHeight(40);
-            $PHPExcel->getActiveSheet()->getRowDimension(2)->setRowHeight(20);
-            $PHPExcel->getActiveSheet()->getRowDimension(3)->setRowHeight(30);
+                //设置表头行高
+                $PHPExcel->getActiveSheet()->getRowDimension(1)->setRowHeight(40);
+                $PHPExcel->getActiveSheet()->getRowDimension(2)->setRowHeight(20);
+                $PHPExcel->getActiveSheet()->getRowDimension(3)->setRowHeight(30);
             
-            //设置表头字体
-            $PHPExcel->getActiveSheet()->getStyle('A1')->getFont()->setName('黑体');
-            $PHPExcel->getActiveSheet()->getStyle('A1')->getFont()->setSize(20);
-            $PHPExcel->getActiveSheet()->getStyle('A1')->getFont()->setBold(true);
-            $PHPExcel->getActiveSheet()->getStyle('A2')->getFont()->setName('宋体');
-            $PHPExcel->getActiveSheet()->getStyle('A2')->getFont()->setSize(14);
-            $PHPExcel->getActiveSheet()->getStyle('A3:F3')->getFont()->setBold(true);
+                //设置表头字体
+                $PHPExcel->getActiveSheet()->getStyle('A1')->getFont()->setName('黑体');
+                $PHPExcel->getActiveSheet()->getStyle('A1')->getFont()->setSize(20);
+                $PHPExcel->getActiveSheet()->getStyle('A1')->getFont()->setBold(true);
+                $PHPExcel->getActiveSheet()->getStyle('A2')->getFont()->setName('宋体');
+                $PHPExcel->getActiveSheet()->getStyle('A2')->getFont()->setSize(14);
+                $PHPExcel->getActiveSheet()->getStyle('A3:F3')->getFont()->setBold(true);
  
-            //设置单元格边框
-            $styleArray = array(  
-                'borders' => array(  
-                    'allborders' => array(  
-                        //'style' => PHPExcel_Style_Border::BORDER_THICK,//边框是粗的  
-                        'style' => PHPExcel_Style_Border::BORDER_THIN,//细边框  
-                        //'color' => array('argb' => 'FFFF0000'),  
-                    ),  
-                ),  
-            );
+                //设置单元格边框
+                $styleArray = array(
+                    'borders' => array(
+                        'allborders' => array(
+                            //'style' => PHPExcel_Style_Border::BORDER_THICK,//边框是粗的
+                            'style' => PHPExcel_Style_Border::BORDER_THIN,//细边框
+                            //'color' => array('argb' => 'FFFF0000'),
+                        ),
+                    ),
+                );
         
-            //表格宽度
-            $PHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(18);//编号
-            $PHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(20);//生卡批次
-            $PHPExcel->getActiveSheet()->getColumnDimension('C')->setWidth(20);//卡片类型
-            $PHPExcel->getActiveSheet()->getColumnDimension('D')->setWidth(20);//生卡数量
-            $PHPExcel->getActiveSheet()->getColumnDimension('E')->setWidth(18);//已使用卡片数量
-            $PHPExcel->getActiveSheet()->getColumnDimension('F')->setWidth(20);//生卡时间
+                //表格宽度
+                $PHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(18);//编号
+                $PHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(20);//生卡批次
+                $PHPExcel->getActiveSheet()->getColumnDimension('C')->setWidth(20);//卡片类型
+                $PHPExcel->getActiveSheet()->getColumnDimension('D')->setWidth(20);//生卡数量
+                $PHPExcel->getActiveSheet()->getColumnDimension('E')->setWidth(18);//已使用卡片数量
+                $PHPExcel->getActiveSheet()->getColumnDimension('F')->setWidth(20);//生卡时间
 
-            //表格标题
-            $PHPExcel->getActiveSheet()->setCellValue('A3', '编号');
-            $PHPExcel->getActiveSheet()->setCellValue('B3', '生卡批次');
-            $PHPExcel->getActiveSheet()->setCellValue('C3', '卡片类型');
-            $PHPExcel->getActiveSheet()->setCellValue('D3', '生卡数量');
-            $PHPExcel->getActiveSheet()->setCellValue('E3', '已使用卡片数量');
-            $PHPExcel->getActiveSheet()->setCellValue('F3', '生卡时间');
+                //表格标题
+                $PHPExcel->getActiveSheet()->setCellValue('A3', '编号');
+                $PHPExcel->getActiveSheet()->setCellValue('B3', '生卡批次');
+                $PHPExcel->getActiveSheet()->setCellValue('C3', '卡片类型');
+                $PHPExcel->getActiveSheet()->setCellValue('D3', '生卡数量');
+                $PHPExcel->getActiveSheet()->setCellValue('E3', '已使用卡片数量');
+                $PHPExcel->getActiveSheet()->setCellValue('F3', '生卡时间');
  
-            $hang = 4;
-            $shuliang = 0;
-            foreach ($_POST['checkboxes'] AS $key => $id)
-                {
-                    $arr = explode('-', $id);
-                    //生卡记录ID
-                    $arr_id[] = $arr[0];
+                $hang = 4;
+                foreach ($_POST['checkboxes'] AS $key => $id)
+                    {
+                        $arr = explode('-', $id);
+                        //生卡记录ID
+                        $arr_id[] = $arr[0];
+                    }
+                $cards_list = get_create_card_loglist();
+                $create_card_log = $cards_list['arr'];//所有生卡记录
+                for($i =0; $i<count($create_card_log); $i++){
+                    if(in_array($create_card_log[$i]['id'],$arr_id)){
+                        $arr_log[$i] = $create_card_log[$i];
+                    }
                 }
-            $cards_list = get_create_card_loglist();
-            $create_card_log = $cards_list['arr'];//所有生卡记录
-        for($i =0; $i<count($create_card_log); $i++){
-            if(in_array($create_card_log[$i]['id'],$arr_id)){
-                $arr_log[$i] = $create_card_log[$i];
-            }
-        }
-        for($j=0;$j<count($arr_log);$j++){
-            $shuliang = $shuliang+1;
-        }
-        for ($kk = $hang; $kk < ($hang + $shuliang); $kk++) {
-            //合并单元格
-            $PHPExcel->getActiveSheet()->mergeCells('A' . $hang . ':A' . $kk);
-            $PHPExcel->getActiveSheet()->mergeCells('B' . $hang . ':B' . $kk);
-            $PHPExcel->getActiveSheet()->mergeCells('C' . $hang . ':C' . $kk);
-            $PHPExcel->getActiveSheet()->mergeCells('D' . $hang . ':D' . $kk);
-            $PHPExcel->getActiveSheet()->mergeCells('E' . $hang . ':E' . $kk);
-            $PHPExcel->getActiveSheet()->mergeCells('F' . $hang . ':F' . $kk);
-        }
-          foreach ($arr_log as $key => $log){
-                 // $PHPExcel->getActiveSheet()->setCellValue('A' . ($hang), $order['order_sn']." ");//加个空格，防止时间戳被转换
-                $PHPExcel->getActiveSheet()->setCellValue('A' . ($hang), $log['id']);
-                $PHPExcel->getActiveSheet()->setCellValue('B' . ($hang), $log['amount_list']);
-                $PHPExcel->getActiveSheet()->setCellValue('C' . ($hang), $log['card_type']);
-                $PHPExcel->getActiveSheet()->setCellValue('D' . ($hang), $log['card_number']);
-                $PHPExcel->getActiveSheet()->setCellValue('E' . ($hang), $log['card_used']);
-                $PHPExcel->getActiveSheet()->setCellValue('F' . ($hang), $log['create_date']." ");
+                foreach ($arr_log as $key => $log){
+                    // $PHPExcel->getActiveSheet()->setCellValue('A' . ($hang), $order['order_sn']." ");//加个空格，防止时间戳被转换
+                    $PHPExcel->getActiveSheet()->setCellValue('A' . ($hang), $log['id']);
+                    $PHPExcel->getActiveSheet()->setCellValue('B' . ($hang), $log['amount_list']);
+                    $PHPExcel->getActiveSheet()->setCellValue('C' . ($hang), $log['card_type']);
+                    $PHPExcel->getActiveSheet()->setCellValue('D' . ($hang), $log['card_number']);
+                    $PHPExcel->getActiveSheet()->setCellValue('E' . ($hang), $log['card_used']);
+                    $PHPExcel->getActiveSheet()->setCellValue('F' . ($hang), $log['create_date']." ");
 
-                $hang = $hang+$shuliang;
-            }
-            //设置单元格边框
-            $PHPExcel->getActiveSheet()->getStyle('A1:F'.$hang)->applyFromArray($styleArray);
-            //设置自动换行
-            $PHPExcel->getActiveSheet()->getStyle('A4:F'.$hang)->getAlignment()->setWrapText(true);
-            //设置字体大小
-            $PHPExcel->getActiveSheet()->getStyle('A4:F'.$hang)->getFont()->setSize(12);
-            //垂直居中
-            $PHPExcel->getActiveSheet()->getStyle('A1:F'.$hang)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
-            //水平居中
-            $PHPExcel->getActiveSheet()->getStyle('A1:F'.$hang)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+                    $hang ++;
+                }
+                //设置单元格边框
+                $PHPExcel->getActiveSheet()->getStyle('A1:F'.$hang)->applyFromArray($styleArray);
+                //设置自动换行
+                $PHPExcel->getActiveSheet()->getStyle('A4:F'.$hang)->getAlignment()->setWrapText(true);
+                //设置字体大小
+                $PHPExcel->getActiveSheet()->getStyle('A4:F'.$hang)->getFont()->setSize(12);
+                //垂直居中
+                $PHPExcel->getActiveSheet()->getStyle('A1:F'.$hang)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+                //水平居中
+                $PHPExcel->getActiveSheet()->getStyle('A1:F'.$hang)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
 
-            header('Content-Type: application/vnd.ms-excel');
-            header('Content-Disposition: attachment;filename="create_card_log_'.date('Y-m-d').'.xls"');
-            header('Cache-Control: max-age=0');
-            $Writer = PHPExcel_IOFactory::createWriter($PHPExcel, 'Excel5');
-            $Writer->save("php://output");
-            exit;
+                header('Content-Type: application/vnd.ms-excel');
+                header('Content-Disposition: attachment;filename="create_card_log_'.date('Y-m-d').'.xls"');
+                header('Cache-Control: max-age=0');
+                $Writer = PHPExcel_IOFactory::createWriter($PHPExcel, 'Excel5');
+                $Writer->save("php://output");
+                exit;
     }
 
 }

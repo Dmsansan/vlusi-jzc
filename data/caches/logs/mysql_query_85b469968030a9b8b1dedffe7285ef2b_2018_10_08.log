@@ -1050,3 +1050,757 @@ SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_n
 
 SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389228033127612','JZC15389228033141052','JZC15389228033156911','JZC15389228033166962','JZC15389228033176310','JZC15389228033188984','JZC15389228033209010','JZC15389228033212580','JZC15389228033224428','JZC15389228033242060','JZC15389228033251951','JZC15389228033262328','JZC15389228033271684','JZC15389228033283628','JZC15389228033301202','JZC15389228033319302','JZC15389228033322299','JZC15389228033345530','JZC15389228033358734','JZC15389228033364092','') AND ac.use_status=1
 
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16 AND ac.use_status=1
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538973830', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538944823;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538972030
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972030
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1538944823'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1538944823
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538973830', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538945030;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538972030
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972030
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972030
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16 AND ac.use_status=1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972032
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16 AND ac.use_status=1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972036
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_create_card_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.amount_list,ac.card_number,ac.amount_number,ac.create_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_create_card_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389286552567239','JZC15389286552585314','JZC15389286552597832','JZC15389286552615056','JZC15389286552638402','JZC15389286552642122','JZC15389286552651603','JZC15389286552673368','JZC15389286552683430','JZC15389286552704116','JZC15389286552715975','JZC15389286552733911','JZC15389286552742168','JZC15389286552754265','JZC15389286552771539','JZC15389286552786407','JZC15389286552809959','JZC15389286552819037','JZC15389286552839392','JZC15389286552856072','') AND ac.use_status=1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389228033127612','JZC15389228033141052','JZC15389228033156911','JZC15389228033166962','JZC15389228033176310','JZC15389228033188984','JZC15389228033209010','JZC15389228033212580','JZC15389228033224428','JZC15389228033242060','JZC15389228033251951','JZC15389228033262328','JZC15389228033271684','JZC15389228033283628','JZC15389228033301202','JZC15389228033319302','JZC15389228033322299','JZC15389228033345530','JZC15389228033358734','JZC15389228033364092','') AND ac.use_status=1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972036
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16 AND ac.use_status=1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972036
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972036
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16 AND ac.use_status=1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538972037
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_create_card_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.amount_list,ac.card_number,ac.amount_number,ac.create_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_create_card_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389286552567239','JZC15389286552585314','JZC15389286552597832','JZC15389286552615056','JZC15389286552638402','JZC15389286552642122','JZC15389286552651603','JZC15389286552673368','JZC15389286552683430','JZC15389286552704116','JZC15389286552715975','JZC15389286552733911','JZC15389286552742168','JZC15389286552754265','JZC15389286552771539','JZC15389286552786407','JZC15389286552809959','JZC15389286552819037','JZC15389286552839392','JZC15389286552856072','') AND ac.use_status=1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389228033127612','JZC15389228033141052','JZC15389228033156911','JZC15389228033166962','JZC15389228033176310','JZC15389228033188984','JZC15389228033209010','JZC15389228033212580','JZC15389228033224428','JZC15389228033242060','JZC15389228033251951','JZC15389228033262328','JZC15389228033271684','JZC15389228033283628','JZC15389228033301202','JZC15389228033319302','JZC15389228033322299','JZC15389228033345530','JZC15389228033358734','JZC15389228033364092','') AND ac.use_status=1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538972037
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_drop_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.user_name,ac.card_number,ac.card_password,ac.card_count,ac.drop_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_card_drop_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538972038
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972038
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_create_card_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.amount_list,ac.card_number,ac.amount_number,ac.create_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_create_card_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389286552567239','JZC15389286552585314','JZC15389286552597832','JZC15389286552615056','JZC15389286552638402','JZC15389286552642122','JZC15389286552651603','JZC15389286552673368','JZC15389286552683430','JZC15389286552704116','JZC15389286552715975','JZC15389286552733911','JZC15389286552742168','JZC15389286552754265','JZC15389286552771539','JZC15389286552786407','JZC15389286552809959','JZC15389286552819037','JZC15389286552839392','JZC15389286552856072','') AND ac.use_status=1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389228033127612','JZC15389228033141052','JZC15389228033156911','JZC15389228033166962','JZC15389228033176310','JZC15389228033188984','JZC15389228033209010','JZC15389228033212580','JZC15389228033224428','JZC15389228033242060','JZC15389228033251951','JZC15389228033262328','JZC15389228033271684','JZC15389228033283628','JZC15389228033301202','JZC15389228033319302','JZC15389228033322299','JZC15389228033345530','JZC15389228033358734','JZC15389228033364092','') AND ac.use_status=1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16 AND ac.use_status=1
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538973840', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538945030;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972040
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538972040
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972040
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16 AND ac.use_status=1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538972041
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_create_card_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.amount_list,ac.card_number,ac.amount_number,ac.create_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_create_card_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389286552567239','JZC15389286552585314','JZC15389286552597832','JZC15389286552615056','JZC15389286552638402','JZC15389286552642122','JZC15389286552651603','JZC15389286552673368','JZC15389286552683430','JZC15389286552704116','JZC15389286552715975','JZC15389286552733911','JZC15389286552742168','JZC15389286552754265','JZC15389286552771539','JZC15389286552786407','JZC15389286552809959','JZC15389286552819037','JZC15389286552839392','JZC15389286552856072','') AND ac.use_status=1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389228033127612','JZC15389228033141052','JZC15389228033156911','JZC15389228033166962','JZC15389228033176310','JZC15389228033188984','JZC15389228033209010','JZC15389228033212580','JZC15389228033224428','JZC15389228033242060','JZC15389228033251951','JZC15389228033262328','JZC15389228033271684','JZC15389228033283628','JZC15389228033301202','JZC15389228033319302','JZC15389228033322299','JZC15389228033345530','JZC15389228033358734','JZC15389228033364092','') AND ac.use_status=1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_drop_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.user_name,ac.card_number,ac.card_password,ac.card_count,ac.drop_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_card_drop_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_create_card_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.amount_list,ac.card_number,ac.amount_number,ac.create_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_create_card_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389286552567239','JZC15389286552585314','JZC15389286552597832','JZC15389286552615056','JZC15389286552638402','JZC15389286552642122','JZC15389286552651603','JZC15389286552673368','JZC15389286552683430','JZC15389286552704116','JZC15389286552715975','JZC15389286552733911','JZC15389286552742168','JZC15389286552754265','JZC15389286552771539','JZC15389286552786407','JZC15389286552809959','JZC15389286552819037','JZC15389286552839392','JZC15389286552856072','') AND ac.use_status=1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389228033127612','JZC15389228033141052','JZC15389228033156911','JZC15389228033166962','JZC15389228033176310','JZC15389228033188984','JZC15389228033209010','JZC15389228033212580','JZC15389228033224428','JZC15389228033242060','JZC15389228033251951','JZC15389228033262328','JZC15389228033271684','JZC15389228033283628','JZC15389228033301202','JZC15389228033319302','JZC15389228033322299','JZC15389228033345530','JZC15389228033358734','JZC15389228033364092','') AND ac.use_status=1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972044
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16 AND ac.use_status=1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538972045
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972046
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16 AND ac.use_status=1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_create_card_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.amount_list,ac.card_number,ac.amount_number,ac.create_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_create_card_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389286552567239','JZC15389286552585314','JZC15389286552597832','JZC15389286552615056','JZC15389286552638402','JZC15389286552642122','JZC15389286552651603','JZC15389286552673368','JZC15389286552683430','JZC15389286552704116','JZC15389286552715975','JZC15389286552733911','JZC15389286552742168','JZC15389286552754265','JZC15389286552771539','JZC15389286552786407','JZC15389286552809959','JZC15389286552819037','JZC15389286552839392','JZC15389286552856072','') AND ac.use_status=1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389228033127612','JZC15389228033141052','JZC15389228033156911','JZC15389228033166962','JZC15389228033176310','JZC15389228033188984','JZC15389228033209010','JZC15389228033212580','JZC15389228033224428','JZC15389228033242060','JZC15389228033251951','JZC15389228033262328','JZC15389228033271684','JZC15389228033283628','JZC15389228033301202','JZC15389228033319302','JZC15389228033322299','JZC15389228033345530','JZC15389228033358734','JZC15389228033364092','') AND ac.use_status=1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538972049
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_drop_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.user_name,ac.card_number,ac.card_password,ac.card_count,ac.drop_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_card_drop_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538972049
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_create_card_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.amount_list,ac.card_number,ac.amount_number,ac.create_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_create_card_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389286552567239','JZC15389286552585314','JZC15389286552597832','JZC15389286552615056','JZC15389286552638402','JZC15389286552642122','JZC15389286552651603','JZC15389286552673368','JZC15389286552683430','JZC15389286552704116','JZC15389286552715975','JZC15389286552733911','JZC15389286552742168','JZC15389286552754265','JZC15389286552771539','JZC15389286552786407','JZC15389286552809959','JZC15389286552819037','JZC15389286552839392','JZC15389286552856072','') AND ac.use_status=1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389228033127612','JZC15389228033141052','JZC15389228033156911','JZC15389228033166962','JZC15389228033176310','JZC15389228033188984','JZC15389228033209010','JZC15389228033212580','JZC15389228033224428','JZC15389228033242060','JZC15389228033251951','JZC15389228033262328','JZC15389228033271684','JZC15389228033283628','JZC15389228033301202','JZC15389228033319302','JZC15389228033322299','JZC15389228033345530','JZC15389228033358734','JZC15389228033364092','') AND ac.use_status=1
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538973852', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538945030;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972052
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16 AND ac.use_status=1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972052
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972052
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16 AND ac.use_status=1
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538973864', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538945030;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972064
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_create_card_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.amount_list,ac.card_number,ac.amount_number,ac.create_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_create_card_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389286552567239','JZC15389286552585314','JZC15389286552597832','JZC15389286552615056','JZC15389286552638402','JZC15389286552642122','JZC15389286552651603','JZC15389286552673368','JZC15389286552683430','JZC15389286552704116','JZC15389286552715975','JZC15389286552733911','JZC15389286552742168','JZC15389286552754265','JZC15389286552771539','JZC15389286552786407','JZC15389286552809959','JZC15389286552819037','JZC15389286552839392','JZC15389286552856072','') AND ac.use_status=1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389228033127612','JZC15389228033141052','JZC15389228033156911','JZC15389228033166962','JZC15389228033176310','JZC15389228033188984','JZC15389228033209010','JZC15389228033212580','JZC15389228033224428','JZC15389228033242060','JZC15389228033251951','JZC15389228033262328','JZC15389228033271684','JZC15389228033283628','JZC15389228033301202','JZC15389228033319302','JZC15389228033322299','JZC15389228033345530','JZC15389228033358734','JZC15389228033364092','') AND ac.use_status=1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538973961', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538945030;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1538945030'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1538945030
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538974141', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538945341;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1538945341'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1538945341
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538974321', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538945521;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1538945521'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1538945521
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538974502', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538945702;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972702
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538974658', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538945702;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972858
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538972864
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1538945702'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1538945702
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538974844', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946044;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538973044
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_card_type` AS ac WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.type_id = 16 AND ac.use_status=1
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538974884', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946044;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538973084
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538973085
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538973088
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538974934', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946044;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538973134
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538974954', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946044;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538973154
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538975007', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946044;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538975032', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946044;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538973232
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '406'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 406', '0.0.0.0')
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '405'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 405', '0.0.0.0')
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '404'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 404', '0.0.0.0')
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '403'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 403', '0.0.0.0')
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '402'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 402', '0.0.0.0')
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '401'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 401', '0.0.0.0')
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '400'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 400', '0.0.0.0')
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '399'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 399', '0.0.0.0')
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '398'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 398', '0.0.0.0')
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '397'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 397', '0.0.0.0')
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '396'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 396', '0.0.0.0')
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '395'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 395', '0.0.0.0')
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '394'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 394', '0.0.0.0')
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '393'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 393', '0.0.0.0')
+
+DELETE FROM `vlusi_jzc`.`jzc_amount_card`WHERE amount_id = '392'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1538946248', 1, '删除: 392', '0.0.0.0')
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538975049', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946044;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538973249
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538973250
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538973250
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1538946044'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1538946044
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538975050', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946250;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538973250
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538973254
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538975179', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946250;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538973380
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538973380
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538973384
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538975354', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946250;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538973554
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538973554
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1538946250'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1538946250
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538975360', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946560;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538973560
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538973560
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538975507', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946560;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538975525', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946560;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538973725
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1538946560'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1538946560
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538975540', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946740;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1538973740
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1538973740
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1538975555', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538946740;}' WHERE sesskey = '0b2cd1a80af3ec636ad055f560bbc814' LIMIT 1
+

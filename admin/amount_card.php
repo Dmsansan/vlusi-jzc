@@ -311,26 +311,170 @@ if ($_REQUEST['act'] =='update')
 /*------------------------------------------------------ */
 //-- 批量删除代金卡
 /*------------------------------------------------------ */
-elseif ($_REQUEST['act'] == 'batch_remove')
+elseif ($_REQUEST['act'] == 'operate')
 {
     admin_priv('amount_card');
-    if (!isset($_POST['checkboxes']) || !is_array($_POST['checkboxes']))
-    {
-        sys_msg($_LANG['no_select_amount_card'], 1);
-    }
 
-    $count = 0;
-    foreach ($_POST['checkboxes'] AS $key => $id)
-    {
-        if ($exc->drop_amount_card($id))
+    if(isset($_POST['batch_remove'])){
+        if (!isset($_POST['checkboxes']) || !is_array($_POST['checkboxes']))
         {
-            admin_log($id,'remove','amount_card');
-            $count++;
+            sys_msg($_LANG['no_select_amount_card'], 1);
         }
+
+        $count = 0;
+        foreach ($_POST['checkboxes'] AS $key => $id)
+        {
+            if ($exc->drop_amount_card($id))
+            {
+                admin_log($id,'remove','amount_card');
+                $count++;
+            }
+        }
+
+        $lnk[] = array('text' => $_LANG['back_list'], 'href' => 'amount_card.php?act=list');
+        sys_msg(sprintf($_LANG['batch_remove_succeed'], $count), 0, $lnk);
+    }elseif(isset($_POST['export'])){
+        if (!isset($_POST['checkboxes']) || !is_array($_POST['checkboxes']))
+        {
+            sys_msg($_LANG['no_select_create_card_log'], 1);
+        }
+        /* 赋值公用信息 */
+        $smarty->assign('shop_name',    $_CFG['shop_name']);
+        $smarty->assign('shop_url',     $ecs->url());
+        $smarty->assign('shop_address', $_CFG['shop_address']);
+        $smarty->assign('service_phone',$_CFG['service_phone']);
+        $smarty->assign('print_time',   local_date($_CFG['time_format']));
+        $smarty->assign('action_user',  $_SESSION['admin_name']);
+
+        $html = '';
+        include_once (ROOT_PATH . 'include/vendor/PHPExcel.php');
+        include_once (ROOT_PATH . 'include/vendor/PHPExcel/IOFactory.php');
+        //require_once dirname(__FILE__) . '/Classes/PHPExcel.php';
+        //require_once dirname(__FILE__) . '/Classes/PHPExcel/IOFactory.php';
+        $PHPExcel = new PHPExcel();
+
+        //设置excel属性基本信息
+        $PHPExcel->getProperties()->setCreator("Neo")
+            ->setLastModifiedBy("Neo")
+            ->setTitle("111")
+            ->setSubject("代金卡列表")
+            ->setDescription("")
+            ->setKeywords("代金卡列表")
+            ->setCategory("");
+        $PHPExcel->setActiveSheetIndex(0);
+        $PHPExcel->getActiveSheet()->setTitle("代金卡列表");
+        //填入表头主标题
+        $PHPExcel->getActiveSheet()->setCellValue('A1', $_CFG['shop_name'].'代金卡列表');
+        //填入表头副标题
+        $PHPExcel->getActiveSheet()->setCellValue('A2', '操作者：'.$_SESSION['admin_name'].' 导出日期：'.date('Y-m-d',time()).' 地址：'.$_CFG['shop_address'].' 电话：'.$_CFG['service_phone']);
+        //合并表头单元格
+        $PHPExcel->getActiveSheet()->mergeCells('A1:I1');
+        $PHPExcel->getActiveSheet()->mergeCells('A2:I2');
+
+        //设置表头行高
+        $PHPExcel->getActiveSheet()->getRowDimension(1)->setRowHeight(40);
+        $PHPExcel->getActiveSheet()->getRowDimension(2)->setRowHeight(20);
+        $PHPExcel->getActiveSheet()->getRowDimension(3)->setRowHeight(30);
+
+        //设置表头字体
+        $PHPExcel->getActiveSheet()->getStyle('A1')->getFont()->setName('黑体');
+        $PHPExcel->getActiveSheet()->getStyle('A1')->getFont()->setSize(20);
+        $PHPExcel->getActiveSheet()->getStyle('A1')->getFont()->setBold(true);
+        $PHPExcel->getActiveSheet()->getStyle('A2')->getFont()->setName('宋体');
+        $PHPExcel->getActiveSheet()->getStyle('A2')->getFont()->setSize(14);
+        $PHPExcel->getActiveSheet()->getStyle('A3:I3')->getFont()->setBold(true);
+
+        //设置单元格边框
+        $styleArray = array(
+            'borders' => array(
+                'allborders' => array(
+                    //'style' => PHPExcel_Style_Border::BORDER_THICK,//边框是粗的
+                    'style' => PHPExcel_Style_Border::BORDER_THIN,//细边框
+                    //'color' => array('argb' => 'FFFF0000'),
+                ),
+            ),
+        );
+
+        //表格宽度
+        $PHPExcel->getActiveSheet()->getColumnDimension('A')->setWidth(18);//编号
+        $PHPExcel->getActiveSheet()->getColumnDimension('B')->setWidth(20);//代金卡批次
+        $PHPExcel->getActiveSheet()->getColumnDimension('C')->setWidth(20);//代金卡卡号
+        $PHPExcel->getActiveSheet()->getColumnDimension('D')->setWidth(20);//代金卡密码
+        $PHPExcel->getActiveSheet()->getColumnDimension('E')->setWidth(18);//状态
+        $PHPExcel->getActiveSheet()->getColumnDimension('F')->setWidth(20);//金额
+        $PHPExcel->getActiveSheet()->getColumnDimension('G')->setWidth(20);//有效日期
+        $PHPExcel->getActiveSheet()->getColumnDimension('H')->setWidth(20);//是否被使用
+        $PHPExcel->getActiveSheet()->getColumnDimension('I')->setWidth(20);//添加日期
+
+        //表格标题
+        $PHPExcel->getActiveSheet()->setCellValue('A3', '编号');
+        $PHPExcel->getActiveSheet()->setCellValue('B3', '代金卡批次');
+        $PHPExcel->getActiveSheet()->setCellValue('C3', '代金卡卡号');
+        $PHPExcel->getActiveSheet()->setCellValue('D3', '代金卡密码');
+        $PHPExcel->getActiveSheet()->setCellValue('E3', '状态');
+        $PHPExcel->getActiveSheet()->setCellValue('F3', '金额');
+        $PHPExcel->getActiveSheet()->setCellValue('G3', '有效日期');
+        $PHPExcel->getActiveSheet()->setCellValue('H3', '是否被使用');
+        $PHPExcel->getActiveSheet()->setCellValue('I3', '添加日期');
+
+        $hang = 4;
+        $amount_status = "";
+        $use_status = "";
+        foreach ($_POST['checkboxes'] AS $key => $id)
+        {
+            $arr_id[] = $id;
+        }
+        $cards_list = get_amount_cardlist();
+        $create_card_log = $cards_list['arr'];//所有代金卡
+        for($i =0; $i<count($create_card_log); $i++){
+            if(in_array($create_card_log[$i]['amount_id'],$arr_id)){
+                $arr_log[$i] = $create_card_log[$i];
+            }
+        }
+        foreach ($arr_log as $key => $log){
+            if($log['amount_status'] == 0){
+                $amount_status = '未激活';
+            }else{
+                $amount_status = '已激活';
+            }
+
+            if($log['use_status'] == 0){
+                $use_status = '未使用';
+            }else{
+                $use_status = '已使用';
+            }
+            // $PHPExcel->getActiveSheet()->setCellValue('A' . ($hang), $order['order_sn']." ");//加个空格，防止时间戳被转换
+            $PHPExcel->getActiveSheet()->setCellValue('A' . ($hang), $log['amount_id']);
+            $PHPExcel->getActiveSheet()->setCellValue('B' . ($hang), $log['amount_list']);
+            $PHPExcel->getActiveSheet()->setCellValue('C' . ($hang), $log['amount_number']);
+            $PHPExcel->getActiveSheet()->setCellValue('D' . ($hang), $log['amount_password']);
+            $PHPExcel->getActiveSheet()->setCellValue('E' . ($hang), $amount_status);
+            $PHPExcel->getActiveSheet()->setCellValue('F' . ($hang), $log['amount_count']);
+            $PHPExcel->getActiveSheet()->setCellValue('G' . ($hang), $log['expry_date']." ");
+            $PHPExcel->getActiveSheet()->setCellValue('H' . ($hang), $use_status);
+            $PHPExcel->getActiveSheet()->setCellValue('I' . ($hang), $log['add_date']." ");
+
+            $hang ++;
+        }
+        //设置单元格边框
+        $PHPExcel->getActiveSheet()->getStyle('A1:I'.$hang)->applyFromArray($styleArray);
+        //设置自动换行
+        $PHPExcel->getActiveSheet()->getStyle('A4:I'.$hang)->getAlignment()->setWrapText(true);
+        //设置字体大小
+        $PHPExcel->getActiveSheet()->getStyle('A4:I'.$hang)->getFont()->setSize(12);
+        //垂直居中
+        $PHPExcel->getActiveSheet()->getStyle('A1:I'.$hang)->getAlignment()->setVertical(PHPExcel_Style_Alignment::VERTICAL_CENTER);
+        //水平居中
+        $PHPExcel->getActiveSheet()->getStyle('A1:I'.$hang)->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_CENTER);
+
+        header('Content-Type: application/vnd.ms-excel');
+        header('Content-Disposition: attachment;filename="create_card_log_'.date('Y-m-d').'.xls"');
+        header('Cache-Control: max-age=0');
+        $Writer = PHPExcel_IOFactory::createWriter($PHPExcel, 'Excel5');
+        $Writer->save("php://output");
+        exit;
     }
 
-    $lnk[] = array('text' => $_LANG['back_list'], 'href' => 'amount_card.php?act=list');
-    sys_msg(sprintf($_LANG['batch_remove_succeed'], $count), 0, $lnk);
 }
 
 /*------------------------------------------------------ */
