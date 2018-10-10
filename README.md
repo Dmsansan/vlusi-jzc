@@ -27,4 +27,4 @@
 
      http://localhost:8080/vlusi_jzc/index.php?m=default&c=user&a=chaxun_kuaid
      参数：com 快递公司名称全拼 中通(zhongtong)  
-          num 快递单号
+          num 快递单号 541193169716
