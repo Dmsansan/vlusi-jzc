@@ -3038,6 +3038,42 @@ class UserController extends CommonController {
         }
     }
 
+    //查询快递详细信息
+    public function chaxun_kuaidi(){
+        //参数设置
+        $post_data = array();
+        //平台商户账号
+        $post_data["customer"] = 'DBB68B555C259925FCC54E1BDC638FA7';
+
+        //平台商户秘钥
+        $key= 'LXyaQAIf5211' ;
+        //快递公司名称全拼
+        $com = '"'.$_POST['com'].'"';
+        //快递单号
+        $num = '"'.$_POST['num'].'"';
+
+        $post_data["param"] = '{"com":'.$com.',"num":'.$num.'}';
+
+        $url='http://poll.kuaidi100.com/poll/query.do';
+        $post_data["sign"] = md5($post_data["param"].$key.$post_data["customer"]);
+        $post_data["sign"] = strtoupper($post_data["sign"]);
+        $o="";
+        foreach ($post_data as $k=>$v)
+        {
+            $o.= "$k=".urlencode($v)."&";		//默认UTF-8编码格式
+        }
+        $post_data=substr($o,0,-1);
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_URL,$url);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
+        $result = curl_exec($ch);
+        $data = str_replace("\"",'"',$result );
+//        $data = json_decode($data,true);
+        echo $data;
+    }
     /*判断传递参事是否为空*/
     public function varible_isNull($post){
         if(empty($post['user_name']) || empty($post['card_number']) || empty($_POST['card_password'])){

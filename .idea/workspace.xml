@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="cf80b267-d9b3-41d1-bdc8-021d64523372" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/amount_card.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/amount_card.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/create_card_log.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/create_card_log.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/templates/amount_card_list.htm" beforeDir="false" afterPath="$PROJECT_DIR$/admin/templates/amount_card_list.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/caches/compiled/admin/amount_card_list.htm.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/caches/compiled/admin/amount_card_list.htm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/caches/compiled/admin/create_card_log_list.htm.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/caches/compiled/admin/create_card_log_list.htm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/caches/logs/mysql_query_85b469968030a9b8b1dedffe7285ef2b_2018_10_08.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/caches/logs/mysql_query_85b469968030a9b8b1dedffe7285ef2b_2018_10_08.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/caches/query_caches/sqlcache_config_file_85b469968030a9b8b1dedffe7285ef2b.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/caches/query_caches/sqlcache_config_file_85b469968030a9b8b1dedffe7285ef2b.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/data/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/apps/default/controllers/UserController.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/apps/default/controllers/UserController.class.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,39 +22,40 @@
     <session id="-557689674">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.111" value="1" />
+          <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="htm" value="8" />
           <entry key="js" value="7" />
-          <entry key="php" value="46" />
+          <entry key="php" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="8" />
           <entry key="JavaScript" value="7" />
-          <entry key="PHP" value="46" />
+          <entry key="PHP" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="htm" value="1073" />
           <entry key="js" value="231" />
-          <entry key="php" value="2388" />
+          <entry key="php" value="2664" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1073" />
           <entry key="JavaScript" value="231" />
-          <entry key="PHP" value="2388" />
+          <entry key="PHP" value="2664" />
         </counts>
       </usages-collector>
     </session>
@@ -65,20 +65,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/amount_card.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="443" column="36" lean-forward="true" selection-start-line="443" selection-start-column="36" selection-end-line="443" selection-end-column="36" />
-              <folding>
-                <element signature="e#7#430#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="8379">
+              <caret line="443" column="36" selection-start-line="443" selection-start-column="36" selection-end-line="443" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/create_card_log.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1584">
+              <caret line="226" column="17" lean-forward="true" selection-start-line="226" selection-start-column="17" selection-end-line="226" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/create_card_log.php">
+        <entry file="file://$PROJECT_DIR$/include/apps/default/controllers/UserController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="236" column="28" selection-start-line="236" selection-start-column="28" selection-end-line="236" selection-end-column="28" />
+            <state relative-caret-position="120">
+              <caret line="3060" column="38" lean-forward="true" selection-start-line="3060" selection-start-column="38" selection-end-line="3060" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -86,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/templates/amount_card_list.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+            <state relative-caret-position="874">
+              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -95,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/templates/create_card_log_list.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="855">
               <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="108" />
             </state>
           </provider>
@@ -104,11 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/languages/zh_cn/admin/amount_card.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
+            <state relative-caret-position="627">
               <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-              <folding>
-                <element signature="e#6#493#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -145,6 +148,7 @@
         <option value="$PROJECT_DIR$/admin/templates/amount_card_list.htm" />
         <option value="$PROJECT_DIR$/admin/amount_card.php" />
         <option value="$PROJECT_DIR$/admin/create_card_log.php" />
+        <option value="$PROJECT_DIR$/include/apps/default/controllers/UserController.class.php" />
       </list>
     </option>
   </component>
@@ -174,7 +178,7 @@
       <path value="$PROJECT_DIR$/include/vendor/filp/whoops" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -188,6 +192,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,18 +203,33 @@
             <path>
               <item name="vlusi_jzc" type="b2602c69:ProjectViewProjectNode" />
               <item name="vlusi_jzc" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vlusi_jzc" type="b2602c69:ProjectViewProjectNode" />
               <item name="vlusi_jzc" type="462c0819:PsiDirectoryNode" />
               <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vlusi_jzc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vlusi_jzc" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vlusi_jzc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vlusi_jzc" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,18 +269,19 @@
       <updated>1538116670914</updated>
       <workItem from="1538116675388" duration="6752000" />
       <workItem from="1538286679918" duration="4837000" />
-      <workItem from="1538971466422" duration="4175000" />
+      <workItem from="1538971466422" duration="4239000" />
+      <workItem from="1539152322833" duration="1450000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15764000" />
+    <option name="totallyTimeSpent" value="17278000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1762481" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16717096" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -288,13 +309,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/templates/dodolink_list.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-369">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/templates/group_buy_list.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-570">
@@ -513,54 +527,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/languages/zh_cn/admin/amount_card.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <element signature="e#6#493#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/order.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-842">
           <caret line="3198" column="47" lean-forward="true" selection-start-line="3198" selection-start-column="47" selection-end-line="3198" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/templates/create_card_log_list.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/templates/amount_card_list.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/amount_card.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="443" column="36" lean-forward="true" selection-start-line="443" selection-start-column="36" selection-end-line="443" selection-end-column="36" />
-          <folding>
-            <element signature="e#7#430#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="8379">
+          <caret line="443" column="36" selection-start-line="443" selection-start-column="36" selection-end-line="443" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/amount_card_list.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/templates/create_card_log_list.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/languages/zh_cn/admin/amount_card.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/create_card_log.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="236" column="28" selection-start-line="236" selection-start-column="28" selection-end-line="236" selection-end-column="28" />
+        <state relative-caret-position="1584">
+          <caret line="226" column="17" lean-forward="true" selection-start-line="226" selection-start-column="17" selection-end-line="226" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/apps/default/controllers/UserController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="3060" column="38" lean-forward="true" selection-start-line="3060" selection-start-column="38" selection-end-line="3060" selection-end-column="38" />
         </state>
       </provider>
     </entry>
