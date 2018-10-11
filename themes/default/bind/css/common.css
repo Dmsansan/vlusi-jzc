@@ -1,0 +1,34 @@
+*{
+    color: #333;
+    font-family: "Microsoft YaHei UI";
+}
+header.mui-bar{
+    background: rgb(79,116,59);
+}
+header.mui-bar a,header.mui-bar h1{
+    color: #ffffff !important;
+}
+::-webkit-input-placeholder{/*Webkit browsers*/
+    font-size:14px;
+    color: rgb(221,221,221);
+}
+.mui-input-row label{
+    width: 25%;
+    line-height:inherit;
+}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{
+    width: 75%;
+}
+.mui-input-group .mui-input-row:after{
+    -webkit-transform: scaleY(0.2);
+    -moz-transform: scaleY(0.2);
+    -ms-transform: scaleY(0.2);
+    -o-transform: scaleY(0.2);
+    transform: scaleY(0.2);
+}
+.mui-input-row .mui-input-clear~.mui-icon-clear, .mui-input-row .mui-input-password~.mui-icon-eye, .mui-input-row .mui-input-speech~.mui-icon-speech{
+    color: rgb(221,221,221);
+}
+p{
+    margin-bottom: 0;
+}

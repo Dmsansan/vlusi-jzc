@@ -1,0 +1,112 @@
+html,body{
+    height: 100%;
+    overflow: scroll;
+}
+section.main-content {
+    padding-top: 46px;
+}
+
+table.address {
+    background: #FFFFFF;
+    width: 100%;
+    font-size: 14px;
+    height: 70px;
+    padding: 15px;
+}
+
+td.position-img {
+    width: 60px;
+    height: 50px;
+    text-align: center;
+}
+
+td.position-img img {
+    width: 15px;
+}
+
+td.address-title {
+    vertical-align: baseline;
+}
+
+td.address-info {
+    overflow: hidden;
+    vertical-align: baseline;
+    width: 60%;
+}
+.logistics {
+    background: #FFFFFF;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+}
+div.logistics img {
+    width: 40px;
+    padding: 5px;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+p.logistics-number,p.logistics-name{
+    color: #333;
+    margin: 0;
+}
+p.logistics-name{
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+ul {
+    list-style: none;
+    padding-left: 20%;
+    background: rgba(255,255,255,1);
+    margin-top: 5px;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+li {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    position: relative;
+    height: 80px;
+    border-left: 1px solid rgb(232,232,232);
+    padding-left: 15px;
+}
+p.logistics-date {
+    position: absolute;
+    left: -20%;
+}
+span.logistics-date-time{
+    color: #cccccc;
+    font-size: 12px;
+}
+span.logistics-date-date, span.logistics-date-time,span.logistics-detail-title,span.logistics-detail-content {
+    display: block;
+}
+i.logistics-dot {
+    width: 8px;
+    height: 8px;
+    background: #D7D7D7;
+    border-radius: 100%;
+    position: absolute;
+    left: -5px;
+    top: 10px;
+}
+i.logistics-dot-warning.logistics-dot{
+    background: #ff5053;
+}
+i.logistics-dot-success.logistics-dot{
+    background: #3e6628;
+}
+span.logistics-detail-title-warning.logistics-detail-title,span.logistics-detail-content-warning.logistics-detail-content{
+    color:#ff5053;
+}
+span.logistics-detail-title{
+    color: #847373
+}
+span.logistics-detail-content{
+    font-size: 12px;
+    color: #847373
+}

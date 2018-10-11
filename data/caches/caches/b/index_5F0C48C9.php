@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:62:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/index.dwt";i:1;s:80:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_page_header.lbi";i:2;s:75:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_search.lbi";i:3;s:80:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_page_footer.lbi";}s:7:"expires";i:1539237474;s:8:"maketime";i:1539233874;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:50:"D:/phpStudy/WWW/vlusi_jzc/themes/default/index.dwt";i:1;s:68:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_page_header.lbi";i:2;s:63:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_search.lbi";i:3;s:68:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_page_footer.lbi";}s:7:"expires";i:1539267103;s:8:"maketime";i:1539263503;}<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />

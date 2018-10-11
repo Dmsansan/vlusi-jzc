@@ -31,6 +31,8 @@ class UserController extends CommonController {
         $this->action = ACTION_NAME;
         // 验证登录
         $this->check_login();
+        //验证手机号是否绑定
+        $this->bind_phone();
         // 用户信息
         $info = model('ClipsBase')->get_user_default($this->user_id);
         // 显示第三方API的头像
@@ -2429,7 +2431,8 @@ class UserController extends CommonController {
             'add_collection',
             'third_login',
             'bind',
-            'unsetsession'
+            'unsetsession',
+            'bind_phone'
         );
         // 未登录处理
         if (empty($_SESSION['user_id']) && !in_array($this->action, $without)) {
@@ -2439,7 +2442,7 @@ class UserController extends CommonController {
             )));
             exit();
         }
-
+        
         // 已经登录，不能访问的方法
         $deny = array(
             'login',
@@ -2450,6 +2453,8 @@ class UserController extends CommonController {
             exit();
         }
     }
+
+
 
     /**
      * 更新商品销量
@@ -3006,6 +3011,107 @@ class UserController extends CommonController {
 		 
 	}
 
+    /**
+    *绑定手机号码
+    */
+    public function bind_phone(){
+        // 不需要绑定手机号的方法的方法
+        $without = array(
+            'send_code',
+            'verify_code'
+        );
+
+       if(!empty($_SESSION['user_id']) && !in_array($this->action, $without)){
+            //已经登录但是无手机号码 
+            $mobile_phone = $this->model->table('users')->field('mobile_phone')->where(array('user_id' => $_SESSION['user_id']))->getOne();
+            if(empty($mobile_phone)){
+                $this->display('bind_phone.dwt');
+                exit;
+            }
+        }
+    }
+
+    /**
+    *发送手机验证码
+    */
+    public function send_code(){
+      $phone = 13625696653;
+      $post_data = array();
+     
+      $post_data['account'] = 'Thxy2018_jzhchutz';
+
+      $post_data['pswd'] = 'Jzhchutz2018@';
+      $post_data['cmd'] = '1'; //指令1表示验证帐号
+      $a = rand(1000,9999);
+      //保存验证码到session
+      $_SESSION['send_code'] = $a;
+      $post_data['mobile'] = $_REQUEST['phone'];
+      $post_data['msg'] = "尊敬的用户您的验证码为".$a."如非本人操作请忽略本短息";
+      $post_data['sendTime'] = ''; //指令1表示验证帐号
+      $post_data['action'] = 'send'; //指令1表示验证帐号
+      $post_data['cmd'] = '1'; //指令1表示验证帐号
+
+      $post_data['extno'] = ''; //指令1表示验证帐号
+      $url='http://114.55.25.138/msg/HttpBatchSendSM';
+      $o='';
+
+
+   
+      foreach ($post_data as $k=>$v)
+      {
+         $o.="$k=".$v.'&';
+      }
+
+
+      $post_data=substr($o,0,-1);
+
+
+
+      // 初始化一个curl会话
+      $ch = curl_init();
+      
+
+      $this_header = array("content-type: application/x-www-form-urlencoded; charset=UTF-8");
+
+
+      curl_setopt($ch,CURLOPT_HTTPHEADER,$this_header);
+
+      //设置提交的方式(post);
+      curl_setopt($ch, CURLOPT_POST, 1);
+      // 设置header
+      curl_setopt($ch, CURLOPT_HEADER, 0);
+      // 设置需要抓取的URL(http://116.255.238.170:7518/sms.aspx)
+      curl_setopt($ch, CURLOPT_URL,$url);
+      // curl_setopt($ch, CURLOPT_RETURNTRANSFER,$url);
+      //请求的参数 你吧                                                                                                             
+      curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); //如果需要将结果直接返回到变量里，那加上这句。
+
+
+      $result = curl_exec($ch);
+      $arr = explode(',', $result);
+      if($arr[1] == 0){
+         echo json_encode(array('code'=>1));
+      }else{
+         echo json_encode(array('code'=>2));
+      }
+    }
+
+    /**
+    *绑定用户手机号以及验证短信验证码
+    */
+    public function verify_code(){
+        if($_REQUEST['code'] == $_SESSION['send_code']){
+             $res = $this->model->table('users')->data(array('mobile_phone' => $_REQUEST['phone']))->where(array('user_id' => $_SESSION['user_id']))->update();
+             if($res){
+                  $_SESSION['send_code'] = md5("haha");
+                  echo json_encode(array('code'=>1));
+             } 
+          
+        }else{
+            echo json_encode(array('code'=>2));
+        }
+    }
     /*用户根据代金卡充值金额*/
     //需要登录才能调用该接口
     public function user_drop_card($post){
