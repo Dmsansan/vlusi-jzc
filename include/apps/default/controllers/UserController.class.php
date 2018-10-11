@@ -723,122 +723,147 @@ class UserController extends CommonController {
         $this->display('user_order_tracking.dwt');
     }
 
+    // /**
+    //  * 订单详情
+    //  */
+    // public function order_detail() {
+    //     $order_id = isset($_GET['order_id']) ? intval($_GET['order_id']) : 0;
+
+    //     // 订单详情
+    //     $order = model('Users')->get_order_detail($order_id, $this->user_id);
+    //     if ($order['order_status'] == OS_UNCONFIRMED) {
+    //         $order['handler'] = "<a class=\"btn btn-info ect-colorf ect-bg\" href=\"" . url('user/cancel_order', array(
+    //                     'order_id' => $order['order_id']
+    //                 )) . "\" onclick=\"if (!confirm('" . L('confirm_cancel') . "')) return false;\">" . L('cancel_order_detail') . "</a>";
+    //     }
+    //     elseif ($order['order_status'] == OS_SPLITED) {
+    //         /* 对配送状态的处理 */
+    //         if ($order['shipping_status'] == SS_SHIPPED) {
+    //             @$order['handler'] = "<a class=\"btn btn-info ect-colorf ect-bg\" href=\"" . url('user/affirm_received', array(
+    //                         'order_id' => $order['order_id']
+    //                     )) . "\" onclick=\"if (!confirm('" . L('confirm_received') . "')) return false;\">" . L('received') . "</a>";
+    //         } elseif ($order['shipping_status'] == SS_RECEIVED) {
+    //             @$order['handler'] = '<a class="btn btn-info ect-colorf ect-bg" type="button" href="javascript:void(0);">' . L('ss_received') . '</a>';
+    //         } else {
+    //             if ($order['pay_status'] == PS_UNPAYED) {
+    //                 @$order['handler'] = "<a class=\"btn btn-infoect-colorf ect-bg\" href=\"" . url('user/cancel_order', array(
+    //                             'order_id' => $order['order_id']
+    //                         )) . "\">" . L('pay_money') . "</a>";
+    //             } else {
+    //                 // @$order['handler'] = "<a class=\"btn btn-info ect-colorf\" href=\"javascript:void(0);\">" . L('view_order') . "</a>";
+    //             }
+    //         }
+    //     } else {
+    //         $order['handler'] = '<a class="btn btn-info ect-colorf ect-bg" type="button" href="javascript:void(0);">' . L('os.' . $order['order_status']) . '</a>';
+    //     }
+    //     if ($order === false) {
+    //         ECTouch::err()->show(L('back_home_lnk'), './');
+    //         exit();
+    //     }
+
+    //     // 订单商品
+    //     $goods_list = model('Order')->order_goods($order_id);
+    //     foreach ($goods_list as $key => $value) {
+    //         $goods_list[$key]['market_price'] = price_format($value['market_price'], false);
+    //         $goods_list[$key]['goods_price'] = price_format($value['goods_price'], false);
+    //         $goods_list[$key]['subtotal'] = price_format($value['subtotal'], false);
+    //         $goods_list[$key]['tags'] = model('ClipsBase')->get_tags($value['goods_id']);
+    //         $goods_list[$key]['goods_thumb'] = get_image_path($order_id, $value['goods_thumb']);
+    //         /*退换货 start*/
+    //         $goods_list[$key]['ret_id'] = $this->model->table('order_return')->field('ret_id')->where('rec_id =' . $value['rec_id'])->getOne();
+    //         $goods_list[$key]['aftermarket'] = model('Users')->check_aftermarket($value['rec_id']); //查询是否申请过售后服务
+    //         if ($order['pay_status'] == PS_PAYED) {
+    //             /*只有已付款订单才能申请售后服务*/
+    //             $goods_list[$key]['service_apply'] = true;
+    //         }
+    //         /*退换货 end*/
+
+    //     }
+
+    //     // 设置能否修改使用余额数
+    //     if ($order['order_amount'] > 0) {
+    //         if ($order['order_status'] == OS_UNCONFIRMED || $order['order_status'] == OS_CONFIRMED) {
+    //             $user = model('Order')->user_info($order['user_id']);
+    //             if ($user['user_money'] + $user['credit_line'] > 0) {
+    //                 $this->assign('allow_edit_surplus', 1);
+    //                 $this->assign('max_surplus', sprintf(L('max_surplus'), $user['user_money']));
+    //             }
+    //         }
+    //     }
+
+    //     // 未发货，未付款时允许更换支付方式
+    //     if ($order['order_amount'] > 0 && $order['pay_status'] == PS_UNPAYED && $order['shipping_status'] == SS_UNSHIPPED) {
+    //         $payment_list = model('Order')->available_payment_list(false, 0, true);
+
+    //         // 过滤掉当前支付方式和余额支付方式
+    //         if (is_array($payment_list)) {
+    //             foreach ($payment_list as $key => $payment) {
+    //                 // 如果不是微信浏览器访问并且不是微信会员 则不显示微信支付
+    //                 if ($payment ['pay_code'] == 'wxpay' && !is_wechat_browser() && empty($_SESSION['openid'])) {
+    //                     unset($payment_list [$key]);
+    //                 }
+    //                 // 兼容过滤ecjia支付方式
+    //                 if (substr($payment['pay_code'], 0 , 4) == 'pay_') {
+    //                     unset($payment_list[$key]);
+    //                 }
+    //                 if(!file_exists(ROOT_PATH . 'plugins/payment/'.$payment['pay_code'].'.php')){
+    //                     unset($payment_list[$key]);
+    //                 }
+    //                 if ($payment['pay_id'] == $order['pay_id'] || $payment['pay_code'] == 'balance') {
+    //                     unset($payment_list[$key]);
+    //                 }
+    //             }
+    //         }
+    //         $this->assign('payment_list', $payment_list);
+    //     }
+    //     $order['pay_desc'] = html_out($order['pay_desc']);
+
+    //     // 如果是银行汇款或货到付款 则显示支付描述
+    //     $payment = model('Order')->payment_info($order ['pay_id']);
+    //     if ($payment['pay_code'] == 'bank' || $payment['pay_code'] == 'cod'){
+    //         $this->assign('pay_desc',$payment['pay_desc']);
+    //     }
+    //     // 如果是微信支付 不允许再使用余额修改订单价格后支付
+    //     if($payment['pay_code'] == 'wxpay'){
+    //         $this->assign('allow_edit_surplus', 0);
+    //     }
+
+    //     // 订单 支付 配送 状态语言项
+    //     $order['order_status'] = L('os.' . $order['order_status']);
+    //     $order['pay_status'] = L('ps.' . $order['pay_status']);
+    //     $order['shipping_status'] = L('ss.' . $order['shipping_status']);
+
+    //     $this->assign('title', L('order_detail'));
+    //     $this->assign('order', $order);
+    //     $this->assign('goods_list', $goods_list);
+    //     $this->display('user_order_detail.dwt');
+    // }
+
     /**
      * 订单详情
      */
     public function order_detail() {
         $order_id = isset($_GET['order_id']) ? intval($_GET['order_id']) : 0;
 
+        // // 订单详情
+        // $order = model('Users')->get_order_detail($order_id, $this->user_id);
+
+        // $this->assign('title', L('order_detail'));
+        // $this->assign('order', $order);
+        $this->assign('order_id',$order_id);
+        $this->display('user_order_detail_wuliu.dwt');
+    }
+    /*
+    *获取订单详情数据
+    */
+    public function ger_order_detail(){
+        $order_id = isset($_GET['order_id']) ? intval($_GET['order_id']) : 0;
+
         // 订单详情
         $order = model('Users')->get_order_detail($order_id, $this->user_id);
-        if ($order['order_status'] == OS_UNCONFIRMED) {
-            $order['handler'] = "<a class=\"btn btn-info ect-colorf ect-bg\" href=\"" . url('user/cancel_order', array(
-                        'order_id' => $order['order_id']
-                    )) . "\" onclick=\"if (!confirm('" . L('confirm_cancel') . "')) return false;\">" . L('cancel_order_detail') . "</a>";
-        }
-        elseif ($order['order_status'] == OS_SPLITED) {
-            /* 对配送状态的处理 */
-            if ($order['shipping_status'] == SS_SHIPPED) {
-                @$order['handler'] = "<a class=\"btn btn-info ect-colorf ect-bg\" href=\"" . url('user/affirm_received', array(
-                            'order_id' => $order['order_id']
-                        )) . "\" onclick=\"if (!confirm('" . L('confirm_received') . "')) return false;\">" . L('received') . "</a>";
-            } elseif ($order['shipping_status'] == SS_RECEIVED) {
-                @$order['handler'] = '<a class="btn btn-info ect-colorf ect-bg" type="button" href="javascript:void(0);">' . L('ss_received') . '</a>';
-            } else {
-                if ($order['pay_status'] == PS_UNPAYED) {
-                    @$order['handler'] = "<a class=\"btn btn-infoect-colorf ect-bg\" href=\"" . url('user/cancel_order', array(
-                                'order_id' => $order['order_id']
-                            )) . "\">" . L('pay_money') . "</a>";
-                } else {
-                    // @$order['handler'] = "<a class=\"btn btn-info ect-colorf\" href=\"javascript:void(0);\">" . L('view_order') . "</a>";
-                }
-            }
-        } else {
-            $order['handler'] = '<a class="btn btn-info ect-colorf ect-bg" type="button" href="javascript:void(0);">' . L('os.' . $order['order_status']) . '</a>';
-        }
-        if ($order === false) {
-            ECTouch::err()->show(L('back_home_lnk'), './');
-            exit();
-        }
 
-        // 订单商品
-        $goods_list = model('Order')->order_goods($order_id);
-        foreach ($goods_list as $key => $value) {
-            $goods_list[$key]['market_price'] = price_format($value['market_price'], false);
-            $goods_list[$key]['goods_price'] = price_format($value['goods_price'], false);
-            $goods_list[$key]['subtotal'] = price_format($value['subtotal'], false);
-            $goods_list[$key]['tags'] = model('ClipsBase')->get_tags($value['goods_id']);
-            $goods_list[$key]['goods_thumb'] = get_image_path($order_id, $value['goods_thumb']);
-            /*退换货 start*/
-            $goods_list[$key]['ret_id'] = $this->model->table('order_return')->field('ret_id')->where('rec_id =' . $value['rec_id'])->getOne();
-            $goods_list[$key]['aftermarket'] = model('Users')->check_aftermarket($value['rec_id']); //查询是否申请过售后服务
-            if ($order['pay_status'] == PS_PAYED) {
-                /*只有已付款订单才能申请售后服务*/
-                $goods_list[$key]['service_apply'] = true;
-            }
-            /*退换货 end*/
-
-        }
-
-        // 设置能否修改使用余额数
-        if ($order['order_amount'] > 0) {
-            if ($order['order_status'] == OS_UNCONFIRMED || $order['order_status'] == OS_CONFIRMED) {
-                $user = model('Order')->user_info($order['user_id']);
-                if ($user['user_money'] + $user['credit_line'] > 0) {
-                    $this->assign('allow_edit_surplus', 1);
-                    $this->assign('max_surplus', sprintf(L('max_surplus'), $user['user_money']));
-                }
-            }
-        }
-
-        // 未发货，未付款时允许更换支付方式
-        if ($order['order_amount'] > 0 && $order['pay_status'] == PS_UNPAYED && $order['shipping_status'] == SS_UNSHIPPED) {
-            $payment_list = model('Order')->available_payment_list(false, 0, true);
-
-            // 过滤掉当前支付方式和余额支付方式
-            if (is_array($payment_list)) {
-                foreach ($payment_list as $key => $payment) {
-                    // 如果不是微信浏览器访问并且不是微信会员 则不显示微信支付
-                    if ($payment ['pay_code'] == 'wxpay' && !is_wechat_browser() && empty($_SESSION['openid'])) {
-                        unset($payment_list [$key]);
-                    }
-                    // 兼容过滤ecjia支付方式
-                    if (substr($payment['pay_code'], 0 , 4) == 'pay_') {
-                        unset($payment_list[$key]);
-                    }
-                    if(!file_exists(ROOT_PATH . 'plugins/payment/'.$payment['pay_code'].'.php')){
-                        unset($payment_list[$key]);
-                    }
-                    if ($payment['pay_id'] == $order['pay_id'] || $payment['pay_code'] == 'balance') {
-                        unset($payment_list[$key]);
-                    }
-                }
-            }
-            $this->assign('payment_list', $payment_list);
-        }
-        $order['pay_desc'] = html_out($order['pay_desc']);
-
-        // 如果是银行汇款或货到付款 则显示支付描述
-        $payment = model('Order')->payment_info($order ['pay_id']);
-        if ($payment['pay_code'] == 'bank' || $payment['pay_code'] == 'cod'){
-            $this->assign('pay_desc',$payment['pay_desc']);
-        }
-        // 如果是微信支付 不允许再使用余额修改订单价格后支付
-        if($payment['pay_code'] == 'wxpay'){
-            $this->assign('allow_edit_surplus', 0);
-        }
-
-        // 订单 支付 配送 状态语言项
-        $order['order_status'] = L('os.' . $order['order_status']);
-        $order['pay_status'] = L('ps.' . $order['pay_status']);
-        $order['shipping_status'] = L('ss.' . $order['shipping_status']);
-
-        $this->assign('title', L('order_detail'));
-        $this->assign('order', $order);
-        $this->assign('goods_list', $goods_list);
-        $this->display('user_order_detail.dwt');
+        echo json_encode(array('data'=>$order))
     }
-
     /**
      * 确认收货
      */

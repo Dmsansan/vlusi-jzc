@@ -187,6 +187,6 @@ $data = array (
   'new_number' => 3,
   'hot_number' => 3,
   'promote_number' => 3,
-  'shop_url' => 'http://localhost',
+  'shop_url' => 'http://localhost:8080',
 );
 ?>

@@ -622,7 +622,7 @@ class UsersModel extends BaseModel {
             $pay = '';
         }
 
-        $sql = "SELECT order_id, order_sn, shipping_id, order_status, shipping_status, pay_status, add_time, " .
+        $sql = "SELECT order_id, kuaidi_name, kuaidi_sn, order_sn, shipping_id, order_status, shipping_status, pay_status, add_time, " .
                 "(goods_amount + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee + tax - discount) AS total_fee " .
                 " FROM " . $this->pre .
                 "order_info WHERE user_id = '$user_id' " . $pay . " ORDER BY add_time DESC LIMIT $start , $num";
@@ -659,6 +659,8 @@ class UsersModel extends BaseModel {
 
             $arr[] = array('order_id' => $value['order_id'],
                 'order_sn' => $value['order_sn'],
+                'kuaidi_sn' => $value['kuaidi_sn'],
+                'kuaidi_name' => $value['kuaidi_name'],
                 'img' => get_image_path(0, model('Order')->get_order_thumb($value['order_id'])),
                 'order_time' => local_date(C('time_format'), $value['add_time']),
                 'order_status' => $value['order_status'],

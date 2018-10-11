@@ -79,6 +79,8 @@ $_LANG['amount_password'] = '代金卡密码';
 $_LANG['amount_number_empty'] = '代金卡卡号不能为空！';
 $_LANG['amount_password_empty'] = '代金卡密码不能为空！';
 
+$_LANG['kuaidi_sn'] = '快递单号';
+$_LANG['kuaidi_name'] = '快递公司名称';
 //JS语言项
 $_LANG['account_js']['surplus_amount_empty'] = '请输入您要操作的金额数量！';
 $_LANG['account_js']['surplus_amount_error'] = '您输入的金额数量格式不正确！';
