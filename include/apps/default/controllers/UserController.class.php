@@ -3071,7 +3071,6 @@ class UserController extends CommonController {
         curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
         $result = curl_exec($ch);
         $data = str_replace("\"",'"',$result );
-//        $data = json_decode($data,true);
         echo $data;
     }
     /*判断传递参事是否为空*/

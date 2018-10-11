@@ -51,6 +51,50 @@ if ($_REQUEST['act'] == 'order_query')
     $smarty->display('order_query.htm');
 }
 
+/**
+ * 添加物流信息
+ */
+elseif ($_REQUEST['act'] == 'add_kuaidi_info'){
+    /* 检查权限 */
+    admin_priv('order_view');
+
+    $order = order_info($_REQUEST['order_id']);//订单信息
+
+    $smarty->assign('order_id',  $_REQUEST['order_id']);//订单ID
+    $smarty->assign('order',  $order);//订单ID
+    $smarty->assign('add_kuaidi_info_url', 'order.php?act=add_kuaidi_info');
+    $smarty->assign('ur_here',     $_LANG['kuaidi_info_add']);
+    $smarty->assign('action_link', array('text' => $_LANG['02_order_list'], 'href' => 'order.php?act=list'));
+    $smarty->assign('form_action', 'insert_kuaidi_info');
+
+    assign_query_info();
+    $smarty->display('kuaidi_info_add.htm');
+}
+
+/**
+ * 插入订单物流信息
+ */
+elseif ($_REQUEST['act'] == 'insert_kuaidi_info'){
+    $arr = array();
+    $arr['kuaidi_name'] = $_POST['kuaidi_name'];
+    $arr['kuaidi_sn'] = $_POST['kuaidi_sn'];
+
+    if (update_order($_POST['order_id'],$arr))
+    {
+        $link[0]['text'] = $_LANG['back_list'];
+        $link[0]['href'] = 'order.php?act=list&' . list_link_postfix();
+
+        admin_log($_POST['order_id'], 'edit', 'order');
+
+        clear_cache_files();
+        sys_msg($_LANG['articleedit_succeed'], 0, $link);
+    }
+    else
+    {
+        die($db->error());
+    }
+}
+
 /*------------------------------------------------------ */
 //-- 订单列表
 /*------------------------------------------------------ */
@@ -5326,7 +5370,7 @@ function order_list()
         $filter['page_count']     = $filter['record_count'] > 0 ? ceil($filter['record_count'] / $filter['page_size']) : 1;
 
         /* 查询 */
-        $sql = "SELECT o.order_id, o.order_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid," .
+        $sql = "SELECT o.order_id, o.order_sn, o.kuaidi_name, o.kuaidi_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid," .
                     "o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, " .
                     "(" . order_amount_field('o.') . ") AS total_fee, " .
                     "IFNULL(u.user_name, '" .$GLOBALS['_LANG']['anonymous']. "') AS buyer ".

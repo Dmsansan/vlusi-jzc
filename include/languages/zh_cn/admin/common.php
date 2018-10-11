@@ -199,6 +199,7 @@ $_LANG['18_create_card_log'] = '生卡记录管理';
 $_LANG['20_card_drop_log'] = '生卡充值记录管理';
 /* 订单管理 */
 $_LANG['02_order_list'] = '订单列表';
+$_LANG['kuaidi_info_add'] = '添加物流信息';
 $_LANG['03_order_query'] = '订单查询';
 $_LANG['04_merge_order'] = '合并订单';
 $_LANG['05_edit_order_print'] = '订单打印';

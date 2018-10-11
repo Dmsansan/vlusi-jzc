@@ -45,7 +45,7 @@ class exchange
         $this->table     = $table;
         $this->db        = &$db;
         $this->id        = $id;
-        $this->amount_id= $id;
+        $this->amount_id = $id;
         $this->name      = $name;
         $this->error_msg = '';
     }
@@ -125,6 +125,8 @@ class exchange
             return false;
         }
     }
+
+
     /**
      * 取得某个字段的值
      *

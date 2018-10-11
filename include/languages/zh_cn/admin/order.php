@@ -96,6 +96,9 @@ $_LANG['exchange_goods'] = '（积分兑换）';
 
 $_LANG['js_languages']['remove_confirm'] = '删除订单将清除该订单的所有信息。您确定要这么做吗？';
 
+$_LANG['kuaidi_sn'] = '快递单号';
+$_LANG['kuaidi_name'] = '快递全拼';
+$_LANG['add_kuaidi_sn'] = '添加物流信息';
 /* 订单搜索 */
 $_LANG['label_order_sn'] = '订单号：';
 $_LANG['label_all_status'] = '订单状态：';
@@ -193,6 +196,8 @@ $_LANG['label_money_refund'] = '应退款金额：';
 $_LANG['label_to_buyer'] = '商家给客户的留言：';
 $_LANG['save_order'] = '保存订单';
 $_LANG['notice_gb_order_amount'] = '（备注：团购如果有保证金，第一次只需支付保证金和相应的支付费用）';
+$_LANG['notice_kuaidi_name'] = '快递公司的全拼：比如中通快递需添加：zhongtong';
+$_LANG['notice_kuaidi_sn'] = '快递单号，快递公司提供的运单号';
 
 $_LANG['action_user'] = '操作者：';
 $_LANG['action_time'] = '操作时间';
@@ -332,6 +337,9 @@ $_LANG['order_gift_integral'] = '订单 %s 赠送的积分';
 $_LANG['return_order_gift_integral'] = '由于退货或未发货操作，退回订单 %s 赠送的积分';
 $_LANG['invoice_no_mall'] = '&nbsp;&nbsp;&nbsp;&nbsp;多个发货单号，请用英文逗号（“,”）隔开。';
 
+$_LANG['back_list'] = '点击返回订单列表';
+$_LANG['articleedit_succeed'] = '订单物流信息编辑成功';
+
 $_LANG['js_languages']['input_price'] = '自定义价格';
 $_LANG['js_languages']['pls_search_user'] = '请搜索并选择会员';
 $_LANG['js_languages']['confirm_drop'] = '确认要删除该商品吗？';
@@ -348,6 +356,9 @@ $_LANG['js_languages']['pls_select_refund'] = '请选择退款方式！';
 $_LANG['js_languages']['pls_select_agency'] = '请选择办事处！';
 $_LANG['js_languages']['pls_select_other_agency'] = '该订单现在就属于这个办事处，请选择其他办事处！';
 $_LANG['js_languages']['loading'] = '加载中...';
+
+$_LANG['js_languages']['kuaidi_name'] = '快递全拼不能为空';
+$_LANG['js_languages']['kuaidi_sn'] = '快递单号不能为空';
 
 /* 订单操作 */
 $_LANG['order_operate'] = '订单操作：';
