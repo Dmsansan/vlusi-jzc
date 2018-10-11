@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-10-08 07:50:36
+Date: 2018-10-11 21:30:15
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -1418,11 +1418,12 @@ CREATE TABLE `jzc_drp_apply` (
   `time` int(12) DEFAULT '0',
   `amount` decimal(10,2) DEFAULT '0.00',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of jzc_drp_apply
 -- ----------------------------
+INSERT INTO `jzc_drp_apply` VALUES ('1', '1', '1', '1539231392', '1.00');
 
 -- ----------------------------
 -- Table structure for jzc_drp_bank
@@ -2096,6 +2097,8 @@ CREATE TABLE `jzc_order_goods` (
 DROP TABLE IF EXISTS `jzc_order_info`;
 CREATE TABLE `jzc_order_info` (
   `order_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `kuaidi_name` varchar(60) DEFAULT NULL,
+  `kuaidi_number` varchar(60) DEFAULT NULL,
   `order_sn` varchar(20) NOT NULL DEFAULT '',
   `user_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `order_status` tinyint(1) unsigned NOT NULL DEFAULT '0',
@@ -5938,7 +5941,8 @@ CREATE TABLE `jzc_sessions` (
 -- ----------------------------
 -- Records of jzc_sessions
 -- ----------------------------
-INSERT INTO `jzc_sessions` VALUES ('ed9716df90d652df3f69dbf5edb77d25', '1538956065', '0', '1', '0.0.0.0', '0', '0', '0.00', '0', '');
+INSERT INTO `jzc_sessions` VALUES ('787c4ce48d5b953f20b8fed6e1b6b2a4', '1539264335', '1', '0', '0.0.0.0', 'haha', '1', '1.00', '15601590617@163.com', 'a:7:{s:9:\"parent_id\";i:0;s:8:\"drp_shop\";a:0:{}s:9:\"last_time\";s:10:\"1539228791\";s:9:\"flow_type\";i:0;s:10:\"login_fail\";i:0;s:7:\"last_ip\";s:7:\"0.0.0.0\";s:9:\"send_code\";s:32:\"4e4d6c332b6fe62a63afe56171fd3725\";}');
+INSERT INTO `jzc_sessions` VALUES ('81ab5667da80e6cb2dbf1ebc7ceb2845', '1539263503', '0', '0', '127.0.0.1', '0', '0', '1.00', '0', 'a:2:{s:9:\"parent_id\";i:0;s:8:\"drp_shop\";a:0:{}}');
 
 -- ----------------------------
 -- Table structure for jzc_sessions_data
@@ -5955,7 +5959,7 @@ CREATE TABLE `jzc_sessions_data` (
 -- ----------------------------
 -- Records of jzc_sessions_data
 -- ----------------------------
-INSERT INTO `jzc_sessions_data` VALUES ('ed9716df90d652df3f69dbf5edb77d25', '4294967295', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1538927265;s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:6:\"400.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}s:9:\"wechat_id\";i:1;}');
+INSERT INTO `jzc_sessions_data` VALUES ('ed9716df90d652df3f69dbf5edb77d25', '4294967295', 'a:5:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539032498;s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:6:\"400.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}s:9:\"wechat_id\";i:1;}');
 
 -- ----------------------------
 -- Table structure for jzc_shipping
@@ -6554,7 +6558,7 @@ CREATE TABLE `jzc_users` (
 -- ----------------------------
 -- Records of jzc_users
 -- ----------------------------
-INSERT INTO `jzc_users` VALUES ('1', '15601590617@163.com', 'haha', 'a2a0ddee0a1cdace6b720e9542cb4e3c', '', '', '0', '1958-01-01', '400.00', '0.00', '0', '0', '0', '1538886901', '1538891637', '0000-00-00 00:00:00', '0.0.0.0', '4', '0', '0', '9828', '0', '0', '0', '', '', '', '', '', '', '0', '0.00', null, null, '0');
+INSERT INTO `jzc_users` VALUES ('1', '15601590617@163.com', 'haha', 'a2a0ddee0a1cdace6b720e9542cb4e3c', '', '', '0', '1958-01-01', '400.00', '0.00', '0', '0', '0', '1538886901', '1539230685', '0000-00-00 00:00:00', '0.0.0.0', '6', '0', '0', '9828', '0', '0', '0', '', '', '', '', '', '15601590617', '0', '0.00', null, null, '0');
 
 -- ----------------------------
 -- Table structure for jzc_user_account
