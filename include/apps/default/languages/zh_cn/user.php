@@ -74,11 +74,17 @@ $_LANG['amount_gt_zero'] = '请在“金额”栏输入大于0的数字';
 $_LANG['select_payment_pls'] = '请选择支付方式';
 $_LANG['select_amount'] = '请输入金额';
 
+$_LANG['amount_number'] = '代金卡卡号';
+$_LANG['amount_password'] = '代金卡密码';
+$_LANG['amount_number_empty'] = '代金卡卡号不能为空！';
+$_LANG['amount_password_empty'] = '代金卡密码不能为空！';
+
 //JS语言项
 $_LANG['account_js']['surplus_amount_empty'] = '请输入您要操作的金额数量！';
 $_LANG['account_js']['surplus_amount_error'] = '您输入的金额数量格式不正确！';
 $_LANG['account_js']['process_desc'] = '请输入您此次操作的备注信息！';
 $_LANG['account_js']['payment_empty'] = '请选择支付方式！';
+
 
 /* 缺货登记 */
 $_LANG['oos_booking'] = '缺货登记';

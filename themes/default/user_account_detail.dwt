@@ -21,14 +21,19 @@
 	<h2>{$surplus_amount}</h2>
 	<img src="__TPL__/statics/img/pur-bg.png">
 	<div class="user-pur-box">
-		<div class="user-nav-1-box g-s-i-title-4 dis-box text-center">
+		<!--<div class="user-nav-1-box g-s-i-title-4 dis-box text-center">
 			<a href="{:url('User/account_deposit')}" class="box-flex">
 				<h4 class="ellipsis-one purse-f"><i class="iconfont icon-money is-money-color"></i>{$lang.surplus_type_0}</h4>
 			</a>
 			<a href="{:url('User/account_raply')}" class="box-flex">
 				<h4 class="ellipsis-one purse-f"><i class="iconfont icon-wodetixian is-money-color"></i>{$lang.surplus_type_1}</h4>
 			</a>
-		</div>
+		</div>-->
+		<div class="user-nav-1-box g-s-i-title-4 dis-box text-center">
+        			<a href="{:url('User/account_deposit_amount')}" class="box-flex">
+        				<h4 class="ellipsis-one purse-f"><i class="iconfont icon-money is-money-color"></i>{$lang.surplus_type_0}</h4>
+        			</a>
+        </div>
 	</div>
 </section>
 <section class="b-color-f my-nav-box m-top10">
