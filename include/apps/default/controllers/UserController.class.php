@@ -853,17 +853,17 @@ class UserController extends CommonController {
         $this->assign('order_id',$order_id);
         $this->display('user_order_detail_wuliu.dwt');
     }
-    /*
-    *获取订单详情数据
-    */
-    public function ger_order_detail(){
-        $order_id = isset($_GET['order_id']) ? intval($_GET['order_id']) : 0;
+    // /*
+    // *获取订单详情数据
+    // */
+    // public function get_order_detail(){
+    //     $order_id = isset($_GET['order_id']) ? intval($_GET['order_id']) : 0;
 
-        // 订单详情
-        $order = model('Users')->get_order_detail($order_id, $this->user_id);
+    //     // 订单详情
+    //     $order = model('Users')->get_order_detail($order_id, $this->user_id);
 
-        echo json_encode(array('data'=>$order))
-    }
+    //     echo json_encode(array('data'=>$order))
+    // }
     /**
      * 确认收货
      */
