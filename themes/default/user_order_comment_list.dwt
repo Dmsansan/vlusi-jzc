@@ -17,12 +17,7 @@
 			<dl>
 			   <dd>{$orders.name}</dd></br>	{$orders.add_time}		   
 			</dl>
-			
-			<dd>
-				 <a  style="" href="{:url('user/order_comment_list',array('id'=>$this->_var['orders']['rec_id'],'order_id'=>$this->_var['orders']['order_id']))}">
-					  <span style="  border: 1px solid #1CBB7F;color:#1CBB7F;border-radius:0.4rem; padding:0.2rem 0.8rem;  position: absolute;  top: 4.5rem;  right: 1rem; }">去评价</span>
-				 </a> 				
-		    </dd>
+
 			</li>
 		<!--{/foreach}-->
 		</ul>

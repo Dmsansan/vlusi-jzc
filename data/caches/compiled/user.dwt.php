@@ -18,7 +18,6 @@
 							<a href="javascript:;">
 								<h4 class="ellipsis-one user-admin-size"><?php echo $this->_var['info']['name']; ?></h4></a>
 							<a href="javascript:;">
-								<p class="user-reg-top color-whie f-03"><?php echo $this->_var['rank_name']; ?></p>
 							</a>
 						</div>
 						<?php if (! $this->_var['isbind']): ?>
@@ -46,18 +45,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="my-nav-box my-shoucang-bg">
-			<div class="user-nav-box n-g-s-i-title-1 dis-box text-center">
-				<a href="<?php echo url('user/collection_list');?>" class="box-flex">
-					<h4 class="color-whie ellipsis-one"><?php if ($this->_var['list']['goods_nums'] != ''): ?> <?php echo $this->_var['list']['goods_nums']; ?><?php else: ?>0<?php endif; ?></h4>
-					<p class="color-whie t-remark3">收藏</p>
-				</a>
-				<a href="<?php echo url('user/msg_list');?>" class="box-flex">
-					<h4 class="color-whie ellipsis-one"><?php if ($this->_var['list']['msg_list'] != ''): ?> <?php echo $this->_var['list']['msg_list']; ?><?php else: ?>0<?php endif; ?></h4>
-					<p class="color-whie t-remark3">消息</p>
-				</a>
-			</div>
-		</div>
+
 	</div>
 	<section class="b-color-f my-nav-box m-top10">
 		<a href="<?php echo url('user/order_list');?>">
@@ -93,7 +81,7 @@
 			<a href="<?php echo url('user/order_comment');?>" class="box-flex">
 				<li>
 					<h4 class="ellipsis-one"><i class="iconfont icon-daipingjia my-img-size"></i></h4>
-					<p class="t-remark3">待评价</p>
+					<p class="t-remark3">已完成</p>
 					<div class="user-list-num">
 						<?php if ($this->_var['list']['not_comment'] != ''): ?><?php echo $this->_var['list']['not_comment']; ?>
 						<?php else: ?>0
@@ -101,12 +89,7 @@
 					</div>
 				</li>
 			</a>
-			<a href="<?php echo url('user/aftermarket_list');?>" class="box-flex">
-				<li>
-					<h4 class="ellipsis-one"><i class="iconfont icon-p-return my-img-size"></i></h4>
-					<p class="t-remark3">退/换货</p>
-				</li>
-			</a>
+
 		</ul>
 	</section>
 	<section class="m-top10 my-nav-box b-color-f">
@@ -124,38 +107,10 @@
 					<p class="t-remark3">余额</p>
 				</li>
 			</div>
-			<a href="<?php echo url('user/bonus');?>" class="box-flex">
-				<li>
-					<h4 class="ellipsis-one"><?php if ($this->_var['list']['bonus'] != ''): ?> <?php echo $this->_var['list']['bonus']; ?><?php else: ?>0<?php endif; ?></h4>
-					<p class="t-remark3">红包</p>
-				</li>
-			</a>
-			<div  class="box-flex">
-				<li>
-					<h4 class="ellipsis-one"><?php if ($this->_var['list']['user_points'] != ''): ?> <?php echo $this->_var['list']['user_points']; ?><?php else: ?>0<?php endif; ?></h4>
-					<p class="t-remark3">积分</p>
-				</li>
-			</div>
+	
 		</ul>
 	</section>
-	<footer class="b-color-f user-fu-box m-top10">
-		<div class="box text-c b-color-f dis-box">
-			<a href="<?php echo url('user/service');?>" class="box-flex">
-				<i class="iconfont icon-kefu"></i>
-				<p class="f-03 col-6">客服服务</p>
-			</a>
-			<!-- <a href="<?php echo url('user/share');?>" class="box-flex">
-				<i class="iconfont icon-fenxiang"></i>
-				<p class="f-03 col-6">我的分享</p>
-			</a> -->
-			
-			<a href="<?php echo url('store/check_store');?>" class="box-flex">
-				<i class="iconfont icon-dianpu"></i>
-				<p class="f-03 col-6">我的微店</p>
-			</a>
-			
-		</div>
-	</footer>
+
 
 	<?php if ($this->_var['history']): ?>
 	<section class="m-top10 my-nav-box">
@@ -194,9 +149,6 @@
 		<i class="nav-box i-cate"></i><span>分类</span>
 	</a>
 	
-	<a href="<?php echo url('store/check_store');?>" class="box-flex nav-list ">
-		<i class="nav-box i-shop"></i><span>店铺</span>
-	</a>
 	
 	<a href="<?php echo url('flow/cart');?>" class="box-flex position-rel nav-list">
 		<i class="nav-box i-flow"></i><span>购物车</span>

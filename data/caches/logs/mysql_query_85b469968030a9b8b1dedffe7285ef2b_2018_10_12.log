@@ -1256,3 +1256,1057 @@ SELECT agency_id FROM `vlusi_jzc`.`jzc_admin_user` WHERE user_id = '1'
 
 SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` AS o WHERE 1 
 
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539333222', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539303921;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539331422
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539331422
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539303921'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539303921
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539333222', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539304422;s:12:\"suppliers_id\";s:1:\"0\";}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539331422
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539331422
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `vlusi_jzc`.`jzc_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` AS o WHERE 1 
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539331425
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions` (sesskey, expiry, ip, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539333537', '0.0.0.0', 'a:0:{}')
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT user_id, user_name, password, action_list, last_login  FROM `vlusi_jzc`.`jzc_admin_user` WHERE user_id = '1'
+
+UPDATE `vlusi_jzc`.`jzc_admin_user` SET last_login = '1539304737', last_ip = '0.0.0.0' WHERE user_id = '1'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539333537', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";s:0:\"\";}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539333538', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539304738;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539331738
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `vlusi_jzc`.`jzc_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` AS o WHERE 1 
+
+SELECT o.order_id, o.order_sn, o.kuaidi_name, o.kuaidi_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `vlusi_jzc`.`jzc_order_info` AS o  LEFT JOIN `vlusi_jzc`.`jzc_users` AS u ON u.user_id=o.user_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539331738
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539304738'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539304738
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539333718', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539304918;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539331918
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539304918'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539304918
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539333898', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539305098;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539332098
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539305098'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539305098
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539334078', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539305278;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539332278
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539332278
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539334158', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539305278;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539332358
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539332366
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539334193', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539305278;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539334299', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539305278;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539305278'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539305278
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539334299', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539305499;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539334310', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539305499;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539332510
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539305499'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539305499
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539334479', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539305679;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539332679
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions` (sesskey, expiry, ip, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539334561', '0.0.0.0', 'a:0:{}')
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT user_id, user_name, password, action_list, last_login  FROM `vlusi_jzc`.`jzc_admin_user` WHERE user_id = '1'
+
+UPDATE `vlusi_jzc`.`jzc_admin_user` SET last_login = '1539305761', last_ip = '0.0.0.0' WHERE user_id = '1'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539334561', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";s:0:\"\";}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539332770
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_drop_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.user_name,ac.card_number,ac.card_password,ac.card_count,ac.drop_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_card_drop_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539334627', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";s:0:\"\";}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539332827
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_create_card_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.amount_list,ac.card_number,ac.amount_number,ac.create_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_create_card_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389286552567239','JZC15389286552585314','JZC15389286552597832','JZC15389286552615056','JZC15389286552638402','JZC15389286552642122','JZC15389286552651603','JZC15389286552673368','JZC15389286552683430','JZC15389286552704116','JZC15389286552715975','JZC15389286552733911','JZC15389286552742168','JZC15389286552754265','JZC15389286552771539','JZC15389286552786407','JZC15389286552809959','JZC15389286552819037','JZC15389286552839392','JZC15389286552856072','') AND ac.use_status=1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389228033127612','JZC15389228033141052','JZC15389228033156911','JZC15389228033166962','JZC15389228033176310','JZC15389228033188984','JZC15389228033209010','JZC15389228033212580','JZC15389228033224428','JZC15389228033242060','JZC15389228033251951','JZC15389228033262328','JZC15389228033271684','JZC15389228033283628','JZC15389228033301202','JZC15389228033319302','JZC15389228033322299','JZC15389228033345530','JZC15389228033358734','JZC15389228033364092','') AND ac.use_status=1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539332828
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_create_card_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.amount_list,ac.card_number,ac.amount_number,ac.create_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_create_card_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389286552567239','JZC15389286552585314','JZC15389286552597832','JZC15389286552615056','JZC15389286552638402','JZC15389286552642122','JZC15389286552651603','JZC15389286552673368','JZC15389286552683430','JZC15389286552704116','JZC15389286552715975','JZC15389286552733911','JZC15389286552742168','JZC15389286552754265','JZC15389286552771539','JZC15389286552786407','JZC15389286552809959','JZC15389286552819037','JZC15389286552839392','JZC15389286552856072','') AND ac.use_status=1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 AND ac.amount_number IN ('JZC15389228033127612','JZC15389228033141052','JZC15389228033156911','JZC15389228033166962','JZC15389228033176310','JZC15389228033188984','JZC15389228033209010','JZC15389228033212580','JZC15389228033224428','JZC15389228033242060','JZC15389228033251951','JZC15389228033262328','JZC15389228033271684','JZC15389228033283628','JZC15389228033301202','JZC15389228033319302','JZC15389228033322299','JZC15389228033345530','JZC15389228033358734','JZC15389228033364092','') AND ac.use_status=1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539332836
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_card_drop_log` AS ac WHERE 1 
+
+SELECT ac.id,ac.user_name,ac.card_number,ac.card_password,ac.card_count,ac.drop_date,ct.card_name as card_type FROM `vlusi_jzc`.`jzc_card_drop_log` AS ac LEFT JOIN `vlusi_jzc`.`jzc_card_type` AS ct ON ac.card_type = ct.id WHERE 1  ORDER by ac.id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539334702', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";s:0:\"\";}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539332902
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539334702', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539305902;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539332902
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539334746', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539305902;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539332946
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539305902'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539305902
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539334927', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539306127;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539306127'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539306127
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539335108', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539306308;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539333308
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539333308
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539306308'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539306308
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539335468', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539306668;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539333668
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539306668'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539306668
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539335647', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539306847;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539306847'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539306847
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539335827', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539307027;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539334027
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539334027
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539307027'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539307027
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539336008', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539307208;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539334208
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539307208'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539307208
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539336188', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539307388;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539334388
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539334388
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539307388'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539307388
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539336367', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539307567;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539307567'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539307567
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539336548', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539307748;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539334748
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539334748
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539307748'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539307748
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539336728', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539307928;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539334928
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539307928'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539307928
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539336908', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308108;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539335108
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539308108'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539308108
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539337088', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308288;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539335288
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT message_id, sender_id, receiver_id, sent_time, readed, deleted, title, message, user_name FROM `vlusi_jzc`.`jzc_admin_message` AS a, `vlusi_jzc`.`jzc_admin_user` AS b WHERE a.sender_id = b.user_id AND a.receiver_id = '1' AND a.readed = 0 AND deleted = 0 ORDER BY a.sent_time DESC
+
+SELECT pay_id, is_cod FROM `vlusi_jzc`.`jzc_payment` WHERE enabled = 1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE 1  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+SELECT pay_id FROM `vlusi_jzc`.`jzc_payment` WHERE is_cod = 1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE 1  AND   order_status  IN ('1','5','6')  AND   shipping_status  IN ('0','3','5')  AND ( pay_status  IN ('2','1')  OR pay_id  IN ('2') ) 
+
+SELECT pay_id FROM `vlusi_jzc`.`jzc_payment` WHERE is_cod = 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE 1  AND   order_status  IN ('1','5')  AND   pay_status = '0' AND ( shipping_status  IN ('1','2')  OR pay_id  IN ('1','3') ) 
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE 1  AND order_status = '0' 
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE  shipping_status=4
+
+SELECT COUNT(*) AS oCount, IFNULL(SUM(order_amount), 0) AS oAmount FROM `vlusi_jzc`.`jzc_order_info`
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_alone_sale = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_alone_sale = 1 AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_new = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_new = 1 AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_best = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_best = 1 AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_hot = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_hot = 1 AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND promote_price>0 AND promote_start_date <= '1539308297' AND promote_end_date >= '1539308297' AND is_real = 1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND promote_price>0 AND promote_start_date <= '1539308297' AND promote_end_date >= '1539308297' AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND goods_number <= warn_number AND is_real = 1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND goods_number <= warn_number AND is_real=0 AND extension_code='virtual_card'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_stats` WHERE access_time > 1539244800
+
+SELECT count(*) FROM `vlusi_jzc`.`jzc_sessions`
+
+SELECT COUNT(f.msg_id) FROM `vlusi_jzc`.`jzc_feedback` AS f LEFT JOIN `vlusi_jzc`.`jzc_feedback` AS r ON r.parent_id=f.msg_id WHERE f.parent_id=0 AND ISNULL(r.msg_id) 
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_comment` WHERE status = 0 AND parent_id = 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_booking_goods` WHERE is_dispose = 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_user_account` WHERE process_type = 1 AND is_paid = 0 
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) AS oCount, IFNULL(SUM(order_amount), 0) AS oAmount FROM `vlusi_jzc`.`jzc_order_info`
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_alone_sale = 1 AND is_real = 1
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_users`
+
+SELECT value FROM `vlusi_jzc`.`jzc_shop_config` WHERE code = 'template'
+
+SELECT value FROM `vlusi_jzc`.`jzc_shop_config` WHERE code = 'stylename'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539337099', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = 'a:3:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308288;}' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `vlusi_jzc`.`jzc_reg_fields` WHERE type < 2 AND display = 1 AND id != 6 ORDER BY dis_order, id
+
+SELECT rank_id, rank_name, min_points FROM `vlusi_jzc`.`jzc_user_rank` WHERE special_rank = 1 ORDER BY min_points
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539335299
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT rank_id, rank_name, min_points FROM `vlusi_jzc`.`jzc_user_rank` ORDER BY min_points ASC 
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_users` WHERE 1 
+
+SELECT user_id, user_name,sex,birthday,mobile_phone,email, is_validated, user_money, frozen_money, rank_points, pay_points, reg_time  FROM `vlusi_jzc`.`jzc_users` WHERE 1  ORDER by user_id DESC LIMIT 0,15
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539337100', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308288;s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539337100, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308288;s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539337100', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539335300
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT id FROM `vlusi_jzc`.`jzc_reg_fields` WHERE type = 0 AND display = 1 ORDER BY dis_order, id
+
+DESC `vlusi_jzc`.`jzc_users`
+
+UPDATE `vlusi_jzc`.`jzc_users` SET sex = '0', birthday = '1958-1-1', reg_time = '1539308329', user_rank = '0', msn = '', qq = '', office_phone = '', home_phone = '', mobile_phone = '', credit_line = '0' WHERE user_name = 'cc'
+
+INSERT INTO `vlusi_jzc`.`jzc_admin_log` (log_time, user_id, log_info, ip_address)  VALUES ('1539308329', 1, '添加会员账号: cc', '0.0.0.0')
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539337129', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308288;s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539337129, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308288;s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539337129', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT rank_id, rank_name, min_points FROM `vlusi_jzc`.`jzc_user_rank` ORDER BY min_points ASC 
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_users` WHERE 1 
+
+SELECT user_id, user_name,sex,birthday,mobile_phone,email, is_validated, user_money, frozen_money, rank_points, pay_points, reg_time  FROM `vlusi_jzc`.`jzc_users` WHERE 1  ORDER by user_id DESC LIMIT 0,15
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539337132', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308288;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539337132, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308288;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539337132', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1539335332
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539308288'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539308288
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539337313', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308513;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539337313, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308513;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539337313', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539308513'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539308513
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539337493', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308693;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539337493, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308693;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539337493', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539308693'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539308693
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539337673', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308873;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539337673, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539308873;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539337673', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539308873'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539308873
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539337853', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539309053;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539337853, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539309053;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539337853', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539336053
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539309053'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539309053
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539338033', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539309233;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539338033, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539309233;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539338033', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539336233
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539309233'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539309233
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539338213', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539309413;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539338213, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539309413;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539338213', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539309413'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539309413
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539338393', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539309593;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539338393, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539309593;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539338393', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539336593
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539309593'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539309593
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539338573', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539309773;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539338573, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539309773;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539338573', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539309773'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539309773
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539338753', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539309953;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539338753, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539309953;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539338753', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539336953
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539309953'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539309953
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539338933', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539310133;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539338933, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539310133;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539338933', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539337133
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539310133'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539310133
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539339113', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539310313;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539339113, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539310313;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539339113', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539337313
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539310313'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539310313
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539339293', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539310493;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539339293, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539310493;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539339293', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539310493'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539310493
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539339473', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539310673;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539339473, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539310673;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539339473', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539337673
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539310673'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539310673
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539339653', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539310853;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539339653, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539310853;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539339653', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539337853
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539310853'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539310853
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539339833', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539311033;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539339833, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539311033;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539339833', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539338033
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539311033'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539311033
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539340013', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539311213;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539340013, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539311213;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539340013', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539311213'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539311213
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539340193', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539311393;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539340193, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539311393;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539340193', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539338393
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539311393'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539311393
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539340373', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539311573;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539340373, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539311573;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539340373', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539338573
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539311573'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539311573
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539340553', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539311753;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539340553, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539311753;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539340553', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539311753'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539311753
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539340733', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539311933;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539340733, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539311933;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539340733', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539338933
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539311933'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539311933
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539340913', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539312113;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539340913, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539312113;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539340913', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539339113
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539312113'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539312113
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539341093', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539312293;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539341093, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539312293;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539341093', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539312293'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539312293
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539341273', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539312473;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539341273, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539312473;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539341273', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539312473'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539312473
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539341453', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539312653;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539341453, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539312653;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539341453', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539312653'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539312653
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539341633', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539312833;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539341633, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539312833;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539341633', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539312833'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539312833
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539341813', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539313013;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539341813, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539313013;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539341813', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539340013
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE add_time >= '1539313013'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` WHERE pay_time >= 1539313013
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('b7449809e1191d48f39c29d31ea641f5', '1539341993', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539313193;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1539341993, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1539313193;s:9:\"user_list\";a:2:{i:0;a:12:{s:7:\"user_id\";s:1:\"2\";s:9:\"user_name\";s:2:\"cc\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:0:\"\";s:5:\"email\";s:17:\"1079516751@qq.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:4:\"0.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-12\";}i:1;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:7:\"1390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1539341993', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = 'b7449809e1191d48f39c29d31ea641f5' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1539340193
+

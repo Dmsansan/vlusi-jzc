@@ -1,20 +1,8 @@
 <?php echo $this->fetch('library/new_page_header.lbi'); ?>
-<header class="dis-box header-menu b-color color-whie"><a class="" href="javascript:history.go(-1)"><i class="iconfont icon-jiantou"></i></a>
+<header class="dis-box header-menu" style="background-color:#4f743b"><a class="" href="javascript:history.go(-1)"><i class="iconfont icon-jiantou"></i></a>
 	<h3 class="box-flex">个人资料</h3>
-	<p><i class="iconfont icon-pailie j-nav-box"></i></p>
 </header>
-<div class="j-nav-content">
-	<ul class="dis-box new-footer-box">
-		<li class="box-flex">
-			<a href="<?php echo url('index/index');?>" class="nav-cont"><i class="nav-box"><img src="__TPL__/statics/img/home.png"></i><span>首页</span></a>
-		</li>
-		<li class="box-flex">
-			<a href="<?php echo url('category/top_all');?>" class="nav-cont"><i class="nav-box"><img src="__TPL__/statics/img/cate.png"></i><span>分类</span></a>
-			<li class="box-flex"><a href="javascript:;" class="nav-cont j-search-input"><i class="nav-box"><img src="__TPL__/statics/img/search.png"></i><span>搜索</span></a></li>
-			<li class="box-flex"><a href="<?php echo url('flow/cart');?>" class="nav-cont"><i class="nav-box"><img src="__TPL__/statics/img/flow.png"></i><span>购物车</span></a></li>
-			<li class="box-flex"><a href="<?php echo url('user/index');?>" class="nav-cont"><i class="nav-box"><img src="__TPL__/statics/img/user.png"></i><span>用户中心</span></a></li>
-	</ul>
-</div>
+
 
 <form name="formEdit" action="<?php echo url('user/profile');?>" method="post" onSubmit="return userEdit()">
 	<section class="flow-consignee ect-bg-colorf s-user-top onclik-admin">
@@ -54,19 +42,12 @@
 	</section>
 	<input name="act" type="hidden" value="profile" />
 	<div class=" ect-padding-tb padding-all">
-		<button name="submit" type="submit" class="btn-submit" value="<?php echo $this->_var['lang']['confirm_edit']; ?>"><?php echo $this->_var['lang']['confirm_edit']; ?></button>
+		<button name="submit" type="submit" class="btn-submit" style="background-color:#4f743b"  value="<?php echo $this->_var['lang']['confirm_edit']; ?>"><?php echo $this->_var['lang']['confirm_edit']; ?></button>
 	</div>
 </form>
 
 <section class="b-color-f my-nav-box m-top10">
-	<a href="<?php echo url('user/edit_password');?>">
-		<div class="s-user-top">
-			<div class="dis-box s-xian-box s-user-top-1">
-				<h3 class="box-flex text-all-span my-u-title-size">修改密码</h3>
-				<span class="t-jiantou"><i class="iconfont icon-jiantou tf-180 jian-top"></i></span>
-			</div>
-		</div>
-	</a>
+
 	<a href="<?php echo url('user/address_list');?>">
 		<div class="s-user-top">
 			<div class="dis-box s-xian-box s-user-top-1">
