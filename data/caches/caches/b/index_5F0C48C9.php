@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:62:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/index.dwt";i:1;s:80:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_page_header.lbi";i:2;s:75:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_search.lbi";i:3;s:80:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_page_footer.lbi";}s:7:"expires";i:1539318004;s:8:"maketime";i:1539314404;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:62:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/index.dwt";i:1;s:80:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_page_header.lbi";i:2;s:75:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_search.lbi";i:3;s:80:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_page_footer.lbi";}s:7:"expires";i:1539336593;s:8:"maketime";i:1539332993;}<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -32,11 +32,11 @@
 	<div class="index-banner swiper-container box position-rel banner-first">
 				<div class="index-nav-box">
 			<ul class="dis-box">
-				<li class="index-left-box"><a href="/vlusi_jzc/index.php?m=default&c=category&a=top_all&u=1"><i class="iconfont icon-caidan color-whie"></i></a></li>
+				<li class="index-left-box"><a href="/vlusi_jzc/index.php?m=default&c=category&a=top_all&u=0"><i class="iconfont icon-caidan color-whie"></i></a></li>
 				<li class="box-flex n-input-index-box">
 					<div class="index-search-box j-search-input" id="j-input-focus"><i class="iconfont icon-sousuo"></i>请输入您搜索的关键词!</div>
 				</li>
-				<li class="index-right-box"><a href="/vlusi_jzc/index.php?m=default&c=user&a=msg_list&u=1"><i class="iconfont icon-xiaoxi1 color-whie n-xiaoxi-size"></i></a></li>
+				<li class="index-right-box"><a href="/vlusi_jzc/index.php?m=default&c=user&a=msg_list&u=0"><i class="iconfont icon-xiaoxi1 color-whie n-xiaoxi-size"></i></a></li>
 			</ul>
 		</div>
 		<div class="swiper-wrapper">
@@ -137,27 +137,25 @@
 	<i class="iconfont icon-dingbu"></i>
 </div>
 <footer class="footer-nav dis-box">
-				<a href="/vlusi_jzc/index.php?m=default&c=index&a=index&u=1" class="box-flex nav-list active">
+				<a href="/vlusi_jzc/index.php?m=default&c=index&a=index&u=0" class="box-flex nav-list active">
 					<i class="nav-box i-home"></i><span>首页</span>
 				</a>
-				<a href="/vlusi_jzc/index.php?m=default&c=category&a=top_all&u=1" class="box-flex nav-list">
+				<a href="/vlusi_jzc/index.php?m=default&c=category&a=top_all&u=0" class="box-flex nav-list">
 					<i class="nav-box i-cate"></i><span>分类</span>
 				</a>
 				
-				<a href="/vlusi_jzc/index.php?m=default&c=store&a=check_store&u=1" class="box-flex nav-list ">
-					<i class="nav-box i-shop"></i><span>店铺</span>
-				</a>
+			
 				
-				<a href="/vlusi_jzc/index.php?m=default&c=flow&a=cart&u=1" class="box-flex position-rel nav-list">
+				<a href="/vlusi_jzc/index.php?m=default&c=flow&a=cart&u=0" class="box-flex position-rel nav-list">
 					<i class="nav-box i-flow"></i><span>购物车</span>
 				</a>
-				<a href="/vlusi_jzc/index.php?m=default&c=user&a=index&u=1" class="box-flex nav-list">
+				<a href="/vlusi_jzc/index.php?m=default&c=user&a=index&u=0" class="box-flex nav-list">
 					<i class="nav-box i-user"></i><span>我的</span>
 				</a>
 		</footer>			
 <div class="search-div ts-3">
 	<section class="search">
-		<form action="/vlusi_jzc/index.php?m=default&c=category&a=index&u=1" method="post">
+		<form action="/vlusi_jzc/index.php?m=default&c=category&a=index&u=0" method="post">
 		<div class="text-all dis-box j-text-all">
 			<a class="a-icon-back j-close-search" href="javascript:history.go(-1)"><i class="iconfont icon-jiantou is-left-font"></i></a>
 			<div class="box-flex input-text">
@@ -217,7 +215,7 @@ function clearHistroy(){
 <script type="text/javascript" src="/vlusi_jzc/data/assets/js/common.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/jquery.more.js"></script>
 <script type="text/javascript">
-	get_asynclist("/vlusi_jzc/index.php?m=default&c=index&a=ajax_goods&type=best&u=1", '__TPL__/images/loader.gif');
+	get_asynclist("/vlusi_jzc/index.php?m=default&c=index&a=ajax_goods&type=best&u=0", '__TPL__/images/loader.gif');
 </script>
 <script type="text/javascript ">
 	$(function($) {		

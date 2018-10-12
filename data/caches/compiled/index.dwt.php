@@ -146,9 +146,7 @@ echo $this->_echash . $k['name'] . '|' . serialize($k) . $this->_echash;
 					<i class="nav-box i-cate"></i><span>分类</span>
 				</a>
 				
-				<a href="<?php echo url('store/check_store');?>" class="box-flex nav-list ">
-					<i class="nav-box i-shop"></i><span>店铺</span>
-				</a>
+			
 				
 				<a href="<?php echo url('flow/cart');?>" class="box-flex position-rel nav-list">
 					<i class="nav-box i-flow"></i><span>购物车</span>
