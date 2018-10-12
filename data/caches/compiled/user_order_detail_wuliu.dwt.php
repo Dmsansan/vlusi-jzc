@@ -22,7 +22,7 @@
         <table class="address">
             <tr>
                 <td class="position-img" rowspan="2">
-                    <img src="img/position.png"/>
+                    <img src="__TPL__/bind/img/position.png"/>
                 </td>
                 <td nowrap>收货人</td>
                 <td nowrap>{{userName}}</td>
@@ -39,7 +39,7 @@
             物流名称信息，运单号
         -->
         <div class="logistics">
-            <img src="img/position.png"/>
+            <img src="__TPL__/bind/img/position.png"/>
             <div>
                 <p class="logistics-name">{{logisticsName}}</p>
                 <p class="logistics-number">运单号：{{userOrderNum}}</p>
@@ -51,42 +51,20 @@
         <ul>
             <li v-for="item in logisticsList">
                 <p class="logistics-date">
-                    <span class="logistics-date-date">{{item.date}}</span>
+                    <span class="logistics-date-date">{{item.ftime}}</span>
                     <span class="logistics-date-time">{{item.time}}</span>
                 </p>
-                <template v-if="item.code == 0">
-                    <i class="logistics-dot logistics-dot-warning"></i>
-                    <p class="logistics-detail">
-                    <span class="logistics-detail-title logistics-detail-title-warning">
-                        {{item.status}}
-                    </span>
-                        <span class="logistics-detail-content logistics-detail-content-warning">
-                        {{item.description}}
-                    </span>
-                    </p>
-                </template>
-                <template v-else-if="item.code == 2">
+                <p>
+                <template>
                     <i class="logistics-dot logistics-dot-success"></i>
                     <p class="logistics-detail">
-                    <span class="logistics-detail-title">
-                        {{item.status}}
-                    </span>
+
                         <span class="logistics-detail-content">
-                        {{item.description}}
+                        {{item.context}}
                     </span>
                     </p>
                 </template>
-                <template v-else>
-                    <i class="logistics-dot"></i>
-                    <p class="logistics-detail">
-                    <span class="logistics-detail-title">
-                        {{item.status}}
-                    </span>
-                        <span class="logistics-detail-content">
-                        {{item.description}}
-                    </span>
-                    </p>
-                </template>
+                </p>
             </li>
         </ul>
     </section>

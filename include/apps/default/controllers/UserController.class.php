@@ -843,27 +843,23 @@ class UserController extends CommonController {
      * 订单详情
      */
     public function order_detail() {
-        $order_id = isset($_GET['order_id']) ? intval($_GET['order_id']) : 0;
-
-        // // 订单详情
-        // $order = model('Users')->get_order_detail($order_id, $this->user_id);
-
-        // $this->assign('title', L('order_detail'));
-        // $this->assign('order', $order);
-        $this->assign('order_id',$order_id);
         $this->display('user_order_detail_wuliu.dwt');
     }
-    // /*
-    // *获取订单详情数据
-    // */
-    // public function get_order_detail(){
-    //     $order_id = isset($_GET['order_id']) ? intval($_GET['order_id']) : 0;
+     /*
+     *获取订单详情数据
+     */
+     public function get_order_detail_wuliu(){
+         $order_id = isset($_GET['order_id']) ? intval($_GET['order_id']) : 0;
 
-    //     // 订单详情
-    //     $order = model('Users')->get_order_detail($order_id, $this->user_id);
+         // 订单详情
+         $order = model('Users')->get_order_detail($order_id, $this->user_id);
 
-    //     echo json_encode(array('data'=>$order))
-    // }
+         $kuaidi_name = $order['kuaidi_name'];
+         $kuaidi_sn = $order['kuaidi_sn'];
+         //物流详情
+         $wuliu = $this->chaxun_kuaidi($kuaidi_name,$kuaidi_sn);
+         echo json_encode(array('res'=>$order,'wuliu'=>$wuliu));
+     }
     /**
      * 确认收货
      */
@@ -3201,7 +3197,7 @@ class UserController extends CommonController {
     }
 
     //查询快递详细信息
-    public function chaxun_kuaidi(){
+    public function chaxun_kuaidi($kuaidi_name,$kuaidi_sn){
         //参数设置
         $post_data = array();
         //平台商户账号
@@ -3210,9 +3206,9 @@ class UserController extends CommonController {
         //平台商户秘钥
         $key= 'LXyaQAIf5211' ;
         //快递公司名称全拼
-        $com = '"'.$_POST['com'].'"';
+        $com = '"'.$kuaidi_name.'"';
         //快递单号
-        $num = '"'.$_POST['num'].'"';
+        $num = '"'.$kuaidi_sn.'"';
 
         $post_data["param"] = '{"com":'.$com.',"num":'.$num.'}';
 
@@ -3233,7 +3229,8 @@ class UserController extends CommonController {
         curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
         $result = curl_exec($ch);
         $data = str_replace("\"",'"',$result );
-        echo $data;
+        $res = json_decode($data);
+        return $res;
     }
     /*判断传递参事是否为空*/
     public function varible_isNull($post){

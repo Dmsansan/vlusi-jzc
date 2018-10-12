@@ -17,11 +17,8 @@ if ($this->_foreach['orders_list']['total'] > 0):
 			<li>
 			<a href="<?php echo url('user/order_detail', array('order_id'=>$this->_var['orders']['order_id']));?>"><img src="<?php echo $this->_var['orders']['img']; ?>" class="pull-left" />
 			<dl>
-			 <!-- <dt>
-				<h4 class="title"><?php echo $this->_var['lang']['order_number']; ?>：<?php echo $this->_var['orders']['order_sn']; ?></h4>
-			  </dt>-->
 			  <dt>
-				<h4 class="title"><?php echo $this->_var['lang']['kuaidi_sn']; ?>：<?php echo $this->_var['orders']['kuaidi_sn']; ?></h4>
+				<h4 class="title"><?php echo $this->_var['lang']['order_number']; ?>：<?php echo $this->_var['orders']['order_sn']; ?></h4>
 			  </dt>
 			  <dd><?php echo $this->_var['lang']['order_status']; ?>：<?php echo $this->_var['orders']['order_status']; ?></dd>
 			  <dd><?php echo $this->_var['lang']['order_total_fee']; ?>：<span class="ect-color"><?php echo $this->_var['orders']['total_fee']; ?></span></dd>
