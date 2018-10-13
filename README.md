@@ -29,4 +29,17 @@
      参数：com 快递公司名称全拼 中通(zhongtong)  
 	num 快递单号 541193169716
 
+线上数据库配置：
+    
+    <?php
+    return array(
+        'DB_TYPE'   => 'mysql',
+        'DB_HOST'   => '127.0.0.1',
+        'DB_USER'   => 'root',
+        'DB_PWD'   => '506651340',
+        'DB_NAME'   => 'vlusi_jzc',
+        'DB_PREFIX'   => 'jzc_',
+        'DB_PORT'   => '3306',
+        'DB_CHARSET'   => 'utf8',
+    );
 
