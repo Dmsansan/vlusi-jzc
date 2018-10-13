@@ -50,11 +50,7 @@ define('EC_CHARSET', 'utf-8');
 define('ADMIN_PATH', 'admin');
 define('AUTH_KEY', 'this is a key');
 define('OLD_AUTH_KEY', '');
-<<<<<<< HEAD
 define('API_TIME', '2018-10-13 18:43:44');
-=======
-define('API_TIME', '2018-10-12 17:38:19');
->>>>>>> df98fe70217d2243ce9d5f7dab60197a2519e945
 define('RUN_ON_ECS', false);
 define('DEFAULT_TIMEZONE', 'PRC');
 $db_config = ROOT_PATH . 'data/database.php';
