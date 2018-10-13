@@ -2,7 +2,6 @@
 	<div class="ect-bg">
 		<header class="ect-header ect-margin-tb ect-margin-lr text-center ect-bg icon-write">
 			<a href="javascript:history.go(-1)" class="pull-left ect-icon ect-icon1 ect-icon-history"></a> <span>{$title}</span>
-			<a href="javascript:;" onClick="openMune()" class="pull-right ect-icon ect-icon1 ect-icon-mune icon-write"></a>
 		</header>
 		<nav class="ect-nav ect-nav-list" style="display:none;">
 			<!-- #BeginLibraryItem "/library/page_menu.lbi" -->
@@ -13,7 +12,7 @@
 	<p class="flow-price ect-padding-lr ect-padding-tb"> {$lang.total}<b id="total_number">{$total.total_number}</b>{$lang.total_number}，{$lang.goods_price}：<b class="ect-colory" id="goods_subtotal">{$total.goods_price}</b> </p>
 	<section class="ect-pro-list flow-pic ect-border-bottom0">
 		<ul>
-			<!-- {foreach from=$goods_list item=goods key=k} -->
+			<!-- {foreach from=$goods_list item=goods key=k} -->、
 			<li class="n-flow1-box">
 				<!--<div class="j-chack-box n-flow-ckecked">
 					<div class="chack-input-box">

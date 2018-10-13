@@ -32,7 +32,7 @@ $data = array (
   'market_price_rate' => 1.2,
   'rewrite' => '0',
   'integral_name' => '积分',
-  'integral_scale' => 1,
+  'integral_scale' => 1.0,
   'integral_percent' => '1',
   'sn_prefix' => 'ECS',
   'comment_check' => '1',
@@ -114,7 +114,7 @@ $data = array (
   'order_cancel_note' => '1',
   'invoice_content' => '',
   'anonymous_buy' => '1',
-  'min_goods_amount' => 0,
+  'min_goods_amount' => 0.0,
   'one_step_buy' => 0,
   'invoice_type' => 
   array (
@@ -126,9 +126,9 @@ $data = array (
     ),
     'rate' => 
     array (
-      0 => 1,
+      0 => 1.0,
       1 => 1.5,
-      2 => 0,
+      2 => 0.0,
     ),
   ),
   'stock_dec_time' => '0',
@@ -187,6 +187,6 @@ $data = array (
   'new_number' => 3,
   'hot_number' => 3,
   'promote_number' => 3,
-  'shop_url' => 'http://localhost:8080',
+  'shop_url' => 'http://localhost',
 );
 ?>

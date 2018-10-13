@@ -13,6 +13,7 @@
  * $Id: users.php 17217 2011-01-19 06:29:08Z liubo $
 */
 
+
 define('IN_ECTOUCH', true);
 
 require(dirname(__FILE__) . '/includes/init.php');
@@ -20,7 +21,7 @@ require(dirname(__FILE__) . '/includes/init.php');
 /*------------------------------------------------------ */
 //-- 用户帐号列表
 /*------------------------------------------------------ */
-
+ 
 if ($_REQUEST['act'] == 'list')
 {
     /* 检查权限 */

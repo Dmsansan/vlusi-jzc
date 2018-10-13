@@ -1,66 +1,64 @@
 var app = new Vue({
     el: '#app',
     data: {
-        userName: '张益达',
-        userPhone: 13524789511,
-        userAddress: '下水道',
-        logisticsName: '顺丰',
-        userOrderNum: 2135478962342,
-        logisticsList: [
-            {
-                date: '06-15',
-                time: '15:22',
-                status: '已发货',
-                description: '订单已发货',
-                code:1
-            },
-            {
-                date: '06-15',
-                time: '15:22',
-                status: '包裹异常',
-                description: '包裹异常，正在处理',
-                code:0
-            },
-            {
-                date: '06-15',
-                time: '15:22',
-                status: '已发货',
-                description: '订单已发货',
-                code:1
-            },
-            {
-                date: '06-15',
-                time: '15:22',
-                status: '已发货',
-                description: '订单已发货哒哒哒哒哒哒多多多多多多多多多多多多多多多多多多多多多多多多',
-                code:1
-            },
-            {
-                date: '06-15',
-                time: '15:22',
-                status: '已发货',
-                description: '订单已发货啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊',
-                code:1
-            },
-            {
-                date: '06-15',
-                time: '15:22',
-                status: '派送中',
-                description: '派送中对方考虑的积分离开对方考虑对方的立刻分开了的纠纷',
-                code:1
-            },
-            {
-                date: '06-15',
-                time: '15:22',
-                status: '已收货',
-                description: '已收货，自提柜提货',
-                code:2
-            }
-        ]
+        userName: '',
+        userPhone: '',
+        userAddress: '',
+        logisticsName: '',
+        userOrderNum: '',
+        logisticsList: ''
     },
-    methods: {}
+    methods: {
+        loadData: function () {
+            var self = this;
+            $.getJSON(getRootPath()+'/index.php?m=default&c=user&a=get_order_detail_wuliu&order_id='+getParam('order_id'), function (data) {
+                console.log(data);
+                if(!data.res){
+                    mui.toast('获取订单信息失败！');
+                }
+                if(data.wuliu.status != 200){
+                    mui.toast('获取快递物流信息失败！');
+                }
+                if(data.res && data.wuliu.status == 200){
+                    self.userName = data.res.consignee;
+                    self.userPhone = data.res.mobile;
+                    self.userAddress = data.res.address;
+                    self.logisticsName = data.res.shipping_name;
+                    self.userOrderNum = data.res.kuaidi_sn;
+                    self.logisticsList = data.wuliu.data;
+                }
+            });
+        }
+    }
 });
+app.loadData();
+
+//js获取项目根路径，如： http://localhost:8083/uimcardprj
+function getRootPath(){
+    //获取当前网址，如： http://localhost:8083/uimcardprj/share/meun.jsp
+    var curWwwPath=window.document.location.href;
+    //获取主机地址之后的目录，如： /uimcardprj/share/meun.jsp
+    var pathName=window.document.location.pathname;
+    var pos=curWwwPath.indexOf(pathName);
+    //获取主机地址，如： http://localhost:8083
+    var localhostPaht=curWwwPath.substring(0,pos);
+    //获取带"/"的项目名，如：/uimcardprj
+    var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+    return(localhostPaht+projectName);
+}
+
 /**
- * 数组逆向排序
+ * 获取指定的URL参数值
+ * URL:http://www.quwan.com/index?name=tyler
+ * 参数：paramName URL参数
+ * 调用方法:getParam("name")
+ * 返回值:tyler
  */
-app.logisticsList.reverse();
+function getParam(paramName) {
+    paramValue = "", isFound = !1;
+    if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+        arrSource = unescape(this.location.search).substring(1, this.location.search.length).split("&"), i = 0;
+        while (i < arrSource.length && !isFound) arrSource[i].indexOf("=") > 0 && arrSource[i].split("=")[0].toLowerCase() == paramName.toLowerCase() && (paramValue = arrSource[i].split("=")[1], isFound = !0), i++
+    }
+    return paramValue == "" && (paramValue = null), paramValue
+}

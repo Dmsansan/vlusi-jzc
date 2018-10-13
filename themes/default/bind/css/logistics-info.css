@@ -57,7 +57,7 @@ p.logistics-name{
 }
 ul {
     list-style: none;
-    padding-left: 20%;
+    padding-left: 30%;
     background: rgba(255,255,255,1);
     margin-top: 5px;
     padding-top: 15px;
@@ -70,13 +70,15 @@ li {
     display: -o-flex;
     display: -ms-flex;
     position: relative;
-    height: 80px;
+    height: 140px;
     border-left: 1px solid rgb(232,232,232);
     padding-left: 15px;
 }
 p.logistics-date {
     position: absolute;
-    left: -20%;
+    left: -35%;
+    font-size: 8px;
+    width:100px;
 }
 span.logistics-date-time{
     color: #cccccc;

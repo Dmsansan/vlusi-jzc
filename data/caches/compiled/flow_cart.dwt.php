@@ -2,7 +2,6 @@
 	<div class="ect-bg">
 		<header class="ect-header ect-margin-tb ect-margin-lr text-center ect-bg icon-write">
 			<a href="javascript:history.go(-1)" class="pull-left ect-icon ect-icon1 ect-icon-history"></a> <span><?php echo $this->_var['title']; ?></span>
-			<a href="javascript:;" onClick="openMune()" class="pull-right ect-icon ect-icon1 ect-icon-mune icon-write"></a>
 		</header>
 		<nav class="ect-nav ect-nav-list" style="display:none;">
 			<?php echo $this->fetch('library/page_menu.lbi'); ?>
@@ -14,7 +13,7 @@
 		<ul>
 			<?php $_from = $this->_var['goods_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('k', 'goods');if (count($_from)):
     foreach ($_from AS $this->_var['k'] => $this->_var['goods']):
-?>
+?>、
 			<li class="n-flow1-box">
 				<!--<div class="j-chack-box n-flow-ckecked">
 					<div class="chack-input-box">

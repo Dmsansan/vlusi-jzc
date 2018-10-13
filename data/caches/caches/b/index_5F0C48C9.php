@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:50:"D:/phpStudy/WWW/vlusi_jzc/themes/default/index.dwt";i:1;s:68:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_page_header.lbi";i:2;s:63:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_search.lbi";i:3;s:68:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_page_footer.lbi";}s:7:"expires";i:1539431018;s:8:"maketime";i:1539427418;}<!DOCTYPE html>
+=======
+<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:62:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/index.dwt";i:1;s:80:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_page_header.lbi";i:2;s:75:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_search.lbi";i:3;s:80:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_page_footer.lbi";}s:7:"expires";i:1539343955;s:8:"maketime";i:1539340355;}<!DOCTYPE html>
+>>>>>>> df98fe70217d2243ce9d5f7dab60197a2519e945
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -13,6 +17,7 @@
 <body style="max-width:640px;">
 <div id="loading"><img src="/vlusi_jzc/themes/default/statics/img/loading.gif" /></div>
 <script type="text/javascript" >var tpl = '/vlusi_jzc/themes/default';</script><div class="con m-b7 new-maxbox">
+<<<<<<< HEAD
 	<!--<header class="header-max-box">
 				<div class="ect-header-banner dis-box">
 			<div class="box-flex">
@@ -37,6 +42,16 @@
 					<div class="index-search-box j-search-input" id="j-input-focus"><i class="iconfont icon-sousuo"></i>请输入您搜索的关键词!</div>
 				</li>
 				<li class="index-right-box"><a href="/vlusi_jzc/index.php?m=default&c=user&a=msg_list&u=0"><i class="iconfont icon-xiaoxi1 color-whie n-xiaoxi-size"></i></a></li>
+=======
+	<div class="index-banner swiper-container box position-rel banner-first">
+				<div class="index-nav-box">
+			<ul class="dis-box">
+				
+				<li class="box-flex n-input-index-box">
+					<div class="index-search-box j-search-input" id="j-input-focus"><i class="iconfont icon-sousuo"></i>请输入您搜索的关键词!</div>
+				</li>
+			
+>>>>>>> df98fe70217d2243ce9d5f7dab60197a2519e945
 			</ul>
 		</div>
 		<div class="swiper-wrapper">
@@ -47,6 +62,7 @@
 		<div class="linear"></div>
 	</div>
 	
+<<<<<<< HEAD
 	<nav class="bg-white ptb-1 index-nav">
 		<ul class="box ul-4 text-c bg-white">
 						<li class="fl">
@@ -84,6 +100,8 @@
 			
 		</ul>
 	</nav>
+=======
+>>>>>>> df98fe70217d2243ce9d5f7dab60197a2519e945
 	
 	<div class="box  title inx-ms m-top06">
 		<div class="dis-box m-top1px b-color-f">
@@ -100,16 +118,20 @@
 	<ul class="index-cate-box m-top06">
 		554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:3:"256";s:3:"num";s:1:"4";}554fcae493e564ee0dc75bdf2ebf94ca	</ul>
 	
+<<<<<<< HEAD
 	<div class="text-c n-cate-box">
 		<p class="index-title"><i class="iconfont icon-cainixihuan is-cainixihuan"></i>猜你喜欢</p>
 		<p class="index-small-title">实时推荐最适合您的宝贝</p>
 	</div>
+=======
+>>>>>>> df98fe70217d2243ce9d5f7dab60197a2519e945
 	<section class="product-list j-product-list n-index-box " data="1">
 		<ul class="index-more-list" id="J_ItemList">
 			<div class="single_item"></div>
 			<a href="javascript:;" style="text-align:center" class="get_more"></a>
 		</ul>
 	</section>
+<<<<<<< HEAD
 	<div class="n-footer-box">
 		<ul class="n-footer-minbox">
 			<li>
@@ -132,6 +154,8 @@
 			</li>
 		</ul>
 	</div>
+=======
+>>>>>>> df98fe70217d2243ce9d5f7dab60197a2519e945
 </div>
 <div class="filter-top" id="scrollUp">
 	<i class="iconfont icon-dingbu"></i>
@@ -144,9 +168,13 @@
 					<i class="nav-box i-cate"></i><span>分类</span>
 				</a>
 				
+<<<<<<< HEAD
 				<a href="/vlusi_jzc/index.php?m=default&c=store&a=check_store&u=0" class="box-flex nav-list ">
 					<i class="nav-box i-shop"></i><span>店铺</span>
 				</a>
+=======
+		
+>>>>>>> df98fe70217d2243ce9d5f7dab60197a2519e945
 				
 				<a href="/vlusi_jzc/index.php?m=default&c=flow&a=cart&u=0" class="box-flex position-rel nav-list">
 					<i class="nav-box i-flow"></i><span>购物车</span>
