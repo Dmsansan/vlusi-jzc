@@ -15,6 +15,7 @@
 /* 访问控制 */
 defined('IN_ECTOUCH') or die('Deny Access');
 
+// require('../moudles/fengxiang/JSSDK.php');
 class UserController extends CommonController {
 
     protected $user_id;
@@ -3252,5 +3253,17 @@ class UserController extends CommonController {
             return false;
         }
     }
-	
+
+    /*微信分享到朋友圈*/
+	public function share_weixin(){
+        $appid = "wx8304ad33eda1cbfe";
+        $appSecret = "48f9a8342d4db04cb7b9abe1d4bc99b7";
+        $jssdk = new JSSDK($appid, $appSecret);
+        //返回签名基本信息
+        $signPackage = $jssdk->getSignPackage();
+        // extract(array("signPackage"=>$signPackage));
+        // include("../themes/default/weixin_share.dwt");
+        $this->assign('signPackage',$signPackage);
+        $this->display('weixin_share.dwt');
+    }
 }

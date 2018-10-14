@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:50:"D:/phpStudy/WWW/vlusi_jzc/themes/default/index.dwt";i:1;s:68:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_page_header.lbi";i:2;s:63:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_search.lbi";i:3;s:68:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_page_footer.lbi";}s:7:"expires";i:1539431018;s:8:"maketime";i:1539427418;}<!DOCTYPE html>
-=======
-<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:62:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/index.dwt";i:1;s:80:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_page_header.lbi";i:2;s:75:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_search.lbi";i:3;s:80:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_page_footer.lbi";}s:7:"expires";i:1539343955;s:8:"maketime";i:1539340355;}<!DOCTYPE html>
->>>>>>> df98fe70217d2243ce9d5f7dab60197a2519e945
+<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:50:"D:/phpStudy/WWW/vlusi_jzc/themes/default/index.dwt";i:1;s:68:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_page_header.lbi";i:2;s:63:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_search.lbi";i:3;s:68:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_page_footer.lbi";}s:7:"expires";i:1539503971;s:8:"maketime";i:1539500371;}<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -17,32 +13,6 @@
 <body style="max-width:640px;">
 <div id="loading"><img src="/vlusi_jzc/themes/default/statics/img/loading.gif" /></div>
 <script type="text/javascript" >var tpl = '/vlusi_jzc/themes/default';</script><div class="con m-b7 new-maxbox">
-<<<<<<< HEAD
-	<!--<header class="header-max-box">
-				<div class="ect-header-banner dis-box">
-			<div class="box-flex">
-				<div class="ect-header-text fl">
-					<h4>欢迎进入<span class="color-red">微商城</span></h4>
-					<p>关注公众号,享专属服务</p>
-				</div>
-			</div>
-			<a class="btn-submit1 j-ewm-box" href="javascript:;">立即关注</a>
-		</div>
-		<div class="index-weixin-box">
-			<div><img src="__TPL__/statics/img/ewm.png"></div>
-			<p class="text-c">长按二维码关注公众微信</p>
-		</div>
-		<div class="index-bg-box"></div>
-			</header>-->
-	<div class="index-banner swiper-container box position-rel banner-first">
-				<div class="index-nav-box">
-			<ul class="dis-box">
-				<li class="index-left-box"><a href="/vlusi_jzc/index.php?m=default&c=category&a=top_all&u=0"><i class="iconfont icon-caidan color-whie"></i></a></li>
-				<li class="box-flex n-input-index-box">
-					<div class="index-search-box j-search-input" id="j-input-focus"><i class="iconfont icon-sousuo"></i>请输入您搜索的关键词!</div>
-				</li>
-				<li class="index-right-box"><a href="/vlusi_jzc/index.php?m=default&c=user&a=msg_list&u=0"><i class="iconfont icon-xiaoxi1 color-whie n-xiaoxi-size"></i></a></li>
-=======
 	<div class="index-banner swiper-container box position-rel banner-first">
 				<div class="index-nav-box">
 			<ul class="dis-box">
@@ -51,7 +21,6 @@
 					<div class="index-search-box j-search-input" id="j-input-focus"><i class="iconfont icon-sousuo"></i>请输入您搜索的关键词!</div>
 				</li>
 			
->>>>>>> df98fe70217d2243ce9d5f7dab60197a2519e945
 			</ul>
 		</div>
 		<div class="swiper-wrapper">
@@ -62,46 +31,6 @@
 		<div class="linear"></div>
 	</div>
 	
-<<<<<<< HEAD
-	<nav class="bg-white ptb-1 index-nav">
-		<ul class="box ul-4 text-c bg-white">
-						<li class="fl">
-				<a href="index.php?c=category&amp;a=top_all" ><img src="themes/default/images/nav/nav_0.png" /></a>
-				<a class="index-menu-text" href="index.php?c=category&amp;a=top_all" >全部分类</a>
-			</li>
-						<li class="fl">
-				<a href="index.php?c=user&amp;a=order_list" ><img src="themes/default/images/nav/nav_1.png" /></a>
-				<a class="index-menu-text" href="index.php?c=user&amp;a=order_list" >我的订单</a>
-			</li>
-						<li class="fl">
-				<a href="index.php?c=groupbuy" ><img src="themes/default/images/nav/nav_4.png" /></a>
-				<a class="index-menu-text" href="index.php?c=groupbuy" >最新团购</a>
-			</li>
-						<li class="fl">
-				<a href="index.php?c=activity" ><img src="themes/default/images/nav/nav_3.png" /></a>
-				<a class="index-menu-text" href="index.php?c=activity" >促销活动</a>
-			</li>
-						<li class="fl">
-				<a href="index.php?c=exchange;" ><img src="themes/default/images/nav/nav_6.png" /></a>
-				<a class="index-menu-text" href="index.php?c=exchange;" >积分商城</a>
-			</li>
-						<li class="fl">
-				<a href="index.php?c=brand" ><img src="themes/default/images/nav/nav_2.png" /></a>
-				<a class="index-menu-text" href="index.php?c=brand" >品牌街</a>
-			</li>
-						<li class="fl">
-				<a href="index.php?c=user" ><img src="themes/default/images/nav/nav_5.png" /></a>
-				<a class="index-menu-text" href="index.php?c=user" >个人中心</a>
-			</li>
-						<li class="fl">
-				<a href="index.php?c=flow&amp;a=cart" ><img src="themes/default/images/nav/nav_7.png" /></a>
-				<a class="index-menu-text" href="index.php?c=flow&amp;a=cart" >购物车</a>
-			</li>
-			
-		</ul>
-	</nav>
-=======
->>>>>>> df98fe70217d2243ce9d5f7dab60197a2519e945
 	
 	<div class="box  title inx-ms m-top06">
 		<div class="dis-box m-top1px b-color-f">
@@ -118,44 +47,12 @@
 	<ul class="index-cate-box m-top06">
 		554fcae493e564ee0dc75bdf2ebf94caads|a:3:{s:4:"name";s:3:"ads";s:2:"id";s:3:"256";s:3:"num";s:1:"4";}554fcae493e564ee0dc75bdf2ebf94ca	</ul>
 	
-<<<<<<< HEAD
-	<div class="text-c n-cate-box">
-		<p class="index-title"><i class="iconfont icon-cainixihuan is-cainixihuan"></i>猜你喜欢</p>
-		<p class="index-small-title">实时推荐最适合您的宝贝</p>
-	</div>
-=======
->>>>>>> df98fe70217d2243ce9d5f7dab60197a2519e945
 	<section class="product-list j-product-list n-index-box " data="1">
 		<ul class="index-more-list" id="J_ItemList">
 			<div class="single_item"></div>
 			<a href="javascript:;" style="text-align:center" class="get_more"></a>
 		</ul>
 	</section>
-<<<<<<< HEAD
-	<div class="n-footer-box">
-		<ul class="n-footer-minbox">
-			<li>
-				<a href="http://m.ecmoban.com/index.php?m=touch&amp;c=index&amp;a=download">
-					<div class="n-footer-img-box"><i class="iconfont icon-qunfengshangjiazhushouapperweimafuben is-ban-fize"></i></div>
-					<p class="footer-tit1">客户端</p>
-				</a>
-			</li>
-			<li>
-				<a href="index.html">
-					<div class="n-footer-img-box"><i class="iconfont icon-shoujiyanzheng is-ban-fize active"></i></div>
-					<p class="footer-tit">触屏版</p>
-				</a>
-			</li>
-			<li>
-				<a href="http://www.ecmoban.com/?pc">
-					<div class="n-footer-img-box"><i class="iconfont icon-pc is-ban-fize jian-top-2"></i></div>
-					<p class="footer-tit1">电脑版</p>
-				</a>
-			</li>
-		</ul>
-	</div>
-=======
->>>>>>> df98fe70217d2243ce9d5f7dab60197a2519e945
 </div>
 <div class="filter-top" id="scrollUp">
 	<i class="iconfont icon-dingbu"></i>
@@ -168,13 +65,7 @@
 					<i class="nav-box i-cate"></i><span>分类</span>
 				</a>
 				
-<<<<<<< HEAD
-				<a href="/vlusi_jzc/index.php?m=default&c=store&a=check_store&u=0" class="box-flex nav-list ">
-					<i class="nav-box i-shop"></i><span>店铺</span>
-				</a>
-=======
 		
->>>>>>> df98fe70217d2243ce9d5f7dab60197a2519e945
 				
 				<a href="/vlusi_jzc/index.php?m=default&c=flow&a=cart&u=0" class="box-flex position-rel nav-list">
 					<i class="nav-box i-flow"></i><span>购物车</span>
