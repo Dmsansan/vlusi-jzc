@@ -19,6 +19,9 @@
 					<a class="" href="javascript:;">
 						<div class="goods-left-jiat"><i class="iconfont icon-gengduo j-nav-box is-con"></i></div>
 					</a>
+					<a class="" href="javascript:;">
+						<div class="goods-left-jiat"><i class="iconfont icon-gengduo j-nav-box is-con"></i></div>
+					</a>
 					<div class="goods-nav ts-3">
 						<ul class="goods-nav-box">
 						    <a href="<?php echo url('index/index');?>">

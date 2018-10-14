@@ -3261,8 +3261,6 @@ class UserController extends CommonController {
         $jssdk = new JSSDK($appid, $appSecret);
         //返回签名基本信息
         $signPackage = $jssdk->getSignPackage();
-        // extract(array("signPackage"=>$signPackage));
-        // include("../themes/default/weixin_share.dwt");
         $this->assign('signPackage',$signPackage);
         $this->display('weixin_share.dwt');
     }
