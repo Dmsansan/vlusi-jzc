@@ -170,7 +170,7 @@
         <i class="fa fa-angle-down"></i> </a>
         <div id="collapseFour1" class="panel-collapse collapse in"> <?php echo $this->_var['lang']['your_surplus']; ?><?php echo empty($this->_var['your_surplus']) ? '0' : $this->_var['your_surplus']; ?><br />
           <span id="ECS_SURPLUS_NOTICE"></span>
-          <input name="surplus" type="text" id="ECS_SURPLUS" size="10" value="<?php echo empty($this->_var['order']['surplus']) ? '0' : $this->_var['order']['surplus']; ?>" onblur="changeSurplus(this.value)" <?php if ($this->_var['disable_surplus']): ?>disabled="disabled"<?php endif; ?> />
+          
         </div>
         <?php endif; ?> 
         

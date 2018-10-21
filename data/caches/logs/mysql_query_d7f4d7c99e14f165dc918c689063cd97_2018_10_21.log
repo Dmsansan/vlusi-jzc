@@ -1174,3 +1174,425 @@ UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1540084581', ip = '0.0.0.0', use
 
 DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1540082781
 
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1540084332
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084332
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `vlusi_jzc`.`jzc_category` AS c LEFT JOIN `vlusi_jzc`.`jzc_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `vlusi_jzc`.`jzc_goods_cat` AS gc , `vlusi_jzc`.`jzc_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084332
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+DESC `vlusi_jzc`.`jzc_sessions_data`
+
+INSERT INTO `vlusi_jzc`.`jzc_sessions_data` (sesskey, expiry, data) VALUES ('27d75751680e126d826c5b1d6ea0b028', '1540086132', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1540057332;s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:6:\"390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}')ON DUPLICATE KEY UPDATE expiry = expiry + 1540086132, data = 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1540057332;s:9:\"user_list\";a:1:{i:0;a:12:{s:7:\"user_id\";s:1:\"1\";s:9:\"user_name\";s:4:\"haha\";s:3:\"sex\";s:1:\"0\";s:8:\"birthday\";s:10:\"1958-01-01\";s:12:\"mobile_phone\";s:11:\"15601590617\";s:5:\"email\";s:19:\"15601590617@163.com\";s:12:\"is_validated\";s:1:\"0\";s:10:\"user_money\";s:6:\"390.00\";s:12:\"frozen_money\";s:4:\"0.00\";s:11:\"rank_points\";s:1:\"0\";s:10:\"pay_points\";s:1:\"0\";s:8:\"reg_time\";s:10:\"2018-10-07\";}}}'
+
+UPDATE `vlusi_jzc`.`jzc_sessions` SET expiry = '1540086132', ip = '0.0.0.0', userid = '0', adminid = '1', user_name='0', user_rank='0', discount='0', email='0', data = '' WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028' LIMIT 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1540084332
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084332
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `vlusi_jzc`.`jzc_suppliers`
+            WHERE  is_check = 1 
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `vlusi_jzc`.`jzc_category` AS c LEFT JOIN `vlusi_jzc`.`jzc_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `vlusi_jzc`.`jzc_goods_cat` AS gc , `vlusi_jzc`.`jzc_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `vlusi_jzc`.`jzc_brand` ORDER BY sort_order
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `vlusi_jzc`.`jzc_suppliers`
+            WHERE  is_check = 1 
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` AS g WHERE is_delete='0'  AND is_real='1'
+
+SELECT goods_id, goods_name, goods_type, goods_sn, virtual_sales, shop_price, is_on_sale, is_best, is_new, is_hot, sort_order, goods_number, integral,  (promote_price > 0 AND promote_start_date <= '1540108799' AND promote_end_date >= '1540108799') AS is_promote  FROM `vlusi_jzc`.`jzc_goods` AS g WHERE is_delete='0'  AND is_real='1' ORDER BY goods_id DESC  LIMIT 0,15
+
+SELECT DISTINCT cat_id
+            FROM `vlusi_jzc`.`jzc_attribute`
+            WHERE attr_type = 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1540084335
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT agency_id FROM `vlusi_jzc`.`jzc_admin_user` WHERE user_id = '1'
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_order_info` AS o WHERE 1 
+
+SELECT o.order_id, o.order_sn, o.kuaidi_name, o.kuaidi_sn, o.add_time, o.order_status, o.shipping_status, o.order_amount, o.money_paid,o.pay_status, o.consignee, o.address, o.email, o.tel, o.extension_code, o.extension_id, (   o.goods_amount + o.tax + o.shipping_fee + o.insure_fee + o.pay_fee + o.pack_fee + o.card_fee ) AS total_fee, IFNULL(u.user_name, '匿名用户') AS buyer  FROM `vlusi_jzc`.`jzc_order_info` AS o  LEFT JOIN `vlusi_jzc`.`jzc_users` AS u ON u.user_id=o.user_id WHERE 1  ORDER BY add_time DESC  LIMIT 0,15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084336
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT rank_id, rank_name, min_points FROM `vlusi_jzc`.`jzc_user_rank` ORDER BY min_points ASC 
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_users` WHERE 1 
+
+SELECT user_id, user_name,sex,birthday,mobile_phone,email, is_validated, user_money, frozen_money, rank_points, pay_points, reg_time  FROM `vlusi_jzc`.`jzc_users` WHERE 1  ORDER by user_id DESC LIMIT 0,15
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1540084336
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084336
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT c.*, COUNT(s.cat_id) AS has_children, COUNT(a.article_id) AS aricle_num  FROM `vlusi_jzc`.`jzc_article_cat` AS c LEFT JOIN `vlusi_jzc`.`jzc_article_cat` AS s ON s.parent_id=c.cat_id LEFT JOIN `vlusi_jzc`.`jzc_article` AS a ON a.cat_id=c.cat_id GROUP BY c.cat_id  ORDER BY parent_id, sort_order ASC
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_users`
+
+SELECT COUNT(DISTINCT user_id) FROM `vlusi_jzc`.`jzc_order_info` WHERE user_id > 0  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+SELECT COUNT(*) AS order_num,  SUM(   goods_amount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee ) AS turnover FROM `vlusi_jzc`.`jzc_order_info` WHERE user_id > 0  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+SELECT COUNT(*) AS order_num,  SUM(   goods_amount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee ) AS turnover FROM `vlusi_jzc`.`jzc_order_info` WHERE user_id = 0  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1540084337
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+DELETE FROM `vlusi_jzc`.`jzc_template` WHERE 1  AND theme <> 'default' 
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1540084338
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084338
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1540084340
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084340
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `vlusi_jzc`.`jzc_suppliers`
+            WHERE  is_check = 1 
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `vlusi_jzc`.`jzc_category` AS c LEFT JOIN `vlusi_jzc`.`jzc_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `vlusi_jzc`.`jzc_goods_cat` AS gc , `vlusi_jzc`.`jzc_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `vlusi_jzc`.`jzc_brand` ORDER BY sort_order
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `vlusi_jzc`.`jzc_suppliers`
+            WHERE  is_check = 1 
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` AS g WHERE is_delete='0'  AND is_real='1'
+
+SELECT goods_id, goods_name, goods_type, goods_sn, virtual_sales, shop_price, is_on_sale, is_best, is_new, is_hot, sort_order, goods_number, integral,  (promote_price > 0 AND promote_start_date <= '1540108799' AND promote_end_date >= '1540108799') AS is_promote  FROM `vlusi_jzc`.`jzc_goods` AS g WHERE is_delete='0'  AND is_real='1' ORDER BY goods_id DESC  LIMIT 0,15
+
+SELECT DISTINCT cat_id
+            FROM `vlusi_jzc`.`jzc_attribute`
+            WHERE attr_type = 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1540084340
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084340
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_users`
+
+SELECT COUNT(DISTINCT user_id) FROM `vlusi_jzc`.`jzc_order_info` WHERE user_id > 0  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+SELECT COUNT(*) AS order_num,  SUM(   goods_amount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee ) AS turnover FROM `vlusi_jzc`.`jzc_order_info` WHERE user_id > 0  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+SELECT COUNT(*) AS order_num,  SUM(   goods_amount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee ) AS turnover FROM `vlusi_jzc`.`jzc_order_info` WHERE user_id = 0  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+DELETE FROM `vlusi_jzc`.`jzc_template` WHERE 1  AND theme <> 'default' 
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084356
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `vlusi_jzc`.`jzc_suppliers`
+            WHERE  is_check = 1 
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `vlusi_jzc`.`jzc_category` AS c LEFT JOIN `vlusi_jzc`.`jzc_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `vlusi_jzc`.`jzc_goods_cat` AS gc , `vlusi_jzc`.`jzc_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `vlusi_jzc`.`jzc_brand` ORDER BY sort_order
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `vlusi_jzc`.`jzc_suppliers`
+            WHERE  is_check = 1 
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` AS g WHERE is_delete='0'  AND is_real='1'
+
+SELECT goods_id, goods_name, goods_type, goods_sn, virtual_sales, shop_price, is_on_sale, is_best, is_new, is_hot, sort_order, goods_number, integral,  (promote_price > 0 AND promote_start_date <= '1540108799' AND promote_end_date >= '1540108799') AS is_promote  FROM `vlusi_jzc`.`jzc_goods` AS g WHERE is_delete='0'  AND is_real='1' ORDER BY goods_id DESC  LIMIT 0,15
+
+SELECT DISTINCT cat_id
+            FROM `vlusi_jzc`.`jzc_attribute`
+            WHERE attr_type = 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_users`
+
+SELECT COUNT(DISTINCT user_id) FROM `vlusi_jzc`.`jzc_order_info` WHERE user_id > 0  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+SELECT COUNT(*) AS order_num,  SUM(   goods_amount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee ) AS turnover FROM `vlusi_jzc`.`jzc_order_info` WHERE user_id > 0  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+SELECT COUNT(*) AS order_num,  SUM(   goods_amount + tax + shipping_fee + insure_fee + pay_fee + pack_fee + card_fee ) AS turnover FROM `vlusi_jzc`.`jzc_order_info` WHERE user_id = 0  AND order_status  IN ('1','5')  AND shipping_status  IN ('1','2')  AND pay_status  IN ('2','1')  
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084358
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1 
+
+SELECT *FROM `vlusi_jzc`.`jzc_amount_card` AS ac WHERE 1  ORDER by ac.amount_id DESC LIMIT 15
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+DELETE FROM `vlusi_jzc`.`jzc_template` WHERE 1  AND theme <> 'default' 
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1540084439
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `vlusi_jzc`.`jzc_suppliers`
+            WHERE  is_check = 1 
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `vlusi_jzc`.`jzc_category` AS c LEFT JOIN `vlusi_jzc`.`jzc_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `vlusi_jzc`.`jzc_goods_cat` AS gc , `vlusi_jzc`.`jzc_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `vlusi_jzc`.`jzc_brand` ORDER BY sort_order
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `vlusi_jzc`.`jzc_suppliers`
+            WHERE  is_check = 1 
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` AS g WHERE is_delete='0'  AND is_real='1'
+
+SELECT goods_id, goods_name, goods_type, goods_sn, virtual_sales, shop_price, is_on_sale, is_best, is_new, is_hot, sort_order, goods_number, integral,  (promote_price > 0 AND promote_start_date <= '1540108799' AND promote_end_date >= '1540108799') AS is_promote  FROM `vlusi_jzc`.`jzc_goods` AS g WHERE is_delete='0'  AND is_real='1' ORDER BY goods_id DESC  LIMIT 0,15
+
+SELECT DISTINCT cat_id
+            FROM `vlusi_jzc`.`jzc_attribute`
+            WHERE attr_type = 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1540084439
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+DELETE FROM `vlusi_jzc`.`jzc_template` WHERE 1  AND theme <> 'default' 
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions_data` WHERE expiry < 1540084440
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084440
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SHOW TABLES LIKE 'jzc\_%'
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084442
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `vlusi_jzc`.`jzc_drp_config`
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT * FROM `vlusi_jzc`.`jzc_drp_config`
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084444
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SHOW TABLES LIKE 'jzc\_%'
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+DELETE FROM `vlusi_jzc`.`jzc_template` WHERE 1  AND theme <> 'default' 
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084446
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `vlusi_jzc`.`jzc_sessions` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT data, expiry FROM `vlusi_jzc`.`jzc_sessions_data` WHERE sesskey = '27d75751680e126d826c5b1d6ea0b028'
+
+SELECT code, value FROM `vlusi_jzc`.`jzc_shop_config` WHERE parent_id > 0
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `vlusi_jzc`.`jzc_suppliers`
+            WHERE  is_check = 1 
+
+SELECT c.cat_id, c.cat_name, c.measure_unit, c.parent_id, c.is_show, c.show_in_nav, c.grade, c.sort_order, COUNT(s.cat_id) AS has_children FROM `vlusi_jzc`.`jzc_category` AS c LEFT JOIN `vlusi_jzc`.`jzc_category` AS s ON s.parent_id=c.cat_id GROUP BY c.cat_id ORDER BY c.parent_id, c.sort_order ASC
+
+SELECT cat_id, COUNT(*) AS goods_num  FROM `vlusi_jzc`.`jzc_goods` WHERE is_delete = 0 AND is_on_sale = 1  GROUP BY cat_id
+
+SELECT gc.cat_id, COUNT(*) AS goods_num  FROM `vlusi_jzc`.`jzc_goods_cat` AS gc , `vlusi_jzc`.`jzc_goods` AS g  WHERE g.goods_id = gc.goods_id AND g.is_delete = 0 AND g.is_on_sale = 1  GROUP BY gc.cat_id
+
+SELECT brand_id, brand_name FROM `vlusi_jzc`.`jzc_brand` ORDER BY sort_order
+
+SELECT suppliers_id, suppliers_name, suppliers_desc
+            FROM `vlusi_jzc`.`jzc_suppliers`
+            WHERE  is_check = 1 
+
+SELECT COUNT(*) FROM `vlusi_jzc`.`jzc_goods` AS g WHERE is_delete='0'  AND is_real='1'
+
+SELECT goods_id, goods_name, goods_type, goods_sn, virtual_sales, shop_price, is_on_sale, is_best, is_new, is_hot, sort_order, goods_number, integral,  (promote_price > 0 AND promote_start_date <= '1540108799' AND promote_end_date >= '1540108799') AS is_promote  FROM `vlusi_jzc`.`jzc_goods` AS g WHERE is_delete='0'  AND is_real='1' ORDER BY goods_id DESC  LIMIT 0,15
+
+SELECT DISTINCT cat_id
+            FROM `vlusi_jzc`.`jzc_attribute`
+            WHERE attr_type = 1
+
+DELETE FROM `vlusi_jzc`.`jzc_sessions` WHERE expiry < 1540084446
+

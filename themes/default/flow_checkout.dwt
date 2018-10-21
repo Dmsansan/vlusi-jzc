@@ -160,7 +160,7 @@
         <i class="fa fa-angle-down"></i> </a>
         <div id="collapseFour1" class="panel-collapse collapse in"> {$lang.your_surplus}{$your_surplus|default:0}<br />
           <span id="ECS_SURPLUS_NOTICE"></span>
-          <input name="surplus" type="text" id="ECS_SURPLUS" size="10" value="{$order.surplus|default:0}" onblur="changeSurplus(this.value)" {if $disable_surplus}disabled="disabled"{/if} />
+          
         </div>
         <!-- {/if} 是否使用余额 --> 
         

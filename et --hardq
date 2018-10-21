@@ -1,0 +1,388 @@
+[33mcommit c777e68f5ed6214079e02fd331df3a1382860980[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sun Oct 21 09:36:01 2018 +0800
+
+    修复冲突bug
+
+[33mcommit 020c4f9ede43960760f79034013c650b08c77f9a[m
+Merge: aa590a0 87137d2
+Author: Dmsansan <15601590617@163.com>
+Date:   Sun Oct 21 09:34:01 2018 +0800
+
+    修改余额可填BUG
+
+[33mcommit aa590a0a374860d1ec94a5d9444dccb4a252fdbd[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sun Oct 21 09:32:27 2018 +0800
+
+    修改余额可填bug
+
+[33mcommit ff91586c13ad107da99b364c728d62f3c2ca40d2[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sun Oct 21 09:17:49 2018 +0800
+
+    修改分类页面添加全部分类
+
+[33mcommit 87137d2f36e49d376a91645170c654b602daf469[m
+Author: dmsansan <562404326@qq.com>
+Date:   Fri Oct 19 13:34:38 2018 +0800
+
+    修复首页二维码生辰
+
+[33mcommit 547054491860bf95e4068da4419583aef7a7ba08[m
+Author: dmsansan <562404326@qq.com>
+Date:   Fri Oct 19 12:29:47 2018 +0800
+
+    123
+
+[33mcommit 27bf9b584e6befbaca1f1ecef67ba43197656f3a[m
+Author: vlusi@changxu <xu.chang@vlusi.com>
+Date:   Fri Oct 19 12:24:43 2018 +0800
+
+    界面修改
+
+[33mcommit 2a70ccdde01396a898fe6bfdbb605f5a39e2d444[m
+Author: vlusi@changxu <xu.chang@vlusi.com>
+Date:   Fri Oct 19 11:57:50 2018 +0800
+
+    tp
+
+[33mcommit 2709151a5153076b59e81befe37186d022af5d57[m
+Author: dmsansan <562404326@qq.com>
+Date:   Thu Oct 18 14:54:03 2018 +0800
+
+    修改数据库结构
+
+[33mcommit f1a276b26d54443f9d1502ec64af3d37dd345096[m
+Author: dmsansan <562404326@qq.com>
+Date:   Thu Oct 18 14:50:28 2018 +0800
+
+    优化首页二维码生成
+
+[33mcommit ff07bf37de31720fc6a30784b2596ce8f689a104[m
+Author: dmsansan <562404326@qq.com>
+Date:   Thu Oct 18 14:07:58 2018 +0800
+
+    删除页面部分元素
+
+[33mcommit 96e08bd88ed91037547d32bfa1d872a7ee116a3b[m
+Author: dmsansan <562404326@qq.com>
+Date:   Wed Oct 17 14:28:01 2018 +0800
+
+    添加首页分享二维码功能
+
+[33mcommit 771c085d3760d959a0c66ffd27efdd8824157883[m
+Author: dmsansan <562404326@qq.com>
+Date:   Wed Oct 17 11:18:30 2018 +0800
+
+    完善微信自定义分享功能
+
+[33mcommit 21e27f1cbdb9972f1fdcd4fbf8a7f5435e5b4892[m
+Author: dmsansan <562404326@qq.com>
+Date:   Mon Oct 15 13:29:40 2018 +0800
+
+    删除jssdk类
+
+[33mcommit 328cf5af34fd70c6bca7cc4b1f56f852477320c3[m
+Merge: 6530c51 f94c274
+Author: dmsansan <562404326@qq.com>
+Date:   Mon Oct 15 13:22:17 2018 +0800
+
+    修改config.php文件
+
+[33mcommit 6530c51e5a9fa074d26bfda5334dd519e85bc372[m
+Author: dmsansan <562404326@qq.com>
+Date:   Mon Oct 15 12:30:53 2018 +0800
+
+    线上版本异常
+
+[33mcommit f94c274a2ab3634e05e593db69622a5ea9bcb6b5[m
+Merge: 3a5bc54 ee37e4a
+Author: dmsansan <562404326@qq.com>
+Date:   Mon Oct 15 11:30:34 2018 +0800
+
+    去除冲突文件
+
+[33mcommit 3a5bc54dfc17873183fe81751d101a53b1b95bcd[m
+Author: dmsansan <562404326@qq.com>
+Date:   Mon Oct 15 11:27:37 2018 +0800
+
+    同步线上
+
+[33mcommit ee37e4ae11d67a124b8c0138e63e29cea09dd250[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sun Oct 14 22:21:29 2018 +0800
+
+    添加微信自定义分享功能
+
+[33mcommit 324faff37d49dd2a6efd56ae605688b389bbf2bd[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sun Oct 14 20:20:46 2018 +0800
+
+    微信分享功能添加
+
+[33mcommit 5dbf0aa6c95f29af7a14adaa18e6da1e058982e0[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sat Oct 13 19:37:58 2018 +0800
+
+    添加线上配置图片文件
+
+[33mcommit a27a2e394a86e2b54add9f62c00ca763e8bbcb37[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sat Oct 13 19:11:53 2018 +0800
+
+    解决conifg.php文件冲突
+
+[33mcommit 973618eeb565a76f1dd4089e19207e4cdb923764[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sat Oct 13 19:01:17 2018 +0800
+
+    添加线上数据库配置
+
+[33mcommit 5dec7a3768ccee54749a28009087475117ec6487[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sat Oct 13 18:57:12 2018 +0800
+
+    修改readme文件
+
+[33mcommit db56c8eda6ac5a8d7770e3997d98a09e4028a582[m
+Merge: ab38d55 df98fe7
+Author: Dmsansan <15601590617@163.com>
+Date:   Sat Oct 13 18:49:17 2018 +0800
+
+    gitpull 失败
+
+[33mcommit ab38d558f95e49af0f9703a862889aa03cbf8f01[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sat Oct 13 18:47:59 2018 +0800
+
+    同步
+
+[33mcommit df98fe70217d2243ce9d5f7dab60197a2519e945[m
+Author: vlusi@changxu <xu.chang@vlusi.com>
+Date:   Fri Oct 12 19:02:51 2018 +0800
+
+    页面调整
+
+[33mcommit df5ebd97c699fdf23c156f5fc8513f95a16ac6ee[m
+Merge: 6f83c58 512a93f
+Author: vlusi@changxu <xu.chang@vlusi.com>
+Date:   Fri Oct 12 16:31:16 2018 +0800
+
+    Merge branch 'master' of https://github.com/Dmsansan/vlusi_jzc
+
+[33mcommit 6f83c587f54ecd2f3c1e4d36adef81ad52faabf1[m
+Author: vlusi@changxu <xu.chang@vlusi.com>
+Date:   Fri Oct 12 16:31:06 2018 +0800
+
+    shouye
+
+[33mcommit 512a93fe51910a13cbba835b6cdf7188029746b2[m
+Author: dmsansan <562404326@qq.com>
+Date:   Fri Oct 12 16:27:07 2018 +0800
+
+    修改数据库文件
+
+[33mcommit 4d84212da2d82d8a3a62aa2d1e5e7c3af16924be[m
+Author: vlusi@changxu <xu.chang@vlusi.com>
+Date:   Fri Oct 12 16:05:25 2018 +0800
+
+    cs
+
+[33mcommit a400824d20a0c157427e835845374a019fb4e79d[m
+Author: vlusi@changxu <xu.chang@vlusi.com>
+Date:   Fri Oct 12 15:11:19 2018 +0800
+
+    cehshi
+
+[33mcommit 0fe6e40aae9619a39801cbd94f128beaa130c138[m
+Author: dmsansan <562404326@qq.com>
+Date:   Fri Oct 12 11:47:23 2018 +0800
+
+    添加物流快递信息
+
+[33mcommit db8e2106be0d090710aea95049bb87f358fe700a[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Fri Oct 12 07:44:51 2018 +0800
+
+    修复get_order_detail的bug
+
+[33mcommit 77e9caa52814429e1e2bd2a506498eb8807f2df4[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Thu Oct 11 22:15:57 2018 +0800
+
+    添加物流信息
+
+[33mcommit 4016828663eaeafd38d29a20c266ed53f6b7eb66[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Thu Oct 11 21:31:36 2018 +0800
+
+    提交数据库修改文件
+
+[33mcommit d821df4e31e63fcd30b2d4aa6caaa89d00596b9e[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Thu Oct 11 21:26:43 2018 +0800
+
+    新增手机号码短信验证
+
+[33mcommit c52be472693f6c75686420e449ee6d21a91573f2[m
+Author: dmsansan <562404326@qq.com>
+Date:   Thu Oct 11 14:33:19 2018 +0800
+
+    添加会员代金卡充值
+
+[33mcommit b80ed70139823aaa8028713ff1e612513c6419b4[m
+Author: dmsansan <562404326@qq.com>
+Date:   Thu Oct 11 11:16:02 2018 +0800
+
+    后台添加订单物流信息
+
+[33mcommit fb5f9318d30bab3952d19b3f41e6e09ebb0f6ba1[m
+Author: Sisansan <562404326@qq.com>
+Date:   Wed Oct 10 14:49:18 2018 +0800
+
+    Update README.md
+
+[33mcommit cd4e9e6e3a5031539edbe4150716f81526134887[m
+Author: Sisansan <562404326@qq.com>
+Date:   Wed Oct 10 14:48:58 2018 +0800
+
+    添加快递信息查询接口
+
+[33mcommit 561bf437048e99f8fc10ac8a94d853363d617778[m
+Author: dmsansan <562404326@qq.com>
+Date:   Wed Oct 10 14:45:25 2018 +0800
+
+    添加快递单号接口数据查询
+
+[33mcommit d3f0ff6706e4384c787beeb0cc3657892033ea2f[m
+Author: dmsansan <562404326@qq.com>
+Date:   Mon Oct 8 13:14:58 2018 +0800
+
+    添加代金卡导出Excel表格功能
+
+[33mcommit 6a8772cd5f98e0df88e87df278aa362f08856e8a[m
+Author: dmsansan <562404326@qq.com>
+Date:   Mon Oct 8 12:43:33 2018 +0800
+
+    优化生卡记录导出excle功能
+
+[33mcommit 578f5813094a3c221cd7c0e681d7e9cee3ba453e[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Mon Oct 8 07:51:51 2018 +0800
+
+    添加数据库文件
+
+[33mcommit 0dca31c1b99bc003e20c83843bf441a224568e4d[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Mon Oct 8 07:49:58 2018 +0800
+
+    新增生卡记录导出excel功能
+
+[33mcommit 503cd57ad3bbd19b9f8a9040f3304ef0d02bf254[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Mon Oct 8 00:42:59 2018 +0800
+
+    导出生卡记录
+
+[33mcommit c1a4b0b5506a0903b324c861330172d1a9164dd6[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sun Oct 7 22:44:58 2018 +0800
+
+    修改代金卡充值接口
+
+[33mcommit 8b02d24a83d8ef865cdb42c98f639778e53b0bc9[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sun Oct 7 22:28:51 2018 +0800
+
+    添加会员充值代金卡
+
+[33mcommit a00d6ae0965c139a180957bd44e1ee1bd6da8dfc[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sun Oct 7 20:41:13 2018 +0800
+
+    修改描述文件
+
+[33mcommit 2ebfee7bec92a90a531f594d47914c9fb593efc9[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sun Oct 7 07:55:53 2018 +0800
+
+    优化程序代码
+
+[33mcommit 9aa637e3605a2cb872a5b4541bb524d9666da92b[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sat Oct 6 16:05:51 2018 +0800
+
+    批量添加卡片加入生卡记录
+
+[33mcommit e69d90dfb2ee9a4dde91383a1557140a4878324d[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Sat Oct 6 11:37:35 2018 +0800
+
+    添加代金卡记录管理相关
+
+[33mcommit 58f6d88c66a4592103b4d6fe67bd3a7ac5730d88[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Thu Oct 4 16:05:29 2018 +0800
+
+    新增代金卡类型
+
+[33mcommit 43985445da477ac88266acdaa945cf824f296a56[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Wed Oct 3 17:01:34 2018 +0800
+
+    新增自动生成卡号密码函数
+
+[33mcommit 742fea9009d363d545634e601be2188b5ae4857c[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Wed Oct 3 12:13:55 2018 +0800
+
+    新增代金卡列表功能
+
+[33mcommit 701e3c9d01ae00736e4fdeb580101693c8ac8c9e[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Mon Oct 1 17:05:38 2018 +0800
+
+    添加代金卡规则
+
+[33mcommit 4bebc16dcee72979c393cddc04f3ad24a3c4a195[m
+Author: Dmsansan <15601590617@163.com>
+Date:   Mon Oct 1 09:29:12 2018 +0800
+
+    添加数据库文件
+
+[33mcommit f47e8fd2a2c4851052801271c6205547629bbf3f[m
+Author: dmsansan <562404326@qq.com>
+Date:   Sun Sep 30 15:13:41 2018 +0800
+
+    新增代金卡功能
+
+[33mcommit 451c66e4bf73b9b4ffc0033146e9dea704de32ee[m
+Author: dmsansan <562404326@qq.com>
+Date:   Fri Sep 28 16:40:49 2018 +0800
+
+    添加表jzc_amount_card
+
+[33mcommit a30f5e51c13b2be5fa73e8a1b3184e41af3c35ea[m
+Author: dmsansan <562404326@qq.com>
+Date:   Fri Sep 28 16:36:46 2018 +0800
+
+    添加代金卡管理页面
+
+[33mcommit c3f4d0c2249a43f248a169e53b100a16e9753079[m
+Author: dmsansan <562404326@qq.com>
+Date:   Fri Sep 28 14:13:53 2018 +0800
+
+    添加数据库文件
+
+[33mcommit d17fbf8e0d9c6a7c494da2e4fd633fe9ef13d7ac[m
+Author: Sisansan <562404326@qq.com>
+Date:   Fri Sep 28 14:11:20 2018 +0800
+
+    Update README.md
+
+[33mcommit 3a0525147fdaa4bac431249a8f445725a8a28278[m
+Author: dmsansan <562404326@qq.com>
+Date:   Fri Sep 28 14:07:13 2018 +0800
+
+    提交安装后的源代码
