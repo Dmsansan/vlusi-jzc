@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:5:{i:0;s:73:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/category_top_all.dwt";i:1;s:80:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_page_header.lbi";i:2;s:81:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_search_small.lbi";i:3;s:75:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_search.lbi";i:4;s:80:"D:/phpStudy/PHPTutorial/WWW/vlusi_jzc/themes/default/library/new_page_footer.lbi";}s:7:"expires";i:1539343019;s:8:"maketime";i:1539339419;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:5:{i:0;s:61:"D:/phpStudy/WWW/vlusi_jzc/themes/default/category_top_all.dwt";i:1;s:68:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_page_header.lbi";i:2;s:69:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_search_small.lbi";i:3;s:63:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_search.lbi";i:4;s:68:"D:/phpStudy/WWW/vlusi_jzc/themes/default/library/new_page_footer.lbi";}s:7:"expires";i:1540088183;s:8:"maketime";i:1540084583;}<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -29,33 +29,63 @@
 </div>	<aside>
 		<div class="menu-left scrollbar-none" id="sidebar">
 			<ul>
-								<li  class="active"><a href="/vlusi_jzc/index.php?m=default&c=category&a=index&id=1&u=0">代金卡</a></li>
+								<li  class="active">全部</li>
+								<li >代金卡</li>
+								<li >食品</li>
 							</ul>
 		</div>
 	</aside>
 		<section class="menu-right padding-all j-content">
-			</section>
+									<h5>代金卡</h5>
+				<ul>
+									<li class="w-3"><a href="javascript:void(0);" onclick='javascript:redirect_list(3);'></a>
+					<img src="/vlusi_jzc/data/attached/images/no_picture.gif" /><span>100元代金卡</span></li>
+									<li class="w-3"><a href="javascript:void(0);" onclick='javascript:redirect_list(4);'></a>
+					<img src="/vlusi_jzc/data/attached/images/no_picture.gif" /><span>200元代金卡</span></li>
+								</ul>
+												<h5>食品</h5>
+				<ul>
+									<li class="w-3"><a href="javascript:void(0);" onclick='javascript:redirect_list(6);'></a>
+					<img src="/vlusi_jzc/data/attached/images/no_picture.gif" /><span>饮料</span></li>
+								</ul>
+						</section>
+		<section class="menu-right padding-all j-content" style="display:none">
+													<h5>代金卡</h5>
+				<ul>
+									<li class="w-3"><a href="javascript:void(0);" onclick='javascript:redirect_list(3);'></a>
+					<img src="/vlusi_jzc/data/attached/images/no_picture.gif" /><span>100元代金卡</span></li>
+									<li class="w-3"><a href="javascript:void(0);" onclick='javascript:redirect_list(4);'></a>
+					<img src="/vlusi_jzc/data/attached/images/no_picture.gif" /><span>200元代金卡</span></li>
+								</ul>
+																						</section>
+		<section class="menu-right padding-all j-content" style="display:none">
+													<h5>食品</h5>
+				<ul>
+									<li class="w-3"><a href="javascript:void(0);" onclick='javascript:redirect_list(6);'></a>
+					<img src="/vlusi_jzc/data/attached/images/no_picture.gif" /><span>饮料</span></li>
+								</ul>
+										</section>
 	</div>
 <footer class="footer-nav dis-box">
-				<a href="/vlusi_jzc/index.php?m=default&c=index&a=index&u=2" class="box-flex nav-list">
+				<a href="/vlusi_jzc/index.php?m=default&c=index&a=index&u=0" class="box-flex nav-list">
 					<i class="nav-box i-home"></i><span>首页</span>
 				</a>
-				<a href="/vlusi_jzc/index.php?m=default&c=category&a=top_all&u=2" class="box-flex nav-list active">
+				<a href="/vlusi_jzc/index.php?m=default&c=category&a=top_all&u=0" class="box-flex nav-list active">
 					<i class="nav-box i-cate"></i><span>分类</span>
 				</a>
 				
 	
 				
-				<a href="/vlusi_jzc/index.php?m=default&c=flow&a=cart&u=2" class="box-flex position-rel nav-list">
+				<a href="/vlusi_jzc/index.php?m=default&c=flow&a=cart&u=0" class="box-flex position-rel nav-list">
 					<i class="nav-box i-flow"></i><span>购物车</span>
 				</a>
-				<a href="/vlusi_jzc/index.php?m=default&c=user&a=index&u=2" class="box-flex nav-list">
+				<a href="/vlusi_jzc/index.php?m=default&c=user&a=index&u=0" class="box-flex nav-list">
 					<i class="nav-box i-user"></i><span>我的</span>
 				</a>
 		</footer>	
 <div class="search-div ts-3">
 	<section class="search">
-		<form action="/vlusi_jzc/index.php?m=default&c=category&a=index&u=2" method="post">
+		<form action="/vlusi_jzc/index.php?m=default&c=category&a=index&u=0" method="post">
 		<div class="text-all dis-box j-text-all">
 			<a class="a-icon-back j-close-search" href="javascript:history.go(-1)"><i class="iconfont icon-jiantou is-left-font"></i></a>
 			<div class="box-flex input-text">

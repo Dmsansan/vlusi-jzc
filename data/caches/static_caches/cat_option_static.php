@@ -1,6 +1,6 @@
 <?php
 $data = array (
-  0 => 
+  2 => 
   array (
     'cat_id' => '2',
     'cat_name' => '全部',
@@ -12,34 +12,11 @@ $data = array (
     'sort_order' => '1',
     'has_children' => '2',
     'goods_num' => '1',
+    'level' => 0,
+    'id' => '2',
+    'name' => '全部',
   ),
   1 => 
-  array (
-    'cat_id' => '3',
-    'cat_name' => '100元代金卡',
-    'measure_unit' => '',
-    'parent_id' => '1',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  2 => 
-  array (
-    'cat_id' => '4',
-    'cat_name' => '200元代金卡',
-    'measure_unit' => '',
-    'parent_id' => '1',
-    'is_show' => '1',
-    'show_in_nav' => '0',
-    'grade' => '0',
-    'sort_order' => '50',
-    'has_children' => '0',
-    'goods_num' => 0,
-  ),
-  3 => 
   array (
     'cat_id' => '1',
     'cat_name' => '代金卡',
@@ -51,8 +28,43 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '2',
     'goods_num' => 0,
+    'level' => 1,
+    'id' => '1',
+    'name' => '代金卡',
+  ),
+  3 => 
+  array (
+    'cat_id' => '3',
+    'cat_name' => '100元代金卡',
+    'measure_unit' => '',
+    'parent_id' => '1',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+    'level' => 2,
+    'id' => '3',
+    'name' => '100元代金卡',
   ),
   4 => 
+  array (
+    'cat_id' => '4',
+    'cat_name' => '200元代金卡',
+    'measure_unit' => '',
+    'parent_id' => '1',
+    'is_show' => '1',
+    'show_in_nav' => '0',
+    'grade' => '0',
+    'sort_order' => '50',
+    'has_children' => '0',
+    'goods_num' => 0,
+    'level' => 2,
+    'id' => '4',
+    'name' => '200元代金卡',
+  ),
+  5 => 
   array (
     'cat_id' => '5',
     'cat_name' => '食品',
@@ -64,8 +76,11 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '1',
     'goods_num' => 0,
+    'level' => 1,
+    'id' => '5',
+    'name' => '食品',
   ),
-  5 => 
+  6 => 
   array (
     'cat_id' => '6',
     'cat_name' => '饮料',
@@ -77,6 +92,9 @@ $data = array (
     'sort_order' => '50',
     'has_children' => '0',
     'goods_num' => 0,
+    'level' => 2,
+    'id' => '6',
+    'name' => '饮料',
   ),
 );
 ?>

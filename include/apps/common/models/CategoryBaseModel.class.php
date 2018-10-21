@@ -47,8 +47,7 @@ class CategoryBaseModel extends BaseModel {
 
                  $sql = 'SELECT c.cat_id,c.cat_name,c.parent_id,c.is_show ' .
                         'FROM ' . $this->pre . 'category as c ' .
-                        "WHERE c.parent_id = 0 AND c.is_show = 1 ORDER BY c.sort_order ASC, c.cat_id ASC";
-
+                "WHERE c.parent_id = 0 OR c.parent_id = (SELECT cat_id FROM ". $this->pre ."category". " WHERE cat_name = '全部')  AND c.is_show = 1 ORDER BY c.sort_order ASC, c.cat_id ASC";
                 $res = $this->query($sql);
                 foreach ($res AS $row) {
                     if ($row['is_show']) {

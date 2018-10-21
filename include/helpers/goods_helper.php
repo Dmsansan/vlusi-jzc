@@ -43,7 +43,7 @@ function get_categories_tree($cat_id = 0)
         /* 获取当前分类及其子分类 */
         $sql = 'SELECT cat_id,cat_name ,parent_id,is_show ' .
                 'FROM ' . $global->ecs->table('category') .
-                "WHERE parent_id = '$parent_id' AND is_show = 1 ORDER BY sort_order ASC, cat_id ASC";
+                "WHERE parent_id = '$parent_id'  AND is_show = 1 ORDER BY sort_order ASC, cat_id ASC";
 
         $res = $global->db->getAll($sql);
 
