@@ -66,6 +66,7 @@
     </ul>
   </div>
 </section>
+
 <div class="two-btn ect-padding-tb ect-padding-lr ect-margin-tb text-center"> 
   <?php echo $this->_var['order']['handler']; ?>
     <?php if ($this->_var['order']['order_tracking']): ?>

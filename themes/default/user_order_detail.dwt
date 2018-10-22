@@ -60,6 +60,7 @@
     </ul>
   </div>
 </section>
+<!--已确认-->
 <div class="two-btn ect-padding-tb ect-padding-lr ect-margin-tb text-center"> 
   {$order.handler}
     <!-- {if $order.order_tracking}-->

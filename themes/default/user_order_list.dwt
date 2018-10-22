@@ -11,7 +11,7 @@
 		<ul id="J_ItemList">
 		 <!--{foreach name=orders_list from=$orders_list item=orders}-->
 			<li>
-			<a href="{:url('user/order_detail', array('order_id'=>$this->_var['orders']['order_id']))}"><img src="{$orders.img}" class="pull-left" />
+			<a href="{:url('user/order_detail_wuliu', array('order_id'=>$this->_var['orders']['order_id']))}"><img src="{$orders.img}" class="pull-left" />
 			<dl>
 			  <dt>
 				<h4 class="title">{$lang.order_number}：{$orders.order_sn}</h4>

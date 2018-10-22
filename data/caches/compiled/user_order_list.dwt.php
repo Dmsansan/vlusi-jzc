@@ -15,7 +15,7 @@ if ($this->_foreach['orders_list']['total'] > 0):
         $this->_foreach['orders_list']['iteration']++;
 ?>
 			<li>
-			<a href="<?php echo url('user/order_detail', array('order_id'=>$this->_var['orders']['order_id']));?>"><img src="<?php echo $this->_var['orders']['img']; ?>" class="pull-left" />
+			<a href="<?php echo url('user/order_detail_wuliu', array('order_id'=>$this->_var['orders']['order_id']));?>"><img src="<?php echo $this->_var['orders']['img']; ?>" class="pull-left" />
 			<dl>
 			  <dt>
 				<h4 class="title"><?php echo $this->_var['lang']['order_number']; ?>：<?php echo $this->_var['orders']['order_sn']; ?></h4>
